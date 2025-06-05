@@ -1,0 +1,37 @@
+<view class="date-selector-mask" wx:if="{{show}}" catchtouchmove="stop">
+  <view class="date-selector-popup">
+    <view class="date-selector-header">
+      <text>选择日期</text>
+      <text class="date-selector-close" bindtap="onClose">✕</text>
+    </view>
+ <view class="date-selector-month-bar">
+  <image class="date-selector-arrow" src="https://img.icons8.com/ios-filled/24/3a8dff/chevron-left.png" mode="aspectFit" bindtap="prevMonth"/>
+  <text>{{year}}年{{month}}月</text>
+  <image class="date-selector-arrow" src="https://img.icons8.com/ios-filled/24/3a8dff/chevron-right.png" mode="aspectFit" bindtap="nextMonth"/>
+</view>
+    <view class="date-selector-week">
+      <block wx:for="{{weekDays}}" wx:key="*this">
+        <text class="date-selector-week-item">{{item}}</text>
+      </block>
+    </view>
+    <view class="date-selector-days">
+      <block wx:for="{{days}}" wx:key="index">
+        <view
+          wx:if="{{item.day}}"
+          class="date-selector-day {{item.isCurrentMonth ? '' : 'date-selector-day--disabled'}} {{item.isToday ? 'date-selector-day--today' : ''}} {{item.isSelected ? 'date-selector-day--selected' : ''}}"
+          bindtap="onSelectDay"
+          data-date="{{item.date}}"
+        >
+          <text>{{item.day}}</text>
+          <view class="date-selector-day-desc">
+            <text wx:if="{{item.lunar && !item.festival}}" class="lunar-text">{{item.lunar}}</text>
+            <text wx:if="{{item.festival}}" class="date-selector-festival">{{item.festival}}</text>
+            <text wx:if="{{item.holiday}}" class="date-selector-holiday">{{item.holiday}}</text>
+            <text wx:if="{{item.isReserve}}" class="date-selector-reserve">预约</text>
+          </view>
+        </view>
+        <view wx:else class="date-selector-day date-selector-day--empty"></view>
+      </block>
+    </view>
+  </view>
+</view>

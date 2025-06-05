@@ -1,0 +1,90 @@
+<view class="index-page">
+  <!-- 顶部轮播图 -->
+  <swiper-component></swiper-component>
+
+  <!-- 查询卡片 -->
+  <view class="search-card">
+    <view class="tab-switch">
+      <view class="tab active">火车票</view>
+      <view class="tab">飞机票</view>
+    </view>
+
+    
+    <view class="station-row">
+      <view class="station" bindtap="showFromStationSelector">{{fromStation}}</view>
+      <image class="arrow" src="https://img.icons8.com/ios-filled/50/3a8dff/sort-right.png"/>
+      <view class="station" bindtap="showToStationSelector">{{toStation}}</view>
+    </view>
+
+
+    <view class="date-row">
+      <view class="date-info" bindtap="showDateSelector">
+        <text class="date">{{dateText}}</text>
+        <text class="day-text">{{dayText}}</text>
+      </view>
+      <!-- 学生票 -->
+      <view class="option-item" bindtap="toggleStudentTicket">
+        <text class="option-text {{ isStudentTicket ? 'active' : '' }}">学生票</text>
+        <view class="radio {{ isStudentTicket ? 'checked' : '' }}"></view>
+      </view>
+      <!-- 高铁动车 -->
+      <view class="option-item" bindtap="toggleHighSpeedTrain">
+        <text class="option-text {{ isHighSpeedTrain ? 'active' : '' }}">高铁动车</text>
+        <view class="radio {{ isHighSpeedTrain ? 'checked' : '' }}"></view>
+      </view>
+    </view>
+    
+    <view class="search-btn-wrapper">
+    <button class="search-btn">火车票查询</button>
+  </view>
+
+    <view class="history-row">
+      <block wx:for="{{historyList}}" wx:key="index">
+        <view class="history-item">{{item}}</view>
+      </block>
+      <text class="clear-btn" wx:if="{{historyList.length > 0}}" bindtap="onClearHistory">清除</text>
+    </view>
+  </view>
+
+  <!-- 快捷导航 -->
+  <view class="quick-nav">
+    <view class="nav-item">
+      <image class="nav-icon" src="https://img.icons8.com/ios-filled/50/3a8dff/train.png"/>
+      <text>极速抢票</text>
+    </view>
+    <view class="nav-item">
+      <image class="nav-icon" src="https://img.icons8.com/ios-filled/50/3a8dff/online-support.png"/>
+      <text>在线选座</text>
+    </view>
+    <view class="nav-item">
+      <image class="nav-icon" src="https://img.icons8.com/ios-filled/50/3a8dff/gift.png"/>
+      <text>抢票好货</text>
+    </view>
+    <view class="nav-item">
+      <image class="nav-icon" src="https://img.icons8.com/ios-filled/50/3a8dff/hotel.png"/>
+      <text>超值酒店</text>
+    </view>
+  </view>
+
+  <!-- 站点选择组件 -->
+  <station-selector
+    show="{{showFromStation}}"
+    title="选择出发站"
+    bind:select="onFromStationSelect"
+    bind:close="onStationSelectorClose" />
+  <station-selector
+    show="{{showToStation}}"
+    title="选择到达站"
+    bind:select="onToStationSelect"
+    bind:close="onStationSelectorClose" />
+
+  <!-- 日期选择组件 -->
+  <date-selector
+    show="{{showDate}}"
+    dateText="{{dateText}}"
+    bind:select="onDateSelect"
+    bind:close="onDateSelectorClose" />
+
+  <!-- 底部tabbar -->
+  <tabbar-component></tabbar-component>
+</view>

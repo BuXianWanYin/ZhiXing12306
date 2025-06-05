@@ -1,0 +1,211 @@
+/* pages/index/index.wxss */
+@import '../../styles/theme.wxss';
+
+.index-page {
+  background: #f6f8fa;
+  min-height: 100vh;
+  padding-bottom: 140rpx; /* 注意：这里的高度需要根据底部tabbar的高度来调整，防止内容被遮挡 */
+}
+
+/* 查询卡片 */
+.search-card {
+  background: #fff;
+  margin: 40rpx 24rpx 0 24rpx;
+  border-radius: 18rpx;
+  box-shadow: 0 4rpx 24rpx #e6eaf0;
+  /* 保持底部内边距，使其与历史搜索行到底部的间距合适 */
+  padding: 36rpx 28rpx 40rpx 28rpx; /* 保持 40rpx 或者您可以微调到更合适的值 */
+  position: relative; /* 保持相对定位 */
+}
+.tab-switch {
+  display: flex;
+  margin-bottom: 24rpx;
+  border-bottom: 2rpx solid #e6eaf0;
+}
+.tab {
+  flex: 1;
+  text-align: center;
+  font-size: 32rpx;
+  color: #888;
+  padding: 16rpx 0;
+  border-radius: 18rpx 18rpx 0 0;
+  background: #f0f4fa;
+  margin-right: 12rpx;
+  border-bottom: 4rpx solid transparent;
+}
+.tab.active {
+  color: #3a8dff;
+  background: #fff;
+  border-bottom: 4rpx solid #3a8dff;
+}
+.station-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top:18px;
+  margin-bottom: 38rpx;
+  border-bottom: 1rpx solidrgb(221, 222, 224);
+  padding-bottom: 20rpx;
+
+}
+.station {
+  flex: 1;
+  text-align: center;
+  font-size: 36rpx;
+  color: #222;
+  font-weight: bold;
+}
+.arrow {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 12rpx;
+}
+.date-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rpx 0; /* 增加顶部和底部内边距，总高度增加 20rpx */
+  margin-left:30px;
+  margin-bottom: 38rpx; /* 增加日期/选项行底部的间距 */
+}
+/* 日期信息容器样式 */
+.date-info {
+  display: flex;
+  align-items: baseline; 
+}
+.date {
+  font-size: 36rpx; /* 日期字体加大 */
+  color: #222; /* 可以保持，或微调如 #1a1a1a 使其更突出 */
+  font-weight: bold; 
+  margin-right: 8rpx;
+}
+/* "明天"文字样式 */
+.day-text {
+  font-size: 24rpx;
+  color: #888;
+}
+/* 隐藏原有的 weekday 样式 */
+.weekday {
+  display: none;
+}
+.options {
+  display: flex;
+  gap: 24rpx; /* 选项之间的间距 */
+}
+/* 选项 item 样式 */
+.option-item {
+  display: flex;
+  align-items: center;
+}
+/* 模拟单选框样式 */
+.radio {
+  width: 32rpx;
+  height: 32rpx;
+  border: 2rpx solid #ccc; /* 未选中边框颜色 */
+  border-radius: 50%;
+  margin-left: 8rpx;
+  box-sizing: border-box;
+}
+.radio.checked {
+  border-color: #3a8dff; /* 选中边框颜色 */
+  background-color: #3a8dff; /* 选中填充颜色 */
+  position: relative;
+}
+/* 选中状态的小圆点 */
+.radio.checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12rpx;
+  height: 12rpx;
+  background-color: #fff; /* 小圆点颜色 */
+  border-radius: 50%;
+}
+/* 选项文字样式 */
+.option-text {
+  font-size: 26rpx;
+  color: #666; 
+}
+.option-text.active {
+  color: #3a8dff; /* 保持选中文字颜色 */
+}
+/* 隐藏原有的 switch-label 样式 */
+.switch-label {
+  display: none;
+}
+
+/* 按钮容器的样式 */
+.search-btn-wrapper {
+  /* 容器会自动撑满卡片内容区域的宽度 */
+  /* 控制容器与上方和下方元素的垂直间距 */
+  margin-top: 36rpx; /* 与上方元素的间距 */
+  margin-bottom: 28rpx; /* 与下方历史记录的间距 */
+  display: block;
+  width: auto;
+}
+
+/* 修改：按钮本身的样式 */
+.search-btn {
+  width: 100% !important; /* 添加 !important 强制覆盖框架默认样式 */
+  height: 88rpx;
+  background: linear-gradient(90deg, #6ec6ff 0%, #3a8dff 100%);
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 32rpx;
+  font-weight: bold;
+  border: none;
+  text-align: center;
+  line-height: 88rpx;
+
+  /* 移除所有 margin 和 padding */
+  margin: 0 !important; /* 同样给 margin 添加 !important */
+  padding: 0 !important; /* 同样给 padding 添加 !important */
+
+  /* 明确设置盒模型 */
+  box-sizing: border-box;
+}
+
+/* 历史搜索行 */
+.history-row {
+  /* 确保其顶部间距由按钮wrapper的 margin-bottom 控制，自身 margin-top 可以为0 */
+  margin-top: 0;
+  display: flex;
+  gap: 16rpx;
+}
+.history-item {
+  background: #f0f4fa;
+  color: #888; /* 保持历史搜索文字颜色 */
+  border-radius: 24rpx;
+  padding: 8rpx 24rpx;
+  font-size: 24rpx;
+}
+.clear-btn {
+  color: #3a8dff;
+  font-size: 24rpx;
+  margin-top:2px;
+}
+
+/* 快捷导航 */
+.quick-nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 40rpx 24rpx 0 24rpx;
+  background: #fff;
+  border-radius: 18rpx;
+  box-shadow: 0 4rpx 24rpx #e6eaf0;
+  padding: 28rpx 0;
+}
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24rpx;
+  color: #222;
+}
+.nav-icon {
+  width: 64rpx;
+  height: 64rpx;
+  margin-bottom: 8rpx;
+}

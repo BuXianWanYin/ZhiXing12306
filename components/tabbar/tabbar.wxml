@@ -1,0 +1,23 @@
+<!-- components/tabbar/tabbar.wxml -->
+<view class="bottom-tabbar">
+  <!-- 火车票 -->
+  <view class="tabbar-item {{ activeTabIndex === 0 ? 'active' : '' }}" data-index="0" bindtap="switchTab">
+    <image class="tabbar-icon" src="{{ activeTabIndex === 0 ? iconUrls[0].active : iconUrls[0].normal }}"/>
+    <text>火车票</text>
+  </view>
+  <!-- 飞机票 -->
+  <view class="tabbar-item {{ activeTabIndex === 1 ? 'active' : '' }}" data-index="1" bindtap="switchTab">
+    <image class="tabbar-icon" src="{{ activeTabIndex === 1 ? iconUrls[1].active : iconUrls[1].normal }}"/>
+    <text>飞机票</text>
+  </view>
+  <!-- 汽车票 -->
+  <view class="tabbar-item {{ activeTabIndex === 2 ? 'active' : '' }}" data-index="2" bindtap="switchTab">
+    <image class="tabbar-icon" src="{{ activeTabIndex === 2 ? iconUrls[2].active : iconUrls[2].normal }}"/>
+    <text>汽车票</text>
+  </view>
+  <!-- 个人中心 -->
+  <view class="tabbar-item {{ activeTabIndex === 3 ? 'active' : '' }}" data-index="3" bindtap="switchTab">
+    <image class="tabbar-icon" src="{{ activeTabIndex === 3 ? iconUrls[3].active : iconUrls[3].normal }}"/>
+    <text>个人中心</text>
+  </view>
+</view>

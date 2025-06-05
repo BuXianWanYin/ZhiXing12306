@@ -1,0 +1,175 @@
+.date-selector-mask {
+  position: fixed;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.2);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.date-selector-popup {
+  width: 90vw;
+  background: #fff;
+  border-radius: 24rpx;
+  overflow: hidden;
+  box-shadow: 0 8rpx 32rpx rgba(0,0,0,0.08);
+  padding: 48rpx 0 48rpx 0;
+}
+.date-selector-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 32rpx;
+  font-weight: bold;
+  padding: 32rpx 32rpx 0 32rpx;
+}
+.date-selector-close {
+  font-size: 36rpx;
+  color: #bbb;
+  font-weight: normal;
+}
+.date-selector-month {
+  text-align: center;
+  font-size: 28rpx;
+  color: #222;
+  margin: 16rpx 0 8rpx 0;
+}
+.date-selector-week {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40rpx;
+  color: #333;
+  font-size: 28rpx;
+  margin-bottom: 8rpx;
+}
+.date-selector-week-item {
+  width: 14.2857%;
+  text-align: center;
+}
+.date-selector-days {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40rpx;
+}
+.date-selector-day {
+  width: 14.2857%;
+  margin: 0;
+  text-align: center;
+  padding: 16rpx 0 8rpx 0;
+  border-radius: 16rpx;
+  position: relative;
+  background: #fff;
+  transition: background 0.2s;
+}
+.date-selector-day--disabled {
+  color: #ccc;
+  background: #f7f7f7;
+}
+.date-selector-day--today {
+  background: #3a8dff;
+  color: #fff;
+  border: none;
+}
+.date-selector-day--today .lunar-text,
+.date-selector-day--today .date-selector-festival,
+.date-selector-day--today .date-selector-holiday,
+.date-selector-day--today .date-selector-reserve {
+  color: #fff;
+}
+.date-selector-day--selected {
+  border: 2rpx solid #3a8dff;
+  background: #fff;
+  color: #222;
+}
+.date-selector-day--today.date-selector-day--selected {
+  background: #3a8dff;
+  color: #fff;
+  border: none;
+}
+.date-selector-day-desc {
+  font-size: 18rpx;
+  color: #bbb;
+  margin-top: 4rpx;
+}
+.date-selector-festival {
+  color: #ff6b81;
+  margin-left: 2rpx;
+}
+.date-selector-reserve {
+  color: #3a8dff;
+  margin-left: 2rpx;
+}
+.date-selector-month-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  color: #222;
+  margin: 16rpx 0 8rpx 0;
+}
+.date-selector-arrow {
+  font-size: 36rpx;
+  color: #3a8dff;
+  margin: 0 32rpx;
+  font-weight: bold;
+  cursor: pointer;
+}
+.date-selector-holiday {
+  color: #ff6b81;
+  margin-left: 2rpx;
+  font-size: 18rpx;
+}
+.date-selector-arrow {
+  width: 36rpx;
+  height: 36rpx;
+  vertical-align: middle;
+  margin: 0 32rpx;
+}
+.lunar-text {
+  color: #888;
+  font-size: 20rpx;
+}
+.date-selector-festival {
+  color: #3a8dff;
+  font-size: 20rpx;
+  margin-left: 2rpx;
+}
+.date-selector-reserve {
+  color: #ff4d4f;
+  font-size: 20rpx;
+  margin-left: 2rpx;
+}
+.date-selector-day--disabled {
+  color: #ccc;
+  background: #f7f7f7;
+}
+.date-selector-day--selected {
+  background: #3a8dff;
+  color: #fff;
+}
+.date-selector-day--today {
+  border: 2rpx solid #3a8dff;
+}
+.date-selector-day--empty {
+  background: none;
+  border: none;
+  box-shadow: none;
+  pointer-events: none;
+}
+.date-selector-week,
+.date-selector-days {
+  box-sizing: border-box;
+}
+
+.date-selector-week-item,
+.date-selector-day {
+  width: 14.2857%;
+  height: 88rpx;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

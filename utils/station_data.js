@@ -1,0 +1,27195 @@
+
+const stationGroupedData = {
+    "B": [
+      {
+        "shortPinyin": "bjb",
+        "name": "北京北",
+        "code": "VAP",
+        "pinyin": "beijingbei",
+        "abbr": "bjb",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "bjd",
+        "name": "北京东",
+        "code": "BOP",
+        "pinyin": "beijingdong",
+        "abbr": "bjd",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "bji",
+        "name": "北京",
+        "code": "BJP",
+        "pinyin": "beijing",
+        "abbr": "bj",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "bjn",
+        "name": "北京南",
+        "code": "VNP",
+        "pinyin": "beijingnan",
+        "abbr": "bjn",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "bjx",
+        "name": "北京大兴",
+        "code": "IPP",
+        "pinyin": "beijingdaxing",
+        "abbr": "bjdx",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "bjx",
+        "name": "北京西",
+        "code": "BXP",
+        "pinyin": "beijingxi",
+        "abbr": "bjx",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "bjy",
+        "name": "北京朝阳",
+        "code": "IFP",
+        "pinyin": "beijingchaoyang",
+        "abbr": "bjcy",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "bji",
+        "name": "滨江",
+        "code": "BJB",
+        "pinyin": "binjiang",
+        "abbr": "bj",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "bla",
+        "name": "百浪",
+        "code": "BRZ",
+        "pinyin": "bailang",
+        "abbr": "bl",
+        "city": "南宁"
+      },
+      {
+        "shortPinyin": "bmq",
+        "name": "班猫箐",
+        "code": "BNM",
+        "pinyin": "banmaoqing",
+        "abbr": "bmq",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "byi",
+        "name": "北营",
+        "code": "BIV",
+        "pinyin": "beiying",
+        "abbr": "by",
+        "city": "太原"
+      },
+      {
+        "shortPinyin": "ban",
+        "name": "北安",
+        "code": "BAB",
+        "pinyin": "beian",
+        "abbr": "ba",
+        "city": "黑河"
+      },
+      {
+        "shortPinyin": "bba",
+        "name": "博白",
+        "code": "BBZ",
+        "pinyin": "bobai",
+        "abbr": "bb",
+        "city": "玉林"
+      },
+      {
+        "shortPinyin": "bbn",
+        "name": "蚌埠南",
+        "code": "BMH",
+        "pinyin": "bengbunan",
+        "abbr": "bbn",
+        "city": "蚌埠"
+      },
+      {
+        "shortPinyin": "bbu",
+        "name": "蚌埠",
+        "code": "BBH",
+        "pinyin": "bengbu",
+        "abbr": "bb",
+        "city": "蚌埠"
+      },
+      {
+        "shortPinyin": "bch",
+        "name": "巴楚",
+        "code": "BCR",
+        "pinyin": "bachu",
+        "abbr": "bc",
+        "city": "喀什"
+      },
+      {
+        "shortPinyin": "bch",
+        "name": "白城",
+        "code": "BCT",
+        "pinyin": "baicheng",
+        "abbr": "bc",
+        "city": "白城"
+      },
+      {
+        "shortPinyin": "bch",
+        "name": "北辰",
+        "code": "BII",
+        "pinyin": "beichen",
+        "abbr": "bc",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "bdb",
+        "name": "宝坻北",
+        "code": "BPP",
+        "pinyin": "baodibei",
+        "abbr": "bdb",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "bdc",
+        "name": "八达岭长城",
+        "code": "VLP",
+        "pinyin": "badalingchangcheng",
+        "abbr": "bdlcc",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "bdd",
+        "name": "保定东",
+        "code": "BMP",
+        "pinyin": "baodingdong",
+        "abbr": "bdd",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "bdh",
+        "name": "北戴河",
+        "code": "BEP",
+        "pinyin": "beidaihe",
+        "abbr": "bdh",
+        "city": "秦皇岛"
+      },
+      {
+        "shortPinyin": "bdi",
+        "name": "保定",
+        "code": "BDP",
+        "pinyin": "baoding",
+        "abbr": "bd",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "bdl",
+        "name": "八达岭",
+        "code": "ILP",
+        "pinyin": "badaling",
+        "abbr": "bdl",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "bdo",
+        "name": "巴东",
+        "code": "BBN",
+        "pinyin": "badong",
+        "abbr": "bd",
+        "city": "恩施"
+      },
+      {
+        "shortPinyin": "bfs",
+        "name": "八方山",
+        "code": "FGQ",
+        "pinyin": "bafangshan",
+        "abbr": "bfs",
+        "city": "长沙"
+      },
+      {
+        "shortPinyin": "bgu",
+        "name": "柏果",
+        "code": "BGM",
+        "pinyin": "baiguo",
+        "abbr": "bg",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "bha",
+        "name": "北海",
+        "code": "BHZ",
+        "pinyin": "beihai",
+        "abbr": "bh",
+        "city": "北海"
+      },
+      {
+        "shortPinyin": "bha",
+        "name": "布海",
+        "code": "BUT",
+        "pinyin": "buhai",
+        "abbr": "bh",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "bha",
+        "name": "滨海",
+        "code": "YKP",
+        "pinyin": "binhai",
+        "abbr": "bh",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "bhb",
+        "name": "滨海北",
+        "code": "FCP",
+        "pinyin": "binhaibei",
+        "abbr": "bhb",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "bhe",
+        "name": "白河",
+        "code": "BEL",
+        "pinyin": "baihe",
+        "abbr": "bh",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "bhx",
+        "name": "滨海西",
+        "code": "FHP",
+        "pinyin": "binhaixi",
+        "abbr": "bhx",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "bji",
+        "name": "毕节",
+        "code": "BOE",
+        "pinyin": "bijie",
+        "abbr": "bj",
+        "city": "毕节"
+      },
+      {
+        "shortPinyin": "bji",
+        "name": "宝鸡",
+        "code": "BJY",
+        "pinyin": "baoji",
+        "abbr": "bj",
+        "city": "宝鸡"
+      },
+      {
+        "shortPinyin": "bji",
+        "name": "白涧",
+        "code": "BAP",
+        "pinyin": "baijian",
+        "abbr": "bj",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "bjn",
+        "name": "宝鸡南",
+        "code": "BBY",
+        "pinyin": "baojinan",
+        "abbr": "bjn",
+        "city": "宝鸡"
+      },
+      {
+        "shortPinyin": "bjt",
+        "name": "北京丰台",
+        "code": "FTP",
+        "pinyin": "beijingfengtai",
+        "abbr": "bjft",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "bkp",
+        "name": "白奎堡",
+        "code": "BKB",
+        "pinyin": "baikuipu",
+        "abbr": "bkp",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "bkt",
+        "name": "博克图",
+        "code": "BKX",
+        "pinyin": "boketu",
+        "abbr": "bkt",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "ble",
+        "name": "博乐",
+        "code": "BER",
+        "pinyin": "bole",
+        "abbr": "bl",
+        "city": "博乐"
+      },
+      {
+        "shortPinyin": "bli",
+        "name": "巴林",
+        "code": "BLX",
+        "pinyin": "balin",
+        "abbr": "bl",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "bli",
+        "name": "勃利",
+        "code": "BLB",
+        "pinyin": "boli",
+        "abbr": "bl",
+        "city": "七台河"
+      },
+      {
+        "shortPinyin": "bmj",
+        "name": "白马井",
+        "code": "BFQ",
+        "pinyin": "baimajing",
+        "abbr": "bmj",
+        "city": "儋州"
+      },
+      {
+        "shortPinyin": "bmt",
+        "name": "八面通",
+        "code": "BMB",
+        "pinyin": "bamiantong",
+        "abbr": "bmt",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "bpi",
+        "name": "北票",
+        "code": "BPT",
+        "pinyin": "beipiao",
+        "abbr": "bp",
+        "city": "朝阳"
+      },
+      {
+        "shortPinyin": "bqi",
+        "name": "宝清",
+        "code": "BUB",
+        "pinyin": "baoqing",
+        "abbr": "bq",
+        "city": "双鸭山"
+      },
+      {
+        "shortPinyin": "bql",
+        "name": "宝泉岭",
+        "code": "BQB",
+        "pinyin": "baoquanling",
+        "abbr": "bql",
+        "city": "鹤岗"
+      },
+      {
+        "shortPinyin": "bse",
+        "name": "百色",
+        "code": "BIZ",
+        "pinyin": "baise",
+        "abbr": "bs",
+        "city": "百色"
+      },
+      {
+        "shortPinyin": "bss",
+        "name": "白山市",
+        "code": "HJL",
+        "pinyin": "baishanshi",
+        "abbr": "bss",
+        "city": "白山"
+      },
+      {
+        "shortPinyin": "btd",
+        "name": "包头东",
+        "code": "BDC",
+        "pinyin": "baotoudong",
+        "abbr": "btd",
+        "city": "包头"
+      },
+      {
+        "shortPinyin": "bto",
+        "name": "包头",
+        "code": "BTC",
+        "pinyin": "baotou",
+        "abbr": "bt",
+        "city": "包头"
+      },
+      {
+        "shortPinyin": "bts",
+        "name": "北屯市",
+        "code": "BXR",
+        "pinyin": "beitunshi",
+        "abbr": "bts",
+        "city": "阿勒泰"
+      },
+      {
+        "shortPinyin": "bxb",
+        "name": "宾西北",
+        "code": "BBB",
+        "pinyin": "binxibei",
+        "abbr": "bxb",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "bxi",
+        "name": "本溪",
+        "code": "BXT",
+        "pinyin": "benxi",
+        "abbr": "bx",
+        "city": "本溪"
+      },
+      {
+        "shortPinyin": "bxj",
+        "name": "步行街",
+        "code": "BWW",
+        "pinyin": "buxingjie",
+        "abbr": "bxj",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "bya",
+        "name": "宾阳",
+        "code": "UKZ",
+        "pinyin": "binyang",
+        "abbr": "by",
+        "city": "南宁"
+      },
+      {
+        "shortPinyin": "byb",
+        "name": "白云鄂博",
+        "code": "BEC",
+        "pinyin": "baiyunebo",
+        "abbr": "byeb",
+        "city": "包头"
+      },
+      {
+        "shortPinyin": "byb",
+        "name": "白云北",
+        "code": "BVE",
+        "pinyin": "baiyunbei",
+        "abbr": "byb",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "byb",
+        "name": "白云机场北",
+        "code": "BBA",
+        "pinyin": "baiyunjichangbei",
+        "abbr": "byjcb",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "byd",
+        "name": "白洋淀",
+        "code": "FWP",
+        "pinyin": "baiyangdian",
+        "abbr": "byd",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "bye",
+        "name": "巴彦淖尔",
+        "code": "FMC",
+        "pinyin": "bayannaoer",
+        "abbr": "byne",
+        "city": "巴彦淖尔"
+      },
+      {
+        "shortPinyin": "byh",
+        "name": "背荫河",
+        "code": "BYB",
+        "pinyin": "beiyinhe",
+        "abbr": "byh",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "byi",
+        "name": "百宜",
+        "code": "FHW",
+        "pinyin": "baiyi",
+        "abbr": "by",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "byl",
+        "name": "巴彦高勒",
+        "code": "BAC",
+        "pinyin": "bayangaole",
+        "abbr": "bygl",
+        "city": "巴彦淖尔"
+      },
+      {
+        "shortPinyin": "byq",
+        "name": "鲅鱼圈",
+        "code": "BYT",
+        "pinyin": "bayuquan",
+        "abbr": "byq",
+        "city": "营口"
+      },
+      {
+        "shortPinyin": "byx",
+        "name": "白银西",
+        "code": "BXJ",
+        "pinyin": "baiyinxi",
+        "abbr": "byx",
+        "city": "白银"
+      },
+      {
+        "shortPinyin": "byx",
+        "name": "白云西",
+        "code": "BXE",
+        "pinyin": "baiyunxi",
+        "abbr": "byx",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "bzd",
+        "name": "巴中东",
+        "code": "BDE",
+        "pinyin": "bazhongdong",
+        "abbr": "bzd",
+        "city": "巴中"
+      },
+      {
+        "shortPinyin": "bzd",
+        "name": "彬州东",
+        "code": "BFY",
+        "pinyin": "binzhoudong",
+        "abbr": "bzd",
+        "city": "咸阳"
+      },
+      {
+        "shortPinyin": "bzh",
+        "name": "巴中",
+        "code": "IEW",
+        "pinyin": "bazhong",
+        "abbr": "bz",
+        "city": "巴中"
+      },
+      {
+        "shortPinyin": "bzh",
+        "name": "滨州",
+        "code": "BIK",
+        "pinyin": "binzhou",
+        "abbr": "bz",
+        "city": "滨州"
+      },
+      {
+        "shortPinyin": "bzh",
+        "name": "亳州",
+        "code": "BZH",
+        "pinyin": "bozhou",
+        "abbr": "bz",
+        "city": "亳州"
+      },
+      {
+        "shortPinyin": "bzh",
+        "name": "宾州",
+        "code": "BZB",
+        "pinyin": "binzhou",
+        "abbr": "bz",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "bzn",
+        "name": "亳州南",
+        "code": "BNU",
+        "pinyin": "bozhounan",
+        "abbr": "bzn",
+        "city": "亳州"
+      },
+      {
+        "shortPinyin": "bao",
+        "name": "博鳌",
+        "code": "BWQ",
+        "pinyin": "boao",
+        "abbr": "ba",
+        "city": "琼海"
+      },
+      {
+        "shortPinyin": "bbg",
+        "name": "白壁关",
+        "code": "BGV",
+        "pinyin": "baibiguan",
+        "abbr": "bbg",
+        "city": "吕梁"
+      },
+      {
+        "shortPinyin": "bbu",
+        "name": "八步",
+        "code": "BBE",
+        "pinyin": "babu",
+        "abbr": "bb",
+        "city": "毕节"
+      },
+      {
+        "shortPinyin": "bch",
+        "name": "栟茶",
+        "code": "FWH",
+        "pinyin": "bencha",
+        "abbr": "bc",
+        "city": "南通"
+      },
+      {
+        "shortPinyin": "bch",
+        "name": "板城",
+        "code": "BUP",
+        "pinyin": "bancheng",
+        "abbr": "bc",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "bdi",
+        "name": "宝坻",
+        "code": "BZI",
+        "pinyin": "baodi",
+        "abbr": "bd",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "bdn",
+        "name": "宝坻南",
+        "code": "BOI",
+        "pinyin": "baodinan",
+        "abbr": "bdn",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "bfe",
+        "name": "宝丰",
+        "code": "BFF",
+        "pinyin": "baofeng",
+        "abbr": "bf",
+        "city": "平顶山"
+      },
+      {
+        "shortPinyin": "bgo",
+        "name": "白沟",
+        "code": "FEP",
+        "pinyin": "baigou",
+        "abbr": "bg",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "bhd",
+        "name": "白河东",
+        "code": "BIY",
+        "pinyin": "baihedong",
+        "abbr": "bhd",
+        "city": "安康"
+      },
+      {
+        "shortPinyin": "bhg",
+        "name": "滨海港",
+        "code": "BGU",
+        "pinyin": "binhaigang",
+        "abbr": "bhg",
+        "city": "盐城"
+      },
+      {
+        "shortPinyin": "bhs",
+        "name": "宝华山",
+        "code": "BWH",
+        "pinyin": "baohuashan",
+        "abbr": "bhs",
+        "city": "镇江"
+      },
+      {
+        "shortPinyin": "bhx",
+        "name": "白河县",
+        "code": "BEY",
+        "pinyin": "baihexian",
+        "abbr": "bhx",
+        "city": "安康"
+      },
+      {
+        "shortPinyin": "bjg",
+        "name": "白芨沟",
+        "code": "BJJ",
+        "pinyin": "baijigou",
+        "abbr": "bjg",
+        "city": "石嘴山"
+      },
+      {
+        "shortPinyin": "bji",
+        "name": "北滘",
+        "code": "IBQ",
+        "pinyin": "beijiao",
+        "abbr": "bj",
+        "city": "佛山"
+      },
+      {
+        "shortPinyin": "bji",
+        "name": "碧江",
+        "code": "BLQ",
+        "pinyin": "bijiang",
+        "abbr": "bj",
+        "city": "佛山"
+      },
+      {
+        "shortPinyin": "bjp",
+        "name": "白鸡坡",
+        "code": "BBM",
+        "pinyin": "baijipo",
+        "abbr": "bjp",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "bjs",
+        "name": "笔架山",
+        "code": "BSB",
+        "pinyin": "bijiashan",
+        "abbr": "bjs",
+        "city": "双鸭山"
+      },
+      {
+        "shortPinyin": "bjt",
+        "name": "八角台",
+        "code": "BTD",
+        "pinyin": "bajiaotai",
+        "abbr": "bjt",
+        "city": "锦州"
+      },
+      {
+        "shortPinyin": "bjx",
+        "name": "北滘西",
+        "code": "BJA",
+        "pinyin": "beijiaoxi",
+        "abbr": "bjx",
+        "city": "佛山"
+      },
+      {
+        "shortPinyin": "bjz",
+        "name": "北井子",
+        "code": "BRT",
+        "pinyin": "beijingzi",
+        "abbr": "bjz",
+        "city": "丹东"
+      },
+      {
+        "shortPinyin": "bka",
+        "name": "保康",
+        "code": "BKD",
+        "pinyin": "baokang",
+        "abbr": "bk",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "bkx",
+        "name": "保康县",
+        "code": "BKN",
+        "pinyin": "baokangxian",
+        "abbr": "bkx",
+        "city": "襄阳"
+      },
+      {
+        "shortPinyin": "bla",
+        "name": "白狼",
+        "code": "BAT",
+        "pinyin": "bailang",
+        "abbr": "bl",
+        "city": "兴安"
+      },
+      {
+        "shortPinyin": "blb",
+        "name": "博罗北",
+        "code": "BLA",
+        "pinyin": "boluobei",
+        "abbr": "blb",
+        "city": "惠州"
+      },
+      {
+        "shortPinyin": "bld",
+        "name": "博乐东",
+        "code": "BOR",
+        "pinyin": "boledong",
+        "abbr": "bld",
+        "city": "博乐"
+      },
+      {
+        "shortPinyin": "bli",
+        "name": "北流",
+        "code": "BOZ",
+        "pinyin": "beiliu",
+        "abbr": "bl",
+        "city": "玉林"
+      },
+      {
+        "shortPinyin": "bli",
+        "name": "宝林",
+        "code": "BNB",
+        "pinyin": "baolin",
+        "abbr": "bl",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "blk",
+        "name": "布列开",
+        "code": "BLR",
+        "pinyin": "buliekai",
+        "abbr": "blk",
+        "city": "伊宁"
+      },
+      {
+        "shortPinyin": "bls",
+        "name": "宝龙山",
+        "code": "BND",
+        "pinyin": "baolongshan",
+        "abbr": "bls",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "blx",
+        "name": "百里峡",
+        "code": "AAP",
+        "pinyin": "bailixia",
+        "abbr": "blx",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "blz",
+        "name": "八里甸子",
+        "code": "BLT",
+        "pinyin": "balidianzi",
+        "abbr": "bldz",
+        "city": "本溪"
+      },
+      {
+        "shortPinyin": "bmb",
+        "name": "白马北",
+        "code": "BME",
+        "pinyin": "baimabei",
+        "abbr": "bmb",
+        "city": "内江"
+      },
+      {
+        "shortPinyin": "bmc",
+        "name": "八面城",
+        "code": "BMD",
+        "pinyin": "bamiancheng",
+        "abbr": "bmc",
+        "city": "铁岭"
+      },
+      {
+        "shortPinyin": "bmz",
+        "name": "北马圈子",
+        "code": "BRP",
+        "pinyin": "beimajuanzi",
+        "abbr": "bmqz",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "bqi",
+        "name": "白旗",
+        "code": "BQP",
+        "pinyin": "baiqi",
+        "abbr": "bq",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "bqu",
+        "name": "白泉",
+        "code": "BQL",
+        "pinyin": "baiquan",
+        "abbr": "bq",
+        "city": "辽源"
+      },
+      {
+        "shortPinyin": "bsh",
+        "name": "璧山",
+        "code": "FZW",
+        "pinyin": "bishan",
+        "abbr": "bs",
+        "city": "璧山"
+      },
+      {
+        "shortPinyin": "bsh",
+        "name": "巴山",
+        "code": "BAY",
+        "pinyin": "bashan",
+        "abbr": "bs",
+        "city": "汉中"
+      },
+      {
+        "shortPinyin": "bsj",
+        "name": "白水江",
+        "code": "BSY",
+        "pinyin": "baishuijiang",
+        "abbr": "bsj",
+        "city": "汉中"
+      },
+      {
+        "shortPinyin": "bsp",
+        "name": "白沙铺",
+        "code": "BSN",
+        "pinyin": "baishapu",
+        "abbr": "bsp",
+        "city": "黄石"
+      },
+      {
+        "shortPinyin": "bsp",
+        "name": "白沙坡",
+        "code": "BPM",
+        "pinyin": "baishapo",
+        "abbr": "bsp",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "bss",
+        "name": "白石山",
+        "code": "BAL",
+        "pinyin": "baishishan",
+        "abbr": "bss",
+        "city": "吉林"
+      },
+      {
+        "shortPinyin": "bsx",
+        "name": "白水县",
+        "code": "BGY",
+        "pinyin": "baishuixian",
+        "abbr": "bsx",
+        "city": "渭南"
+      },
+      {
+        "shortPinyin": "bsz",
+        "name": "白水镇",
+        "code": "BUM",
+        "pinyin": "baishuizhen",
+        "abbr": "bsz",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "bta",
+        "name": "板塘",
+        "code": "NGQ",
+        "pinyin": "bantang",
+        "abbr": "bt",
+        "city": "湘潭"
+      },
+      {
+        "shortPinyin": "bti",
+        "name": "坂田",
+        "code": "BTQ",
+        "pinyin": "bantian",
+        "abbr": "bt",
+        "city": "深圳"
+      },
+      {
+        "shortPinyin": "bto",
+        "name": "泊头",
+        "code": "BZP",
+        "pinyin": "botou",
+        "abbr": "bt",
+        "city": "沧州"
+      },
+      {
+        "shortPinyin": "btu",
+        "name": "北屯",
+        "code": "BYP",
+        "pinyin": "beitun",
+        "abbr": "bt",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "bty",
+        "name": "巴图营",
+        "code": "BWT",
+        "pinyin": "batuying",
+        "abbr": "bty",
+        "city": "朝阳"
+      },
+      {
+        "shortPinyin": "bwd",
+        "name": "白文东",
+        "code": "BCV",
+        "pinyin": "baiwendong",
+        "abbr": "bwd",
+        "city": "吕梁"
+      },
+      {
+        "shortPinyin": "bxc",
+        "name": "本溪新城",
+        "code": "BVT",
+        "pinyin": "benxixincheng",
+        "abbr": "bxxc",
+        "city": "本溪"
+      },
+      {
+        "shortPinyin": "bxi",
+        "name": "博兴",
+        "code": "BXK",
+        "pinyin": "boxing",
+        "abbr": "bx",
+        "city": "滨州"
+      },
+      {
+        "shortPinyin": "bxt",
+        "name": "八仙筒",
+        "code": "VXD",
+        "pinyin": "baxiantong",
+        "abbr": "bxt",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "byg",
+        "name": "白音察干",
+        "code": "BYC",
+        "pinyin": "baiyinchagan",
+        "abbr": "bycg",
+        "city": "乌兰察布"
+      },
+      {
+        "shortPinyin": "byi",
+        "name": "宝应",
+        "code": "BAU",
+        "pinyin": "baoying",
+        "abbr": "by",
+        "city": "扬州"
+      },
+      {
+        "shortPinyin": "byl",
+        "name": "白音他拉",
+        "code": "BID",
+        "pinyin": "baiyintala",
+        "abbr": "bytl",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "byn",
+        "name": "白音华南",
+        "code": "BOD",
+        "pinyin": "baiyinhuanan",
+        "abbr": "byhn",
+        "city": "兴安"
+      },
+      {
+        "shortPinyin": "bys",
+        "name": "白音胡硕",
+        "code": "BCD",
+        "pinyin": "baiyinhushuo",
+        "abbr": "byhs",
+        "city": "兴安"
+      },
+      {
+        "shortPinyin": "bys",
+        "name": "白银市",
+        "code": "BNJ",
+        "pinyin": "baiyinshi",
+        "abbr": "bys",
+        "city": "白银"
+      },
+      {
+        "shortPinyin": "bzb",
+        "name": "霸州北",
+        "code": "VPP",
+        "pinyin": "bazhoubei",
+        "abbr": "bzb",
+        "city": "廊坊"
+      },
+      {
+        "shortPinyin": "bzh",
+        "name": "彬州",
+        "code": "BXY",
+        "pinyin": "binzhou",
+        "abbr": "bz",
+        "city": "咸阳"
+      },
+      {
+        "shortPinyin": "bzh",
+        "name": "霸州",
+        "code": "RMP",
+        "pinyin": "bazhou",
+        "abbr": "bz",
+        "city": "廊坊"
+      },
+      {
+        "shortPinyin": "bzh",
+        "name": "北宅",
+        "code": "BVP",
+        "pinyin": "beizhai",
+        "abbr": "bz",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "bzx",
+        "name": "巴中西",
+        "code": "BZE",
+        "pinyin": "bazhongxi",
+        "abbr": "bzx",
+        "city": "巴中"
+      },
+      {
+        "shortPinyin": "bzx",
+        "name": "霸州西",
+        "code": "FOP",
+        "pinyin": "bazhouxi",
+        "abbr": "bzx",
+        "city": "廊坊"
+      },
+      {
+        "shortPinyin": "blu",
+        "name": "博罗",
+        "code": "BOA",
+        "pinyin": "boluo",
+        "abbr": "bl",
+        "city": "惠州"
+      },
+      {
+        "shortPinyin": "bsh",
+        "name": "保山",
+        "code": "BAM",
+        "pinyin": "baoshan",
+        "abbr": "bs",
+        "city": "保山"
+      },
+      {
+        "shortPinyin": "bta",
+        "name": "北滩",
+        "code": "BEJ",
+        "pinyin": "beitan",
+        "abbr": "bt",
+        "city": "白银"
+      },
+      {
+        "shortPinyin": "byn",
+        "name": "白银南",
+        "code": "BVJ",
+        "pinyin": "baiyinnan",
+        "abbr": "byn",
+        "city": "白银"
+      }
+    ],
+    "L": [
+      {
+        "shortPinyin": "lxi",
+        "name": "礼贤",
+        "code": "LXI",
+        "pinyin": "lixian",
+        "abbr": "lx",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "lta",
+        "name": "练塘",
+        "code": "LTU",
+        "pinyin": "liantang",
+        "abbr": "lt",
+        "city": "上海"
+      },
+      {
+        "shortPinyin": "lch",
+        "name": "历城",
+        "code": "VHK",
+        "pinyin": "licheng",
+        "abbr": "lc",
+        "city": "济南"
+      },
+      {
+        "shortPinyin": "ljl",
+        "name": "蔺家楼",
+        "code": "ULK",
+        "pinyin": "linjialou",
+        "abbr": "ljl",
+        "city": "济南"
+      },
+      {
+        "shortPinyin": "lqs",
+        "name": "龙泉寺",
+        "code": "UQJ",
+        "pinyin": "longquansi",
+        "abbr": "lqs",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "lsa",
+        "name": "拉萨",
+        "code": "LSO",
+        "pinyin": "lasa",
+        "abbr": "ls",
+        "city": "拉萨"
+      },
+      {
+        "shortPinyin": "lsc",
+        "name": "乐善村",
+        "code": "LUM",
+        "pinyin": "leshancun",
+        "abbr": "lsc",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "lsp",
+        "name": "林盛堡",
+        "code": "LBT",
+        "pinyin": "linshengpu",
+        "abbr": "lsp",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "ltx",
+        "name": "骆驼巷",
+        "code": "LTJ",
+        "pinyin": "luotuoxiang",
+        "abbr": "ltx",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "lwb",
+        "name": "莱芜北",
+        "code": "VIK",
+        "pinyin": "laiwubei",
+        "abbr": "lwb",
+        "city": "济南"
+      },
+      {
+        "shortPinyin": "lzd",
+        "name": "兰州东",
+        "code": "LVJ",
+        "pinyin": "lanzhoudong",
+        "abbr": "lzd",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "lzh",
+        "name": "兰州",
+        "code": "LZJ",
+        "pinyin": "lanzhou",
+        "abbr": "lz",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "lzq",
+        "name": "兰州新区",
+        "code": "LQJ",
+        "pinyin": "lanzhouxinqu",
+        "abbr": "lzxq",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "lzx",
+        "name": "兰州西",
+        "code": "LAJ",
+        "pinyin": "lanzhouxi",
+        "abbr": "lzx",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "lad",
+        "name": "隆安东",
+        "code": "IDZ",
+        "pinyin": "longandong",
+        "abbr": "lad",
+        "city": "南宁"
+      },
+      {
+        "shortPinyin": "lan",
+        "name": "六安",
+        "code": "UAH",
+        "pinyin": "luan",
+        "abbr": "la",
+        "city": "六安"
+      },
+      {
+        "shortPinyin": "lba",
+        "name": "灵宝",
+        "code": "LBF",
+        "pinyin": "lingbao",
+        "abbr": "lb",
+        "city": "三门峡"
+      },
+      {
+        "shortPinyin": "lbb",
+        "name": "来宾北",
+        "code": "UCZ",
+        "pinyin": "laibinbei",
+        "abbr": "lbb",
+        "city": "来宾"
+      },
+      {
+        "shortPinyin": "lbx",
+        "name": "灵宝西",
+        "code": "LPF",
+        "pinyin": "lingbaoxi",
+        "abbr": "lbx",
+        "city": "三门峡"
+      },
+      {
+        "shortPinyin": "lby",
+        "name": "绿博园",
+        "code": "LCF",
+        "pinyin": "lvboyuan",
+        "abbr": "lby",
+        "city": "郑州"
+      },
+      {
+        "shortPinyin": "lca",
+        "name": "临沧",
+        "code": "LXM",
+        "pinyin": "lincang",
+        "abbr": "lc",
+        "city": "临沧"
+      },
+      {
+        "shortPinyin": "lcb",
+        "name": "隆昌北",
+        "code": "NWW",
+        "pinyin": "longchangbei",
+        "abbr": "lcb",
+        "city": "内江"
+      },
+      {
+        "shortPinyin": "lcd",
+        "name": "乐昌东",
+        "code": "ILQ",
+        "pinyin": "lechangdong",
+        "abbr": "lcd",
+        "city": "韶关"
+      },
+      {
+        "shortPinyin": "lcg",
+        "name": "芦潮港",
+        "code": "UCH",
+        "pinyin": "luchaogang",
+        "abbr": "lcg",
+        "city": "上海"
+      },
+      {
+        "shortPinyin": "lch",
+        "name": "陆川",
+        "code": "LKZ",
+        "pinyin": "luchuan",
+        "abbr": "lc",
+        "city": "玉林"
+      },
+      {
+        "shortPinyin": "lch",
+        "name": "龙川",
+        "code": "LUQ",
+        "pinyin": "longchuan",
+        "abbr": "lc",
+        "city": "河源"
+      },
+      {
+        "shortPinyin": "lch",
+        "name": "利川",
+        "code": "LCN",
+        "pinyin": "lichuan",
+        "abbr": "lc",
+        "city": "恩施"
+      },
+      {
+        "shortPinyin": "lch",
+        "name": "临川",
+        "code": "LCG",
+        "pinyin": "linchuan",
+        "abbr": "lc",
+        "city": "临川"
+      },
+      {
+        "shortPinyin": "lch",
+        "name": "隆昌",
+        "code": "LCW",
+        "pinyin": "longchang",
+        "abbr": "lc",
+        "city": "内江"
+      },
+      {
+        "shortPinyin": "lch",
+        "name": "潞城",
+        "code": "UTP",
+        "pinyin": "lucheng",
+        "abbr": "lc",
+        "city": "长治"
+      },
+      {
+        "shortPinyin": "lch",
+        "name": "聊城",
+        "code": "UCK",
+        "pinyin": "liaocheng",
+        "abbr": "lc",
+        "city": "聊城"
+      },
+      {
+        "shortPinyin": "lch",
+        "name": "陵城",
+        "code": "LGK",
+        "pinyin": "lingcheng",
+        "abbr": "lc",
+        "city": "德州"
+      },
+      {
+        "shortPinyin": "lcx",
+        "name": "龙川西",
+        "code": "LCA",
+        "pinyin": "longchuanxi",
+        "abbr": "lcx",
+        "city": "河源"
+      },
+      {
+        "shortPinyin": "lcx",
+        "name": "聊城西",
+        "code": "VXK",
+        "pinyin": "liaochengxi",
+        "abbr": "lcx",
+        "city": "聊城"
+      },
+      {
+        "shortPinyin": "lcz",
+        "name": "老城镇",
+        "code": "ACQ",
+        "pinyin": "laochengzhen",
+        "abbr": "lcz",
+        "city": "澄迈"
+      },
+      {
+        "shortPinyin": "lda",
+        "name": "两当",
+        "code": "LDY",
+        "pinyin": "liangdang",
+        "abbr": "ld",
+        "city": "陇南"
+      },
+      {
+        "shortPinyin": "lda",
+        "name": "鹿道",
+        "code": "LDL",
+        "pinyin": "ludao",
+        "abbr": "ld",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "ldb",
+        "name": "龙洞堡",
+        "code": "FVW",
+        "pinyin": "longdongbao",
+        "abbr": "ldb",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "ldi",
+        "name": "娄底",
+        "code": "LDQ",
+        "pinyin": "loudi",
+        "abbr": "ld",
+        "city": "娄底"
+      },
+      {
+        "shortPinyin": "ldn",
+        "name": "娄底南",
+        "code": "UOQ",
+        "pinyin": "loudinan",
+        "abbr": "ldn",
+        "city": "娄底"
+      },
+      {
+        "shortPinyin": "ldy",
+        "name": "离堆公园",
+        "code": "INW",
+        "pinyin": "liduigongyuan",
+        "abbr": "ldgy",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "lfa",
+        "name": "廊坊",
+        "code": "LJP",
+        "pinyin": "langfang",
+        "abbr": "lf",
+        "city": "廊坊"
+      },
+      {
+        "shortPinyin": "lfa",
+        "name": "娄烦",
+        "code": "USV",
+        "pinyin": "loufan",
+        "abbr": "lf",
+        "city": "太原"
+      },
+      {
+        "shortPinyin": "lfb",
+        "name": "廊坊北",
+        "code": "LBI",
+        "pinyin": "langfangbei",
+        "abbr": "lfb",
+        "city": "廊坊"
+      },
+      {
+        "shortPinyin": "lfe",
+        "name": "陆丰",
+        "code": "LLQ",
+        "pinyin": "lufeng",
+        "abbr": "lf",
+        "city": "汕尾"
+      },
+      {
+        "shortPinyin": "lfe",
+        "name": "临汾",
+        "code": "LFV",
+        "pinyin": "linfen",
+        "abbr": "lf",
+        "city": "临汾"
+      },
+      {
+        "shortPinyin": "lfx",
+        "name": "临汾西",
+        "code": "LXV",
+        "pinyin": "linfenxi",
+        "abbr": "lfx",
+        "city": "临汾"
+      },
+      {
+        "shortPinyin": "lfx",
+        "name": "廊坊西",
+        "code": "LFI",
+        "pinyin": "langfangxi",
+        "abbr": "lfx",
+        "city": "廊坊"
+      },
+      {
+        "shortPinyin": "lgu",
+        "name": "拉古",
+        "code": "LGB",
+        "pinyin": "lagu",
+        "abbr": "lg",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "lgu",
+        "name": "芦官",
+        "code": "LAE",
+        "pinyin": "luguan",
+        "abbr": "lg",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "lgu",
+        "name": "麓谷",
+        "code": "BNQ",
+        "pinyin": "lugu",
+        "abbr": "lg",
+        "city": "长沙"
+      },
+      {
+        "shortPinyin": "lgz",
+        "name": "良各庄",
+        "code": "LGP",
+        "pinyin": "lianggezhuang",
+        "abbr": "lgz",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "lhe",
+        "name": "临河",
+        "code": "LHC",
+        "pinyin": "linhe",
+        "abbr": "lh",
+        "city": "巴彦淖尔"
+      },
+      {
+        "shortPinyin": "lhe",
+        "name": "柳河",
+        "code": "LNL",
+        "pinyin": "liuhe",
+        "abbr": "lh",
+        "city": "通化"
+      },
+      {
+        "shortPinyin": "lhe",
+        "name": "漯河",
+        "code": "LON",
+        "pinyin": "luohe",
+        "abbr": "lh",
+        "city": "漯河"
+      },
+      {
+        "shortPinyin": "lhe",
+        "name": "六合",
+        "code": "KLH",
+        "pinyin": "liuhe",
+        "abbr": "lh",
+        "city": "南京"
+      },
+      {
+        "shortPinyin": "lhn",
+        "name": "珞璜南",
+        "code": "LNE",
+        "pinyin": "luohuangnan",
+        "abbr": "lhn",
+        "city": "江津"
+      },
+      {
+        "shortPinyin": "lhu",
+        "name": "隆回",
+        "code": "LHA",
+        "pinyin": "longhui",
+        "abbr": "lh",
+        "city": "邵阳"
+      },
+      {
+        "shortPinyin": "lhu",
+        "name": "隆化",
+        "code": "UHP",
+        "pinyin": "longhua",
+        "abbr": "lh",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "lhu",
+        "name": "绿化",
+        "code": "LWJ",
+        "pinyin": "lvhua",
+        "abbr": "lh",
+        "city": "嘉峪关"
+      },
+      {
+        "shortPinyin": "lhx",
+        "name": "漯河西",
+        "code": "LBN",
+        "pinyin": "luohexi",
+        "abbr": "lhx",
+        "city": "漯河"
+      },
+      {
+        "shortPinyin": "ljd",
+        "name": "刘家店",
+        "code": "UDT",
+        "pinyin": "liujiadian",
+        "abbr": "ljd",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "lji",
+        "name": "龙井",
+        "code": "LJL",
+        "pinyin": "longjing",
+        "abbr": "lj",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "lji",
+        "name": "临江",
+        "code": "LQL",
+        "pinyin": "linjiang",
+        "abbr": "lj",
+        "city": "白山"
+      },
+      {
+        "shortPinyin": "lji",
+        "name": "丽江",
+        "code": "LHM",
+        "pinyin": "lijiang",
+        "abbr": "lj",
+        "city": "丽江"
+      },
+      {
+        "shortPinyin": "lji",
+        "name": "龙嘉",
+        "code": "UJL",
+        "pinyin": "longjia",
+        "abbr": "lj",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "lji",
+        "name": "庐江",
+        "code": "UJH",
+        "pinyin": "lujiang",
+        "abbr": "lj",
+        "city": "合肥"
+      },
+      {
+        "shortPinyin": "lji",
+        "name": "连江",
+        "code": "LKS",
+        "pinyin": "lianjiang",
+        "abbr": "lj",
+        "city": "福州"
+      },
+      {
+        "shortPinyin": "ljx",
+        "name": "庐江西",
+        "code": "LUU",
+        "pinyin": "lujiangxi",
+        "abbr": "ljx",
+        "city": "合肥"
+      },
+      {
+        "shortPinyin": "lka",
+        "name": "兰考",
+        "code": "LKF",
+        "pinyin": "lankao",
+        "abbr": "lk",
+        "city": "开封"
+      },
+      {
+        "shortPinyin": "lkn",
+        "name": "兰考南",
+        "code": "LUF",
+        "pinyin": "lankaonan",
+        "abbr": "lkn",
+        "city": "开封"
+      },
+      {
+        "shortPinyin": "lko",
+        "name": "林口",
+        "code": "LKB",
+        "pinyin": "linkou",
+        "abbr": "lk",
+        "city": "林口"
+      },
+      {
+        "shortPinyin": "lks",
+        "name": "龙口市",
+        "code": "UKK",
+        "pinyin": "longkoushi",
+        "abbr": "lks",
+        "city": "烟台"
+      },
+      {
+        "shortPinyin": "lli",
+        "name": "吕梁",
+        "code": "LHV",
+        "pinyin": "lvliang",
+        "abbr": "ll",
+        "city": "吕梁"
+      },
+      {
+        "shortPinyin": "lli",
+        "name": "醴陵",
+        "code": "LLG",
+        "pinyin": "liling",
+        "abbr": "ll",
+        "city": "株洲"
+      },
+      {
+        "shortPinyin": "lli",
+        "name": "兰棱",
+        "code": "LLB",
+        "pinyin": "lanling",
+        "abbr": "ll",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "lli",
+        "name": "拉林",
+        "code": "LAB",
+        "pinyin": "lalin",
+        "abbr": "ll",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "lln",
+        "name": "柳林南",
+        "code": "LKV",
+        "pinyin": "liulinnan",
+        "abbr": "lln",
+        "city": "吕梁"
+      },
+      {
+        "shortPinyin": "lna",
+        "name": "陇南",
+        "code": "INJ",
+        "pinyin": "longnan",
+        "abbr": "ln",
+        "city": "陇南"
+      },
+      {
+        "shortPinyin": "lny",
+        "name": "辽宁朝阳",
+        "code": "VET",
+        "pinyin": "liaoningchaoyang",
+        "abbr": "lncy",
+        "city": "朝阳"
+      },
+      {
+        "shortPinyin": "lpi",
+        "name": "梁平",
+        "code": "UQW",
+        "pinyin": "liangping",
+        "abbr": "lp",
+        "city": "梁平"
+      },
+      {
+        "shortPinyin": "lpi",
+        "name": "滦平",
+        "code": "UPP",
+        "pinyin": "luanping",
+        "abbr": "lp",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "lpi",
+        "name": "罗平",
+        "code": "LPM",
+        "pinyin": "luoping",
+        "abbr": "lp",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "lpn",
+        "name": "梁平南",
+        "code": "LPE",
+        "pinyin": "liangpingnan",
+        "abbr": "lpn",
+        "city": "梁平"
+      },
+      {
+        "shortPinyin": "lpn",
+        "name": "临平南",
+        "code": "EVH",
+        "pinyin": "linpingnan",
+        "abbr": "lpn",
+        "city": "杭州"
+      },
+      {
+        "shortPinyin": "lps",
+        "name": "六盘水",
+        "code": "UMW",
+        "pinyin": "liupanshui",
+        "abbr": "lps",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "lqi",
+        "name": "灵丘",
+        "code": "LVV",
+        "pinyin": "lingqiu",
+        "abbr": "lq",
+        "city": "大同"
+      },
+      {
+        "shortPinyin": "lqi",
+        "name": "龙桥",
+        "code": "LQU",
+        "pinyin": "longqiao",
+        "abbr": "lq",
+        "city": "合肥"
+      },
+      {
+        "shortPinyin": "lsb",
+        "name": "龙山北",
+        "code": "LBA",
+        "pinyin": "longshanbei",
+        "abbr": "lsb",
+        "city": "吉首"
+      },
+      {
+        "shortPinyin": "lsd",
+        "name": "灵石东",
+        "code": "UDV",
+        "pinyin": "lingshidong",
+        "abbr": "lsd",
+        "city": "晋中"
+      },
+      {
+        "shortPinyin": "lsh",
+        "name": "乐山",
+        "code": "IVW",
+        "pinyin": "leshan",
+        "abbr": "ls",
+        "city": "乐山"
+      },
+      {
+        "shortPinyin": "lsh",
+        "name": "陵水",
+        "code": "LIQ",
+        "pinyin": "lingshui",
+        "abbr": "ls",
+        "city": "陵水"
+      },
+      {
+        "shortPinyin": "lsh",
+        "name": "丽水",
+        "code": "USH",
+        "pinyin": "lishui",
+        "abbr": "ls",
+        "city": "丽水"
+      },
+      {
+        "shortPinyin": "lsh",
+        "name": "旅顺",
+        "code": "LST",
+        "pinyin": "lvshun",
+        "abbr": "ls",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "lsh",
+        "name": "庐山",
+        "code": "LSG",
+        "pinyin": "lushan",
+        "abbr": "ls",
+        "city": "九江"
+      },
+      {
+        "shortPinyin": "lsh",
+        "name": "溧水",
+        "code": "LDH",
+        "pinyin": "lishui",
+        "abbr": "ls",
+        "city": "南京"
+      },
+      {
+        "shortPinyin": "lsx",
+        "name": "岚山西",
+        "code": "UWK",
+        "pinyin": "lanshanxi",
+        "abbr": "lsx",
+        "city": "日照"
+      },
+      {
+        "shortPinyin": "lta",
+        "name": "黎塘",
+        "code": "LTZ",
+        "pinyin": "litang",
+        "abbr": "lt",
+        "city": "南宁"
+      },
+      {
+        "shortPinyin": "lta",
+        "name": "芦台",
+        "code": "LTP",
+        "pinyin": "lutai",
+        "abbr": "lt",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "lto",
+        "name": "临潼",
+        "code": "LIY",
+        "pinyin": "lintong",
+        "abbr": "lt",
+        "city": "西安"
+      },
+      {
+        "shortPinyin": "lto",
+        "name": "乐同",
+        "code": "LEA",
+        "pinyin": "letong",
+        "abbr": "lt",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "lwb",
+        "name": "灵武北",
+        "code": "UWJ",
+        "pinyin": "lingwubei",
+        "abbr": "lwb",
+        "city": "银川"
+      },
+      {
+        "shortPinyin": "lwd",
+        "name": "莱芜东",
+        "code": "LWK",
+        "pinyin": "laiwudong",
+        "abbr": "lwd",
+        "city": "济南"
+      },
+      {
+        "shortPinyin": "lwj",
+        "name": "洛湾三江",
+        "code": "KRW",
+        "pinyin": "luowansanjiang",
+        "abbr": "lwsj",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "lxb",
+        "name": "澧县北",
+        "code": "LEQ",
+        "pinyin": "lixianbei",
+        "abbr": "lxb",
+        "city": "常德"
+      },
+      {
+        "shortPinyin": "lxi",
+        "name": "泸县",
+        "code": "LXE",
+        "pinyin": "luxian",
+        "abbr": "lx",
+        "city": "泸州"
+      },
+      {
+        "shortPinyin": "lxi",
+        "name": "陇西",
+        "code": "LXJ",
+        "pinyin": "longxi",
+        "abbr": "lx",
+        "city": "定西"
+      },
+      {
+        "shortPinyin": "lxi",
+        "name": "陇县",
+        "code": "LXY",
+        "pinyin": "longxian",
+        "abbr": "lx",
+        "city": "宝鸡"
+      },
+      {
+        "shortPinyin": "lxi",
+        "name": "临西",
+        "code": "UEP",
+        "pinyin": "linxi",
+        "abbr": "lx",
+        "city": "邢台"
+      },
+      {
+        "shortPinyin": "lxi",
+        "name": "莱西",
+        "code": "LBK",
+        "pinyin": "laixi",
+        "abbr": "lx",
+        "city": "青岛"
+      },
+      {
+        "shortPinyin": "lxi",
+        "name": "兰溪",
+        "code": "LWH",
+        "pinyin": "lanxi",
+        "abbr": "lx",
+        "city": "金华"
+      },
+      {
+        "shortPinyin": "lxi",
+        "name": "良乡",
+        "code": "LAP",
+        "pinyin": "liangxiang",
+        "abbr": "lx",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "lya",
+        "name": "略阳",
+        "code": "LYY",
+        "pinyin": "lueyang",
+        "abbr": "ly",
+        "city": "汉中"
+      },
+      {
+        "shortPinyin": "lya",
+        "name": "辽阳",
+        "code": "LYT",
+        "pinyin": "liaoyang",
+        "abbr": "ly",
+        "city": "辽阳"
+      },
+      {
+        "shortPinyin": "lya",
+        "name": "耒阳",
+        "code": "LYQ",
+        "pinyin": "leiyang",
+        "abbr": "ly",
+        "city": "衡阳"
+      },
+      {
+        "shortPinyin": "lya",
+        "name": "溧阳",
+        "code": "LEH",
+        "pinyin": "liyang",
+        "abbr": "ly",
+        "city": "常州"
+      },
+      {
+        "shortPinyin": "lya",
+        "name": "龙岩",
+        "code": "LYS",
+        "pinyin": "longyan",
+        "abbr": "ly",
+        "city": "龙岩"
+      },
+      {
+        "shortPinyin": "lya",
+        "name": "洛阳",
+        "code": "LYF",
+        "pinyin": "luoyang",
+        "abbr": "ly",
+        "city": "洛阳"
+      },
+      {
+        "shortPinyin": "lyb",
+        "name": "临沂北",
+        "code": "UMK",
+        "pinyin": "linyibei",
+        "abbr": "lyb",
+        "city": "临沂"
+      },
+      {
+        "shortPinyin": "lyd",
+        "name": "连云港东",
+        "code": "UKH",
+        "pinyin": "lianyungangdong",
+        "abbr": "lygd",
+        "city": "连云港"
+      },
+      {
+        "shortPinyin": "lyd",
+        "name": "洛阳东",
+        "code": "LDF",
+        "pinyin": "luoyangdong",
+        "abbr": "lyd",
+        "city": "洛阳"
+      },
+      {
+        "shortPinyin": "lyg",
+        "name": "连云港",
+        "code": "UIH",
+        "pinyin": "lianyungang",
+        "abbr": "lyg",
+        "city": "连云港"
+      },
+      {
+        "shortPinyin": "lyi",
+        "name": "临沂",
+        "code": "LVK",
+        "pinyin": "linyi",
+        "abbr": "ly",
+        "city": "临沂"
+      },
+      {
+        "shortPinyin": "lym",
+        "name": "洛阳龙门",
+        "code": "LLF",
+        "pinyin": "luoyanglongmen",
+        "abbr": "lylm",
+        "city": "洛阳"
+      },
+      {
+        "shortPinyin": "lyn",
+        "name": "柳园南",
+        "code": "LNR",
+        "pinyin": "liuyuannan",
+        "abbr": "lyn",
+        "city": "酒泉"
+      },
+      {
+        "shortPinyin": "lyu",
+        "name": "凌源",
+        "code": "LYD",
+        "pinyin": "lingyuan",
+        "abbr": "ly",
+        "city": "朝阳"
+      },
+      {
+        "shortPinyin": "lyu",
+        "name": "辽源",
+        "code": "LYL",
+        "pinyin": "liaoyuan",
+        "abbr": "ly",
+        "city": "辽源"
+      },
+      {
+        "shortPinyin": "lyu",
+        "name": "柳园",
+        "code": "DHR",
+        "pinyin": "liuyuan",
+        "abbr": "ly",
+        "city": "酒泉"
+      },
+      {
+        "shortPinyin": "lyu",
+        "name": "涟源",
+        "code": "LAQ",
+        "pinyin": "lianyuan",
+        "abbr": "ly",
+        "city": "娄底"
+      },
+      {
+        "shortPinyin": "lyu",
+        "name": "涞源",
+        "code": "LYP",
+        "pinyin": "laiyuan",
+        "abbr": "ly",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "lyu",
+        "name": "罗源",
+        "code": "LVS",
+        "pinyin": "luoyuan",
+        "abbr": "ly",
+        "city": "福州"
+      },
+      {
+        "shortPinyin": "lyx",
+        "name": "耒阳西",
+        "code": "LPQ",
+        "pinyin": "leiyangxi",
+        "abbr": "lyx",
+        "city": "衡阳"
+      },
+      {
+        "shortPinyin": "lzh",
+        "name": "泸州",
+        "code": "LUE",
+        "pinyin": "luzhou",
+        "abbr": "lz",
+        "city": "泸州"
+      },
+      {
+        "shortPinyin": "lzh",
+        "name": "林芝",
+        "code": "LZO",
+        "pinyin": "linzhi",
+        "abbr": "lz",
+        "city": "林芝"
+      },
+      {
+        "shortPinyin": "lzh",
+        "name": "柳州",
+        "code": "LZZ",
+        "pinyin": "liuzhou",
+        "abbr": "lz",
+        "city": "柳州"
+      },
+      {
+        "shortPinyin": "lzh",
+        "name": "六枝",
+        "code": "LIW",
+        "pinyin": "liuzhi",
+        "abbr": "lz",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "lzh",
+        "name": "阆中",
+        "code": "LZE",
+        "pinyin": "langzhong",
+        "abbr": "lz",
+        "city": "南充"
+      },
+      {
+        "shortPinyin": "lzh",
+        "name": "龙镇",
+        "code": "LZA",
+        "pinyin": "longzhen",
+        "abbr": "lz",
+        "city": "黑河"
+      },
+      {
+        "shortPinyin": "lzh",
+        "name": "立志",
+        "code": "LZX",
+        "pinyin": "lizhi",
+        "abbr": "lz",
+        "city": "大庆"
+      },
+      {
+        "shortPinyin": "lzh",
+        "name": "辽中",
+        "code": "LZD",
+        "pinyin": "liaozhong",
+        "abbr": "lz",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "lba",
+        "name": "冷坝",
+        "code": "LBE",
+        "pinyin": "lengba",
+        "abbr": "lb",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "lbb",
+        "name": "琅勃拉邦",
+        "code": "VJM",
+        "pinyin": "langbolabang",
+        "abbr": "lblb",
+        "city": "琅勃拉邦"
+      },
+      {
+        "shortPinyin": "lbi",
+        "name": "来宾",
+        "code": "UBZ",
+        "pinyin": "laibin",
+        "abbr": "lb",
+        "city": "来宾"
+      },
+      {
+        "shortPinyin": "lbi",
+        "name": "老边",
+        "code": "LLT",
+        "pinyin": "laobian",
+        "abbr": "lb",
+        "city": "营口"
+      },
+      {
+        "shortPinyin": "lbi",
+        "name": "灵璧",
+        "code": "GMH",
+        "pinyin": "lingbi",
+        "abbr": "lb",
+        "city": "宿州"
+      },
+      {
+        "shortPinyin": "lbu",
+        "name": "寮步",
+        "code": "LTQ",
+        "pinyin": "liaobu",
+        "abbr": "lb",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "lcb",
+        "name": "洛川北",
+        "code": "LRY",
+        "pinyin": "luochuanbei",
+        "abbr": "lcb",
+        "city": "延安"
+      },
+      {
+        "shortPinyin": "lch",
+        "name": "罗城",
+        "code": "VCZ",
+        "pinyin": "luocheng",
+        "abbr": "lc",
+        "city": "河池"
+      },
+      {
+        "shortPinyin": "lch",
+        "name": "乐昌",
+        "code": "LCQ",
+        "pinyin": "lechang",
+        "abbr": "lc",
+        "city": "韶关"
+      },
+      {
+        "shortPinyin": "lch",
+        "name": "黎城",
+        "code": "UCP",
+        "pinyin": "licheng",
+        "abbr": "lc",
+        "city": "长治"
+      },
+      {
+        "shortPinyin": "lch",
+        "name": "临城",
+        "code": "UUP",
+        "pinyin": "lincheng",
+        "abbr": "lc",
+        "city": "邢台"
+      },
+      {
+        "shortPinyin": "lcu",
+        "name": "蓝村",
+        "code": "LCK",
+        "pinyin": "lancun",
+        "abbr": "lc",
+        "city": "青岛"
+      },
+      {
+        "shortPinyin": "ldo",
+        "name": "乐东",
+        "code": "UQQ",
+        "pinyin": "ledong",
+        "abbr": "ld",
+        "city": "乐东"
+      },
+      {
+        "shortPinyin": "ldo",
+        "name": "林东",
+        "code": "LRC",
+        "pinyin": "lindong",
+        "abbr": "ld",
+        "city": "赤峰"
+      },
+      {
+        "shortPinyin": "ldu",
+        "name": "乐都",
+        "code": "LDO",
+        "pinyin": "ledu",
+        "abbr": "ld",
+        "city": "海东"
+      },
+      {
+        "shortPinyin": "ldx",
+        "name": "梁底下",
+        "code": "LDP",
+        "pinyin": "liangdixia",
+        "abbr": "ldx",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "ldz",
+        "name": "六道河子",
+        "code": "LVP",
+        "pinyin": "liudaohezi",
+        "abbr": "ldhz",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "lfa",
+        "name": "鲁番",
+        "code": "LVM",
+        "pinyin": "lufan",
+        "abbr": "lf",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "lfa",
+        "name": "落垡",
+        "code": "LOP",
+        "pinyin": "luofa",
+        "abbr": "lf",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "lfd",
+        "name": "陆丰东",
+        "code": "LDA",
+        "pinyin": "lufengdong",
+        "abbr": "lfd",
+        "city": "汕尾"
+      },
+      {
+        "shortPinyin": "lfe",
+        "name": "来凤",
+        "code": "LFA",
+        "pinyin": "laifeng",
+        "abbr": "lf",
+        "city": "恩施"
+      },
+      {
+        "shortPinyin": "lfe",
+        "name": "龙丰",
+        "code": "KFQ",
+        "pinyin": "longfeng",
+        "abbr": "lf",
+        "city": "惠州"
+      },
+      {
+        "shortPinyin": "lfn",
+        "name": "陆丰南",
+        "code": "LAA",
+        "pinyin": "lufengnan",
+        "abbr": "lfn",
+        "city": "汕尾"
+      },
+      {
+        "shortPinyin": "lfn",
+        "name": "禄丰南",
+        "code": "LQM",
+        "pinyin": "lufengnan",
+        "abbr": "lfn",
+        "city": "楚雄"
+      },
+      {
+        "shortPinyin": "lfu",
+        "name": "老府",
+        "code": "UFD",
+        "pinyin": "laofu",
+        "abbr": "lf",
+        "city": "赤峰"
+      },
+      {
+        "shortPinyin": "lga",
+        "name": "兰岗",
+        "code": "LNB",
+        "pinyin": "langang",
+        "abbr": "lg",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "lgd",
+        "name": "龙骨甸",
+        "code": "LGM",
+        "pinyin": "longgudian",
+        "abbr": "lgd",
+        "city": "楚雄"
+      },
+      {
+        "shortPinyin": "lgn",
+        "name": "临高南",
+        "code": "KGQ",
+        "pinyin": "lingaonan",
+        "abbr": "lgn",
+        "city": "临高"
+      },
+      {
+        "shortPinyin": "lgo",
+        "name": "芦沟",
+        "code": "LOM",
+        "pinyin": "lugou",
+        "abbr": "lg",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "lgo",
+        "name": "龙沟",
+        "code": "LGJ",
+        "pinyin": "longgou",
+        "abbr": "lg",
+        "city": "武威"
+      },
+      {
+        "shortPinyin": "lha",
+        "name": "临海",
+        "code": "UFH",
+        "pinyin": "linhai",
+        "abbr": "lh",
+        "city": "台州"
+      },
+      {
+        "shortPinyin": "lha",
+        "name": "凌海",
+        "code": "JID",
+        "pinyin": "linghai",
+        "abbr": "lh",
+        "city": "锦州"
+      },
+      {
+        "shortPinyin": "lha",
+        "name": "拉哈",
+        "code": "LHX",
+        "pinyin": "laha",
+        "abbr": "lh",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "lha",
+        "name": "林海",
+        "code": "LXX",
+        "pinyin": "linhai",
+        "abbr": "lh",
+        "city": "加格达奇"
+      },
+      {
+        "shortPinyin": "lhe",
+        "name": "滦河",
+        "code": "UDP",
+        "pinyin": "luanhe",
+        "abbr": "lh",
+        "city": "唐山"
+      },
+      {
+        "shortPinyin": "lhn",
+        "name": "临海南",
+        "code": "LHU",
+        "pinyin": "linhainan",
+        "abbr": "lhn",
+        "city": "台州"
+      },
+      {
+        "shortPinyin": "lhn",
+        "name": "凌海南",
+        "code": "UNT",
+        "pinyin": "linghainan",
+        "abbr": "lhn",
+        "city": "锦州"
+      },
+      {
+        "shortPinyin": "lhu",
+        "name": "龙华",
+        "code": "LHP",
+        "pinyin": "longhua",
+        "abbr": "lh",
+        "city": "衡水"
+      },
+      {
+        "shortPinyin": "lhy",
+        "name": "滦河沿",
+        "code": "UNP",
+        "pinyin": "luanheyan",
+        "abbr": "lhy",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "lhz",
+        "name": "六合镇",
+        "code": "LEX",
+        "pinyin": "liuhezhen",
+        "abbr": "lhz",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "ljd",
+        "name": "罗江东",
+        "code": "IKW",
+        "pinyin": "luojiangdong",
+        "abbr": "ljd",
+        "city": "德阳"
+      },
+      {
+        "shortPinyin": "ljd",
+        "name": "亮甲店",
+        "code": "LRT",
+        "pinyin": "liangjiadian",
+        "abbr": "ljd",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "ljh",
+        "name": "刘家河",
+        "code": "LVT",
+        "pinyin": "liujiahe",
+        "abbr": "ljh",
+        "city": "丹东"
+      },
+      {
+        "shortPinyin": "lji",
+        "name": "廉江",
+        "code": "LJZ",
+        "pinyin": "lianjiang",
+        "abbr": "lj",
+        "city": "湛江"
+      },
+      {
+        "shortPinyin": "lji",
+        "name": "罗江",
+        "code": "LJW",
+        "pinyin": "luojiang",
+        "abbr": "lj",
+        "city": "德阳"
+      },
+      {
+        "shortPinyin": "lji",
+        "name": "柳江",
+        "code": "UQZ",
+        "pinyin": "liujiang",
+        "abbr": "lj",
+        "city": "柳州"
+      },
+      {
+        "shortPinyin": "lji",
+        "name": "两家",
+        "code": "UJT",
+        "pinyin": "liangjia",
+        "abbr": "lj",
+        "city": "白城"
+      },
+      {
+        "shortPinyin": "lji",
+        "name": "李家",
+        "code": "LJB",
+        "pinyin": "lijia",
+        "abbr": "lj",
+        "city": "黑河"
+      },
+      {
+        "shortPinyin": "lji",
+        "name": "龙江",
+        "code": "LJX",
+        "pinyin": "longjiang",
+        "abbr": "lj",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "ljk",
+        "name": "莲江口",
+        "code": "LHB",
+        "pinyin": "lianjiangkou",
+        "abbr": "ljk",
+        "city": "佳木斯"
+      },
+      {
+        "shortPinyin": "ljn",
+        "name": "利津南",
+        "code": "LNK",
+        "pinyin": "lijinnan",
+        "abbr": "ljn",
+        "city": "东营"
+      },
+      {
+        "shortPinyin": "ljp",
+        "name": "李家坪",
+        "code": "LIJ",
+        "pinyin": "lijiaping",
+        "abbr": "ljp",
+        "city": "定西"
+      },
+      {
+        "shortPinyin": "ljz",
+        "name": "厉家寨",
+        "code": "UPK",
+        "pinyin": "lijiazhai",
+        "abbr": "ljz",
+        "city": "临沂"
+      },
+      {
+        "shortPinyin": "lkn",
+        "name": "林口南",
+        "code": "LRB",
+        "pinyin": "linkounan",
+        "abbr": "lkn",
+        "city": "林口"
+      },
+      {
+        "shortPinyin": "lkp",
+        "name": "路口铺",
+        "code": "LKQ",
+        "pinyin": "lukoupu",
+        "abbr": "lkp",
+        "city": "岳阳"
+      },
+      {
+        "shortPinyin": "lla",
+        "name": "老莱",
+        "code": "LAX",
+        "pinyin": "laolai",
+        "abbr": "ll",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "llb",
+        "name": "龙里北",
+        "code": "KFW",
+        "pinyin": "longlibei",
+        "abbr": "llb",
+        "city": "都匀"
+      },
+      {
+        "shortPinyin": "llb",
+        "name": "沥林北",
+        "code": "KBQ",
+        "pinyin": "lilinbei",
+        "abbr": "llb",
+        "city": "惠州"
+      },
+      {
+        "shortPinyin": "llb",
+        "name": "兰陵北",
+        "code": "COK",
+        "pinyin": "lanlingbei",
+        "abbr": "llb",
+        "city": "临沂"
+      },
+      {
+        "shortPinyin": "lld",
+        "name": "醴陵东",
+        "code": "UKQ",
+        "pinyin": "lilingdong",
+        "abbr": "lld",
+        "city": "株洲"
+      },
+      {
+        "shortPinyin": "lli",
+        "name": "临澧",
+        "code": "LWQ",
+        "pinyin": "linli",
+        "abbr": "ll",
+        "city": "常德"
+      },
+      {
+        "shortPinyin": "lli",
+        "name": "零陵",
+        "code": "UWZ",
+        "pinyin": "lingling",
+        "abbr": "ll",
+        "city": "永州"
+      },
+      {
+        "shortPinyin": "lli",
+        "name": "陆良",
+        "code": "LRM",
+        "pinyin": "luliang",
+        "abbr": "ll",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "llo",
+        "name": "卢龙",
+        "code": "UAP",
+        "pinyin": "lulong",
+        "abbr": "ll",
+        "city": "秦皇岛"
+      },
+      {
+        "shortPinyin": "lmd",
+        "name": "喇嘛甸",
+        "code": "LMX",
+        "pinyin": "lamadian",
+        "abbr": "lmd",
+        "city": "大庆"
+      },
+      {
+        "shortPinyin": "lmd",
+        "name": "里木店",
+        "code": "LMB",
+        "pinyin": "limudian",
+        "abbr": "lmd",
+        "city": "绥化"
+      },
+      {
+        "shortPinyin": "lme",
+        "name": "洛门",
+        "code": "LMJ",
+        "pinyin": "luomen",
+        "abbr": "lm",
+        "city": "天水"
+      },
+      {
+        "shortPinyin": "lmi",
+        "name": "芦庙",
+        "code": "LMU",
+        "pinyin": "lumiao",
+        "abbr": "lm",
+        "city": "亳州"
+      },
+      {
+        "shortPinyin": "lna",
+        "name": "龙南",
+        "code": "UNG",
+        "pinyin": "longnan",
+        "abbr": "ln",
+        "city": "赣州"
+      },
+      {
+        "shortPinyin": "lnd",
+        "name": "龙南东",
+        "code": "LBG",
+        "pinyin": "longnandong",
+        "abbr": "lnd",
+        "city": "赣州"
+      },
+      {
+        "shortPinyin": "lpb",
+        "name": "乐平北",
+        "code": "LKG",
+        "pinyin": "lepingbei",
+        "abbr": "lpb",
+        "city": "景德镇"
+      },
+      {
+        "shortPinyin": "lpd",
+        "name": "六盘水东",
+        "code": "LDE",
+        "pinyin": "liupanshuidong",
+        "abbr": "lpsd",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "lpl",
+        "name": "落坡岭",
+        "code": "LPP",
+        "pinyin": "luopoling",
+        "abbr": "lpl",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "lps",
+        "name": "六盘山",
+        "code": "UPJ",
+        "pinyin": "liupanshan",
+        "abbr": "lps",
+        "city": "固原"
+      },
+      {
+        "shortPinyin": "lps",
+        "name": "乐平市",
+        "code": "LPG",
+        "pinyin": "lepingshi",
+        "abbr": "lps",
+        "city": "景德镇"
+      },
+      {
+        "shortPinyin": "lpu",
+        "name": "洛浦",
+        "code": "LVR",
+        "pinyin": "luopu",
+        "abbr": "lp",
+        "city": "和田"
+      },
+      {
+        "shortPinyin": "lqi",
+        "name": "临清",
+        "code": "UQK",
+        "pinyin": "linqing",
+        "abbr": "lq",
+        "city": "聊城"
+      },
+      {
+        "shortPinyin": "lqn",
+        "name": "礼泉南",
+        "code": "UNY",
+        "pinyin": "liquannan",
+        "abbr": "lqn",
+        "city": "咸阳"
+      },
+      {
+        "shortPinyin": "lqs",
+        "name": "龙泉市",
+        "code": "LVU",
+        "pinyin": "longquanshi",
+        "abbr": "lqs",
+        "city": "丽水"
+      },
+      {
+        "shortPinyin": "lqu",
+        "name": "礼泉",
+        "code": "LGY",
+        "pinyin": "liquan",
+        "abbr": "lq",
+        "city": "咸阳"
+      },
+      {
+        "shortPinyin": "lqu",
+        "name": "临泉",
+        "code": "LOU",
+        "pinyin": "linquan",
+        "abbr": "lq",
+        "city": "阜阳"
+      },
+      {
+        "shortPinyin": "lsd",
+        "name": "冷水江东",
+        "code": "UDQ",
+        "pinyin": "lengshuijiangdong",
+        "abbr": "lsjd",
+        "city": "娄底"
+      },
+      {
+        "shortPinyin": "lsg",
+        "name": "连山关",
+        "code": "LGT",
+        "pinyin": "lianshanguan",
+        "abbr": "lsg",
+        "city": "本溪"
+      },
+      {
+        "shortPinyin": "lsg",
+        "name": "流水沟",
+        "code": "USP",
+        "pinyin": "liushuigou",
+        "abbr": "lsg",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "lsh",
+        "name": "灵石",
+        "code": "LSV",
+        "pinyin": "lingshi",
+        "abbr": "ls",
+        "city": "晋中"
+      },
+      {
+        "shortPinyin": "lsh",
+        "name": "罗山",
+        "code": "LRN",
+        "pinyin": "luoshan",
+        "abbr": "ls",
+        "city": "信阳"
+      },
+      {
+        "shortPinyin": "lsh",
+        "name": "涟水",
+        "code": "LIU",
+        "pinyin": "lianshui",
+        "abbr": "ls",
+        "city": "淮安"
+      },
+      {
+        "shortPinyin": "lsh",
+        "name": "龙市",
+        "code": "LAG",
+        "pinyin": "longshi",
+        "abbr": "ls",
+        "city": "吉安"
+      },
+      {
+        "shortPinyin": "lsh",
+        "name": "梁山",
+        "code": "LMK",
+        "pinyin": "liangshan",
+        "abbr": "ls",
+        "city": "济宁"
+      },
+      {
+        "shortPinyin": "lsh",
+        "name": "鲁山",
+        "code": "LAF",
+        "pinyin": "lushan",
+        "abbr": "ls",
+        "city": "平顶山"
+      },
+      {
+        "shortPinyin": "lsn",
+        "name": "娄山关南",
+        "code": "LSE",
+        "pinyin": "loushanguannan",
+        "abbr": "lsgn",
+        "city": "遵义"
+      },
+      {
+        "shortPinyin": "lst",
+        "name": "柳树屯",
+        "code": "LSD",
+        "pinyin": "liushutun",
+        "abbr": "lst",
+        "city": "葫芦岛"
+      },
+      {
+        "shortPinyin": "lsz",
+        "name": "龙山镇",
+        "code": "LAS",
+        "pinyin": "longshanzhen",
+        "abbr": "lsz",
+        "city": "漳州"
+      },
+      {
+        "shortPinyin": "lsz",
+        "name": "李石寨",
+        "code": "LET",
+        "pinyin": "lishizhai",
+        "abbr": "lsz",
+        "city": "抚顺"
+      },
+      {
+        "shortPinyin": "lsz",
+        "name": "梨树镇",
+        "code": "LSB",
+        "pinyin": "lishuzhen",
+        "abbr": "lsz",
+        "city": "鸡西"
+      },
+      {
+        "shortPinyin": "lta",
+        "name": "轮台",
+        "code": "LAR",
+        "pinyin": "luntai",
+        "abbr": "lt",
+        "city": "库尔勒"
+      },
+      {
+        "shortPinyin": "ltb",
+        "name": "龙塘坝",
+        "code": "LBM",
+        "pinyin": "longtangba",
+        "abbr": "ltb",
+        "city": "楚雄"
+      },
+      {
+        "shortPinyin": "ltu",
+        "name": "濑湍",
+        "code": "LVZ",
+        "pinyin": "laituan",
+        "abbr": "lt",
+        "city": "崇左"
+      },
+      {
+        "shortPinyin": "ltz",
+        "name": "龙塘镇",
+        "code": "LVB",
+        "pinyin": "longtangzhen",
+        "abbr": "ltz",
+        "city": "清远"
+      },
+      {
+        "shortPinyin": "lwa",
+        "name": "李旺",
+        "code": "VLJ",
+        "pinyin": "liwang",
+        "abbr": "lw",
+        "city": "中卫"
+      },
+      {
+        "shortPinyin": "lws",
+        "name": "狼尾山",
+        "code": "LRJ",
+        "pinyin": "langweishan",
+        "abbr": "lws",
+        "city": "张掖"
+      },
+      {
+        "shortPinyin": "lwu",
+        "name": "灵武",
+        "code": "LNJ",
+        "pinyin": "lingwu",
+        "abbr": "lw",
+        "city": "灵武"
+      },
+      {
+        "shortPinyin": "lwx",
+        "name": "莱芜西",
+        "code": "UXK",
+        "pinyin": "laiwuxi",
+        "abbr": "lwx",
+        "city": "莱芜"
+      },
+      {
+        "shortPinyin": "lxi",
+        "name": "岚县",
+        "code": "UXV",
+        "pinyin": "lanxian",
+        "abbr": "lx",
+        "city": "吕梁"
+      },
+      {
+        "shortPinyin": "lxi",
+        "name": "朗县",
+        "code": "LIO",
+        "pinyin": "langxian",
+        "abbr": "lx",
+        "city": "朗县"
+      },
+      {
+        "shortPinyin": "lxi",
+        "name": "芦溪",
+        "code": "LUG",
+        "pinyin": "luxi",
+        "abbr": "lx",
+        "city": "芦溪"
+      },
+      {
+        "shortPinyin": "lxi",
+        "name": "临湘",
+        "code": "LXQ",
+        "pinyin": "linxiang",
+        "abbr": "lx",
+        "city": "岳阳"
+      },
+      {
+        "shortPinyin": "lxi",
+        "name": "滦县",
+        "code": "UXP",
+        "pinyin": "luanxian",
+        "abbr": "lx",
+        "city": "唐山"
+      },
+      {
+        "shortPinyin": "lxi",
+        "name": "林西",
+        "code": "LXC",
+        "pinyin": "linxi",
+        "abbr": "lx",
+        "city": "赤峰"
+      },
+      {
+        "shortPinyin": "lxi",
+        "name": "朗乡",
+        "code": "LXB",
+        "pinyin": "langxiang",
+        "abbr": "lx",
+        "city": "伊春"
+      },
+      {
+        "shortPinyin": "lxn",
+        "name": "郎溪南",
+        "code": "LXU",
+        "pinyin": "langxinan",
+        "abbr": "lxn",
+        "city": "宣城"
+      },
+      {
+        "shortPinyin": "lxn",
+        "name": "莱西南",
+        "code": "LXK",
+        "pinyin": "laixinan",
+        "abbr": "lxn",
+        "city": "青岛"
+      },
+      {
+        "shortPinyin": "lxx",
+        "name": "利辛西",
+        "code": "XBH",
+        "pinyin": "lixinxi",
+        "abbr": "lxx",
+        "city": "亳州"
+      },
+      {
+        "shortPinyin": "lya",
+        "name": "莱阳",
+        "code": "LYK",
+        "pinyin": "laiyang",
+        "abbr": "ly",
+        "city": "烟台"
+      },
+      {
+        "shortPinyin": "lyd",
+        "name": "凌源东",
+        "code": "LDD",
+        "pinyin": "lingyuandong",
+        "abbr": "lyd",
+        "city": "朝阳"
+      },
+      {
+        "shortPinyin": "lyd",
+        "name": "临沂东",
+        "code": "UYK",
+        "pinyin": "linyidong",
+        "abbr": "lyd",
+        "city": "临沂"
+      },
+      {
+        "shortPinyin": "lyi",
+        "name": "临邑",
+        "code": "LUK",
+        "pinyin": "linyi",
+        "abbr": "ly",
+        "city": "德州"
+      },
+      {
+        "shortPinyin": "lyi",
+        "name": "临颍",
+        "code": "LNF",
+        "pinyin": "linying",
+        "abbr": "ly",
+        "city": "漯河"
+      },
+      {
+        "shortPinyin": "lyn",
+        "name": "莱阳南",
+        "code": "VEK",
+        "pinyin": "laiyangnan",
+        "abbr": "lyn",
+        "city": "烟台"
+      },
+      {
+        "shortPinyin": "lyn",
+        "name": "龙游南",
+        "code": "LYU",
+        "pinyin": "longyounan",
+        "abbr": "lyn",
+        "city": "衢州"
+      },
+      {
+        "shortPinyin": "lyo",
+        "name": "龙游",
+        "code": "LMH",
+        "pinyin": "longyou",
+        "abbr": "ly",
+        "city": "衢州"
+      },
+      {
+        "shortPinyin": "lyu",
+        "name": "礼乐",
+        "code": "UEQ",
+        "pinyin": "liyue",
+        "abbr": "ly",
+        "city": "江门"
+      },
+      {
+        "shortPinyin": "lyu",
+        "name": "林源",
+        "code": "LYX",
+        "pinyin": "linyuan",
+        "abbr": "ly",
+        "city": "大庆"
+      },
+      {
+        "shortPinyin": "lzb",
+        "name": "鹿寨北",
+        "code": "LSZ",
+        "pinyin": "luzhaibei",
+        "abbr": "lzb",
+        "city": "柳州"
+      },
+      {
+        "shortPinyin": "lzb",
+        "name": "临淄北",
+        "code": "UEK",
+        "pinyin": "linzibei",
+        "abbr": "lzb",
+        "city": "淄博"
+      },
+      {
+        "shortPinyin": "lzd",
+        "name": "泸州东",
+        "code": "UDE",
+        "pinyin": "luzhoudong",
+        "abbr": "lzd",
+        "city": "泸州"
+      },
+      {
+        "shortPinyin": "lze",
+        "name": "临泽",
+        "code": "LEJ",
+        "pinyin": "linze",
+        "abbr": "lz",
+        "city": "张掖"
+      },
+      {
+        "shortPinyin": "lzh",
+        "name": "雷州",
+        "code": "UAQ",
+        "pinyin": "leizhou",
+        "abbr": "lz",
+        "city": "湛江"
+      },
+      {
+        "shortPinyin": "lzh",
+        "name": "来舟",
+        "code": "LZS",
+        "pinyin": "laizhou",
+        "abbr": "lz",
+        "city": "来舟"
+      },
+      {
+        "shortPinyin": "lzh",
+        "name": "刘召",
+        "code": "WYC",
+        "pinyin": "liuzhao",
+        "abbr": "lz",
+        "city": "巴彦淖尔"
+      },
+      {
+        "shortPinyin": "lzh",
+        "name": "鹿寨",
+        "code": "LIZ",
+        "pinyin": "luzhai",
+        "abbr": "lz",
+        "city": "柳州"
+      },
+      {
+        "shortPinyin": "lzh",
+        "name": "拉鲊",
+        "code": "LEM",
+        "pinyin": "lazha",
+        "abbr": "lz",
+        "city": "攀枝花"
+      },
+      {
+        "shortPinyin": "lzh",
+        "name": "莱州",
+        "code": "VPK",
+        "pinyin": "laizhou",
+        "abbr": "lz",
+        "city": "烟台"
+      },
+      {
+        "shortPinyin": "lzn",
+        "name": "六枝南",
+        "code": "LOE",
+        "pinyin": "liuzhinan",
+        "abbr": "lzn",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "lzn",
+        "name": "临泽南",
+        "code": "LDJ",
+        "pinyin": "linzenan",
+        "abbr": "lzn",
+        "city": "张掖"
+      },
+      {
+        "shortPinyin": "lbo",
+        "name": "荔波",
+        "code": "UBE",
+        "pinyin": "libo",
+        "abbr": "lb",
+        "city": "都匀"
+      },
+      {
+        "shortPinyin": "lfs",
+        "name": "罗浮山",
+        "code": "LVA",
+        "pinyin": "luofushan",
+        "abbr": "lfs",
+        "city": "惠州"
+      },
+      {
+        "shortPinyin": "lhd",
+        "name": "珞璜东",
+        "code": "LHE",
+        "pinyin": "luohuangdong",
+        "abbr": "lhd",
+        "city": "重庆"
+      },
+      {
+        "shortPinyin": "lxi",
+        "name": "临县",
+        "code": "LUV",
+        "pinyin": "linxian",
+        "abbr": "lx",
+        "city": "吕梁"
+      },
+      {
+        "shortPinyin": "lxi",
+        "name": "龙兴",
+        "code": "LIE",
+        "pinyin": "longxing",
+        "abbr": "lx",
+        "city": "重庆"
+      }
+    ],
+    "C": [
+      {
+        "shortPinyin": "cqb",
+        "name": "重庆北",
+        "code": "CUW",
+        "pinyin": "chongqingbei",
+        "abbr": "cqb",
+        "city": "重庆"
+      },
+      {
+        "shortPinyin": "cqi",
+        "name": "重庆",
+        "code": "CQW",
+        "pinyin": "chongqing",
+        "abbr": "cq",
+        "city": "重庆"
+      },
+      {
+        "shortPinyin": "cqn",
+        "name": "重庆南",
+        "code": "CRW",
+        "pinyin": "chongqingnan",
+        "abbr": "cqn",
+        "city": "重庆"
+      },
+      {
+        "shortPinyin": "cqx",
+        "name": "重庆西",
+        "code": "CXW",
+        "pinyin": "chongqingxi",
+        "abbr": "cqx",
+        "city": "重庆"
+      },
+      {
+        "shortPinyin": "cch",
+        "name": "长春",
+        "code": "CCT",
+        "pinyin": "changchun",
+        "abbr": "cc",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "ccn",
+        "name": "长春南",
+        "code": "CET",
+        "pinyin": "changchunnan",
+        "abbr": "ccn",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "ccx",
+        "name": "长春西",
+        "code": "CRT",
+        "pinyin": "changchunxi",
+        "abbr": "ccx",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "cdd",
+        "name": "成都东",
+        "code": "ICW",
+        "pinyin": "chengdudong",
+        "abbr": "cdd",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "cdn",
+        "name": "成都南",
+        "code": "CNW",
+        "pinyin": "chengdunan",
+        "abbr": "cdn",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "cdu",
+        "name": "成都",
+        "code": "CDW",
+        "pinyin": "chengdu",
+        "abbr": "cd",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "cdx",
+        "name": "成都西",
+        "code": "CMW",
+        "pinyin": "chengduxi",
+        "abbr": "cdx",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "cgy",
+        "name": "陈官营",
+        "code": "CAJ",
+        "pinyin": "chenguanying",
+        "abbr": "cgy",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "cqi",
+        "name": "长清",
+        "code": "CNK",
+        "pinyin": "changqing",
+        "abbr": "cq",
+        "city": "济南"
+      },
+      {
+        "shortPinyin": "csh",
+        "name": "长沙",
+        "code": "CSQ",
+        "pinyin": "changsha",
+        "abbr": "cs",
+        "city": "长沙"
+      },
+      {
+        "shortPinyin": "csn",
+        "name": "长沙南",
+        "code": "CWQ",
+        "pinyin": "changshanan",
+        "abbr": "csn",
+        "city": "长沙"
+      },
+      {
+        "shortPinyin": "csx",
+        "name": "长沙西",
+        "code": "RXQ",
+        "pinyin": "changshaxi",
+        "abbr": "csx",
+        "city": "长沙"
+      },
+      {
+        "shortPinyin": "czh",
+        "name": "常庄",
+        "code": "CVK",
+        "pinyin": "changzhuang",
+        "abbr": "cz",
+        "city": "济南"
+      },
+      {
+        "shortPinyin": "cbg",
+        "name": "查布嘎",
+        "code": "CBC",
+        "pinyin": "chabuga",
+        "abbr": "cbg",
+        "city": "赤峰"
+      },
+      {
+        "shortPinyin": "cbi",
+        "name": "赤壁",
+        "code": "CBN",
+        "pinyin": "chibi",
+        "abbr": "cb",
+        "city": "咸宁"
+      },
+      {
+        "shortPinyin": "cbs",
+        "name": "长白山",
+        "code": "CUL",
+        "pinyin": "changbaishan",
+        "abbr": "cbs",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "cbx",
+        "name": "长白山西",
+        "code": "SJL",
+        "pinyin": "changbaishanxi",
+        "abbr": "cbsx",
+        "city": "白山"
+      },
+      {
+        "shortPinyin": "cde",
+        "name": "常德",
+        "code": "VGQ",
+        "pinyin": "changde",
+        "abbr": "cd",
+        "city": "常德"
+      },
+      {
+        "shortPinyin": "cde",
+        "name": "承德",
+        "code": "CDP",
+        "pinyin": "chengde",
+        "abbr": "cd",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "cdn",
+        "name": "承德南",
+        "code": "IVP",
+        "pinyin": "chengdenan",
+        "abbr": "cdn",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "cfd",
+        "name": "曹妃甸东",
+        "code": "POP",
+        "pinyin": "caofeidiandong",
+        "abbr": "cfdd",
+        "city": "唐山"
+      },
+      {
+        "shortPinyin": "cfe",
+        "name": "赤峰",
+        "code": "CID",
+        "pinyin": "chifeng",
+        "abbr": "cf",
+        "city": "赤峰"
+      },
+      {
+        "shortPinyin": "cfg",
+        "name": "曹妃甸港",
+        "code": "PGP",
+        "pinyin": "caofeidiangang",
+        "abbr": "cfdg",
+        "city": "唐山"
+      },
+      {
+        "shortPinyin": "cfn",
+        "name": "赤峰南",
+        "code": "CFD",
+        "pinyin": "chifengnan",
+        "abbr": "cfn",
+        "city": "赤峰"
+      },
+      {
+        "shortPinyin": "cga",
+        "name": "嵯岗",
+        "code": "CAX",
+        "pinyin": "cuogang",
+        "abbr": "cg",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "cga",
+        "name": "柴岗",
+        "code": "CGT",
+        "pinyin": "chaigang",
+        "abbr": "cg",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "cgb",
+        "name": "柴沟堡",
+        "code": "CGV",
+        "pinyin": "chaigoubu",
+        "abbr": "cgp",
+        "city": "张家口"
+      },
+      {
+        "shortPinyin": "cgb",
+        "name": "长葛北",
+        "code": "CGF",
+        "pinyin": "changgebei",
+        "abbr": "cgb",
+        "city": "许昌"
+      },
+      {
+        "shortPinyin": "cgu",
+        "name": "城固",
+        "code": "CGY",
+        "pinyin": "chenggu",
+        "abbr": "cg",
+        "city": "汉中"
+      },
+      {
+        "shortPinyin": "cgz",
+        "name": "成高子",
+        "code": "CZB",
+        "pinyin": "chenggaozi",
+        "abbr": "cgz",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "cha",
+        "name": "草海",
+        "code": "WBW",
+        "pinyin": "caohai",
+        "abbr": "ch",
+        "city": "毕节"
+      },
+      {
+        "shortPinyin": "chd",
+        "name": "巢湖东",
+        "code": "GUH",
+        "pinyin": "chaohudong",
+        "abbr": "chd",
+        "city": "合肥"
+      },
+      {
+        "shortPinyin": "che",
+        "name": "柴河",
+        "code": "CHB",
+        "pinyin": "chaihe",
+        "abbr": "ch",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "chu",
+        "name": "巢湖",
+        "code": "CIH",
+        "pinyin": "chaohu",
+        "abbr": "ch",
+        "city": "合肥"
+      },
+      {
+        "shortPinyin": "cji",
+        "name": "从江",
+        "code": "KNW",
+        "pinyin": "congjiang",
+        "abbr": "cj",
+        "city": "凯里"
+      },
+      {
+        "shortPinyin": "cjy",
+        "name": "蔡家崖",
+        "code": "EBV",
+        "pinyin": "caijiaya",
+        "abbr": "cjy",
+        "city": "吕梁"
+      },
+      {
+        "shortPinyin": "cld",
+        "name": "长乐东",
+        "code": "CIS",
+        "pinyin": "changledong",
+        "abbr": "cld",
+        "city": "福州"
+      },
+      {
+        "shortPinyin": "cle",
+        "name": "长乐",
+        "code": "CAS",
+        "pinyin": "changle",
+        "abbr": "cl",
+        "city": "福州"
+      },
+      {
+        "shortPinyin": "clh",
+        "name": "长临河",
+        "code": "FVH",
+        "pinyin": "changlinhe",
+        "abbr": "clh",
+        "city": "合肥"
+      },
+      {
+        "shortPinyin": "cli",
+        "name": "慈利",
+        "code": "CUQ",
+        "pinyin": "cili",
+        "abbr": "cl",
+        "city": "张家界"
+      },
+      {
+        "shortPinyin": "cli",
+        "name": "茶陵",
+        "code": "CDG",
+        "pinyin": "chaling",
+        "abbr": "cl",
+        "city": "株洲"
+      },
+      {
+        "shortPinyin": "cli",
+        "name": "崇礼",
+        "code": "KOP",
+        "pinyin": "chongli",
+        "abbr": "cl",
+        "city": "张家口"
+      },
+      {
+        "shortPinyin": "cli",
+        "name": "昌黎",
+        "code": "CLP",
+        "pinyin": "changli",
+        "abbr": "cl",
+        "city": "秦皇岛"
+      },
+      {
+        "shortPinyin": "cli",
+        "name": "长流",
+        "code": "CLA",
+        "pinyin": "changliu",
+        "abbr": "cl",
+        "city": "海口"
+      },
+      {
+        "shortPinyin": "cln",
+        "name": "长乐南",
+        "code": "CVS",
+        "pinyin": "changlenan",
+        "abbr": "cln",
+        "city": "福州"
+      },
+      {
+        "shortPinyin": "cmi",
+        "name": "晨明",
+        "code": "CMB",
+        "pinyin": "chenming",
+        "abbr": "cm",
+        "city": "伊春"
+      },
+      {
+        "shortPinyin": "cna",
+        "name": "苍南",
+        "code": "CEH",
+        "pinyin": "cangnan",
+        "abbr": "cn",
+        "city": "温州"
+      },
+      {
+        "shortPinyin": "cpb",
+        "name": "昌平北",
+        "code": "VBP",
+        "pinyin": "changpingbei",
+        "abbr": "cpb",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "cpd",
+        "name": "常平东",
+        "code": "FQQ",
+        "pinyin": "changpingdong",
+        "abbr": "cpd",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "cpi",
+        "name": "翠屏",
+        "code": "YBW",
+        "pinyin": "cuiping",
+        "abbr": "cp",
+        "city": "宜宾"
+      },
+      {
+        "shortPinyin": "cpi",
+        "name": "昌平",
+        "code": "CPP",
+        "pinyin": "changping",
+        "abbr": "cp",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "cqq",
+        "name": "长庆桥",
+        "code": "CQJ",
+        "pinyin": "changqingqiao",
+        "abbr": "cqq",
+        "city": "庆阳"
+      },
+      {
+        "shortPinyin": "cre",
+        "name": "崇仁",
+        "code": "CRG",
+        "pinyin": "chongren",
+        "abbr": "cr",
+        "city": "崇仁"
+      },
+      {
+        "shortPinyin": "csb",
+        "name": "长寿北",
+        "code": "COW",
+        "pinyin": "changshoubei",
+        "abbr": "csb",
+        "city": "长寿"
+      },
+      {
+        "shortPinyin": "csh",
+        "name": "潮汕",
+        "code": "CBQ",
+        "pinyin": "chaoshan",
+        "abbr": "cs",
+        "city": "潮州"
+      },
+      {
+        "shortPinyin": "csq",
+        "name": "察素齐",
+        "code": "CSC",
+        "pinyin": "chasuqi",
+        "abbr": "csq",
+        "city": "呼和浩特"
+      },
+      {
+        "shortPinyin": "cti",
+        "name": "朝天",
+        "code": "CTE",
+        "pinyin": "chaotian",
+        "abbr": "ct",
+        "city": "广元"
+      },
+      {
+        "shortPinyin": "ctn",
+        "name": "长汀南",
+        "code": "CNS",
+        "pinyin": "changtingnan",
+        "abbr": "ctn",
+        "city": "长汀"
+      },
+      {
+        "shortPinyin": "ctn",
+        "name": "朝天南",
+        "code": "CTY",
+        "pinyin": "chaotiannan",
+        "abbr": "ctn",
+        "city": "广元"
+      },
+      {
+        "shortPinyin": "ctu",
+        "name": "昌图",
+        "code": "CTT",
+        "pinyin": "changtu",
+        "abbr": "ct",
+        "city": "铁岭"
+      },
+      {
+        "shortPinyin": "ctx",
+        "name": "昌图西",
+        "code": "CPT",
+        "pinyin": "changtuxi",
+        "abbr": "ctx",
+        "city": "铁岭"
+      },
+      {
+        "shortPinyin": "ctz",
+        "name": "长汀镇",
+        "code": "CDB",
+        "pinyin": "changtingzhen",
+        "abbr": "ctz",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "cwu",
+        "name": "长武",
+        "code": "CWY",
+        "pinyin": "changwu",
+        "abbr": "cw",
+        "city": "咸阳"
+      },
+      {
+        "shortPinyin": "cxi",
+        "name": "苍溪",
+        "code": "CXE",
+        "pinyin": "cangxi",
+        "abbr": "cx",
+        "city": "广元"
+      },
+      {
+        "shortPinyin": "cxi",
+        "name": "辰溪",
+        "code": "CXQ",
+        "pinyin": "chenxi",
+        "abbr": "cx",
+        "city": "怀化"
+      },
+      {
+        "shortPinyin": "cxi",
+        "name": "磁县",
+        "code": "CIP",
+        "pinyin": "cixian",
+        "abbr": "cx",
+        "city": "邯郸"
+      },
+      {
+        "shortPinyin": "cxi",
+        "name": "楚雄",
+        "code": "CUM",
+        "pinyin": "chuxiong",
+        "abbr": "cx",
+        "city": "楚雄"
+      },
+      {
+        "shortPinyin": "cxi",
+        "name": "曹县",
+        "code": "CXK",
+        "pinyin": "caoxian",
+        "abbr": "cx",
+        "city": "菏泽"
+      },
+      {
+        "shortPinyin": "cxi",
+        "name": "城西",
+        "code": "CIA",
+        "pinyin": "chengxi",
+        "abbr": "cx",
+        "city": "海口"
+      },
+      {
+        "shortPinyin": "cxn",
+        "name": "长兴南",
+        "code": "CFH",
+        "pinyin": "changxingnan",
+        "abbr": "cxn",
+        "city": "湖州"
+      },
+      {
+        "shortPinyin": "cxt",
+        "name": "陈相屯",
+        "code": "CXT",
+        "pinyin": "chenxiangtun",
+        "abbr": "cxt",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "cya",
+        "name": "春阳",
+        "code": "CAL",
+        "pinyin": "chunyang",
+        "abbr": "cy",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "cya",
+        "name": "潮阳",
+        "code": "CNQ",
+        "pinyin": "chaoyang",
+        "abbr": "cy",
+        "city": "汕头"
+      },
+      {
+        "shortPinyin": "cyc",
+        "name": "朝阳川",
+        "code": "CYL",
+        "pinyin": "chaoyangchuan",
+        "abbr": "cyc",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "cyh",
+        "name": "朝阳湖",
+        "code": "CYE",
+        "pinyin": "chaoyanghu",
+        "abbr": "cyh",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "czb",
+        "name": "滁州北",
+        "code": "CUH",
+        "pinyin": "chuzhoubei",
+        "abbr": "czb",
+        "city": "滁州"
+      },
+      {
+        "shortPinyin": "czb",
+        "name": "常州北",
+        "code": "ESH",
+        "pinyin": "changzhoubei",
+        "abbr": "czb",
+        "city": "常州"
+      },
+      {
+        "shortPinyin": "czb",
+        "name": "长治北",
+        "code": "CBF",
+        "pinyin": "changzhibei",
+        "abbr": "czb",
+        "city": "长治"
+      },
+      {
+        "shortPinyin": "czd",
+        "name": "长治东",
+        "code": "CUF",
+        "pinyin": "changzhidong",
+        "abbr": "czd",
+        "city": "长治"
+      },
+      {
+        "shortPinyin": "czh",
+        "name": "长征",
+        "code": "CZJ",
+        "pinyin": "changzheng",
+        "abbr": "cz",
+        "city": "白银"
+      },
+      {
+        "shortPinyin": "czh",
+        "name": "池州",
+        "code": "IYH",
+        "pinyin": "chizhou",
+        "abbr": "cz",
+        "city": "池州"
+      },
+      {
+        "shortPinyin": "czh",
+        "name": "滁州",
+        "code": "CXH",
+        "pinyin": "chuzhou",
+        "abbr": "cz",
+        "city": "滁州"
+      },
+      {
+        "shortPinyin": "czh",
+        "name": "郴州",
+        "code": "CZQ",
+        "pinyin": "chenzhou",
+        "abbr": "cz",
+        "city": "郴州"
+      },
+      {
+        "shortPinyin": "czh",
+        "name": "沧州",
+        "code": "COP",
+        "pinyin": "cangzhou",
+        "abbr": "cz",
+        "city": "沧州"
+      },
+      {
+        "shortPinyin": "czh",
+        "name": "常州",
+        "code": "CZH",
+        "pinyin": "changzhou",
+        "abbr": "cz",
+        "city": "常州"
+      },
+      {
+        "shortPinyin": "czh",
+        "name": "长治",
+        "code": "CZF",
+        "pinyin": "changzhi",
+        "abbr": "cz",
+        "city": "长治"
+      },
+      {
+        "shortPinyin": "czh",
+        "name": "崇州",
+        "code": "CZE",
+        "pinyin": "chongzhou",
+        "abbr": "cz",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "czn",
+        "name": "崇左南",
+        "code": "COZ",
+        "pinyin": "chongzuonan",
+        "abbr": "czn",
+        "city": "崇左"
+      },
+      {
+        "shortPinyin": "czu",
+        "name": "崇左",
+        "code": "CZZ",
+        "pinyin": "chongzuo",
+        "abbr": "cz",
+        "city": "崇左"
+      },
+      {
+        "shortPinyin": "czx",
+        "name": "郴州西",
+        "code": "ICQ",
+        "pinyin": "chenzhouxi",
+        "abbr": "czx",
+        "city": "郴州"
+      },
+      {
+        "shortPinyin": "czx",
+        "name": "沧州西",
+        "code": "CBP",
+        "pinyin": "cangzhouxi",
+        "abbr": "czx",
+        "city": "沧州"
+      },
+      {
+        "shortPinyin": "can",
+        "name": "潮安",
+        "code": "CMQ",
+        "pinyin": "chaoan",
+        "abbr": "ca",
+        "city": "潮州"
+      },
+      {
+        "shortPinyin": "can",
+        "name": "长安",
+        "code": "CAA",
+        "pinyin": "changan",
+        "abbr": "ca",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "cax",
+        "name": "长安西",
+        "code": "CXA",
+        "pinyin": "changanxi",
+        "abbr": "cax",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "cbb",
+        "name": "赤壁北",
+        "code": "CIN",
+        "pinyin": "chibibei",
+        "abbr": "cbb",
+        "city": "咸宁"
+      },
+      {
+        "shortPinyin": "cch",
+        "name": "澄城",
+        "code": "CUY",
+        "pinyin": "chengcheng",
+        "abbr": "cc",
+        "city": "渭南"
+      },
+      {
+        "shortPinyin": "cch",
+        "name": "长城",
+        "code": "CEJ",
+        "pinyin": "changcheng",
+        "abbr": "cc",
+        "city": "白银"
+      },
+      {
+        "shortPinyin": "ccu",
+        "name": "陈村",
+        "code": "CVA",
+        "pinyin": "chencun",
+        "abbr": "cc",
+        "city": "佛山"
+      },
+      {
+        "shortPinyin": "cdb",
+        "name": "承德县北",
+        "code": "IYP",
+        "pinyin": "chengdexianbei",
+        "abbr": "cdxb",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "cdd",
+        "name": "承德东",
+        "code": "CCP",
+        "pinyin": "chengdedong",
+        "abbr": "cdd",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "cgb",
+        "name": "城固北",
+        "code": "CBY",
+        "pinyin": "chenggubei",
+        "abbr": "cgb",
+        "city": "汉中"
+      },
+      {
+        "shortPinyin": "cge",
+        "name": "长葛",
+        "code": "CEF",
+        "pinyin": "changge",
+        "abbr": "cg",
+        "city": "许昌"
+      },
+      {
+        "shortPinyin": "cgh",
+        "name": "查干湖",
+        "code": "VAT",
+        "pinyin": "chaganhu",
+        "abbr": "cgh",
+        "city": "松原"
+      },
+      {
+        "shortPinyin": "che",
+        "name": "册亨",
+        "code": "CHZ",
+        "pinyin": "ceheng",
+        "abbr": "ch",
+        "city": "兴义"
+      },
+      {
+        "shortPinyin": "che",
+        "name": "翠亨",
+        "code": "IHQ",
+        "pinyin": "cuiheng",
+        "abbr": "ch",
+        "city": "中山"
+      },
+      {
+        "shortPinyin": "chk",
+        "name": "草河口",
+        "code": "CKT",
+        "pinyin": "caohekou",
+        "abbr": "chk",
+        "city": "本溪"
+      },
+      {
+        "shortPinyin": "chk",
+        "name": "崔黄口",
+        "code": "CHP",
+        "pinyin": "cuihuangkou",
+        "abbr": "chk",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "cjg",
+        "name": "蔡家沟",
+        "code": "CJT",
+        "pinyin": "caijiagou",
+        "abbr": "cjg",
+        "city": "松原"
+      },
+      {
+        "shortPinyin": "cjh",
+        "name": "成吉思汗",
+        "code": "CJX",
+        "pinyin": "chengjisihan",
+        "abbr": "cjsh",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "cji",
+        "name": "岔江",
+        "code": "CAM",
+        "pinyin": "chajiang",
+        "abbr": "cj",
+        "city": "兴义"
+      },
+      {
+        "shortPinyin": "cjn",
+        "name": "陈江南",
+        "code": "KKQ",
+        "pinyin": "chenjiangnan",
+        "abbr": "cjn",
+        "city": "惠州"
+      },
+      {
+        "shortPinyin": "cjp",
+        "name": "蔡家坡",
+        "code": "CJY",
+        "pinyin": "caijiapo",
+        "abbr": "cjp",
+        "city": "宝鸡"
+      },
+      {
+        "shortPinyin": "cle",
+        "name": "策勒",
+        "code": "CLR",
+        "pinyin": "cele",
+        "abbr": "cl",
+        "city": "和田"
+      },
+      {
+        "shortPinyin": "cle",
+        "name": "昌乐",
+        "code": "CLK",
+        "pinyin": "changle",
+        "abbr": "cl",
+        "city": "潍坊"
+      },
+      {
+        "shortPinyin": "clg",
+        "name": "超梁沟",
+        "code": "CYP",
+        "pinyin": "chaolianggou",
+        "abbr": "clg",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "cln",
+        "name": "茶陵南",
+        "code": "CNG",
+        "pinyin": "chalingnan",
+        "abbr": "cln",
+        "city": "株洲"
+      },
+      {
+        "shortPinyin": "clz",
+        "name": "长岭子",
+        "code": "CLT",
+        "pinyin": "changlingzi",
+        "abbr": "clz",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "cna",
+        "name": "潮南",
+        "code": "CHA",
+        "pinyin": "chaonan",
+        "abbr": "cn",
+        "city": "汕头"
+      },
+      {
+        "shortPinyin": "cni",
+        "name": "长宁",
+        "code": "CNE",
+        "pinyin": "changning",
+        "abbr": "cn",
+        "city": "宜宾"
+      },
+      {
+        "shortPinyin": "cno",
+        "name": "长农",
+        "code": "CNJ",
+        "pinyin": "changnong",
+        "abbr": "cn",
+        "city": "中卫"
+      },
+      {
+        "shortPinyin": "cpi",
+        "name": "常平",
+        "code": "DAQ",
+        "pinyin": "changping",
+        "abbr": "cp",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "cpl",
+        "name": "长坡岭",
+        "code": "CPM",
+        "pinyin": "changpoling",
+        "abbr": "cpl",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "cpn",
+        "name": "常平南",
+        "code": "FPQ",
+        "pinyin": "changpingnan",
+        "abbr": "cpn",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "cpn",
+        "name": "茌平南",
+        "code": "CPK",
+        "pinyin": "chipingnan",
+        "abbr": "cpn",
+        "city": "聊城"
+      },
+      {
+        "shortPinyin": "cqi",
+        "name": "长箐",
+        "code": "CQE",
+        "pinyin": "changqing",
+        "abbr": "cq",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "cqi",
+        "name": "辰清",
+        "code": "CQB",
+        "pinyin": "chenqing",
+        "abbr": "cq",
+        "city": "黑河"
+      },
+      {
+        "shortPinyin": "csh",
+        "name": "长寿",
+        "code": "EFW",
+        "pinyin": "changshou",
+        "abbr": "cs",
+        "city": "长寿"
+      },
+      {
+        "shortPinyin": "csh",
+        "name": "长寿湖",
+        "code": "CSE",
+        "pinyin": "changshouhu",
+        "abbr": "csh",
+        "city": "长寿"
+      },
+      {
+        "shortPinyin": "csh",
+        "name": "蔡山",
+        "code": "CON",
+        "pinyin": "caishan",
+        "abbr": "cs",
+        "city": "黄冈"
+      },
+      {
+        "shortPinyin": "csh",
+        "name": "苍石",
+        "code": "CST",
+        "pinyin": "cangshi",
+        "abbr": "cs",
+        "city": "抚顺"
+      },
+      {
+        "shortPinyin": "csh",
+        "name": "草市",
+        "code": "CSL",
+        "pinyin": "caoshi",
+        "abbr": "cs",
+        "city": "抚顺"
+      },
+      {
+        "shortPinyin": "csh",
+        "name": "磁山",
+        "code": "CSP",
+        "pinyin": "cishan",
+        "abbr": "cs",
+        "city": "邯郸"
+      },
+      {
+        "shortPinyin": "csh",
+        "name": "常山",
+        "code": "CSU",
+        "pinyin": "changshan",
+        "abbr": "cs",
+        "city": "衢州"
+      },
+      {
+        "shortPinyin": "csh",
+        "name": "常熟",
+        "code": "CAU",
+        "pinyin": "changshu",
+        "abbr": "cs",
+        "city": "苏州"
+      },
+      {
+        "shortPinyin": "csh",
+        "name": "楚山",
+        "code": "CSB",
+        "pinyin": "chushan",
+        "abbr": "cs",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "cst",
+        "name": "长山屯",
+        "code": "CVT",
+        "pinyin": "changshantun",
+        "abbr": "cst",
+        "city": "松原"
+      },
+      {
+        "shortPinyin": "cti",
+        "name": "长汀",
+        "code": "CES",
+        "pinyin": "changting",
+        "abbr": "ct",
+        "city": "长汀"
+      },
+      {
+        "shortPinyin": "cwa",
+        "name": "春湾",
+        "code": "CQQ",
+        "pinyin": "chunwan",
+        "abbr": "cw",
+        "city": "阳江"
+      },
+      {
+        "shortPinyin": "cxi",
+        "name": "岑溪",
+        "code": "CNZ",
+        "pinyin": "cenxi",
+        "abbr": "cx",
+        "city": "梧州"
+      },
+      {
+        "shortPinyin": "cxi",
+        "name": "长兴",
+        "code": "CBH",
+        "pinyin": "changxing",
+        "abbr": "cx",
+        "city": "湖州"
+      },
+      {
+        "shortPinyin": "cxi",
+        "name": "磁西",
+        "code": "CRP",
+        "pinyin": "cixi",
+        "abbr": "cx",
+        "city": "邯郸"
+      },
+      {
+        "shortPinyin": "cya",
+        "name": "磁窑",
+        "code": "CYK",
+        "pinyin": "ciyao",
+        "abbr": "cy",
+        "city": "泰安"
+      },
+      {
+        "shortPinyin": "cya",
+        "name": "长阳",
+        "code": "CYN",
+        "pinyin": "changyang",
+        "abbr": "cy",
+        "city": "宜昌"
+      },
+      {
+        "shortPinyin": "cya",
+        "name": "城阳",
+        "code": "CEK",
+        "pinyin": "chengyang",
+        "abbr": "cy",
+        "city": "青岛"
+      },
+      {
+        "shortPinyin": "cyc",
+        "name": "创业村",
+        "code": "CEX",
+        "pinyin": "chuangyecun",
+        "abbr": "cyc",
+        "city": "大庆"
+      },
+      {
+        "shortPinyin": "cyd",
+        "name": "朝阳地",
+        "code": "CDD",
+        "pinyin": "chaoyangdi",
+        "abbr": "cyd",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "cyi",
+        "name": "昌邑",
+        "code": "CRK",
+        "pinyin": "changyi",
+        "abbr": "cy",
+        "city": "潍坊"
+      },
+      {
+        "shortPinyin": "cyn",
+        "name": "朝阳南",
+        "code": "CYD",
+        "pinyin": "chaoyangnan",
+        "abbr": "cyn",
+        "city": "朝阳"
+      },
+      {
+        "shortPinyin": "cyu",
+        "name": "长垣",
+        "code": "CYF",
+        "pinyin": "changyuan",
+        "abbr": "cy",
+        "city": "新乡"
+      },
+      {
+        "shortPinyin": "cyz",
+        "name": "朝阳镇",
+        "code": "CZL",
+        "pinyin": "chaoyangzhen",
+        "abbr": "cyz",
+        "city": "通化"
+      },
+      {
+        "shortPinyin": "czh",
+        "name": "陈庄",
+        "code": "CZY",
+        "pinyin": "chenzhuang",
+        "abbr": "cz",
+        "city": "蒲城"
+      },
+      {
+        "shortPinyin": "czh",
+        "name": "潮州",
+        "code": "CKQ",
+        "pinyin": "chaozhou",
+        "abbr": "cz",
+        "city": "潮州"
+      },
+      {
+        "shortPinyin": "czl",
+        "name": "曹子里",
+        "code": "CFP",
+        "pinyin": "caozili",
+        "abbr": "czl",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "czn",
+        "name": "长治南",
+        "code": "CAF",
+        "pinyin": "changzhinan",
+        "abbr": "czn",
+        "city": "长治"
+      },
+      {
+        "shortPinyin": "czt",
+        "name": "城子坦",
+        "code": "CWT",
+        "pinyin": "chengzitan",
+        "abbr": "czt",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "czw",
+        "name": "车转湾",
+        "code": "CWM",
+        "pinyin": "chezhuanwan",
+        "abbr": "czw",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "cka",
+        "name": "茶卡",
+        "code": "CVO",
+        "pinyin": "chaka",
+        "abbr": "ck",
+        "city": "海西州"
+      },
+      {
+        "shortPinyin": "cpi",
+        "name": "茌平",
+        "code": "CHK",
+        "pinyin": "chiping",
+        "abbr": "cp",
+        "city": "聊城"
+      }
+    ],
+    "S": [
+      {
+        "shortPinyin": "sha",
+        "name": "上海",
+        "code": "SHH",
+        "pinyin": "shanghai",
+        "abbr": "sh",
+        "city": "上海"
+      },
+      {
+        "shortPinyin": "shn",
+        "name": "上海南",
+        "code": "SNH",
+        "pinyin": "shanghainan",
+        "abbr": "shn",
+        "city": "上海"
+      },
+      {
+        "shortPinyin": "shq",
+        "name": "上海虹桥",
+        "code": "AOH",
+        "pinyin": "shanghaihongqiao",
+        "abbr": "shhq",
+        "city": "上海"
+      },
+      {
+        "shortPinyin": "shx",
+        "name": "上海西",
+        "code": "SXH",
+        "pinyin": "shanghaixi",
+        "abbr": "shx",
+        "city": "上海"
+      },
+      {
+        "shortPinyin": "sby",
+        "name": "世博园",
+        "code": "ZWT",
+        "pinyin": "shiboyuan",
+        "abbr": "sby",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "sjb",
+        "name": "石家庄北",
+        "code": "VVP",
+        "pinyin": "shijiazhuangbei",
+        "abbr": "sjzb",
+        "city": "石家庄"
+      },
+      {
+        "shortPinyin": "sjd",
+        "name": "石家庄东",
+        "code": "SXP",
+        "pinyin": "shijiazhuangdong",
+        "abbr": "sjzd",
+        "city": "石家庄"
+      },
+      {
+        "shortPinyin": "sjt",
+        "name": "邵家堂",
+        "code": "SJJ",
+        "pinyin": "shaojiatang",
+        "abbr": "sjt",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "sjz",
+        "name": "石家庄",
+        "code": "SJP",
+        "pinyin": "shijiazhuang",
+        "abbr": "sjz",
+        "city": "石家庄"
+      },
+      {
+        "shortPinyin": "sjz",
+        "name": "施家嘴",
+        "code": "SHM",
+        "pinyin": "shijiazui",
+        "abbr": "sjz",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "sya",
+        "name": "沈阳",
+        "code": "SYT",
+        "pinyin": "shenyang",
+        "abbr": "sy",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "syb",
+        "name": "沈阳北",
+        "code": "SBT",
+        "pinyin": "shenyangbei",
+        "abbr": "syb",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "syd",
+        "name": "沈阳东",
+        "code": "SDT",
+        "pinyin": "shenyangdong",
+        "abbr": "syd",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "syn",
+        "name": "沈阳南",
+        "code": "SOT",
+        "pinyin": "shenyangnan",
+        "abbr": "syn",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "syu",
+        "name": "水源",
+        "code": "OYJ",
+        "pinyin": "shuiyuan",
+        "abbr": "sy",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "syx",
+        "name": "沈阳西",
+        "code": "OOT",
+        "pinyin": "shenyangxi",
+        "abbr": "syx",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "syz",
+        "name": "桑园子",
+        "code": "SAJ",
+        "pinyin": "sangyuanzi",
+        "abbr": "syz",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "sbe",
+        "name": "肃北",
+        "code": "SBJ",
+        "pinyin": "subei",
+        "abbr": "sb",
+        "city": "酒泉"
+      },
+      {
+        "shortPinyin": "scb",
+        "name": "双城北",
+        "code": "SBB",
+        "pinyin": "shuangchengbei",
+        "abbr": "scb",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "scd",
+        "name": "舒城东",
+        "code": "SDU",
+        "pinyin": "shuchengdong",
+        "abbr": "scd",
+        "city": "六安"
+      },
+      {
+        "shortPinyin": "sch",
+        "name": "莎车",
+        "code": "SCR",
+        "pinyin": "shache",
+        "abbr": "sc",
+        "city": "喀什"
+      },
+      {
+        "shortPinyin": "sch",
+        "name": "沙城",
+        "code": "SCP",
+        "pinyin": "shacheng",
+        "abbr": "sc",
+        "city": "张家口"
+      },
+      {
+        "shortPinyin": "scl",
+        "name": "宋城路",
+        "code": "SFF",
+        "pinyin": "songchenglu",
+        "abbr": "scl",
+        "city": "开封"
+      },
+      {
+        "shortPinyin": "scp",
+        "name": "双城堡",
+        "code": "SCB",
+        "pinyin": "shuangchengpu",
+        "abbr": "scp",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "sdo",
+        "name": "邵东",
+        "code": "FIQ",
+        "pinyin": "shaodong",
+        "abbr": "sd",
+        "city": "邵阳"
+      },
+      {
+        "shortPinyin": "sdu",
+        "name": "十渡",
+        "code": "SEP",
+        "pinyin": "shidu",
+        "abbr": "sd",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "sfb",
+        "name": "双峰北",
+        "code": "NFQ",
+        "pinyin": "shuangfengbei",
+        "abbr": "sfb",
+        "city": "娄底"
+      },
+      {
+        "shortPinyin": "sfe",
+        "name": "双丰",
+        "code": "OFB",
+        "pinyin": "shuangfeng",
+        "abbr": "sf",
+        "city": "伊春"
+      },
+      {
+        "shortPinyin": "sfh",
+        "name": "绥芬河",
+        "code": "SFB",
+        "pinyin": "suifenhe",
+        "abbr": "sfh",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "sgd",
+        "name": "韶关东",
+        "code": "SGQ",
+        "pinyin": "shaoguandong",
+        "abbr": "sgd",
+        "city": "韶关"
+      },
+      {
+        "shortPinyin": "sgu",
+        "name": "韶关",
+        "code": "SNQ",
+        "pinyin": "shaoguan",
+        "abbr": "sg",
+        "city": "韶关"
+      },
+      {
+        "shortPinyin": "she",
+        "name": "沙河",
+        "code": "SHP",
+        "pinyin": "shahe",
+        "abbr": "sh",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "she",
+        "name": "商河",
+        "code": "SOK",
+        "pinyin": "shanghe",
+        "abbr": "sh",
+        "city": "济南"
+      },
+      {
+        "shortPinyin": "shg",
+        "name": "山海关",
+        "code": "SHD",
+        "pinyin": "shanhaiguan",
+        "abbr": "shg",
+        "city": "秦皇岛"
+      },
+      {
+        "shortPinyin": "shj",
+        "name": "上海松江",
+        "code": "IMH",
+        "pinyin": "shanghaisongjiang",
+        "abbr": "shsj",
+        "city": "上海"
+      },
+      {
+        "shortPinyin": "shs",
+        "name": "沙河市",
+        "code": "VOP",
+        "pinyin": "shaheshi",
+        "abbr": "shs",
+        "city": "邢台"
+      },
+      {
+        "shortPinyin": "sht",
+        "name": "山河屯",
+        "code": "SHL",
+        "pinyin": "shanhetun",
+        "abbr": "sht",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "shu",
+        "name": "绥化",
+        "code": "SHB",
+        "pinyin": "suihua",
+        "abbr": "sh",
+        "city": "绥化"
+      },
+      {
+        "shortPinyin": "shz",
+        "name": "石河子",
+        "code": "SZR",
+        "pinyin": "shihezi",
+        "abbr": "shz",
+        "city": "石河子"
+      },
+      {
+        "shortPinyin": "sjb",
+        "name": "松江北",
+        "code": "SAH",
+        "pinyin": "songjiangbei",
+        "abbr": "sjb",
+        "city": "上海"
+      },
+      {
+        "shortPinyin": "sjd",
+        "name": "三家店",
+        "code": "ODP",
+        "pinyin": "sanjiadian",
+        "abbr": "sjd",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "sjf",
+        "name": "三间房",
+        "code": "SFX",
+        "pinyin": "sanjianfang",
+        "abbr": "sjf",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "sjh",
+        "name": "水家湖",
+        "code": "SQH",
+        "pinyin": "shuijiahu",
+        "abbr": "sjh",
+        "city": "合肥"
+      },
+      {
+        "shortPinyin": "sji",
+        "name": "孙家",
+        "code": "SUB",
+        "pinyin": "sunjia",
+        "abbr": "sj",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "sji",
+        "name": "沈家",
+        "code": "OJB",
+        "pinyin": "shenjia",
+        "abbr": "sj",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "sjn",
+        "name": "三江南",
+        "code": "SWZ",
+        "pinyin": "sanjiangnan",
+        "abbr": "sjn",
+        "city": "柳州"
+      },
+      {
+        "shortPinyin": "sjn",
+        "name": "石景山南",
+        "code": "SRP",
+        "pinyin": "shijingshannan",
+        "abbr": "sjsn",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "sjt",
+        "name": "苏家屯",
+        "code": "SXT",
+        "pinyin": "sujiatun",
+        "abbr": "sjt",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "sjx",
+        "name": "三江县",
+        "code": "SOZ",
+        "pinyin": "sanjiangxian",
+        "abbr": "sjx",
+        "city": "柳州"
+      },
+      {
+        "shortPinyin": "sjz",
+        "name": "深井子",
+        "code": "SWT",
+        "pinyin": "shenjingzi",
+        "abbr": "sjz",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "sks",
+        "name": "四棵树",
+        "code": "SIR",
+        "pinyin": "sikeshu",
+        "abbr": "sks",
+        "city": "塔城"
+      },
+      {
+        "shortPinyin": "sla",
+        "name": "舒兰",
+        "code": "SLL",
+        "pinyin": "shulan",
+        "abbr": "sl",
+        "city": "吉林"
+      },
+      {
+        "shortPinyin": "slc",
+        "name": "双流机场",
+        "code": "IPW",
+        "pinyin": "shuangliujichang",
+        "abbr": "sljc",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "slh",
+        "name": "双龙湖",
+        "code": "OHB",
+        "pinyin": "shuanglonghu",
+        "abbr": "slh",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "sli",
+        "name": "绥棱",
+        "code": "SIB",
+        "pinyin": "suiling",
+        "abbr": "sl",
+        "city": "绥化"
+      },
+      {
+        "shortPinyin": "sli",
+        "name": "狮岭",
+        "code": "SLA",
+        "pinyin": "shiling",
+        "abbr": "sl",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "sli",
+        "name": "石林",
+        "code": "SLM",
+        "pinyin": "shilin",
+        "abbr": "sl",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "sln",
+        "name": "双龙南",
+        "code": "SNE",
+        "pinyin": "shuanglongnan",
+        "abbr": "sln",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "slu",
+        "name": "商洛",
+        "code": "OLY",
+        "pinyin": "shangluo",
+        "abbr": "sl",
+        "city": "商洛"
+      },
+      {
+        "shortPinyin": "slx",
+        "name": "双流西",
+        "code": "IQW",
+        "pinyin": "shuangliuxi",
+        "abbr": "slx",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "slx",
+        "name": "石林西",
+        "code": "SYM",
+        "pinyin": "shilinxi",
+        "abbr": "slx",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "slz",
+        "name": "胜利镇",
+        "code": "OLB",
+        "pinyin": "shenglizhen",
+        "abbr": "slz",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "smb",
+        "name": "石门县北",
+        "code": "VFQ",
+        "pinyin": "shimenxianbei",
+        "abbr": "smxb",
+        "city": "常德"
+      },
+      {
+        "shortPinyin": "smb",
+        "name": "神木北",
+        "code": "OMV",
+        "pinyin": "shenmubei",
+        "abbr": "smb",
+        "city": "榆林"
+      },
+      {
+        "shortPinyin": "smb",
+        "name": "三明北",
+        "code": "SHS",
+        "pinyin": "sanmingbei",
+        "abbr": "smb",
+        "city": "三明"
+      },
+      {
+        "shortPinyin": "smi",
+        "name": "三明",
+        "code": "SVS",
+        "pinyin": "sanming",
+        "abbr": "sm",
+        "city": "三明"
+      },
+      {
+        "shortPinyin": "smi",
+        "name": "嵩明",
+        "code": "SVM",
+        "pinyin": "songming",
+        "abbr": "sm",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "sml",
+        "name": "树木岭",
+        "code": "FMQ",
+        "pinyin": "shumuling",
+        "abbr": "sml",
+        "city": "长沙"
+      },
+      {
+        "shortPinyin": "smn",
+        "name": "神木南",
+        "code": "OMY",
+        "pinyin": "shenmunan",
+        "abbr": "smn",
+        "city": "榆林"
+      },
+      {
+        "shortPinyin": "smn",
+        "name": "三门峡南",
+        "code": "SCF",
+        "pinyin": "sanmenxianan",
+        "abbr": "smxn",
+        "city": "三门峡"
+      },
+      {
+        "shortPinyin": "smu",
+        "name": "神木",
+        "code": "HMY",
+        "pinyin": "shenmu",
+        "abbr": "sm",
+        "city": "榆林"
+      },
+      {
+        "shortPinyin": "smx",
+        "name": "三门县",
+        "code": "OQH",
+        "pinyin": "sanmenxian",
+        "abbr": "smx",
+        "city": "台州"
+      },
+      {
+        "shortPinyin": "smx",
+        "name": "三门峡西",
+        "code": "SXF",
+        "pinyin": "sanmenxiaxi",
+        "abbr": "smxx",
+        "city": "三门峡"
+      },
+      {
+        "shortPinyin": "smx",
+        "name": "三门峡",
+        "code": "SMF",
+        "pinyin": "sanmenxia",
+        "abbr": "smx",
+        "city": "三门峡"
+      },
+      {
+        "shortPinyin": "sna",
+        "name": "商南",
+        "code": "ONY",
+        "pinyin": "shangnan",
+        "abbr": "sn",
+        "city": "商洛"
+      },
+      {
+        "shortPinyin": "sni",
+        "name": "遂宁",
+        "code": "NIW",
+        "pinyin": "suining",
+        "abbr": "sn",
+        "city": "遂宁"
+      },
+      {
+        "shortPinyin": "sni",
+        "name": "睢宁",
+        "code": "SNU",
+        "pinyin": "suining",
+        "abbr": "sn",
+        "city": "徐州"
+      },
+      {
+        "shortPinyin": "son",
+        "name": "宋",
+        "code": "SOB",
+        "pinyin": "song",
+        "abbr": "son",
+        "city": "绥化"
+      },
+      {
+        "shortPinyin": "spa",
+        "name": "石牌",
+        "code": "SPQ",
+        "pinyin": "shipai",
+        "abbr": "sp",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "spb",
+        "name": "沙坪坝",
+        "code": "CYW",
+        "pinyin": "shapingba",
+        "abbr": "spb",
+        "city": "重庆"
+      },
+      {
+        "shortPinyin": "spd",
+        "name": "四平东",
+        "code": "PPT",
+        "pinyin": "sipingdong",
+        "abbr": "spd",
+        "city": "四平"
+      },
+      {
+        "shortPinyin": "spd",
+        "name": "山坡东",
+        "code": "SBN",
+        "pinyin": "shanpodong",
+        "abbr": "spd",
+        "city": "武汉"
+      },
+      {
+        "shortPinyin": "spi",
+        "name": "四平",
+        "code": "SPT",
+        "pinyin": "siping",
+        "abbr": "sp",
+        "city": "四平"
+      },
+      {
+        "shortPinyin": "sqb",
+        "name": "沈丘北",
+        "code": "SKF",
+        "pinyin": "shenqiubei",
+        "abbr": "sqb",
+        "city": "周口"
+      },
+      {
+        "shortPinyin": "sqi",
+        "name": "宿迁",
+        "code": "SQU",
+        "pinyin": "suqian",
+        "abbr": "sq",
+        "city": "宿迁"
+      },
+      {
+        "shortPinyin": "sqi",
+        "name": "商丘",
+        "code": "SQF",
+        "pinyin": "shangqiu",
+        "abbr": "sq",
+        "city": "商丘"
+      },
+      {
+        "shortPinyin": "sqx",
+        "name": "石泉县",
+        "code": "SXY",
+        "pinyin": "shiquanxian",
+        "abbr": "sqx",
+        "city": "安康"
+      },
+      {
+        "shortPinyin": "sqz",
+        "name": "石桥子",
+        "code": "SQT",
+        "pinyin": "shiqiaozi",
+        "abbr": "sqz",
+        "city": "本溪"
+      },
+      {
+        "shortPinyin": "sra",
+        "name": "上饶",
+        "code": "SRG",
+        "pinyin": "shangrao",
+        "abbr": "sr",
+        "city": "上饶"
+      },
+      {
+        "shortPinyin": "src",
+        "name": "石人城",
+        "code": "SRB",
+        "pinyin": "shirencheng",
+        "abbr": "src",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "ssb",
+        "name": "鄯善北",
+        "code": "SMR",
+        "pinyin": "shanshanbei",
+        "abbr": "ssb",
+        "city": "吐鲁番"
+      },
+      {
+        "shortPinyin": "ssd",
+        "name": "宿松东",
+        "code": "SSU",
+        "pinyin": "susongdong",
+        "abbr": "ssd",
+        "city": "安庆"
+      },
+      {
+        "shortPinyin": "ssd",
+        "name": "蜀山东",
+        "code": "HTH",
+        "pinyin": "shushandong",
+        "abbr": "ssd",
+        "city": "合肥"
+      },
+      {
+        "shortPinyin": "ssh",
+        "name": "韶山",
+        "code": "SSQ",
+        "pinyin": "shaoshan",
+        "abbr": "ss",
+        "city": "湘潭"
+      },
+      {
+        "shortPinyin": "ssh",
+        "name": "神树",
+        "code": "SWB",
+        "pinyin": "shenshu",
+        "abbr": "ss",
+        "city": "伊春"
+      },
+      {
+        "shortPinyin": "ssn",
+        "name": "韶山南",
+        "code": "INQ",
+        "pinyin": "shaoshannan",
+        "abbr": "ssn",
+        "city": "湘潭"
+      },
+      {
+        "shortPinyin": "sso",
+        "name": "宿松",
+        "code": "OAH",
+        "pinyin": "susong",
+        "abbr": "ss",
+        "city": "安庆"
+      },
+      {
+        "shortPinyin": "ssu",
+        "name": "三穗",
+        "code": "QHW",
+        "pinyin": "sansui",
+        "abbr": "ss",
+        "city": "凯里"
+      },
+      {
+        "shortPinyin": "sta",
+        "name": "松桃",
+        "code": "MZQ",
+        "pinyin": "songtao",
+        "abbr": "st",
+        "city": "铜仁"
+      },
+      {
+        "shortPinyin": "stn",
+        "name": "汕头南",
+        "code": "SNA",
+        "pinyin": "shantounan",
+        "abbr": "stn",
+        "city": "汕头"
+      },
+      {
+        "shortPinyin": "sto",
+        "name": "汕头",
+        "code": "OTQ",
+        "pinyin": "shantou",
+        "abbr": "st",
+        "city": "汕头"
+      },
+      {
+        "shortPinyin": "swe",
+        "name": "汕尾",
+        "code": "OGQ",
+        "pinyin": "shanwei",
+        "abbr": "sw",
+        "city": "汕尾"
+      },
+      {
+        "shortPinyin": "swu",
+        "name": "邵武",
+        "code": "SWS",
+        "pinyin": "shaowu",
+        "abbr": "sw",
+        "city": "南平"
+      },
+      {
+        "shortPinyin": "sxb",
+        "name": "绍兴北",
+        "code": "SLH",
+        "pinyin": "shaoxingbei",
+        "abbr": "sxb",
+        "city": "绍兴"
+      },
+      {
+        "shortPinyin": "sxd",
+        "name": "绍兴东",
+        "code": "SSH",
+        "pinyin": "shaoxingdong",
+        "abbr": "sxd",
+        "city": "绍兴"
+      },
+      {
+        "shortPinyin": "sxi",
+        "name": "松溪",
+        "code": "SIS",
+        "pinyin": "songxi",
+        "abbr": "sx",
+        "city": "南平"
+      },
+      {
+        "shortPinyin": "sxi",
+        "name": "涉县",
+        "code": "OEP",
+        "pinyin": "shexian",
+        "abbr": "sx",
+        "city": "邯郸"
+      },
+      {
+        "shortPinyin": "sxi",
+        "name": "莘县",
+        "code": "SNK",
+        "pinyin": "shenxian",
+        "abbr": "sx",
+        "city": "聊城"
+      },
+      {
+        "shortPinyin": "sxi",
+        "name": "绍兴",
+        "code": "SOH",
+        "pinyin": "shaoxing",
+        "abbr": "sx",
+        "city": "绍兴"
+      },
+      {
+        "shortPinyin": "sya",
+        "name": "三亚",
+        "code": "SEQ",
+        "pinyin": "sanya",
+        "abbr": "sy",
+        "city": "三亚"
+      },
+      {
+        "shortPinyin": "sya",
+        "name": "邵阳",
+        "code": "SYQ",
+        "pinyin": "shaoyang",
+        "abbr": "sy",
+        "city": "邵阳"
+      },
+      {
+        "shortPinyin": "sya",
+        "name": "十堰",
+        "code": "SNN",
+        "pinyin": "shiyan",
+        "abbr": "sy",
+        "city": "十堰"
+      },
+      {
+        "shortPinyin": "sya",
+        "name": "双阳",
+        "code": "OYT",
+        "pinyin": "shuangyang",
+        "abbr": "sy",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "syd",
+        "name": "十堰东",
+        "code": "OUN",
+        "pinyin": "shiyandong",
+        "abbr": "syd",
+        "city": "十堰"
+      },
+      {
+        "shortPinyin": "syi",
+        "name": "顺义",
+        "code": "SOP",
+        "pinyin": "shunyi",
+        "abbr": "sy",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "syq",
+        "name": "三元区",
+        "code": "SMS",
+        "pinyin": "sanyuanqu",
+        "abbr": "syq",
+        "city": "三明"
+      },
+      {
+        "shortPinyin": "sys",
+        "name": "双鸭山",
+        "code": "SSB",
+        "pinyin": "shuangyashan",
+        "abbr": "sys",
+        "city": "双鸭山"
+      },
+      {
+        "shortPinyin": "syu",
+        "name": "松原",
+        "code": "VYT",
+        "pinyin": "songyuan",
+        "abbr": "sy",
+        "city": "松原"
+      },
+      {
+        "shortPinyin": "syx",
+        "name": "双鸭山西",
+        "code": "OXB",
+        "pinyin": "shuangyashanxi",
+        "abbr": "sysx",
+        "city": "双鸭山"
+      },
+      {
+        "shortPinyin": "syx",
+        "name": "顺义西",
+        "code": "IKP",
+        "pinyin": "shunyixi",
+        "abbr": "syx",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "szb",
+        "name": "深圳北",
+        "code": "IOQ",
+        "pinyin": "shenzhenbei",
+        "abbr": "szb",
+        "city": "深圳"
+      },
+      {
+        "shortPinyin": "szb",
+        "name": "苏州北",
+        "code": "OHH",
+        "pinyin": "suzhoubei",
+        "abbr": "szb",
+        "city": "苏州"
+      },
+      {
+        "shortPinyin": "szc",
+        "name": "深圳机场",
+        "code": "SCA",
+        "pinyin": "shenzhenjichang",
+        "abbr": "szjc",
+        "city": "深圳"
+      },
+      {
+        "shortPinyin": "szc",
+        "name": "嵊州新昌",
+        "code": "SKU",
+        "pinyin": "shengzhouxinchang",
+        "abbr": "szxc",
+        "city": "绍兴"
+      },
+      {
+        "shortPinyin": "szd",
+        "name": "深圳东",
+        "code": "BJQ",
+        "pinyin": "shenzhendong",
+        "abbr": "szd",
+        "city": "深圳"
+      },
+      {
+        "shortPinyin": "szd",
+        "name": "宿州东",
+        "code": "SRH",
+        "pinyin": "suzhoudong",
+        "abbr": "szd",
+        "city": "宿州"
+      },
+      {
+        "shortPinyin": "szh",
+        "name": "绥中",
+        "code": "SZD",
+        "pinyin": "suizhong",
+        "abbr": "sz",
+        "city": "葫芦岛"
+      },
+      {
+        "shortPinyin": "szh",
+        "name": "朔州",
+        "code": "SUV",
+        "pinyin": "shuozhou",
+        "abbr": "sz",
+        "city": "朔州"
+      },
+      {
+        "shortPinyin": "szh",
+        "name": "深圳",
+        "code": "SZQ",
+        "pinyin": "shenzhen",
+        "abbr": "sz",
+        "city": "深圳"
+      },
+      {
+        "shortPinyin": "szh",
+        "name": "随州",
+        "code": "SZN",
+        "pinyin": "suizhou",
+        "abbr": "sz",
+        "city": "随州"
+      },
+      {
+        "shortPinyin": "szh",
+        "name": "宿州",
+        "code": "OXH",
+        "pinyin": "suzhou",
+        "abbr": "sz",
+        "city": "宿州"
+      },
+      {
+        "shortPinyin": "szh",
+        "name": "苏州",
+        "code": "SZH",
+        "pinyin": "suzhou",
+        "abbr": "sz",
+        "city": "苏州"
+      },
+      {
+        "shortPinyin": "szh",
+        "name": "尚志",
+        "code": "SZB",
+        "pinyin": "shangzhi",
+        "abbr": "sz",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "szn",
+        "name": "随州南",
+        "code": "ONN",
+        "pinyin": "suizhounan",
+        "abbr": "szn",
+        "city": "随州"
+      },
+      {
+        "shortPinyin": "szn",
+        "name": "石嘴山南",
+        "code": "QQJ",
+        "pinyin": "shizuishannan",
+        "abbr": "szsn",
+        "city": "石嘴山"
+      },
+      {
+        "shortPinyin": "szn",
+        "name": "尚志南",
+        "code": "OZB",
+        "pinyin": "shangzhinan",
+        "abbr": "szn",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "szs",
+        "name": "深圳坪山",
+        "code": "IFQ",
+        "pinyin": "shenzhenpingshan",
+        "abbr": "szps",
+        "city": "深圳"
+      },
+      {
+        "shortPinyin": "szx",
+        "name": "石柱县",
+        "code": "OSW",
+        "pinyin": "shizhuxian",
+        "abbr": "szx",
+        "city": "石柱"
+      },
+      {
+        "shortPinyin": "szx",
+        "name": "深圳西",
+        "code": "OSQ",
+        "pinyin": "shenzhenxi",
+        "abbr": "szx",
+        "city": "深圳"
+      },
+      {
+        "shortPinyin": "dht",
+        "name": "大禾塘",
+        "code": "SOQ",
+        "pinyin": "shaodong",
+        "abbr": "dh",
+        "city": "邵东"
+      },
+      {
+        "shortPinyin": "sba",
+        "name": "石坝",
+        "code": "OBJ",
+        "pinyin": "shiba",
+        "abbr": "sb",
+        "city": "吴忠"
+      },
+      {
+        "shortPinyin": "sbc",
+        "name": "上板城",
+        "code": "SBP",
+        "pinyin": "shangbancheng",
+        "abbr": "sbc",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "sbi",
+        "name": "施秉",
+        "code": "AQW",
+        "pinyin": "shibing",
+        "abbr": "sb",
+        "city": "凯里"
+      },
+      {
+        "shortPinyin": "sbn",
+        "name": "上板城南",
+        "code": "OBP",
+        "pinyin": "shangbanchengnan",
+        "abbr": "sbcn",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "scd",
+        "name": "石城东",
+        "code": "SDG",
+        "pinyin": "shichengdong",
+        "abbr": "scd",
+        "city": "赣州"
+      },
+      {
+        "shortPinyin": "sch",
+        "name": "商城",
+        "code": "SWN",
+        "pinyin": "shangcheng",
+        "abbr": "sc",
+        "city": "信阳"
+      },
+      {
+        "shortPinyin": "sch",
+        "name": "舒城",
+        "code": "OCH",
+        "pinyin": "shucheng",
+        "abbr": "sc",
+        "city": "六安"
+      },
+      {
+        "shortPinyin": "sch",
+        "name": "遂昌",
+        "code": "SCU",
+        "pinyin": "suichang",
+        "abbr": "sc",
+        "city": "丽水"
+      },
+      {
+        "shortPinyin": "sch",
+        "name": "顺昌",
+        "code": "SCS",
+        "pinyin": "shunchang",
+        "abbr": "sc",
+        "city": "南平"
+      },
+      {
+        "shortPinyin": "sch",
+        "name": "神池",
+        "code": "SMV",
+        "pinyin": "shenchi",
+        "abbr": "sc",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "sch",
+        "name": "石城",
+        "code": "SCT",
+        "pinyin": "shicheng",
+        "abbr": "sc",
+        "city": "丹东"
+      },
+      {
+        "shortPinyin": "scz",
+        "name": "山城镇",
+        "code": "SCL",
+        "pinyin": "shanchengzhen",
+        "abbr": "scz",
+        "city": "通化"
+      },
+      {
+        "shortPinyin": "sda",
+        "name": "山丹",
+        "code": "SDJ",
+        "pinyin": "shandan",
+        "abbr": "sd",
+        "city": "张掖"
+      },
+      {
+        "shortPinyin": "sdb",
+        "name": "顺德北",
+        "code": "SVA",
+        "pinyin": "shundebei",
+        "abbr": "sdb",
+        "city": "佛山"
+      },
+      {
+        "shortPinyin": "sdc",
+        "name": "山丹马场",
+        "code": "JEJ",
+        "pinyin": "shandanmachang",
+        "abbr": "sdmc",
+        "city": "张掖"
+      },
+      {
+        "shortPinyin": "sde",
+        "name": "绥德",
+        "code": "ODY",
+        "pinyin": "suide",
+        "abbr": "sd",
+        "city": "榆林"
+      },
+      {
+        "shortPinyin": "sde",
+        "name": "顺德",
+        "code": "ORQ",
+        "pinyin": "shunde",
+        "abbr": "sd",
+        "city": "佛山"
+      },
+      {
+        "shortPinyin": "sdu",
+        "name": "商都",
+        "code": "SXC",
+        "pinyin": "shangdu",
+        "abbr": "sd",
+        "city": "乌兰察布"
+      },
+      {
+        "shortPinyin": "sdw",
+        "name": "四道湾",
+        "code": "OUD",
+        "pinyin": "sidaowan",
+        "abbr": "sdw",
+        "city": "赤峰"
+      },
+      {
+        "shortPinyin": "sdx",
+        "name": "三都县",
+        "code": "KKW",
+        "pinyin": "sanduxian",
+        "abbr": "sdx",
+        "city": "都匀"
+      },
+      {
+        "shortPinyin": "sdy",
+        "name": "顺德学院",
+        "code": "OJQ",
+        "pinyin": "shundexueyuan",
+        "abbr": "sdxy",
+        "city": "佛山"
+      },
+      {
+        "shortPinyin": "sfa",
+        "name": "胜芳",
+        "code": "SUP",
+        "pinyin": "shengfang",
+        "abbr": "sf",
+        "city": "廊坊"
+      },
+      {
+        "shortPinyin": "sft",
+        "name": "四方台",
+        "code": "STB",
+        "pinyin": "sifangtai",
+        "abbr": "sft",
+        "city": "绥化"
+      },
+      {
+        "shortPinyin": "sfu",
+        "name": "水富",
+        "code": "OTW",
+        "pinyin": "shuifu",
+        "abbr": "sf",
+        "city": "昭通"
+      },
+      {
+        "shortPinyin": "sgk",
+        "name": "三关口",
+        "code": "OKJ",
+        "pinyin": "sanguankou",
+        "abbr": "sgk",
+        "city": "固原"
+      },
+      {
+        "shortPinyin": "sgl",
+        "name": "桑根达来",
+        "code": "OGC",
+        "pinyin": "sanggendalai",
+        "abbr": "sgdl",
+        "city": "锡林郭勒"
+      },
+      {
+        "shortPinyin": "sgz",
+        "name": "上高镇",
+        "code": "SVK",
+        "pinyin": "shanggaozhen",
+        "abbr": "sgz",
+        "city": "泰安"
+      },
+      {
+        "shortPinyin": "sha",
+        "name": "上杭",
+        "code": "SNS",
+        "pinyin": "shanghang",
+        "abbr": "sh",
+        "city": "龙岩"
+      },
+      {
+        "shortPinyin": "she",
+        "name": "蜀河",
+        "code": "SHY",
+        "pinyin": "shuhe",
+        "abbr": "sh",
+        "city": "安康"
+      },
+      {
+        "shortPinyin": "she",
+        "name": "松河",
+        "code": "SBM",
+        "pinyin": "songhe",
+        "abbr": "sh",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "shk",
+        "name": "沙河口",
+        "code": "SKT",
+        "pinyin": "shahekou",
+        "abbr": "shk",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "shl",
+        "name": "赛汗塔拉",
+        "code": "SHC",
+        "pinyin": "saihantala",
+        "abbr": "shtl",
+        "city": "锡林郭勒"
+      },
+      {
+        "shortPinyin": "sho",
+        "name": "泗洪",
+        "code": "GQH",
+        "pinyin": "sihong",
+        "abbr": "sh",
+        "city": "宿迁"
+      },
+      {
+        "shortPinyin": "shs",
+        "name": "双河市",
+        "code": "OHR",
+        "pinyin": "shuangheshi",
+        "abbr": "shs",
+        "city": "博乐"
+      },
+      {
+        "shortPinyin": "shu",
+        "name": "四会",
+        "code": "AHQ",
+        "pinyin": "sihui",
+        "abbr": "sh",
+        "city": "肇庆"
+      },
+      {
+        "shortPinyin": "shu",
+        "name": "沙湖",
+        "code": "OHJ",
+        "pinyin": "shahu",
+        "abbr": "sh",
+        "city": "石嘴山"
+      },
+      {
+        "shortPinyin": "shx",
+        "name": "三河县",
+        "code": "OXP",
+        "pinyin": "sanhexian",
+        "abbr": "shx",
+        "city": "廊坊"
+      },
+      {
+        "shortPinyin": "shy",
+        "name": "四合永",
+        "code": "OHD",
+        "pinyin": "siheyong",
+        "abbr": "shy",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "shz",
+        "name": "双河镇",
+        "code": "SEL",
+        "pinyin": "shuanghezhen",
+        "abbr": "shz",
+        "city": "吉林"
+      },
+      {
+        "shortPinyin": "shz",
+        "name": "三合庄",
+        "code": "SVP",
+        "pinyin": "sanhezhuang",
+        "abbr": "shz",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "sjb",
+        "name": "畲江北",
+        "code": "SOA",
+        "pinyin": "shejiangbei",
+        "abbr": "sjb",
+        "city": "梅州"
+      },
+      {
+        "shortPinyin": "sjh",
+        "name": "沈家河",
+        "code": "OJJ",
+        "pinyin": "shenjiahe",
+        "abbr": "sjh",
+        "city": "固原"
+      },
+      {
+        "shortPinyin": "sji",
+        "name": "双吉",
+        "code": "SML",
+        "pinyin": "shuangji",
+        "abbr": "sj",
+        "city": "吉林"
+      },
+      {
+        "shortPinyin": "sji",
+        "name": "尚家",
+        "code": "SJB",
+        "pinyin": "shangjia",
+        "abbr": "sj",
+        "city": "绥化"
+      },
+      {
+        "shortPinyin": "sjk",
+        "name": "三江口",
+        "code": "SKD",
+        "pinyin": "sanjiangkou",
+        "abbr": "sjk",
+        "city": "铁岭"
+      },
+      {
+        "shortPinyin": "sjl",
+        "name": "司家岭",
+        "code": "OLK",
+        "pinyin": "sijialing",
+        "abbr": "sjl",
+        "city": "淄博"
+      },
+      {
+        "shortPinyin": "sjx",
+        "name": "沙井西",
+        "code": "SJA",
+        "pinyin": "shajingxi",
+        "abbr": "sjx",
+        "city": "深圳"
+      },
+      {
+        "shortPinyin": "sjz",
+        "name": "松江镇",
+        "code": "OZL",
+        "pinyin": "songjiangzhen",
+        "abbr": "sjz",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "sjz",
+        "name": "三井子",
+        "code": "OJT",
+        "pinyin": "sanjingzi",
+        "abbr": "sjz",
+        "city": "松原"
+      },
+      {
+        "shortPinyin": "sjz",
+        "name": "十家子",
+        "code": "SJD",
+        "pinyin": "shijiazi",
+        "abbr": "sjz",
+        "city": "阜新"
+      },
+      {
+        "shortPinyin": "sjz",
+        "name": "三家寨",
+        "code": "SMM",
+        "pinyin": "sanjiazhai",
+        "abbr": "sjz",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "sld",
+        "name": "什里店",
+        "code": "OMP",
+        "pinyin": "shilidian",
+        "abbr": "sld",
+        "city": "邯郸"
+      },
+      {
+        "shortPinyin": "sle",
+        "name": "疏勒",
+        "code": "SUR",
+        "pinyin": "shule",
+        "abbr": "sl",
+        "city": "喀什"
+      },
+      {
+        "shortPinyin": "slh",
+        "name": "舍力虎",
+        "code": "VLD",
+        "pinyin": "shelihu",
+        "abbr": "slh",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "slh",
+        "name": "疏勒河",
+        "code": "SHJ",
+        "pinyin": "shulehe",
+        "abbr": "slh",
+        "city": "酒泉"
+      },
+      {
+        "shortPinyin": "sli",
+        "name": "双辽",
+        "code": "ZJD",
+        "pinyin": "shuangliao",
+        "abbr": "sl",
+        "city": "四平"
+      },
+      {
+        "shortPinyin": "sli",
+        "name": "石岭",
+        "code": "SOL",
+        "pinyin": "shiling",
+        "abbr": "sl",
+        "city": "四平"
+      },
+      {
+        "shortPinyin": "sli",
+        "name": "石磷",
+        "code": "SPB",
+        "pinyin": "shilin",
+        "abbr": "sl",
+        "city": "鸡西"
+      },
+      {
+        "shortPinyin": "slo",
+        "name": "石龙",
+        "code": "SLQ",
+        "pinyin": "shilong",
+        "abbr": "sl",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "slq",
+        "name": "萨拉齐",
+        "code": "SLC",
+        "pinyin": "salaqi",
+        "abbr": "slq",
+        "city": "包头"
+      },
+      {
+        "shortPinyin": "slu",
+        "name": "索伦",
+        "code": "SNT",
+        "pinyin": "suolun",
+        "abbr": "sl",
+        "city": "兴安"
+      },
+      {
+        "shortPinyin": "slz",
+        "name": "沙岭子",
+        "code": "SLP",
+        "pinyin": "shalingzi",
+        "abbr": "slz",
+        "city": "张家口"
+      },
+      {
+        "shortPinyin": "smx",
+        "name": "石门县",
+        "code": "OMQ",
+        "pinyin": "shimenxian",
+        "abbr": "smx",
+        "city": "常德"
+      },
+      {
+        "shortPinyin": "smx",
+        "name": "神木西",
+        "code": "OUY",
+        "pinyin": "shenmuxi",
+        "abbr": "smx",
+        "city": "榆林"
+      },
+      {
+        "shortPinyin": "sna",
+        "name": "山南",
+        "code": "SAO",
+        "pinyin": "shannan",
+        "abbr": "sna",
+        "city": "山南"
+      },
+      {
+        "shortPinyin": "sni",
+        "name": "肃宁",
+        "code": "SYP",
+        "pinyin": "suning",
+        "abbr": "sn",
+        "city": "沧州"
+      },
+      {
+        "shortPinyin": "snj",
+        "name": "神农架",
+        "code": "SMN",
+        "pinyin": "shennongjia",
+        "abbr": "snj",
+        "city": "神农架"
+      },
+      {
+        "shortPinyin": "snq",
+        "name": "苏尼特左旗",
+        "code": "ONC",
+        "pinyin": "sunitezuoqi",
+        "abbr": "sntzq",
+        "city": "锡林郭勒"
+      },
+      {
+        "shortPinyin": "spa",
+        "name": "双牌",
+        "code": "SBZ",
+        "pinyin": "shuangpai",
+        "abbr": "sp",
+        "city": "永州"
+      },
+      {
+        "shortPinyin": "spi",
+        "name": "遂平",
+        "code": "SON",
+        "pinyin": "suiping",
+        "abbr": "sp",
+        "city": "驻马店"
+      },
+      {
+        "shortPinyin": "spt",
+        "name": "沙坡头",
+        "code": "SFJ",
+        "pinyin": "shapotou",
+        "abbr": "spt",
+        "city": "中卫"
+      },
+      {
+        "shortPinyin": "sqd",
+        "name": "商丘东",
+        "code": "SIF",
+        "pinyin": "shangqiudong",
+        "abbr": "sqd",
+        "city": "商丘"
+      },
+      {
+        "shortPinyin": "sqi",
+        "name": "石桥",
+        "code": "SQE",
+        "pinyin": "shiqiao",
+        "abbr": "sq",
+        "city": "达川"
+      },
+      {
+        "shortPinyin": "sqi",
+        "name": "沈丘",
+        "code": "SQN",
+        "pinyin": "shenqiu",
+        "abbr": "sq",
+        "city": "周口"
+      },
+      {
+        "shortPinyin": "sqn",
+        "name": "商丘南",
+        "code": "SPF",
+        "pinyin": "shangqiunan",
+        "abbr": "sqn",
+        "city": "商丘"
+      },
+      {
+        "shortPinyin": "squ",
+        "name": "水泉",
+        "code": "SID",
+        "pinyin": "shuiquan",
+        "abbr": "sq",
+        "city": "朝阳"
+      },
+      {
+        "shortPinyin": "sri",
+        "name": "桑日",
+        "code": "SRO",
+        "pinyin": "sangri",
+        "abbr": "sri",
+        "city": "桑日"
+      },
+      {
+        "shortPinyin": "ssb",
+        "name": "狮山北",
+        "code": "NSQ",
+        "pinyin": "shishanbei",
+        "abbr": "ssb",
+        "city": "佛山"
+      },
+      {
+        "shortPinyin": "ssb",
+        "name": "三水北",
+        "code": "ARQ",
+        "pinyin": "sanshuibei",
+        "abbr": "ssb",
+        "city": "佛山"
+      },
+      {
+        "shortPinyin": "ssb",
+        "name": "松山湖北",
+        "code": "KUQ",
+        "pinyin": "songshanhubei",
+        "abbr": "sshb",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "ssh",
+        "name": "鄯善",
+        "code": "SSR",
+        "pinyin": "shanshan",
+        "abbr": "ss",
+        "city": "吐鲁番"
+      },
+      {
+        "shortPinyin": "ssh",
+        "name": "狮山",
+        "code": "KSQ",
+        "pinyin": "shishan",
+        "abbr": "ss",
+        "city": "佛山"
+      },
+      {
+        "shortPinyin": "ssh",
+        "name": "松树",
+        "code": "SFT",
+        "pinyin": "songshu",
+        "abbr": "ss",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "ssh",
+        "name": "三水",
+        "code": "SJQ",
+        "pinyin": "sanshui",
+        "abbr": "ss",
+        "city": "佛山"
+      },
+      {
+        "shortPinyin": "ssh",
+        "name": "泗水",
+        "code": "OSK",
+        "pinyin": "sishui",
+        "abbr": "ss",
+        "city": "济宁"
+      },
+      {
+        "shortPinyin": "ssh",
+        "name": "山市",
+        "code": "SQB",
+        "pinyin": "shanshi",
+        "abbr": "ss",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "ssj",
+        "name": "三十家",
+        "code": "SRD",
+        "pinyin": "sanshijia",
+        "abbr": "ssj",
+        "city": "朝阳"
+      },
+      {
+        "shortPinyin": "ssn",
+        "name": "三水南",
+        "code": "RNQ",
+        "pinyin": "sanshuinan",
+        "abbr": "ssn",
+        "city": "佛山"
+      },
+      {
+        "shortPinyin": "ssn",
+        "name": "泗水南",
+        "code": "ONK",
+        "pinyin": "sishuinan",
+        "abbr": "ssn",
+        "city": "济宁"
+      },
+      {
+        "shortPinyin": "ssz",
+        "name": "双水镇",
+        "code": "PQQ",
+        "pinyin": "shuangshuizhen",
+        "abbr": "ssz",
+        "city": "江门"
+      },
+      {
+        "shortPinyin": "sth",
+        "name": "索图罕",
+        "code": "SHX",
+        "pinyin": "suotuhan",
+        "abbr": "sth",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "sti",
+        "name": "石梯",
+        "code": "STE",
+        "pinyin": "shiti",
+        "abbr": "st",
+        "city": "达州"
+      },
+      {
+        "shortPinyin": "stj",
+        "name": "三堂集",
+        "code": "SDH",
+        "pinyin": "santangji",
+        "abbr": "stj",
+        "city": "阜阳"
+      },
+      {
+        "shortPinyin": "sto",
+        "name": "神头",
+        "code": "SEV",
+        "pinyin": "shentou",
+        "abbr": "st",
+        "city": "朔州"
+      },
+      {
+        "shortPinyin": "sto",
+        "name": "石头",
+        "code": "OTB",
+        "pinyin": "shitou",
+        "abbr": "st",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "stu",
+        "name": "沙沱",
+        "code": "SFM",
+        "pinyin": "shatuo",
+        "abbr": "st",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "swa",
+        "name": "上万",
+        "code": "SWP",
+        "pinyin": "shangwan",
+        "abbr": "sw",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "swn",
+        "name": "沙湾南",
+        "code": "SWE",
+        "pinyin": "shawannan",
+        "abbr": "swn",
+        "city": "乐山"
+      },
+      {
+        "shortPinyin": "sws",
+        "name": "沙湾市",
+        "code": "SXR",
+        "pinyin": "shawanshi",
+        "abbr": "sws",
+        "city": "塔城"
+      },
+      {
+        "shortPinyin": "swu",
+        "name": "孙吴",
+        "code": "SKB",
+        "pinyin": "sunwu",
+        "abbr": "sw",
+        "city": "黑河"
+      },
+      {
+        "shortPinyin": "sxb",
+        "name": "歙县北",
+        "code": "NPH",
+        "pinyin": "shexianbei",
+        "abbr": "sxb",
+        "city": "黄山"
+      },
+      {
+        "shortPinyin": "sxi",
+        "name": "遂溪",
+        "code": "SXZ",
+        "pinyin": "suixi",
+        "abbr": "sx",
+        "city": "湛江"
+      },
+      {
+        "shortPinyin": "sxi",
+        "name": "石岘",
+        "code": "SXL",
+        "pinyin": "shixian",
+        "abbr": "sx",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "sxi",
+        "name": "寿县",
+        "code": "SOU",
+        "pinyin": "shouxian",
+        "abbr": "sx",
+        "city": "淮南"
+      },
+      {
+        "shortPinyin": "sxi",
+        "name": "沙县",
+        "code": "SAS",
+        "pinyin": "shaxian",
+        "abbr": "sx",
+        "city": "沙县"
+      },
+      {
+        "shortPinyin": "sxi",
+        "name": "始兴",
+        "code": "IPQ",
+        "pinyin": "shixing",
+        "abbr": "sx",
+        "city": "韶关"
+      },
+      {
+        "shortPinyin": "sxi",
+        "name": "随县",
+        "code": "OVN",
+        "pinyin": "suixian",
+        "abbr": "sx",
+        "city": "随州"
+      },
+      {
+        "shortPinyin": "sxi",
+        "name": "歙县",
+        "code": "OVH",
+        "pinyin": "shexian",
+        "abbr": "sx",
+        "city": "黄山"
+      },
+      {
+        "shortPinyin": "sxi",
+        "name": "泗县",
+        "code": "GPH",
+        "pinyin": "sixian",
+        "abbr": "sx",
+        "city": "宿州"
+      },
+      {
+        "shortPinyin": "sxi",
+        "name": "水茜",
+        "code": "SSS",
+        "pinyin": "shuixi",
+        "abbr": "sx",
+        "city": "三明"
+      },
+      {
+        "shortPinyin": "sxp",
+        "name": "上西铺",
+        "code": "SXM",
+        "pinyin": "shangxipu",
+        "abbr": "sxp",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "sxz",
+        "name": "石峡子",
+        "code": "SXJ",
+        "pinyin": "shixiazi",
+        "abbr": "sxz",
+        "city": "武威"
+      },
+      {
+        "shortPinyin": "sya",
+        "name": "寿阳",
+        "code": "SYV",
+        "pinyin": "shouyang",
+        "abbr": "sy",
+        "city": "晋中"
+      },
+      {
+        "shortPinyin": "sya",
+        "name": "泗阳",
+        "code": "MPH",
+        "pinyin": "siyang",
+        "abbr": "sy",
+        "city": "宿迁"
+      },
+      {
+        "shortPinyin": "sya",
+        "name": "沭阳",
+        "code": "FMH",
+        "pinyin": "shuyang",
+        "abbr": "sy",
+        "city": "宿迁"
+      },
+      {
+        "shortPinyin": "sya",
+        "name": "松阳",
+        "code": "SUU",
+        "pinyin": "songyang",
+        "abbr": "sy",
+        "city": "丽水"
+      },
+      {
+        "shortPinyin": "sya",
+        "name": "水洋",
+        "code": "OYP",
+        "pinyin": "shuiyang",
+        "abbr": "sy",
+        "city": "长治"
+      },
+      {
+        "shortPinyin": "sya",
+        "name": "三阳",
+        "code": "SYU",
+        "pinyin": "sanyang",
+        "abbr": "sy",
+        "city": "黄山"
+      },
+      {
+        "shortPinyin": "sya",
+        "name": "射阳",
+        "code": "SAU",
+        "pinyin": "sheyang",
+        "abbr": "sy",
+        "city": "盐城"
+      },
+      {
+        "shortPinyin": "sya",
+        "name": "双洋",
+        "code": "SQS",
+        "pinyin": "shuangyang",
+        "abbr": "sy",
+        "city": "龙岩"
+      },
+      {
+        "shortPinyin": "sya",
+        "name": "绥阳",
+        "code": "SYB",
+        "pinyin": "suiyang",
+        "abbr": "sy",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "syb",
+        "name": "松原北",
+        "code": "OCT",
+        "pinyin": "songyuanbei",
+        "abbr": "syb",
+        "city": "松原"
+      },
+      {
+        "shortPinyin": "syb",
+        "name": "邵阳北",
+        "code": "OVQ",
+        "pinyin": "shaoyangbei",
+        "abbr": "syb",
+        "city": "邵阳"
+      },
+      {
+        "shortPinyin": "syc",
+        "name": "三阳川",
+        "code": "SYJ",
+        "pinyin": "sanyangchuan",
+        "abbr": "syc",
+        "city": "天水"
+      },
+      {
+        "shortPinyin": "syd",
+        "name": "上腰墩",
+        "code": "SPJ",
+        "pinyin": "shangyaodun",
+        "abbr": "syd",
+        "city": "武威"
+      },
+      {
+        "shortPinyin": "syi",
+        "name": "三营",
+        "code": "OEJ",
+        "pinyin": "sanying",
+        "abbr": "sy",
+        "city": "固原"
+      },
+      {
+        "shortPinyin": "syi",
+        "name": "山阴",
+        "code": "SNV",
+        "pinyin": "shanyin",
+        "abbr": "sy",
+        "city": "朔州"
+      },
+      {
+        "shortPinyin": "syn",
+        "name": "上虞南",
+        "code": "SVU",
+        "pinyin": "shangyunan",
+        "abbr": "syn",
+        "city": "绍兴"
+      },
+      {
+        "shortPinyin": "syp",
+        "name": "三源浦",
+        "code": "SYL",
+        "pinyin": "sanyuanpu",
+        "abbr": "syp",
+        "city": "通化"
+      },
+      {
+        "shortPinyin": "syu",
+        "name": "上园",
+        "code": "SUD",
+        "pinyin": "shangyuan",
+        "abbr": "sy",
+        "city": "朝阳"
+      },
+      {
+        "shortPinyin": "syu",
+        "name": "三原",
+        "code": "SAY",
+        "pinyin": "sanyuan",
+        "abbr": "sy",
+        "city": "咸阳"
+      },
+      {
+        "shortPinyin": "syu",
+        "name": "上虞",
+        "code": "BDH",
+        "pinyin": "shangyu",
+        "abbr": "sy",
+        "city": "绍兴"
+      },
+      {
+        "shortPinyin": "syx",
+        "name": "邵阳西",
+        "code": "SXA",
+        "pinyin": "shaoyangxi",
+        "abbr": "syx",
+        "city": "邵阳"
+      },
+      {
+        "shortPinyin": "syx",
+        "name": "沙洋西",
+        "code": "OJN",
+        "pinyin": "shayangxi",
+        "abbr": "syx",
+        "city": "荆门"
+      },
+      {
+        "shortPinyin": "szb",
+        "name": "绥中北",
+        "code": "SND",
+        "pinyin": "suizhongbei",
+        "abbr": "szb",
+        "city": "葫芦岛"
+      },
+      {
+        "shortPinyin": "szb",
+        "name": "深圳机场北",
+        "code": "SBA",
+        "pinyin": "shenzhenjichangbei",
+        "abbr": "szjcb",
+        "city": "深圳"
+      },
+      {
+        "shortPinyin": "szb",
+        "name": "嵊州北",
+        "code": "SEU",
+        "pinyin": "shengzhoubei",
+        "abbr": "szb",
+        "city": "绍兴"
+      },
+      {
+        "shortPinyin": "szd",
+        "name": "三灶东",
+        "code": "SAA",
+        "pinyin": "sanzaodong",
+        "abbr": "szd",
+        "city": "珠海"
+      },
+      {
+        "shortPinyin": "sze",
+        "name": "盛泽",
+        "code": "SJU",
+        "pinyin": "shengze",
+        "abbr": "sz",
+        "city": "苏州"
+      },
+      {
+        "shortPinyin": "szh",
+        "name": "孙镇",
+        "code": "OZY",
+        "pinyin": "sunzhen",
+        "abbr": "sz",
+        "city": "渭南"
+      },
+      {
+        "shortPinyin": "szh",
+        "name": "神州",
+        "code": "SRQ",
+        "pinyin": "shenzhou",
+        "abbr": "sz",
+        "city": "万宁"
+      },
+      {
+        "shortPinyin": "szh",
+        "name": "桑植",
+        "code": "SZA",
+        "pinyin": "sangzhi",
+        "abbr": "sz",
+        "city": "张家界"
+      },
+      {
+        "shortPinyin": "szh",
+        "name": "深州",
+        "code": "OZP",
+        "pinyin": "shenzhou",
+        "abbr": "sz",
+        "city": "衡水"
+      },
+      {
+        "shortPinyin": "szh",
+        "name": "肃州",
+        "code": "SRJ",
+        "pinyin": "suzhou",
+        "abbr": "sz",
+        "city": "酒泉"
+      },
+      {
+        "shortPinyin": "szm",
+        "name": "十字门",
+        "code": "SIA",
+        "pinyin": "shizimen",
+        "abbr": "szm",
+        "city": "珠海"
+      },
+      {
+        "shortPinyin": "szn",
+        "name": "苏州南",
+        "code": "SMU",
+        "pinyin": "suzhounan",
+        "abbr": "szn",
+        "city": "苏州"
+      },
+      {
+        "shortPinyin": "szo",
+        "name": "师宗",
+        "code": "SEM",
+        "pinyin": "shizong",
+        "abbr": "sz",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "szq",
+        "name": "苏州园区",
+        "code": "KAH",
+        "pinyin": "suzhouyuanqu",
+        "abbr": "szyq",
+        "city": "苏州"
+      },
+      {
+        "shortPinyin": "szq",
+        "name": "苏州新区",
+        "code": "ITH",
+        "pinyin": "suzhouxinqu",
+        "abbr": "szxq",
+        "city": "苏州"
+      },
+      {
+        "shortPinyin": "szs",
+        "name": "石嘴山",
+        "code": "OZJ",
+        "pinyin": "shizuishan",
+        "abbr": "szs",
+        "city": "石嘴山"
+      },
+      {
+        "shortPinyin": "szx",
+        "name": "松滋西",
+        "code": "SIN",
+        "pinyin": "songzixi",
+        "abbr": "szx",
+        "city": "荆州"
+      },
+      {
+        "shortPinyin": "sch",
+        "name": "三岔湖",
+        "code": "SCE",
+        "pinyin": "sanchahu",
+        "abbr": "sch",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "sfx",
+        "name": "什邡西",
+        "code": "SFE",
+        "pinyin": "shifangxi",
+        "abbr": "sfx",
+        "city": "德阳"
+      },
+      {
+        "shortPinyin": "slb",
+        "name": "商洛北",
+        "code": "SBY",
+        "pinyin": "shangluobei",
+        "abbr": "slb",
+        "city": "商洛"
+      },
+      {
+        "shortPinyin": "slx",
+        "name": "石楼县",
+        "code": "STV",
+        "pinyin": "shilouxian",
+        "abbr": "slx",
+        "city": "吕梁"
+      },
+      {
+        "shortPinyin": "spa",
+        "name": "松潘",
+        "code": "SOE",
+        "pinyin": "songpan",
+        "abbr": "sp",
+        "city": "阿坝藏族羌族自治州"
+      },
+      {
+        "shortPinyin": "stu",
+        "name": "水土",
+        "code": "SUE",
+        "pinyin": "shuitu",
+        "abbr": "st",
+        "city": "重庆"
+      },
+      {
+        "shortPinyin": "sxd",
+        "name": "三星堆",
+        "code": "SDE",
+        "pinyin": "sanxingdui",
+        "abbr": "sxd",
+        "city": "德阳"
+      },
+      {
+        "shortPinyin": "syn",
+        "name": "山阴南",
+        "code": "OYV",
+        "pinyin": "shanyinnan",
+        "abbr": "syn",
+        "city": "朔州"
+      },
+      {
+        "shortPinyin": "syx",
+        "name": "三元西",
+        "code": "SRS",
+        "pinyin": "sanyuanxi",
+        "abbr": "syx",
+        "city": "三明"
+      },
+      {
+        "shortPinyin": "szd",
+        "name": "朔州东",
+        "code": "OZV",
+        "pinyin": "shuozhoudong",
+        "abbr": "szd",
+        "city": "朔州"
+      }
+    ],
+    "T": [
+      {
+        "shortPinyin": "tjb",
+        "name": "天津北",
+        "code": "TBP",
+        "pinyin": "tianjinbei",
+        "abbr": "tjb",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "tji",
+        "name": "天津",
+        "code": "TJP",
+        "pinyin": "tianjin",
+        "abbr": "tj",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "tjn",
+        "name": "天津南",
+        "code": "TIP",
+        "pinyin": "tianjinnan",
+        "abbr": "tjn",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "tjx",
+        "name": "天津西",
+        "code": "TXP",
+        "pinyin": "tianjinxi",
+        "abbr": "tjx",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "tyd",
+        "name": "太原东",
+        "code": "TDV",
+        "pinyin": "taiyuandong",
+        "abbr": "tyd",
+        "city": "太原"
+      },
+      {
+        "shortPinyin": "tyn",
+        "name": "太原南",
+        "code": "TNV",
+        "pinyin": "taiyuannan",
+        "abbr": "tyn",
+        "city": "太原"
+      },
+      {
+        "shortPinyin": "tyu",
+        "name": "太原",
+        "code": "TYV",
+        "pinyin": "taiyuan",
+        "abbr": "ty",
+        "city": "太原"
+      },
+      {
+        "shortPinyin": "tan",
+        "name": "泰安",
+        "code": "TMK",
+        "pinyin": "taian",
+        "abbr": "ta",
+        "city": "泰安"
+      },
+      {
+        "shortPinyin": "tbe",
+        "name": "通北",
+        "code": "TBB",
+        "pinyin": "tongbei",
+        "abbr": "tb",
+        "city": "黑河"
+      },
+      {
+        "shortPinyin": "tcd",
+        "name": "铜川东",
+        "code": "TCY",
+        "pinyin": "tongchuandong",
+        "abbr": "tcd",
+        "city": "铜川"
+      },
+      {
+        "shortPinyin": "tch",
+        "name": "塔城",
+        "code": "TZR",
+        "pinyin": "tacheng",
+        "abbr": "tc",
+        "city": "塔城"
+      },
+      {
+        "shortPinyin": "tch",
+        "name": "汤池",
+        "code": "TCX",
+        "pinyin": "tangchi",
+        "abbr": "tc",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "tda",
+        "name": "通道",
+        "code": "TRQ",
+        "pinyin": "tongdao",
+        "abbr": "td",
+        "city": "怀化"
+      },
+      {
+        "shortPinyin": "tdd",
+        "name": "土地堂东",
+        "code": "TTN",
+        "pinyin": "tuditangdong",
+        "abbr": "tdtd",
+        "city": "武汉"
+      },
+      {
+        "shortPinyin": "teq",
+        "name": "塔尔气",
+        "code": "TVX",
+        "pinyin": "taerqi",
+        "abbr": "teq",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "tgu",
+        "name": "潼关",
+        "code": "TGY",
+        "pinyin": "tongguan",
+        "abbr": "tg",
+        "city": "渭南"
+      },
+      {
+        "shortPinyin": "tgu",
+        "name": "太谷",
+        "code": "TGV",
+        "pinyin": "taigu",
+        "abbr": "tg",
+        "city": "晋中"
+      },
+      {
+        "shortPinyin": "tgu",
+        "name": "塘沽",
+        "code": "TGP",
+        "pinyin": "tanggu",
+        "abbr": "tg",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "tha",
+        "name": "吐哈",
+        "code": "THR",
+        "pinyin": "tuha",
+        "abbr": "th",
+        "city": "吐鲁番"
+      },
+      {
+        "shortPinyin": "tha",
+        "name": "通海",
+        "code": "TAM",
+        "pinyin": "tonghai",
+        "abbr": "th",
+        "city": "玉溪"
+      },
+      {
+        "shortPinyin": "tha",
+        "name": "塔哈",
+        "code": "THX",
+        "pinyin": "taha",
+        "abbr": "th",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "thc",
+        "name": "天河机场",
+        "code": "TJN",
+        "pinyin": "tianhejichang",
+        "abbr": "thjc",
+        "city": "武汉"
+      },
+      {
+        "shortPinyin": "the",
+        "name": "泰和",
+        "code": "THG",
+        "pinyin": "taihe",
+        "abbr": "th",
+        "city": "吉安"
+      },
+      {
+        "shortPinyin": "the",
+        "name": "塔河",
+        "code": "TXX",
+        "pinyin": "tahe",
+        "abbr": "th",
+        "city": "加格达奇"
+      },
+      {
+        "shortPinyin": "thj",
+        "name": "天河街",
+        "code": "TEN",
+        "pinyin": "tianhejie",
+        "abbr": "thj",
+        "city": "武汉"
+      },
+      {
+        "shortPinyin": "thn",
+        "name": "太湖南",
+        "code": "TAU",
+        "pinyin": "taihunan",
+        "abbr": "thn",
+        "city": "安庆"
+      },
+      {
+        "shortPinyin": "tht",
+        "name": "天河潭",
+        "code": "TTE",
+        "pinyin": "tianhetan",
+        "abbr": "tht",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "thu",
+        "name": "通化",
+        "code": "THL",
+        "pinyin": "tonghua",
+        "abbr": "th",
+        "city": "通化"
+      },
+      {
+        "shortPinyin": "thu",
+        "name": "太湖",
+        "code": "TKH",
+        "pinyin": "taihu",
+        "abbr": "th",
+        "city": "安庆"
+      },
+      {
+        "shortPinyin": "tji",
+        "name": "同江",
+        "code": "TJB",
+        "pinyin": "tongjiang",
+        "abbr": "tj",
+        "city": "佳木斯"
+      },
+      {
+        "shortPinyin": "tjt",
+        "name": "陶家屯",
+        "code": "TOT",
+        "pinyin": "taojiatun",
+        "abbr": "tjt",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "tkd",
+        "name": "托克托东",
+        "code": "TVC",
+        "pinyin": "tuoketuodong",
+        "abbr": "tktd",
+        "city": "呼和浩特"
+      },
+      {
+        "shortPinyin": "tla",
+        "name": "泰来",
+        "code": "TLX",
+        "pinyin": "tailai",
+        "abbr": "tl",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "tlb",
+        "name": "吐鲁番北",
+        "code": "TAR",
+        "pinyin": "tulufanbei",
+        "abbr": "tlfb",
+        "city": "吐鲁番"
+      },
+      {
+        "shortPinyin": "tlf",
+        "name": "吐鲁番",
+        "code": "TFR",
+        "pinyin": "tulufan",
+        "abbr": "tlf",
+        "city": "吐鲁番"
+      },
+      {
+        "shortPinyin": "tli",
+        "name": "通辽",
+        "code": "TLD",
+        "pinyin": "tongliao",
+        "abbr": "tl",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "tli",
+        "name": "铜陵",
+        "code": "TJH",
+        "pinyin": "tongling",
+        "abbr": "tl",
+        "city": "铜陵"
+      },
+      {
+        "shortPinyin": "tli",
+        "name": "铁岭",
+        "code": "TLT",
+        "pinyin": "tieling",
+        "abbr": "tl",
+        "city": "铁岭"
+      },
+      {
+        "shortPinyin": "tli",
+        "name": "铁力",
+        "code": "TLB",
+        "pinyin": "tieli",
+        "abbr": "tl",
+        "city": "伊春"
+      },
+      {
+        "shortPinyin": "tlu",
+        "name": "桐庐",
+        "code": "TLU",
+        "pinyin": "tonglu",
+        "abbr": "tl",
+        "city": "杭州"
+      },
+      {
+        "shortPinyin": "tlx",
+        "name": "铁岭西",
+        "code": "PXT",
+        "pinyin": "tielingxi",
+        "abbr": "tlx",
+        "city": "铁岭"
+      },
+      {
+        "shortPinyin": "tlz",
+        "name": "陶赖昭",
+        "code": "TPT",
+        "pinyin": "taolaizhao",
+        "abbr": "tlz",
+        "city": "松原"
+      },
+      {
+        "shortPinyin": "tmb",
+        "name": "图们北",
+        "code": "QSL",
+        "pinyin": "tumenbei",
+        "abbr": "tmb",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "tme",
+        "name": "图们",
+        "code": "TML",
+        "pinyin": "tumen",
+        "abbr": "tm",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "tmg",
+        "name": "头门港",
+        "code": "TMU",
+        "pinyin": "toumengang",
+        "abbr": "tmg",
+        "city": "台州"
+      },
+      {
+        "shortPinyin": "tmk",
+        "name": "图木舒克",
+        "code": "TMR",
+        "pinyin": "tumushuke",
+        "abbr": "tmsk",
+        "city": "喀什"
+      },
+      {
+        "shortPinyin": "tmn",
+        "name": "天门南",
+        "code": "TNN",
+        "pinyin": "tianmennan",
+        "abbr": "tmn",
+        "city": "天门"
+      },
+      {
+        "shortPinyin": "tna",
+        "name": "潼南",
+        "code": "TVW",
+        "pinyin": "tongnan",
+        "abbr": "tn",
+        "city": "潼南"
+      },
+      {
+        "shortPinyin": "tni",
+        "name": "泰宁",
+        "code": "TNS",
+        "pinyin": "taining",
+        "abbr": "tn",
+        "city": "三明"
+      },
+      {
+        "shortPinyin": "tre",
+        "name": "铜仁",
+        "code": "RDQ",
+        "pinyin": "tongren",
+        "abbr": "tr",
+        "city": "铜仁"
+      },
+      {
+        "shortPinyin": "trn",
+        "name": "铜仁南",
+        "code": "TNW",
+        "pinyin": "tongrennan",
+        "abbr": "trn",
+        "city": "铜仁"
+      },
+      {
+        "shortPinyin": "tsb",
+        "name": "唐山北",
+        "code": "FUP",
+        "pinyin": "tangshanbei",
+        "abbr": "tsb",
+        "city": "唐山"
+      },
+      {
+        "shortPinyin": "tsf",
+        "name": "田师府",
+        "code": "TFT",
+        "pinyin": "tianshifu",
+        "abbr": "tsf",
+        "city": "本溪"
+      },
+      {
+        "shortPinyin": "tsh",
+        "name": "泰山",
+        "code": "TAK",
+        "pinyin": "taishan",
+        "abbr": "ts",
+        "city": "泰安"
+      },
+      {
+        "shortPinyin": "tsh",
+        "name": "唐山",
+        "code": "TSP",
+        "pinyin": "tangshan",
+        "abbr": "ts",
+        "city": "唐山"
+      },
+      {
+        "shortPinyin": "tsh",
+        "name": "天水",
+        "code": "TSJ",
+        "pinyin": "tianshui",
+        "abbr": "ts",
+        "city": "天水"
+      },
+      {
+        "shortPinyin": "tsn",
+        "name": "天水南",
+        "code": "TIJ",
+        "pinyin": "tianshuinan",
+        "abbr": "tsn",
+        "city": "天水"
+      },
+      {
+        "shortPinyin": "twh",
+        "name": "汤旺河",
+        "code": "THB",
+        "pinyin": "tangwanghe",
+        "abbr": "twh",
+        "city": "伊春"
+      },
+      {
+        "shortPinyin": "txh",
+        "name": "汤逊湖",
+        "code": "THN",
+        "pinyin": "tangxunhu",
+        "abbr": "txh",
+        "city": "武汉"
+      },
+      {
+        "shortPinyin": "txi",
+        "name": "土溪",
+        "code": "TSW",
+        "pinyin": "tuxi",
+        "abbr": "tx",
+        "city": "达州"
+      },
+      {
+        "shortPinyin": "typ",
+        "name": "通远堡",
+        "code": "TYT",
+        "pinyin": "tongyuanpu",
+        "abbr": "typ",
+        "city": "丹东"
+      },
+      {
+        "shortPinyin": "tys",
+        "name": "太阳升",
+        "code": "TQT",
+        "pinyin": "taiyangsheng",
+        "abbr": "tys",
+        "city": "大庆"
+      },
+      {
+        "shortPinyin": "tyu",
+        "name": "通榆",
+        "code": "KTT",
+        "pinyin": "tongyu",
+        "abbr": "ty",
+        "city": "白城"
+      },
+      {
+        "shortPinyin": "tzb",
+        "name": "桐梓北",
+        "code": "TBE",
+        "pinyin": "tongzibei",
+        "abbr": "tzb",
+        "city": "遵义"
+      },
+      {
+        "shortPinyin": "tzc",
+        "name": "太子城",
+        "code": "IZP",
+        "pinyin": "taizicheng",
+        "abbr": "tzc",
+        "city": "张家口"
+      },
+      {
+        "shortPinyin": "tzd",
+        "name": "滕州东",
+        "code": "TEK",
+        "pinyin": "tengzhoudong",
+        "abbr": "tzd",
+        "city": "枣庄"
+      },
+      {
+        "shortPinyin": "tzd",
+        "name": "桐梓东",
+        "code": "TDE",
+        "pinyin": "tongzidong",
+        "abbr": "tzd",
+        "city": "遵义"
+      },
+      {
+        "shortPinyin": "tzh",
+        "name": "台州",
+        "code": "TEU",
+        "pinyin": "taizhou",
+        "abbr": "tz",
+        "city": "台州"
+      },
+      {
+        "shortPinyin": "tzh",
+        "name": "泰州",
+        "code": "UTH",
+        "pinyin": "taizhou",
+        "abbr": "tz",
+        "city": "泰州"
+      },
+      {
+        "shortPinyin": "tzh",
+        "name": "通州",
+        "code": "TOP",
+        "pinyin": "tongzhou",
+        "abbr": "tz",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "tzx",
+        "name": "台州西",
+        "code": "TZH",
+        "pinyin": "taizhouxi",
+        "abbr": "tzx",
+        "city": "台州"
+      },
+      {
+        "shortPinyin": "tzx",
+        "name": "通州西",
+        "code": "TAP",
+        "pinyin": "tongzhouxi",
+        "abbr": "tzx",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "tan",
+        "name": "台安",
+        "code": "TID",
+        "pinyin": "taian",
+        "abbr": "ta",
+        "city": "鞍山"
+      },
+      {
+        "shortPinyin": "tan",
+        "name": "台安南",
+        "code": "TAD",
+        "pinyin": "taiannan",
+        "abbr": "tan",
+        "city": "鞍山"
+      },
+      {
+        "shortPinyin": "tay",
+        "name": "通安驿",
+        "code": "TAJ",
+        "pinyin": "tonganyi",
+        "abbr": "tay",
+        "city": "定西"
+      },
+      {
+        "shortPinyin": "tba",
+        "name": "桐柏",
+        "code": "TBF",
+        "pinyin": "tongbai",
+        "abbr": "tb",
+        "city": "南阳"
+      },
+      {
+        "shortPinyin": "tca",
+        "name": "太仓",
+        "code": "TCU",
+        "pinyin": "taicang",
+        "abbr": "tc",
+        "city": "苏州"
+      },
+      {
+        "shortPinyin": "tcb",
+        "name": "桃村北",
+        "code": "TOK",
+        "pinyin": "taocunbei",
+        "abbr": "tcb",
+        "city": "烟台"
+      },
+      {
+        "shortPinyin": "tcd",
+        "name": "桐城东",
+        "code": "TOU",
+        "pinyin": "tongchengdong",
+        "abbr": "tcd",
+        "city": "安庆"
+      },
+      {
+        "shortPinyin": "tcg",
+        "name": "铁厂沟",
+        "code": "TJR",
+        "pinyin": "tiechanggou",
+        "abbr": "tcg",
+        "city": "塔城"
+      },
+      {
+        "shortPinyin": "tch",
+        "name": "铁厂",
+        "code": "TCL",
+        "pinyin": "tiechang",
+        "abbr": "tc",
+        "city": "通化"
+      },
+      {
+        "shortPinyin": "tch",
+        "name": "郯城",
+        "code": "TZK",
+        "pinyin": "tancheng",
+        "abbr": "tc",
+        "city": "临沂"
+      },
+      {
+        "shortPinyin": "tch",
+        "name": "桐城",
+        "code": "TTH",
+        "pinyin": "tongcheng",
+        "abbr": "tc",
+        "city": "安庆"
+      },
+      {
+        "shortPinyin": "tcn",
+        "name": "桐城南",
+        "code": "TUU",
+        "pinyin": "tongchengnan",
+        "abbr": "tcn",
+        "city": "安庆"
+      },
+      {
+        "shortPinyin": "tcn",
+        "name": "太仓南",
+        "code": "TNU",
+        "pinyin": "taicangnan",
+        "abbr": "tcn",
+        "city": "苏州"
+      },
+      {
+        "shortPinyin": "tcs",
+        "name": "铁刹山",
+        "code": "PST",
+        "pinyin": "tiechashan",
+        "abbr": "tcs",
+        "city": "本溪"
+      },
+      {
+        "shortPinyin": "tcu",
+        "name": "桃村",
+        "code": "TCK",
+        "pinyin": "taocun",
+        "abbr": "tc",
+        "city": "烟台"
+      },
+      {
+        "shortPinyin": "tdb",
+        "name": "田东北",
+        "code": "TBZ",
+        "pinyin": "tiandongbei",
+        "abbr": "tdb",
+        "city": "百色"
+      },
+      {
+        "shortPinyin": "tdo",
+        "name": "田东",
+        "code": "TDZ",
+        "pinyin": "tiandong",
+        "abbr": "td",
+        "city": "百色"
+      },
+      {
+        "shortPinyin": "tga",
+        "name": "天岗",
+        "code": "TGL",
+        "pinyin": "tiangang",
+        "abbr": "tg",
+        "city": "吉林"
+      },
+      {
+        "shortPinyin": "tgd",
+        "name": "太谷东",
+        "code": "TEV",
+        "pinyin": "taigudong",
+        "abbr": "tgd",
+        "city": "晋中"
+      },
+      {
+        "shortPinyin": "tgk",
+        "name": "铁干里克",
+        "code": "VAR",
+        "pinyin": "tieganlike",
+        "abbr": "tglk",
+        "city": "库尔勒"
+      },
+      {
+        "shortPinyin": "tgl",
+        "name": "土贵乌拉",
+        "code": "TGC",
+        "pinyin": "tuguiwula",
+        "abbr": "tgwl",
+        "city": "乌兰察布"
+      },
+      {
+        "shortPinyin": "tgx",
+        "name": "太谷西",
+        "code": "TIV",
+        "pinyin": "taiguxi",
+        "abbr": "tgx",
+        "city": "晋中"
+      },
+      {
+        "shortPinyin": "thb",
+        "name": "太和北",
+        "code": "JYN",
+        "pinyin": "taihebei",
+        "abbr": "thb",
+        "city": "阜阳"
+      },
+      {
+        "shortPinyin": "thd",
+        "name": "太和东",
+        "code": "TDU",
+        "pinyin": "taihedong",
+        "abbr": "thd",
+        "city": "阜阳"
+      },
+      {
+        "shortPinyin": "the",
+        "name": "唐河",
+        "code": "THF",
+        "pinyin": "tanghe",
+        "abbr": "th",
+        "city": "南阳"
+      },
+      {
+        "shortPinyin": "thn",
+        "name": "唐海南",
+        "code": "IEP",
+        "pinyin": "tanghainan",
+        "abbr": "thn",
+        "city": "唐山"
+      },
+      {
+        "shortPinyin": "thx",
+        "name": "通化县",
+        "code": "TXL",
+        "pinyin": "tonghuaxian",
+        "abbr": "thx",
+        "city": "通化"
+      },
+      {
+        "shortPinyin": "tji",
+        "name": "团结",
+        "code": "TIX",
+        "pinyin": "tuanjie",
+        "abbr": "tj",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "tjj",
+        "name": "谭家井",
+        "code": "TNJ",
+        "pinyin": "tanjiajing",
+        "abbr": "tjj",
+        "city": "武威"
+      },
+      {
+        "shortPinyin": "tjw",
+        "name": "唐家湾",
+        "code": "PDQ",
+        "pinyin": "tangjiawan",
+        "abbr": "tjw",
+        "city": "珠海"
+      },
+      {
+        "shortPinyin": "tjz",
+        "name": "统军庄",
+        "code": "TZP",
+        "pinyin": "tongjunzhuang",
+        "abbr": "tjz",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "tlb",
+        "name": "铜陵北",
+        "code": "KXH",
+        "pinyin": "tonglingbei",
+        "abbr": "tlb",
+        "city": "铜陵"
+      },
+      {
+        "shortPinyin": "tld",
+        "name": "吐列毛杜",
+        "code": "TMD",
+        "pinyin": "tuliemaodu",
+        "abbr": "tlmd",
+        "city": "兴安"
+      },
+      {
+        "shortPinyin": "tlh",
+        "name": "图里河",
+        "code": "TEX",
+        "pinyin": "tulihe",
+        "abbr": "tlh",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "tli",
+        "name": "亭亮",
+        "code": "TIZ",
+        "pinyin": "tingliang",
+        "abbr": "tl",
+        "city": "崇左"
+      },
+      {
+        "shortPinyin": "tli",
+        "name": "田林",
+        "code": "TFZ",
+        "pinyin": "tianlin",
+        "abbr": "tl",
+        "city": "百色"
+      },
+      {
+        "shortPinyin": "tmb",
+        "name": "天门北",
+        "code": "TMN",
+        "pinyin": "tianmenbei",
+        "abbr": "tmb",
+        "city": "天门"
+      },
+      {
+        "shortPinyin": "tms",
+        "name": "太姥山",
+        "code": "TLS",
+        "pinyin": "taimushan",
+        "abbr": "tms",
+        "city": "宁德"
+      },
+      {
+        "shortPinyin": "tmt",
+        "name": "土牧尔台",
+        "code": "TRC",
+        "pinyin": "tumuertai",
+        "abbr": "tmet",
+        "city": "乌兰察布"
+      },
+      {
+        "shortPinyin": "tmz",
+        "name": "土门子",
+        "code": "TCJ",
+        "pinyin": "tumenzi",
+        "abbr": "tmz",
+        "city": "武威"
+      },
+      {
+        "shortPinyin": "tna",
+        "name": "洮南",
+        "code": "TVT",
+        "pinyin": "taonan",
+        "abbr": "tn",
+        "city": "白城"
+      },
+      {
+        "shortPinyin": "tpc",
+        "name": "太平川",
+        "code": "TIT",
+        "pinyin": "taipingchuan",
+        "abbr": "tpc",
+        "city": "松原"
+      },
+      {
+        "shortPinyin": "tpz",
+        "name": "太平镇",
+        "code": "TEB",
+        "pinyin": "taipingzhen",
+        "abbr": "tpz",
+        "city": "双鸭山"
+      },
+      {
+        "shortPinyin": "tqi",
+        "name": "台前",
+        "code": "TTK",
+        "pinyin": "taiqian",
+        "abbr": "tq",
+        "city": "濮阳"
+      },
+      {
+        "shortPinyin": "tqi",
+        "name": "图强",
+        "code": "TQX",
+        "pinyin": "tuqiang",
+        "abbr": "tq",
+        "city": "加格达奇"
+      },
+      {
+        "shortPinyin": "tql",
+        "name": "天桥岭",
+        "code": "TQL",
+        "pinyin": "tianqiaoling",
+        "abbr": "tql",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "tqz",
+        "name": "土桥子",
+        "code": "TQJ",
+        "pinyin": "tuqiaozi",
+        "abbr": "tqz",
+        "city": "中卫"
+      },
+      {
+        "shortPinyin": "tsb",
+        "name": "甜水堡",
+        "code": "TUJ",
+        "pinyin": "tianshuibu",
+        "abbr": "tsb",
+        "city": "庆阳"
+      },
+      {
+        "shortPinyin": "tsc",
+        "name": "汤山城",
+        "code": "TCT",
+        "pinyin": "tangshancheng",
+        "abbr": "tsc",
+        "city": "丹东"
+      },
+      {
+        "shortPinyin": "tsh",
+        "name": "台山",
+        "code": "PUQ",
+        "pinyin": "taishan",
+        "abbr": "ts",
+        "city": "江门"
+      },
+      {
+        "shortPinyin": "tsh",
+        "name": "桃山",
+        "code": "TAB",
+        "pinyin": "taoshan",
+        "abbr": "ts",
+        "city": "伊春"
+      },
+      {
+        "shortPinyin": "tsx",
+        "name": "唐山西",
+        "code": "TSI",
+        "pinyin": "tangshanxi",
+        "abbr": "tsx",
+        "city": "唐山"
+      },
+      {
+        "shortPinyin": "tts",
+        "name": "天台山",
+        "code": "TIU",
+        "pinyin": "tiantaishan",
+        "abbr": "tts",
+        "city": "台州"
+      },
+      {
+        "shortPinyin": "ttu",
+        "name": "通途",
+        "code": "TUT",
+        "pinyin": "tongtu",
+        "abbr": "tt",
+        "city": "松原"
+      },
+      {
+        "shortPinyin": "twe",
+        "name": "通渭",
+        "code": "TWJ",
+        "pinyin": "tongwei",
+        "abbr": "tw",
+        "city": "定西"
+      },
+      {
+        "shortPinyin": "txd",
+        "name": "田心东",
+        "code": "KQQ",
+        "pinyin": "tianxindong",
+        "abbr": "txd",
+        "city": "株洲"
+      },
+      {
+        "shortPinyin": "txi",
+        "name": "藤县",
+        "code": "TAZ",
+        "pinyin": "tengxian",
+        "abbr": "tx",
+        "city": "梧州"
+      },
+      {
+        "shortPinyin": "txi",
+        "name": "同心",
+        "code": "TXJ",
+        "pinyin": "tongxin",
+        "abbr": "tx",
+        "city": "吴忠"
+      },
+      {
+        "shortPinyin": "txi",
+        "name": "桐乡",
+        "code": "TCH",
+        "pinyin": "tongxiang",
+        "abbr": "tx",
+        "city": "嘉兴"
+      },
+      {
+        "shortPinyin": "tya",
+        "name": "田阳",
+        "code": "TRZ",
+        "pinyin": "tianyang",
+        "abbr": "ty",
+        "city": "百色"
+      },
+      {
+        "shortPinyin": "tyi",
+        "name": "天义",
+        "code": "TND",
+        "pinyin": "tianyi",
+        "abbr": "ty",
+        "city": "赤峰"
+      },
+      {
+        "shortPinyin": "tyi",
+        "name": "汤阴",
+        "code": "TYF",
+        "pinyin": "tangyin",
+        "abbr": "ty",
+        "city": "安阳"
+      },
+      {
+        "shortPinyin": "tyj",
+        "name": "天涯海角",
+        "code": "THA",
+        "pinyin": "tianyahaijiao",
+        "abbr": "tyhj",
+        "city": "三亚"
+      },
+      {
+        "shortPinyin": "tys",
+        "name": "太阳山",
+        "code": "TYJ",
+        "pinyin": "taiyangshan",
+        "abbr": "tys",
+        "city": "吴忠"
+      },
+      {
+        "shortPinyin": "tyu",
+        "name": "桃源",
+        "code": "TYA",
+        "pinyin": "taoyuan",
+        "abbr": "ty",
+        "city": "常德"
+      },
+      {
+        "shortPinyin": "tyu",
+        "name": "汤原",
+        "code": "TYB",
+        "pinyin": "tangyuan",
+        "abbr": "ty",
+        "city": "佳木斯"
+      },
+      {
+        "shortPinyin": "tyx",
+        "name": "通远堡西",
+        "code": "TST",
+        "pinyin": "tongyuanpuxi",
+        "abbr": "typx",
+        "city": "丹东"
+      },
+      {
+        "shortPinyin": "tyy",
+        "name": "塔崖驿",
+        "code": "TYP",
+        "pinyin": "tayayi",
+        "abbr": "tyy",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "tzh",
+        "name": "滕州",
+        "code": "TXK",
+        "pinyin": "tengzhou",
+        "abbr": "tz",
+        "city": "枣庄"
+      },
+      {
+        "shortPinyin": "tzh",
+        "name": "天镇",
+        "code": "TZV",
+        "pinyin": "tianzhen",
+        "abbr": "tz",
+        "city": "大同"
+      },
+      {
+        "shortPinyin": "tzh",
+        "name": "天祝",
+        "code": "TZJ",
+        "pinyin": "tianzhu",
+        "abbr": "tz",
+        "city": "武威"
+      },
+      {
+        "shortPinyin": "tzs",
+        "name": "天柱山",
+        "code": "QWH",
+        "pinyin": "tianzhushan",
+        "abbr": "tzs",
+        "city": "安庆"
+      },
+      {
+        "shortPinyin": "tzx",
+        "name": "天祝西",
+        "code": "TRJ",
+        "pinyin": "tianzhuxi",
+        "abbr": "tzx",
+        "city": "武威"
+      },
+      {
+        "shortPinyin": "tfc",
+        "name": "天府机场",
+        "code": "TIE",
+        "pinyin": "tianfujichang",
+        "abbr": "tfjc",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "tji",
+        "name": "统景",
+        "code": "TOE",
+        "pinyin": "tongjing",
+        "abbr": "tj",
+        "city": "重庆"
+      },
+      {
+        "shortPinyin": "tld",
+        "name": "桐庐东",
+        "code": "TBU",
+        "pinyin": "tongludong",
+        "abbr": "tld",
+        "city": "杭州"
+      },
+      {
+        "shortPinyin": "tmg",
+        "name": "铁门关",
+        "code": "XAR",
+        "pinyin": "tiemenguan",
+        "abbr": "tmg",
+        "city": "铁门关"
+      }
+    ],
+    "W": [
+      {
+        "shortPinyin": "wxi",
+        "name": "万象",
+        "code": "YTM",
+        "pinyin": "wanxiang",
+        "abbr": "wx",
+        "city": "万象"
+      },
+      {
+        "shortPinyin": "wha",
+        "name": "武汉",
+        "code": "WHN",
+        "pinyin": "wuhan",
+        "abbr": "wh",
+        "city": "武汉"
+      },
+      {
+        "shortPinyin": "whd",
+        "name": "武汉东",
+        "code": "LFN",
+        "pinyin": "wuhandong",
+        "abbr": "whd",
+        "city": "武汉"
+      },
+      {
+        "shortPinyin": "wjw",
+        "name": "王家湾",
+        "code": "WJJ",
+        "pinyin": "wangjiawan",
+        "abbr": "wjw",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "wln",
+        "name": "乌鲁木齐南",
+        "code": "WMR",
+        "pinyin": "wulumuqinan",
+        "abbr": "wlmqn",
+        "city": "乌鲁木齐"
+      },
+      {
+        "shortPinyin": "wlq",
+        "name": "乌鲁木齐",
+        "code": "WAR",
+        "pinyin": "wulumuqi",
+        "abbr": "wlmq",
+        "city": "乌鲁木齐"
+      },
+      {
+        "shortPinyin": "wxc",
+        "name": "吴圩机场",
+        "code": "WJZ",
+        "pinyin": "wuxujichang",
+        "abbr": "wxjc",
+        "city": "南宁"
+      },
+      {
+        "shortPinyin": "wzt",
+        "name": "王兆屯",
+        "code": "WZB",
+        "pinyin": "wangzhaotun",
+        "abbr": "wzt",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "wch",
+        "name": "文昌",
+        "code": "WEQ",
+        "pinyin": "wenchang",
+        "abbr": "wc",
+        "city": "文昌"
+      },
+      {
+        "shortPinyin": "wch",
+        "name": "武昌",
+        "code": "WCN",
+        "pinyin": "wuchang",
+        "abbr": "wc",
+        "city": "武汉"
+      },
+      {
+        "shortPinyin": "wch",
+        "name": "五常",
+        "code": "WCB",
+        "pinyin": "wuchang",
+        "abbr": "wc",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "wds",
+        "name": "武当山",
+        "code": "WRN",
+        "pinyin": "wudangshan",
+        "abbr": "wds",
+        "city": "十堰"
+      },
+      {
+        "shortPinyin": "wfa",
+        "name": "潍坊",
+        "code": "WFK",
+        "pinyin": "weifang",
+        "abbr": "wf",
+        "city": "潍坊"
+      },
+      {
+        "shortPinyin": "wfd",
+        "name": "瓦房店",
+        "code": "WDT",
+        "pinyin": "wafangdian",
+        "abbr": "wfd",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "wft",
+        "name": "万发屯",
+        "code": "WFB",
+        "pinyin": "wanfatun",
+        "abbr": "wft",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "wfx",
+        "name": "瓦房店西",
+        "code": "WXT",
+        "pinyin": "wafangdianxi",
+        "abbr": "wfdx",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "wga",
+        "name": "王岗",
+        "code": "WGB",
+        "pinyin": "wanggang",
+        "abbr": "wg",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "wgo",
+        "name": "武功",
+        "code": "WGY",
+        "pinyin": "wugong",
+        "abbr": "wg",
+        "city": "咸阳"
+      },
+      {
+        "shortPinyin": "wha",
+        "name": "威海",
+        "code": "WKK",
+        "pinyin": "weihai",
+        "abbr": "wh",
+        "city": "威海"
+      },
+      {
+        "shortPinyin": "whd",
+        "name": "乌海东",
+        "code": "WVC",
+        "pinyin": "wuhaidong",
+        "abbr": "whd",
+        "city": "乌海"
+      },
+      {
+        "shortPinyin": "whe",
+        "name": "苇河",
+        "code": "WHB",
+        "pinyin": "weihe",
+        "abbr": "wh",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "whu",
+        "name": "芜湖",
+        "code": "WHH",
+        "pinyin": "wuhu",
+        "abbr": "wh",
+        "city": "芜湖"
+      },
+      {
+        "shortPinyin": "whx",
+        "name": "乌海西",
+        "code": "WXC",
+        "pinyin": "wuhaixi",
+        "abbr": "whx",
+        "city": "乌海"
+      },
+      {
+        "shortPinyin": "whx",
+        "name": "苇河西",
+        "code": "WIB",
+        "pinyin": "weihexi",
+        "abbr": "whx",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "wji",
+        "name": "温江",
+        "code": "WJE",
+        "pinyin": "wenjiang",
+        "abbr": "wj",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "wji",
+        "name": "五家",
+        "code": "WUB",
+        "pinyin": "wujia",
+        "abbr": "wj",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "wks",
+        "name": "五棵树",
+        "code": "WKT",
+        "pinyin": "wukeshu",
+        "abbr": "wks",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "wlb",
+        "name": "乌兰察布",
+        "code": "WPC",
+        "pinyin": "wulanchabu",
+        "abbr": "wlcb",
+        "city": "乌兰察布"
+      },
+      {
+        "shortPinyin": "wle",
+        "name": "万乐",
+        "code": "WEB",
+        "pinyin": "wanle",
+        "abbr": "wl",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "wli",
+        "name": "温岭",
+        "code": "VHH",
+        "pinyin": "wenling",
+        "abbr": "wl",
+        "city": "台州"
+      },
+      {
+        "shortPinyin": "wln",
+        "name": "乌龙泉南",
+        "code": "WFN",
+        "pinyin": "wulongquannan",
+        "abbr": "wlqn",
+        "city": "武汉"
+      },
+      {
+        "shortPinyin": "wlo",
+        "name": "武隆",
+        "code": "WLW",
+        "pinyin": "wulong",
+        "abbr": "wl",
+        "city": "武隆"
+      },
+      {
+        "shortPinyin": "wlt",
+        "name": "乌兰浩特",
+        "code": "WWT",
+        "pinyin": "wulanhaote",
+        "abbr": "wlht",
+        "city": "兴安"
+      },
+      {
+        "shortPinyin": "wlx",
+        "name": "乌拉山西",
+        "code": "WQC",
+        "pinyin": "wulashanxi",
+        "abbr": "wlsx",
+        "city": "巴彦淖尔"
+      },
+      {
+        "shortPinyin": "wna",
+        "name": "渭南",
+        "code": "WNY",
+        "pinyin": "weinan",
+        "abbr": "wn",
+        "city": "渭南"
+      },
+      {
+        "shortPinyin": "wnb",
+        "name": "渭南北",
+        "code": "WBY",
+        "pinyin": "weinanbei",
+        "abbr": "wnb",
+        "city": "渭南"
+      },
+      {
+        "shortPinyin": "wns",
+        "name": "五女山",
+        "code": "WET",
+        "pinyin": "wunvshan",
+        "abbr": "wns",
+        "city": "本溪"
+      },
+      {
+        "shortPinyin": "wnx",
+        "name": "渭南西",
+        "code": "WXY",
+        "pinyin": "weinanxi",
+        "abbr": "wnx",
+        "city": "渭南"
+      },
+      {
+        "shortPinyin": "wpi",
+        "name": "沃皮",
+        "code": "WPT",
+        "pinyin": "wopi",
+        "abbr": "wp",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "wqi",
+        "name": "汪清",
+        "code": "WQL",
+        "pinyin": "wangqing",
+        "abbr": "wq",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "wqi",
+        "name": "武清",
+        "code": "WWP",
+        "pinyin": "wuqing",
+        "abbr": "wq",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "wsh",
+        "name": "武胜",
+        "code": "WSE",
+        "pinyin": "wusheng",
+        "abbr": "ws",
+        "city": "广安"
+      },
+      {
+        "shortPinyin": "wsh",
+        "name": "威舍",
+        "code": "WSM",
+        "pinyin": "weishe",
+        "abbr": "ws",
+        "city": "兴义"
+      },
+      {
+        "shortPinyin": "wsq",
+        "name": "乌审旗",
+        "code": "WGC",
+        "pinyin": "wushenqi",
+        "abbr": "wsq",
+        "city": "鄂尔多斯"
+      },
+      {
+        "shortPinyin": "wsu",
+        "name": "乌苏",
+        "code": "WSR",
+        "pinyin": "wusu",
+        "abbr": "ws",
+        "city": "塔城"
+      },
+      {
+        "shortPinyin": "wwd",
+        "name": "武威东",
+        "code": "WDJ",
+        "pinyin": "wuweidong",
+        "abbr": "wwd",
+        "city": "武威"
+      },
+      {
+        "shortPinyin": "wwe",
+        "name": "武威",
+        "code": "WUJ",
+        "pinyin": "wuwei",
+        "abbr": "ww",
+        "city": "武威"
+      },
+      {
+        "shortPinyin": "wwn",
+        "name": "武威南",
+        "code": "WWJ",
+        "pinyin": "wuweinan",
+        "abbr": "wwn",
+        "city": "武威"
+      },
+      {
+        "shortPinyin": "wwn",
+        "name": "无为南",
+        "code": "WWU",
+        "pinyin": "wuweinan",
+        "abbr": "wwn",
+        "city": "芜湖"
+      },
+      {
+        "shortPinyin": "wxb",
+        "name": "武穴北",
+        "code": "WJN",
+        "pinyin": "wuxuebei",
+        "abbr": "wxb",
+        "city": "武穴"
+      },
+      {
+        "shortPinyin": "wxd",
+        "name": "无锡东",
+        "code": "WGH",
+        "pinyin": "wuxidong",
+        "abbr": "wxd",
+        "city": "无锡"
+      },
+      {
+        "shortPinyin": "wxi",
+        "name": "无锡",
+        "code": "WXH",
+        "pinyin": "wuxi",
+        "abbr": "wx",
+        "city": "无锡"
+      },
+      {
+        "shortPinyin": "wxi",
+        "name": "乌西",
+        "code": "WXR",
+        "pinyin": "wuxi",
+        "abbr": "wx",
+        "city": "乌鲁木齐"
+      },
+      {
+        "shortPinyin": "wxu",
+        "name": "武穴",
+        "code": "WXN",
+        "pinyin": "wuxue",
+        "abbr": "wx",
+        "city": "武穴"
+      },
+      {
+        "shortPinyin": "wxu",
+        "name": "吴圩",
+        "code": "WYZ",
+        "pinyin": "wuxu",
+        "abbr": "wx",
+        "city": "南宁"
+      },
+      {
+        "shortPinyin": "wxx",
+        "name": "闻喜西",
+        "code": "WOV",
+        "pinyin": "wenxixi",
+        "abbr": "wxx",
+        "city": "运城"
+      },
+      {
+        "shortPinyin": "wyb",
+        "name": "武夷山北",
+        "code": "WBS",
+        "pinyin": "wuyishanbei",
+        "abbr": "wysb",
+        "city": "南平"
+      },
+      {
+        "shortPinyin": "wyi",
+        "name": "五营",
+        "code": "WWB",
+        "pinyin": "wuying",
+        "abbr": "wy",
+        "city": "伊春"
+      },
+      {
+        "shortPinyin": "wyl",
+        "name": "乌伊岭",
+        "code": "WPB",
+        "pinyin": "wuyiling",
+        "abbr": "wyl",
+        "city": "伊春"
+      },
+      {
+        "shortPinyin": "wys",
+        "name": "武夷山",
+        "code": "WAS",
+        "pinyin": "wuyishan",
+        "abbr": "wys",
+        "city": "南平"
+      },
+      {
+        "shortPinyin": "wyu",
+        "name": "渭源",
+        "code": "WEJ",
+        "pinyin": "weiyuan",
+        "abbr": "wy",
+        "city": "定西"
+      },
+      {
+        "shortPinyin": "wyu",
+        "name": "婺源",
+        "code": "WYG",
+        "pinyin": "wuyuan",
+        "abbr": "wy",
+        "city": "上饶"
+      },
+      {
+        "shortPinyin": "wyu",
+        "name": "万源",
+        "code": "WYY",
+        "pinyin": "wanyuan",
+        "abbr": "wy",
+        "city": "达州"
+      },
+      {
+        "shortPinyin": "wzb",
+        "name": "万州北",
+        "code": "WZE",
+        "pinyin": "wanzhoubei",
+        "abbr": "wzb",
+        "city": "万州"
+      },
+      {
+        "shortPinyin": "wzh",
+        "name": "梧州",
+        "code": "WZZ",
+        "pinyin": "wuzhou",
+        "abbr": "wz",
+        "city": "梧州"
+      },
+      {
+        "shortPinyin": "wzh",
+        "name": "万州",
+        "code": "WYW",
+        "pinyin": "wanzhou",
+        "abbr": "wz",
+        "city": "万州"
+      },
+      {
+        "shortPinyin": "wzh",
+        "name": "吴忠",
+        "code": "WVJ",
+        "pinyin": "wuzhong",
+        "abbr": "wz",
+        "city": "吴忠"
+      },
+      {
+        "shortPinyin": "wzh",
+        "name": "温州",
+        "code": "RZH",
+        "pinyin": "wenzhou",
+        "abbr": "wz",
+        "city": "温州"
+      },
+      {
+        "shortPinyin": "wzn",
+        "name": "梧州南",
+        "code": "WBZ",
+        "pinyin": "wuzhounan",
+        "abbr": "wzn",
+        "city": "梧州"
+      },
+      {
+        "shortPinyin": "wzn",
+        "name": "温州南",
+        "code": "VRH",
+        "pinyin": "wenzhounan",
+        "abbr": "wzn",
+        "city": "温州"
+      },
+      {
+        "shortPinyin": "wan",
+        "name": "武安",
+        "code": "WAP",
+        "pinyin": "wuan",
+        "abbr": "wa",
+        "city": "邯郸"
+      },
+      {
+        "shortPinyin": "wan",
+        "name": "文安",
+        "code": "WBP",
+        "pinyin": "wenan",
+        "abbr": "wa",
+        "city": "廊坊"
+      },
+      {
+        "shortPinyin": "wax",
+        "name": "万安县",
+        "code": "WAG",
+        "pinyin": "wananxian",
+        "abbr": "wax",
+        "city": "吉安"
+      },
+      {
+        "shortPinyin": "waz",
+        "name": "王安镇",
+        "code": "WVP",
+        "pinyin": "wanganzhen",
+        "abbr": "waz",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "wbu",
+        "name": "吴堡",
+        "code": "WUY",
+        "pinyin": "wubu",
+        "abbr": "wb",
+        "city": "榆林"
+      },
+      {
+        "shortPinyin": "wcg",
+        "name": "五叉沟",
+        "code": "WCT",
+        "pinyin": "wuchagou",
+        "abbr": "wcg",
+        "city": "兴安"
+      },
+      {
+        "shortPinyin": "wch",
+        "name": "吴川",
+        "code": "WAQ",
+        "pinyin": "wuchuan",
+        "abbr": "wc",
+        "city": "湛江"
+      },
+      {
+        "shortPinyin": "wch",
+        "name": "温春",
+        "code": "WDB",
+        "pinyin": "wenchun",
+        "abbr": "wc",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "wdc",
+        "name": "五大连池",
+        "code": "WRB",
+        "pinyin": "wudalianchi",
+        "abbr": "wdlc",
+        "city": "黑河"
+      },
+      {
+        "shortPinyin": "wdd",
+        "name": "文登东",
+        "code": "WGK",
+        "pinyin": "wendengdong",
+        "abbr": "wdd",
+        "city": "威海"
+      },
+      {
+        "shortPinyin": "wde",
+        "name": "文登",
+        "code": "WBK",
+        "pinyin": "wendeng",
+        "abbr": "wd",
+        "city": "威海"
+      },
+      {
+        "shortPinyin": "wdh",
+        "name": "五道河",
+        "code": "WHP",
+        "pinyin": "wudaohe",
+        "abbr": "wdh",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "wdi",
+        "name": "文地",
+        "code": "WNZ",
+        "pinyin": "wendi",
+        "abbr": "wd",
+        "city": "玉林"
+      },
+      {
+        "shortPinyin": "wdn",
+        "name": "文登南",
+        "code": "WWK",
+        "pinyin": "wendengnan",
+        "abbr": "wdn",
+        "city": "威海"
+      },
+      {
+        "shortPinyin": "wdo",
+        "name": "卫东",
+        "code": "WVT",
+        "pinyin": "weidong",
+        "abbr": "wd",
+        "city": "兴安"
+      },
+      {
+        "shortPinyin": "wdu",
+        "name": "望都",
+        "code": "WDP",
+        "pinyin": "wangdu",
+        "abbr": "wd",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "wdx",
+        "name": "武当山西",
+        "code": "WWN",
+        "pinyin": "wudangshanxi",
+        "abbr": "wdsx",
+        "city": "十堰"
+      },
+      {
+        "shortPinyin": "weh",
+        "name": "乌尔旗汗",
+        "code": "WHX",
+        "pinyin": "wuerqihan",
+        "abbr": "weqh",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "wfb",
+        "name": "潍坊北",
+        "code": "WJK",
+        "pinyin": "weifangbei",
+        "abbr": "wfb",
+        "city": "潍坊"
+      },
+      {
+        "shortPinyin": "wfs",
+        "name": "五府山",
+        "code": "WFG",
+        "pinyin": "wufushan",
+        "abbr": "wfs",
+        "city": "上饶"
+      },
+      {
+        "shortPinyin": "wfu",
+        "name": "王府",
+        "code": "WUT",
+        "pinyin": "wangfu",
+        "abbr": "wf",
+        "city": "松原"
+      },
+      {
+        "shortPinyin": "wgt",
+        "name": "吴官田",
+        "code": "WGM",
+        "pinyin": "wuguantian",
+        "abbr": "wgt",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "whb",
+        "name": "威虎岭北",
+        "code": "WBL",
+        "pinyin": "weihulingbei",
+        "abbr": "whlb",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "whb",
+        "name": "威海北",
+        "code": "WHK",
+        "pinyin": "weihaibei",
+        "abbr": "whb",
+        "city": "威海"
+      },
+      {
+        "shortPinyin": "whb",
+        "name": "芜湖北",
+        "code": "WBU",
+        "pinyin": "wuhubei",
+        "abbr": "whb",
+        "city": "芜湖"
+      },
+      {
+        "shortPinyin": "whh",
+        "name": "威海南海",
+        "code": "WRK",
+        "pinyin": "weihainanhai",
+        "abbr": "whnh",
+        "city": "威海"
+      },
+      {
+        "shortPinyin": "whn",
+        "name": "芜湖南",
+        "code": "RVH",
+        "pinyin": "wuhunan",
+        "abbr": "whn",
+        "city": "芜湖"
+      },
+      {
+        "shortPinyin": "whn",
+        "name": "卫辉南",
+        "code": "WVF",
+        "pinyin": "weihuinan",
+        "abbr": "whn",
+        "city": "新乡"
+      },
+      {
+        "shortPinyin": "whu",
+        "name": "五华",
+        "code": "WHA",
+        "pinyin": "wuhua",
+        "abbr": "wh",
+        "city": "梅州"
+      },
+      {
+        "shortPinyin": "whu",
+        "name": "卫辉",
+        "code": "WHF",
+        "pinyin": "weihui",
+        "abbr": "wh",
+        "city": "新乡"
+      },
+      {
+        "shortPinyin": "wjc",
+        "name": "吴家川",
+        "code": "WCJ",
+        "pinyin": "wujiachuan",
+        "abbr": "wjc",
+        "city": "白银"
+      },
+      {
+        "shortPinyin": "wji",
+        "name": "渭津",
+        "code": "WJL",
+        "pinyin": "weijin",
+        "abbr": "wj",
+        "city": "辽源"
+      },
+      {
+        "shortPinyin": "wji",
+        "name": "午汲",
+        "code": "WJP",
+        "pinyin": "wuji",
+        "abbr": "wj",
+        "city": "邯郸"
+      },
+      {
+        "shortPinyin": "wji",
+        "name": "威箐",
+        "code": "WAM",
+        "pinyin": "weiqing",
+        "abbr": "wj",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "wjq",
+        "name": "魏家泉",
+        "code": "WJR",
+        "pinyin": "weijiaquan",
+        "abbr": "wjq",
+        "city": "昌吉"
+      },
+      {
+        "shortPinyin": "wke",
+        "name": "倭肯",
+        "code": "WQB",
+        "pinyin": "woken",
+        "abbr": "wk",
+        "city": "七台河"
+      },
+      {
+        "shortPinyin": "wla",
+        "name": "乌兰",
+        "code": "WIO",
+        "pinyin": "wulan",
+        "abbr": "wl",
+        "city": "海西州"
+      },
+      {
+        "shortPinyin": "wlb",
+        "name": "五龙背",
+        "code": "WBT",
+        "pinyin": "wulongbei",
+        "abbr": "wlb",
+        "city": "丹东"
+      },
+      {
+        "shortPinyin": "wld",
+        "name": "五龙背东",
+        "code": "WMT",
+        "pinyin": "wulongbeidong",
+        "abbr": "wlbd",
+        "city": "丹东"
+      },
+      {
+        "shortPinyin": "wlg",
+        "name": "瓦拉干",
+        "code": "WVX",
+        "pinyin": "walagan",
+        "abbr": "wlg",
+        "city": "加格达奇"
+      },
+      {
+        "shortPinyin": "wli",
+        "name": "五莲",
+        "code": "WLK",
+        "pinyin": "wulian",
+        "abbr": "wl",
+        "city": "日照"
+      },
+      {
+        "shortPinyin": "wls",
+        "name": "卧龙寺",
+        "code": "WLY",
+        "pinyin": "wolongsi",
+        "abbr": "wls",
+        "city": "宝鸡"
+      },
+      {
+        "shortPinyin": "wlt",
+        "name": "乌兰木图",
+        "code": "VLT",
+        "pinyin": "wulanmutu",
+        "abbr": "wlmt",
+        "city": "阜新"
+      },
+      {
+        "shortPinyin": "wlt",
+        "name": "卧里屯",
+        "code": "WLX",
+        "pinyin": "wolitun",
+        "abbr": "wlt",
+        "city": "大庆"
+      },
+      {
+        "shortPinyin": "wnd",
+        "name": "望牛墩",
+        "code": "WNA",
+        "pinyin": "wangniudun",
+        "abbr": "wnd",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "wne",
+        "name": "乌奴耳",
+        "code": "WRX",
+        "pinyin": "wunuer",
+        "abbr": "wne",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "wni",
+        "name": "万宁",
+        "code": "WNQ",
+        "pinyin": "wanning",
+        "abbr": "wn",
+        "city": "万宁"
+      },
+      {
+        "shortPinyin": "wni",
+        "name": "万年",
+        "code": "WWG",
+        "pinyin": "wannian",
+        "abbr": "wn",
+        "city": "景德镇"
+      },
+      {
+        "shortPinyin": "wnn",
+        "name": "渭南南",
+        "code": "WVY",
+        "pinyin": "weinannan",
+        "abbr": "wnn",
+        "city": "渭南"
+      },
+      {
+        "shortPinyin": "wnz",
+        "name": "渭南镇",
+        "code": "WNJ",
+        "pinyin": "weinanzhen",
+        "abbr": "wnz",
+        "city": "天水"
+      },
+      {
+        "shortPinyin": "wpi",
+        "name": "武平",
+        "code": "WPS",
+        "pinyin": "wuping",
+        "abbr": "wp",
+        "city": "龙岩"
+      },
+      {
+        "shortPinyin": "wqi",
+        "name": "吴桥",
+        "code": "WUP",
+        "pinyin": "wuqiao",
+        "abbr": "wq",
+        "city": "沧州"
+      },
+      {
+        "shortPinyin": "wro",
+        "name": "万荣",
+        "code": "VOM",
+        "pinyin": "wanrong",
+        "abbr": "wr",
+        "city": "老挝万荣"
+      },
+      {
+        "shortPinyin": "wsh",
+        "name": "巫山",
+        "code": "WOE",
+        "pinyin": "wushan",
+        "abbr": "ws",
+        "city": "巫山"
+      },
+      {
+        "shortPinyin": "wsh",
+        "name": "文水",
+        "code": "WEV",
+        "pinyin": "wenshui",
+        "abbr": "ws",
+        "city": "吕梁"
+      },
+      {
+        "shortPinyin": "wsh",
+        "name": "巍山",
+        "code": "WOM",
+        "pinyin": "weishan",
+        "abbr": "ws",
+        "city": "大理"
+      },
+      {
+        "shortPinyin": "wsh",
+        "name": "武山",
+        "code": "WSJ",
+        "pinyin": "wushan",
+        "abbr": "ws",
+        "city": "天水"
+      },
+      {
+        "shortPinyin": "wsx",
+        "name": "瓦石峡",
+        "code": "WHR",
+        "pinyin": "washixia",
+        "abbr": "wsx",
+        "city": "巴音郭楞蒙古自治州"
+      },
+      {
+        "shortPinyin": "wsz",
+        "name": "魏善庄",
+        "code": "WSP",
+        "pinyin": "weishanzhuang",
+        "abbr": "wsz",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "wto",
+        "name": "五通",
+        "code": "WTZ",
+        "pinyin": "wutong",
+        "abbr": "wt",
+        "city": "桂林"
+      },
+      {
+        "shortPinyin": "wto",
+        "name": "王瞳",
+        "code": "WTP",
+        "pinyin": "wangtong",
+        "abbr": "wt",
+        "city": "衡水"
+      },
+      {
+        "shortPinyin": "wts",
+        "name": "五台山",
+        "code": "WSV",
+        "pinyin": "wutaishan",
+        "abbr": "wts",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "wtz",
+        "name": "王团庄",
+        "code": "WZJ",
+        "pinyin": "wangtuanzhuang",
+        "abbr": "wtz",
+        "city": "吴忠"
+      },
+      {
+        "shortPinyin": "wwe",
+        "name": "无为",
+        "code": "IIH",
+        "pinyin": "wuwei",
+        "abbr": "ww",
+        "city": "芜湖"
+      },
+      {
+        "shortPinyin": "wws",
+        "name": "瓦屋山",
+        "code": "WAH",
+        "pinyin": "wawushan",
+        "abbr": "wws",
+        "city": "常州"
+      },
+      {
+        "shortPinyin": "wwu",
+        "name": "五五",
+        "code": "WVR",
+        "pinyin": "wuwu",
+        "abbr": "ww",
+        "city": "克拉玛依"
+      },
+      {
+        "shortPinyin": "wxd",
+        "name": "武乡东",
+        "code": "WVV",
+        "pinyin": "wuxiangdong",
+        "abbr": "wxd",
+        "city": "长治"
+      },
+      {
+        "shortPinyin": "wxi",
+        "name": "威信",
+        "code": "WXE",
+        "pinyin": "weixin",
+        "abbr": "wx",
+        "city": "昭通"
+      },
+      {
+        "shortPinyin": "wxi",
+        "name": "武乡",
+        "code": "WUV",
+        "pinyin": "wuxiang",
+        "abbr": "wx",
+        "city": "长治"
+      },
+      {
+        "shortPinyin": "wxi",
+        "name": "闻喜",
+        "code": "WXV",
+        "pinyin": "wenxi",
+        "abbr": "wx",
+        "city": "运城"
+      },
+      {
+        "shortPinyin": "wxi",
+        "name": "卫星",
+        "code": "WVB",
+        "pinyin": "weixing",
+        "abbr": "wx",
+        "city": "鸡西"
+      },
+      {
+        "shortPinyin": "wxq",
+        "name": "无锡新区",
+        "code": "IFH",
+        "pinyin": "wuxixinqu",
+        "abbr": "wxxq",
+        "city": "无锡"
+      },
+      {
+        "shortPinyin": "wya",
+        "name": "王杨",
+        "code": "WYB",
+        "pinyin": "wangyang",
+        "abbr": "wy",
+        "city": "伊春"
+      },
+      {
+        "shortPinyin": "wyb",
+        "name": "武义北",
+        "code": "WDH",
+        "pinyin": "wuyibei",
+        "abbr": "wyb",
+        "city": "金华"
+      },
+      {
+        "shortPinyin": "wyi",
+        "name": "武义",
+        "code": "RYH",
+        "pinyin": "wuyi",
+        "abbr": "wy",
+        "city": "金华"
+      },
+      {
+        "shortPinyin": "wyt",
+        "name": "瓦窑田",
+        "code": "WIM",
+        "pinyin": "wayaotian",
+        "abbr": "wyt",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "wza",
+        "name": "湾仔",
+        "code": "WZA",
+        "pinyin": "wanzai",
+        "abbr": "wz",
+        "city": "珠海"
+      },
+      {
+        "shortPinyin": "wzb",
+        "name": "湾仔北",
+        "code": "WBA",
+        "pinyin": "wanzaibei",
+        "abbr": "wzb",
+        "city": "珠海"
+      },
+      {
+        "shortPinyin": "wzb",
+        "name": "温州北",
+        "code": "URH",
+        "pinyin": "wenzhoubei",
+        "abbr": "wzb",
+        "city": "温州"
+      },
+      {
+        "shortPinyin": "wzg",
+        "name": "苇子沟",
+        "code": "WZL",
+        "pinyin": "weizigou",
+        "abbr": "wzg",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "wzh",
+        "name": "韦庄",
+        "code": "WZY",
+        "pinyin": "weizhuang",
+        "abbr": "wz",
+        "city": "渭南"
+      },
+      {
+        "shortPinyin": "wzh",
+        "name": "五寨",
+        "code": "WZV",
+        "pinyin": "wuzhai",
+        "abbr": "wz",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "wzh",
+        "name": "武陟",
+        "code": "WIF",
+        "pinyin": "wuzhi",
+        "abbr": "wz",
+        "city": "焦作"
+      },
+      {
+        "shortPinyin": "wzn",
+        "name": "湾沚南",
+        "code": "WNU",
+        "pinyin": "wanzhinan",
+        "abbr": "wzn",
+        "city": "芜湖"
+      },
+      {
+        "shortPinyin": "wzz",
+        "name": "魏杖子",
+        "code": "WKD",
+        "pinyin": "weizhangzi",
+        "abbr": "wzz",
+        "city": "朝阳"
+      },
+      {
+        "shortPinyin": "wzz",
+        "name": "微子镇",
+        "code": "WQP",
+        "pinyin": "weizizhen",
+        "abbr": "wzz",
+        "city": "长治"
+      },
+      {
+        "shortPinyin": "wji",
+        "name": "武进",
+        "code": "WJU",
+        "pinyin": "wujin",
+        "abbr": "wj",
+        "city": "常州"
+      },
+      {
+        "shortPinyin": "wyu",
+        "name": "威远",
+        "code": "WYE",
+        "pinyin": "weiyuan",
+        "abbr": "wy",
+        "city": "内江"
+      }
+    ],
+    "D": [
+      {
+        "shortPinyin": "dch",
+        "name": "大成",
+        "code": "DCT",
+        "pinyin": "dacheng",
+        "abbr": "dc",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "dni",
+        "name": "大拟",
+        "code": "DNZ",
+        "pinyin": "dani",
+        "abbr": "dn",
+        "city": "南宁"
+      },
+      {
+        "shortPinyin": "dsp",
+        "name": "读书铺",
+        "code": "DPM",
+        "pinyin": "dushupu",
+        "abbr": "dsp",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "dwt",
+        "name": "大王滩",
+        "code": "DZZ",
+        "pinyin": "dawangtan",
+        "abbr": "dwt",
+        "city": "南宁"
+      },
+      {
+        "shortPinyin": "dyu",
+        "name": "大元",
+        "code": "DYZ",
+        "pinyin": "dayuan",
+        "abbr": "dy",
+        "city": "南宁"
+      },
+      {
+        "shortPinyin": "dab",
+        "name": "大安北",
+        "code": "RNT",
+        "pinyin": "daanbei",
+        "abbr": "dab",
+        "city": "白城"
+      },
+      {
+        "shortPinyin": "dad",
+        "name": "东安东",
+        "code": "DCZ",
+        "pinyin": "dongandong",
+        "abbr": "dad",
+        "city": "永州"
+      },
+      {
+        "shortPinyin": "dbc",
+        "name": "达坂城",
+        "code": "DCR",
+        "pinyin": "dabancheng",
+        "abbr": "dbc",
+        "city": "乌鲁木齐"
+      },
+      {
+        "shortPinyin": "dbi",
+        "name": "定边",
+        "code": "DYJ",
+        "pinyin": "dingbian",
+        "abbr": "db",
+        "city": "榆林"
+      },
+      {
+        "shortPinyin": "dch",
+        "name": "东岔",
+        "code": "DCJ",
+        "pinyin": "dongcha",
+        "abbr": "dc",
+        "city": "天水"
+      },
+      {
+        "shortPinyin": "ddo",
+        "name": "丹东",
+        "code": "DUT",
+        "pinyin": "dandong",
+        "abbr": "dd",
+        "city": "丹东"
+      },
+      {
+        "shortPinyin": "dfa",
+        "name": "东方",
+        "code": "UFQ",
+        "pinyin": "dongfang",
+        "abbr": "df",
+        "city": "东方"
+      },
+      {
+        "shortPinyin": "dfe",
+        "name": "丹凤",
+        "code": "DGY",
+        "pinyin": "danfeng",
+        "abbr": "df",
+        "city": "商洛"
+      },
+      {
+        "shortPinyin": "dfe",
+        "name": "大丰",
+        "code": "KRQ",
+        "pinyin": "dafeng",
+        "abbr": "df",
+        "city": "株洲"
+      },
+      {
+        "shortPinyin": "dfh",
+        "name": "东方红",
+        "code": "DFB",
+        "pinyin": "dongfanghong",
+        "abbr": "dfh",
+        "city": "鸡西"
+      },
+      {
+        "shortPinyin": "dfn",
+        "name": "大方南",
+        "code": "DNE",
+        "pinyin": "dafangnan",
+        "abbr": "dfn",
+        "city": "毕节"
+      },
+      {
+        "shortPinyin": "dfn",
+        "name": "东风南",
+        "code": "DPJ",
+        "pinyin": "dongfengnan",
+        "abbr": "dfn",
+        "city": "酒泉"
+      },
+      {
+        "shortPinyin": "dgb",
+        "name": "东港北",
+        "code": "RGT",
+        "pinyin": "donggangbei",
+        "abbr": "dgb",
+        "city": "丹东"
+      },
+      {
+        "shortPinyin": "dgd",
+        "name": "东莞东",
+        "code": "DMQ",
+        "pinyin": "dongguandong",
+        "abbr": "dgd",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "dgn",
+        "name": "东莞南",
+        "code": "DNA",
+        "pinyin": "dongguannan",
+        "abbr": "dgn",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "dgs",
+        "name": "大孤山",
+        "code": "RMT",
+        "pinyin": "dagushan",
+        "abbr": "dgs",
+        "city": "丹东"
+      },
+      {
+        "shortPinyin": "dgu",
+        "name": "东莞",
+        "code": "RTQ",
+        "pinyin": "dongguan",
+        "abbr": "dg",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "dgx",
+        "name": "东莞西",
+        "code": "WGQ",
+        "pinyin": "dongguanxi",
+        "abbr": "dgx",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "dhq",
+        "name": "大红旗",
+        "code": "DQD",
+        "pinyin": "dahongqi",
+        "abbr": "dhq",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "dhs",
+        "name": "大虎山",
+        "code": "DHD",
+        "pinyin": "dahushan",
+        "abbr": "dhs",
+        "city": "锦州"
+      },
+      {
+        "shortPinyin": "dhu",
+        "name": "敦化",
+        "code": "DHL",
+        "pinyin": "dunhua",
+        "abbr": "dh",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "dhu",
+        "name": "敦煌",
+        "code": "DHJ",
+        "pinyin": "dunhuang",
+        "abbr": "dh",
+        "city": "酒泉"
+      },
+      {
+        "shortPinyin": "dhu",
+        "name": "德惠",
+        "code": "DHT",
+        "pinyin": "dehui",
+        "abbr": "dh",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "dhx",
+        "name": "德惠西",
+        "code": "DXT",
+        "pinyin": "dehuixi",
+        "abbr": "dhx",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "djc",
+        "name": "东京城",
+        "code": "DJB",
+        "pinyin": "dongjingcheng",
+        "abbr": "djc",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "djg",
+        "name": "达家沟",
+        "code": "DJT",
+        "pinyin": "dajiagou",
+        "abbr": "djg",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "dji",
+        "name": "垫江",
+        "code": "DJE",
+        "pinyin": "dianjiang",
+        "abbr": "dj",
+        "city": "垫江"
+      },
+      {
+        "shortPinyin": "dji",
+        "name": "道滘",
+        "code": "RRQ",
+        "pinyin": "daojiao",
+        "abbr": "dj",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "dji",
+        "name": "大涧",
+        "code": "DFP",
+        "pinyin": "dajian",
+        "abbr": "dj",
+        "city": "大同"
+      },
+      {
+        "shortPinyin": "dji",
+        "name": "洞井",
+        "code": "FWQ",
+        "pinyin": "dongjing",
+        "abbr": "dj",
+        "city": "长沙"
+      },
+      {
+        "shortPinyin": "djy",
+        "name": "都江堰",
+        "code": "DDW",
+        "pinyin": "dujiangyan",
+        "abbr": "djy",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "dko",
+        "name": "洞口",
+        "code": "DKA",
+        "pinyin": "dongkou",
+        "abbr": "dk",
+        "city": "邵阳"
+      },
+      {
+        "shortPinyin": "dlb",
+        "name": "大连北",
+        "code": "DFT",
+        "pinyin": "dalianbei",
+        "abbr": "dlb",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "dlh",
+        "name": "德令哈",
+        "code": "DHO",
+        "pinyin": "delingha",
+        "abbr": "dlh",
+        "city": "德令哈"
+      },
+      {
+        "shortPinyin": "dlh",
+        "name": "达连河",
+        "code": "DCB",
+        "pinyin": "dalianhe",
+        "abbr": "dlh",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "dli",
+        "name": "大荔",
+        "code": "DNY",
+        "pinyin": "dali",
+        "abbr": "dl",
+        "city": "渭南"
+      },
+      {
+        "shortPinyin": "dli",
+        "name": "大理",
+        "code": "DKM",
+        "pinyin": "dali",
+        "abbr": "dl",
+        "city": "大理"
+      },
+      {
+        "shortPinyin": "dli",
+        "name": "大连",
+        "code": "DLT",
+        "pinyin": "dalian",
+        "abbr": "dl",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "dmh",
+        "name": "大明湖",
+        "code": "JAK",
+        "pinyin": "daminghu",
+        "abbr": "dmh",
+        "city": "济南"
+      },
+      {
+        "shortPinyin": "dml",
+        "name": "得莫利",
+        "code": "DTB",
+        "pinyin": "demoli",
+        "abbr": "dml",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "dmx",
+        "name": "东明县",
+        "code": "DNF",
+        "pinyin": "dongmingxian",
+        "abbr": "dmx",
+        "city": "菏泽"
+      },
+      {
+        "shortPinyin": "dna",
+        "name": "定南",
+        "code": "DNG",
+        "pinyin": "dingnan",
+        "abbr": "dn",
+        "city": "赣州"
+      },
+      {
+        "shortPinyin": "dnn",
+        "name": "定南南",
+        "code": "DIG",
+        "pinyin": "dingnannan",
+        "abbr": "dnn",
+        "city": "赣州"
+      },
+      {
+        "shortPinyin": "dpu",
+        "name": "大埔",
+        "code": "DPI",
+        "pinyin": "dapu",
+        "abbr": "dp",
+        "city": "梅州"
+      },
+      {
+        "shortPinyin": "dqd",
+        "name": "大庆东",
+        "code": "LFX",
+        "pinyin": "daqingdong",
+        "abbr": "dqd",
+        "city": "大庆"
+      },
+      {
+        "shortPinyin": "dqi",
+        "name": "大庆",
+        "code": "DZX",
+        "pinyin": "daqing",
+        "abbr": "dq",
+        "city": "大庆"
+      },
+      {
+        "shortPinyin": "dqs",
+        "name": "对青山",
+        "code": "DQB",
+        "pinyin": "duiqingshan",
+        "abbr": "dqs",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "dqx",
+        "name": "大庆西",
+        "code": "RHX",
+        "pinyin": "daqingxi",
+        "abbr": "dqx",
+        "city": "大庆"
+      },
+      {
+        "shortPinyin": "dsh",
+        "name": "东胜",
+        "code": "DOC",
+        "pinyin": "dongsheng",
+        "abbr": "ds",
+        "city": "鄂尔多斯"
+      },
+      {
+        "shortPinyin": "dsh",
+        "name": "独山",
+        "code": "RWW",
+        "pinyin": "dushan",
+        "abbr": "ds",
+        "city": "都匀"
+      },
+      {
+        "shortPinyin": "dsn",
+        "name": "砀山南",
+        "code": "PRH",
+        "pinyin": "dangshannan",
+        "abbr": "dsn",
+        "city": "宿州"
+      },
+      {
+        "shortPinyin": "dsq",
+        "name": "大石桥",
+        "code": "DQT",
+        "pinyin": "dashiqiao",
+        "abbr": "dsq",
+        "city": "营口"
+      },
+      {
+        "shortPinyin": "dsx",
+        "name": "东胜西",
+        "code": "DYC",
+        "pinyin": "dongshengxi",
+        "abbr": "dsx",
+        "city": "鄂尔多斯"
+      },
+      {
+        "shortPinyin": "dtn",
+        "name": "大同南",
+        "code": "DMV",
+        "pinyin": "datongnan",
+        "abbr": "dtn",
+        "city": "大同"
+      },
+      {
+        "shortPinyin": "dto",
+        "name": "大同",
+        "code": "DTV",
+        "pinyin": "datong",
+        "abbr": "dt",
+        "city": "大同"
+      },
+      {
+        "shortPinyin": "dtu",
+        "name": "大屯",
+        "code": "DNT",
+        "pinyin": "datun",
+        "abbr": "dt",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "dtx",
+        "name": "大通西",
+        "code": "DTO",
+        "pinyin": "datongxi",
+        "abbr": "dtx",
+        "city": "西宁"
+      },
+      {
+        "shortPinyin": "dwk",
+        "name": "大武口",
+        "code": "DFJ",
+        "pinyin": "dawukou",
+        "abbr": "dwk",
+        "city": "石嘴山"
+      },
+      {
+        "shortPinyin": "dwu",
+        "name": "党武",
+        "code": "DWE",
+        "pinyin": "dangwu",
+        "abbr": "dw",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "dxb",
+        "name": "定西北",
+        "code": "DNJ",
+        "pinyin": "dingxibei",
+        "abbr": "dxb",
+        "city": "定西"
+      },
+      {
+        "shortPinyin": "dxc",
+        "name": "大兴机场",
+        "code": "IWP",
+        "pinyin": "daxingjichang",
+        "abbr": "dxjc",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "dxi",
+        "name": "定西",
+        "code": "DSJ",
+        "pinyin": "dingxi",
+        "abbr": "dx",
+        "city": "定西"
+      },
+      {
+        "shortPinyin": "dxi",
+        "name": "东乡",
+        "code": "DXG",
+        "pinyin": "dongxiang",
+        "abbr": "dx",
+        "city": "抚州"
+      },
+      {
+        "shortPinyin": "dxi",
+        "name": "大兴",
+        "code": "DXX",
+        "pinyin": "daxing",
+        "abbr": "dx",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "dxs",
+        "name": "东兴市",
+        "code": "RIZ",
+        "pinyin": "dongxingshi",
+        "abbr": "dxs",
+        "city": "防城港"
+      },
+      {
+        "shortPinyin": "dya",
+        "name": "德阳",
+        "code": "DYW",
+        "pinyin": "deyang",
+        "abbr": "dy",
+        "city": "德阳"
+      },
+      {
+        "shortPinyin": "dya",
+        "name": "当阳",
+        "code": "DYN",
+        "pinyin": "dangyang",
+        "abbr": "dy",
+        "city": "宜昌"
+      },
+      {
+        "shortPinyin": "dya",
+        "name": "丹阳",
+        "code": "DYH",
+        "pinyin": "danyang",
+        "abbr": "dy",
+        "city": "镇江"
+      },
+      {
+        "shortPinyin": "dyb",
+        "name": "大冶北",
+        "code": "DBN",
+        "pinyin": "dayebei",
+        "abbr": "dyb",
+        "city": "黄石"
+      },
+      {
+        "shortPinyin": "dyd",
+        "name": "大英东",
+        "code": "IAW",
+        "pinyin": "dayingdong",
+        "abbr": "dyd",
+        "city": "遂宁"
+      },
+      {
+        "shortPinyin": "dyd",
+        "name": "都匀东",
+        "code": "KJW",
+        "pinyin": "duyundong",
+        "abbr": "dyd",
+        "city": "都匀"
+      },
+      {
+        "shortPinyin": "dyi",
+        "name": "东营",
+        "code": "DPK",
+        "pinyin": "dongying",
+        "abbr": "dy",
+        "city": "东营"
+      },
+      {
+        "shortPinyin": "dyi",
+        "name": "大邑",
+        "code": "DEE",
+        "pinyin": "dayi",
+        "abbr": "dy",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "dyn",
+        "name": "东营南",
+        "code": "DOK",
+        "pinyin": "dongyingnan",
+        "abbr": "dyn",
+        "city": "东营"
+      },
+      {
+        "shortPinyin": "dys",
+        "name": "大杨树",
+        "code": "DUX",
+        "pinyin": "dayangshu",
+        "abbr": "dys",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "dyu",
+        "name": "都匀",
+        "code": "RYW",
+        "pinyin": "duyun",
+        "abbr": "dy",
+        "city": "都匀"
+      },
+      {
+        "shortPinyin": "dzd",
+        "name": "德州东",
+        "code": "DIP",
+        "pinyin": "dezhoudong",
+        "abbr": "dzd",
+        "city": "德州"
+      },
+      {
+        "shortPinyin": "dzd",
+        "name": "定州东",
+        "code": "DOP",
+        "pinyin": "dingzhoudong",
+        "abbr": "dzd",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "dzd",
+        "name": "邓州东",
+        "code": "DDF",
+        "pinyin": "dengzhoudong",
+        "abbr": "dzd",
+        "city": "南阳"
+      },
+      {
+        "shortPinyin": "dzh",
+        "name": "东至",
+        "code": "DCH",
+        "pinyin": "dongzhi",
+        "abbr": "dz",
+        "city": "池州"
+      },
+      {
+        "shortPinyin": "dzh",
+        "name": "达州",
+        "code": "RXW",
+        "pinyin": "dazhou",
+        "abbr": "dz",
+        "city": "达州"
+      },
+      {
+        "shortPinyin": "dzh",
+        "name": "德州",
+        "code": "DZP",
+        "pinyin": "dezhou",
+        "abbr": "dz",
+        "city": "德州"
+      },
+      {
+        "shortPinyin": "dzh",
+        "name": "定州",
+        "code": "DXP",
+        "pinyin": "dingzhou",
+        "abbr": "dz",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "dzh",
+        "name": "邓州",
+        "code": "DOF",
+        "pinyin": "dengzhou",
+        "abbr": "dz",
+        "city": "南阳"
+      },
+      {
+        "shortPinyin": "dan",
+        "name": "都安",
+        "code": "RUZ",
+        "pinyin": "duan",
+        "abbr": "da",
+        "city": "河池"
+      },
+      {
+        "shortPinyin": "dan",
+        "name": "大安",
+        "code": "RAT",
+        "pinyin": "daan",
+        "abbr": "da",
+        "city": "白城"
+      },
+      {
+        "shortPinyin": "dan",
+        "name": "德安",
+        "code": "DAG",
+        "pinyin": "dean",
+        "abbr": "da",
+        "city": "九江"
+      },
+      {
+        "shortPinyin": "dba",
+        "name": "大坝",
+        "code": "DBJ",
+        "pinyin": "daba",
+        "abbr": "db",
+        "city": "青铜峡"
+      },
+      {
+        "shortPinyin": "dba",
+        "name": "德保",
+        "code": "RBZ",
+        "pinyin": "debao",
+        "abbr": "db",
+        "city": "百色"
+      },
+      {
+        "shortPinyin": "dba",
+        "name": "到保",
+        "code": "RBT",
+        "pinyin": "daobao",
+        "abbr": "db",
+        "city": "白城"
+      },
+      {
+        "shortPinyin": "dba",
+        "name": "大巴",
+        "code": "DBD",
+        "pinyin": "daba",
+        "abbr": "db",
+        "city": "阜新"
+      },
+      {
+        "shortPinyin": "dba",
+        "name": "电白",
+        "code": "NWQ",
+        "pinyin": "dianbai",
+        "abbr": "db",
+        "city": "茂名"
+      },
+      {
+        "shortPinyin": "dba",
+        "name": "大板",
+        "code": "DBC",
+        "pinyin": "daban",
+        "abbr": "db",
+        "city": "赤峰"
+      },
+      {
+        "shortPinyin": "dbj",
+        "name": "东边井",
+        "code": "DBB",
+        "pinyin": "dongbianjing",
+        "abbr": "dbj",
+        "city": "绥化"
+      },
+      {
+        "shortPinyin": "dbs",
+        "name": "德伯斯",
+        "code": "RDT",
+        "pinyin": "debosi",
+        "abbr": "dbs",
+        "city": "兴安"
+      },
+      {
+        "shortPinyin": "dcg",
+        "name": "打柴沟",
+        "code": "DGJ",
+        "pinyin": "dachaigou",
+        "abbr": "dcg",
+        "city": "武威"
+      },
+      {
+        "shortPinyin": "dch",
+        "name": "德昌",
+        "code": "DVW",
+        "pinyin": "dechang",
+        "abbr": "dc",
+        "city": "西昌"
+      },
+      {
+        "shortPinyin": "dch",
+        "name": "大厂",
+        "code": "DCI",
+        "pinyin": "dachang",
+        "abbr": "dc",
+        "city": "廊坊"
+      },
+      {
+        "shortPinyin": "dch",
+        "name": "都昌",
+        "code": "DCG",
+        "pinyin": "duchang",
+        "abbr": "dc",
+        "city": "九江"
+      },
+      {
+        "shortPinyin": "dcn",
+        "name": "东城南",
+        "code": "IYQ",
+        "pinyin": "dongchengnan",
+        "abbr": "dcn",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "dcx",
+        "name": "德昌西",
+        "code": "DXE",
+        "pinyin": "dechangxi",
+        "abbr": "dcx",
+        "city": "西昌"
+      },
+      {
+        "shortPinyin": "dda",
+        "name": "滴道",
+        "code": "DDB",
+        "pinyin": "didao",
+        "abbr": "dd",
+        "city": "鸡西"
+      },
+      {
+        "shortPinyin": "ddg",
+        "name": "大磴沟",
+        "code": "DKJ",
+        "pinyin": "dadenggou",
+        "abbr": "ddg",
+        "city": "石嘴山"
+      },
+      {
+        "shortPinyin": "ddh",
+        "name": "东戴河",
+        "code": "RDD",
+        "pinyin": "dongdaihe",
+        "abbr": "ddh",
+        "city": "葫芦岛"
+      },
+      {
+        "shortPinyin": "ddx",
+        "name": "丹东西",
+        "code": "RWT",
+        "pinyin": "dandongxi",
+        "abbr": "ddx",
+        "city": "丹东"
+      },
+      {
+        "shortPinyin": "ded",
+        "name": "刀尔登",
+        "code": "DRD",
+        "pinyin": "daoerdeng",
+        "abbr": "ded",
+        "city": "朝阳"
+      },
+      {
+        "shortPinyin": "dee",
+        "name": "得耳布尔",
+        "code": "DRX",
+        "pinyin": "deerbuer",
+        "abbr": "debe",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "deh",
+        "name": "东二道河",
+        "code": "DRB",
+        "pinyin": "dongerdaohe",
+        "abbr": "dedh",
+        "city": "佳木斯"
+      },
+      {
+        "shortPinyin": "det",
+        "name": "杜尔伯特",
+        "code": "TKX",
+        "pinyin": "duerbote",
+        "abbr": "debt",
+        "city": "大庆"
+      },
+      {
+        "shortPinyin": "dfa",
+        "name": "大方",
+        "code": "DFE",
+        "pinyin": "dafang",
+        "abbr": "df",
+        "city": "毕节"
+      },
+      {
+        "shortPinyin": "dfe",
+        "name": "东丰",
+        "code": "DIL",
+        "pinyin": "dongfeng",
+        "abbr": "df",
+        "city": "辽源"
+      },
+      {
+        "shortPinyin": "dge",
+        "name": "都格",
+        "code": "DMM",
+        "pinyin": "duge",
+        "abbr": "dg",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "dgg",
+        "name": "东莞港",
+        "code": "DGA",
+        "pinyin": "dongguangang",
+        "abbr": "dgg",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "dgn",
+        "name": "大港南",
+        "code": "DNU",
+        "pinyin": "dagangnan",
+        "abbr": "dgn",
+        "city": "镇江"
+      },
+      {
+        "shortPinyin": "dgt",
+        "name": "大官屯",
+        "code": "DTT",
+        "pinyin": "daguantun",
+        "abbr": "dgt",
+        "city": "抚顺"
+      },
+      {
+        "shortPinyin": "dgu",
+        "name": "东光",
+        "code": "DGP",
+        "pinyin": "dongguang",
+        "abbr": "dg",
+        "city": "沧州"
+      },
+      {
+        "shortPinyin": "dha",
+        "name": "东海",
+        "code": "DHB",
+        "pinyin": "donghai",
+        "abbr": "dh",
+        "city": "鸡西"
+      },
+      {
+        "shortPinyin": "dhb",
+        "name": "东花园北",
+        "code": "QBP",
+        "pinyin": "donghuayuanbei",
+        "abbr": "dhyb",
+        "city": "张家口"
+      },
+      {
+        "shortPinyin": "dhc",
+        "name": "大灰厂",
+        "code": "DHP",
+        "pinyin": "dahuichang",
+        "abbr": "dhc",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "dhd",
+        "name": "鼎湖东",
+        "code": "UWQ",
+        "pinyin": "dinghudong",
+        "abbr": "dhd",
+        "city": "肇庆"
+      },
+      {
+        "shortPinyin": "dhs",
+        "name": "鼎湖山",
+        "code": "NVQ",
+        "pinyin": "dinghushan",
+        "abbr": "dhs",
+        "city": "肇庆"
+      },
+      {
+        "shortPinyin": "dhu",
+        "name": "东环",
+        "code": "DHA",
+        "pinyin": "donghuan",
+        "abbr": "dh",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "dhx",
+        "name": "东海县",
+        "code": "DQH",
+        "pinyin": "donghaixian",
+        "abbr": "dhx",
+        "city": "连云港"
+      },
+      {
+        "shortPinyin": "dji",
+        "name": "东津",
+        "code": "DKB",
+        "pinyin": "dongjin",
+        "abbr": "dj",
+        "city": "绥化"
+      },
+      {
+        "shortPinyin": "djk",
+        "name": "丹江口",
+        "code": "DON",
+        "pinyin": "danjiangkou",
+        "abbr": "djk",
+        "city": "十堰"
+      },
+      {
+        "shortPinyin": "djk",
+        "name": "董家口",
+        "code": "DTK",
+        "pinyin": "dongjiakou",
+        "abbr": "djk",
+        "city": "青岛"
+      },
+      {
+        "shortPinyin": "dkt",
+        "name": "大口屯",
+        "code": "DKP",
+        "pinyin": "dakoutun",
+        "abbr": "dkt",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "dla",
+        "name": "东来",
+        "code": "RVD",
+        "pinyin": "donglai",
+        "abbr": "dl",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "dli",
+        "name": "大林",
+        "code": "DLD",
+        "pinyin": "dalin",
+        "abbr": "dl",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "dli",
+        "name": "带岭",
+        "code": "DLB",
+        "pinyin": "dailing",
+        "abbr": "dl",
+        "city": "伊春"
+      },
+      {
+        "shortPinyin": "dlq",
+        "name": "达拉特旗",
+        "code": "DIC",
+        "pinyin": "dalateqi",
+        "abbr": "dltq",
+        "city": "鄂尔多斯"
+      },
+      {
+        "shortPinyin": "dlt",
+        "name": "独立屯",
+        "code": "DTX",
+        "pinyin": "dulitun",
+        "abbr": "dlt",
+        "city": "大庆"
+      },
+      {
+        "shortPinyin": "dlu",
+        "name": "豆罗",
+        "code": "DLV",
+        "pinyin": "douluo",
+        "abbr": "dl",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "dlx",
+        "name": "达拉特西",
+        "code": "DNC",
+        "pinyin": "dalatexi",
+        "abbr": "dltx",
+        "city": "鄂尔多斯"
+      },
+      {
+        "shortPinyin": "dlx",
+        "name": "大连西",
+        "code": "GZT",
+        "pinyin": "dalianxi",
+        "abbr": "dlx",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "dlz",
+        "name": "大朗镇",
+        "code": "KOQ",
+        "pinyin": "dalangzhen",
+        "abbr": "dlz",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "dmc",
+        "name": "东明村",
+        "code": "DMD",
+        "pinyin": "dongmingcun",
+        "abbr": "dmc",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "dmh",
+        "name": "洞庙河",
+        "code": "DEP",
+        "pinyin": "dongmiaohe",
+        "abbr": "dmh",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "dpf",
+        "name": "大平房",
+        "code": "DPD",
+        "pinyin": "dapingfang",
+        "abbr": "dpf",
+        "city": "朝阳"
+      },
+      {
+        "shortPinyin": "dps",
+        "name": "大盘石",
+        "code": "RPP",
+        "pinyin": "dapanshi",
+        "abbr": "dps",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "dpu",
+        "name": "大堡",
+        "code": "DVT",
+        "pinyin": "dapu",
+        "abbr": "dp",
+        "city": "丹东"
+      },
+      {
+        "shortPinyin": "dqg",
+        "name": "大青沟",
+        "code": "DSD",
+        "pinyin": "daqinggou",
+        "abbr": "dqg",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "dqh",
+        "name": "大其拉哈",
+        "code": "DQX",
+        "pinyin": "daqilaha",
+        "abbr": "dqlh",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "dqi",
+        "name": "德清",
+        "code": "DRH",
+        "pinyin": "deqing",
+        "abbr": "dq",
+        "city": "湖州"
+      },
+      {
+        "shortPinyin": "dqi",
+        "name": "杜桥",
+        "code": "DQU",
+        "pinyin": "duqiao",
+        "abbr": "dq",
+        "city": "台州"
+      },
+      {
+        "shortPinyin": "dqx",
+        "name": "德清西",
+        "code": "MOH",
+        "pinyin": "deqingxi",
+        "abbr": "dqx",
+        "city": "湖州"
+      },
+      {
+        "shortPinyin": "dsd",
+        "name": "东胜东",
+        "code": "RSC",
+        "pinyin": "dongshengdong",
+        "abbr": "dsd",
+        "city": "鄂尔多斯"
+      },
+      {
+        "shortPinyin": "dsh",
+        "name": "东升",
+        "code": "DRQ",
+        "pinyin": "dongsheng",
+        "abbr": "ds",
+        "city": "中山"
+      },
+      {
+        "shortPinyin": "dsh",
+        "name": "登沙河",
+        "code": "DWT",
+        "pinyin": "dengshahe",
+        "abbr": "dsh",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "dsh",
+        "name": "砀山",
+        "code": "DKH",
+        "pinyin": "dangshan",
+        "abbr": "ds",
+        "city": "宿州"
+      },
+      {
+        "shortPinyin": "dsn",
+        "name": "大石头南",
+        "code": "DAL",
+        "pinyin": "dashitounan",
+        "abbr": "dstn",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "dst",
+        "name": "大石头",
+        "code": "DSL",
+        "pinyin": "dashitou",
+        "abbr": "dst",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "dsz",
+        "name": "大石寨",
+        "code": "RZT",
+        "pinyin": "dashizhai",
+        "abbr": "dsz",
+        "city": "兴安"
+      },
+      {
+        "shortPinyin": "dta",
+        "name": "灯塔",
+        "code": "DGT",
+        "pinyin": "dengta",
+        "abbr": "dt",
+        "city": "辽阳"
+      },
+      {
+        "shortPinyin": "dta",
+        "name": "定陶",
+        "code": "DQK",
+        "pinyin": "dingtao",
+        "abbr": "dt",
+        "city": "菏泽"
+      },
+      {
+        "shortPinyin": "dta",
+        "name": "东台",
+        "code": "DBH",
+        "pinyin": "dongtai",
+        "abbr": "dt",
+        "city": "盐城"
+      },
+      {
+        "shortPinyin": "dtb",
+        "name": "大田边",
+        "code": "DBM",
+        "pinyin": "datianbian",
+        "abbr": "dtb",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "dtd",
+        "name": "当涂东",
+        "code": "OWH",
+        "pinyin": "dangtudong",
+        "abbr": "dtd",
+        "city": "马鞍山"
+      },
+      {
+        "shortPinyin": "dth",
+        "name": "东通化",
+        "code": "DTL",
+        "pinyin": "dongtonghua",
+        "abbr": "dth",
+        "city": "通化"
+      },
+      {
+        "shortPinyin": "dtu",
+        "name": "丹徒",
+        "code": "RUH",
+        "pinyin": "dantu",
+        "abbr": "dt",
+        "city": "镇江"
+      },
+      {
+        "shortPinyin": "dwa",
+        "name": "东湾",
+        "code": "DRJ",
+        "pinyin": "dongwan",
+        "abbr": "dw",
+        "city": "白银"
+      },
+      {
+        "shortPinyin": "dwa",
+        "name": "大旺",
+        "code": "WWQ",
+        "pinyin": "dawang",
+        "abbr": "dw",
+        "city": "肇庆"
+      },
+      {
+        "shortPinyin": "dwp",
+        "name": "低窝铺",
+        "code": "DWJ",
+        "pinyin": "diwopu",
+        "abbr": "dwp",
+        "city": "玉门"
+      },
+      {
+        "shortPinyin": "dxd",
+        "name": "德兴东",
+        "code": "DDG",
+        "pinyin": "dexingdong",
+        "abbr": "dxd",
+        "city": "上饶"
+      },
+      {
+        "shortPinyin": "dxg",
+        "name": "大兴沟",
+        "code": "DXL",
+        "pinyin": "daxinggou",
+        "abbr": "dxg",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "dxi",
+        "name": "德兴",
+        "code": "DWG",
+        "pinyin": "dexing",
+        "abbr": "dx",
+        "city": "上饶"
+      },
+      {
+        "shortPinyin": "dxi",
+        "name": "定襄",
+        "code": "DXV",
+        "pinyin": "dingxiang",
+        "abbr": "dx",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "dxi",
+        "name": "代县",
+        "code": "DKV",
+        "pinyin": "daixian",
+        "abbr": "dx",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "dxi",
+        "name": "甸心",
+        "code": "DXM",
+        "pinyin": "dianxin",
+        "abbr": "dx",
+        "city": "楚雄"
+      },
+      {
+        "shortPinyin": "dxs",
+        "name": "丹霞山",
+        "code": "IRQ",
+        "pinyin": "danxiashan",
+        "abbr": "dxs",
+        "city": "韶关"
+      },
+      {
+        "shortPinyin": "dxu",
+        "name": "东戌",
+        "code": "RXP",
+        "pinyin": "dongxu",
+        "abbr": "dx",
+        "city": "邯郸"
+      },
+      {
+        "shortPinyin": "dxz",
+        "name": "东辛庄",
+        "code": "DXD",
+        "pinyin": "dongxinzhuang",
+        "abbr": "dxz",
+        "city": "葫芦岛"
+      },
+      {
+        "shortPinyin": "dya",
+        "name": "大雁",
+        "code": "DYX",
+        "pinyin": "dayan",
+        "abbr": "dy",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "dya",
+        "name": "大阳",
+        "code": "RET",
+        "pinyin": "dayang",
+        "abbr": "dy",
+        "city": "本溪"
+      },
+      {
+        "shortPinyin": "dyb",
+        "name": "丹阳北",
+        "code": "EXH",
+        "pinyin": "danyangbei",
+        "abbr": "dyb",
+        "city": "镇江"
+      },
+      {
+        "shortPinyin": "dyb",
+        "name": "东阳北",
+        "code": "DIU",
+        "pinyin": "dongyangbei",
+        "abbr": "dyb",
+        "city": "金华"
+      },
+      {
+        "shortPinyin": "dyd",
+        "name": "东淤地",
+        "code": "DBV",
+        "pinyin": "dongyudi",
+        "abbr": "dyd",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "dyi",
+        "name": "大营",
+        "code": "DYV",
+        "pinyin": "daying",
+        "abbr": "dy",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "dyu",
+        "name": "定远",
+        "code": "EWH",
+        "pinyin": "dingyuan",
+        "abbr": "dy",
+        "city": "滁州"
+      },
+      {
+        "shortPinyin": "dyu",
+        "name": "岱岳",
+        "code": "RYV",
+        "pinyin": "daiyue",
+        "abbr": "dy",
+        "city": "朔州"
+      },
+      {
+        "shortPinyin": "dyu",
+        "name": "大余",
+        "code": "DYG",
+        "pinyin": "dayu",
+        "abbr": "dy",
+        "city": "赣州"
+      },
+      {
+        "shortPinyin": "dyz",
+        "name": "大营镇",
+        "code": "DJP",
+        "pinyin": "dayingzhen",
+        "abbr": "dyz",
+        "city": "衡水"
+      },
+      {
+        "shortPinyin": "dzc",
+        "name": "大战场",
+        "code": "DTJ",
+        "pinyin": "dazhanchang",
+        "abbr": "dzc",
+        "city": "中卫"
+      },
+      {
+        "shortPinyin": "dzh",
+        "name": "兑镇",
+        "code": "DWV",
+        "pinyin": "duizhen",
+        "abbr": "dz",
+        "city": "吕梁"
+      },
+      {
+        "shortPinyin": "dzh",
+        "name": "道州",
+        "code": "DFZ",
+        "pinyin": "daozhou",
+        "abbr": "dz",
+        "city": "永州"
+      },
+      {
+        "shortPinyin": "dzh",
+        "name": "东镇",
+        "code": "DNV",
+        "pinyin": "dongzhen",
+        "abbr": "dz",
+        "city": "运城"
+      },
+      {
+        "shortPinyin": "dzh",
+        "name": "东庄",
+        "code": "DZV",
+        "pinyin": "dongzhuang",
+        "abbr": "dz",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "dzh",
+        "name": "端州",
+        "code": "WZQ",
+        "pinyin": "duanzhou",
+        "abbr": "dz",
+        "city": "肇庆"
+      },
+      {
+        "shortPinyin": "dzh",
+        "name": "低庄",
+        "code": "DVQ",
+        "pinyin": "dizhuang",
+        "abbr": "dz",
+        "city": "怀化"
+      },
+      {
+        "shortPinyin": "dzh",
+        "name": "豆庄",
+        "code": "ROP",
+        "pinyin": "douzhuang",
+        "abbr": "dz",
+        "city": "邯郸"
+      },
+      {
+        "shortPinyin": "dzn",
+        "name": "大足南",
+        "code": "FQW",
+        "pinyin": "dazunan",
+        "abbr": "dzn",
+        "city": "大足"
+      },
+      {
+        "shortPinyin": "dzy",
+        "name": "大竹园",
+        "code": "DZY",
+        "pinyin": "dazhuyuan",
+        "abbr": "dzy",
+        "city": "安康"
+      },
+      {
+        "shortPinyin": "dzz",
+        "name": "大杖子",
+        "code": "DAP",
+        "pinyin": "dazhangzi",
+        "abbr": "dzz",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "dzz",
+        "name": "豆张庄",
+        "code": "RZP",
+        "pinyin": "douzhangzhuang",
+        "abbr": "dzz",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "dhu",
+        "name": "德化",
+        "code": "DKS",
+        "pinyin": "dehua",
+        "abbr": "dh",
+        "city": "泉州"
+      },
+      {
+        "shortPinyin": "dsd",
+        "name": "独山东",
+        "code": "DDE",
+        "pinyin": "dushandong",
+        "abbr": "dsd",
+        "city": "都匀"
+      },
+      {
+        "shortPinyin": "dtb",
+        "name": "大田北",
+        "code": "DTS",
+        "pinyin": "datianbei",
+        "abbr": "dtb",
+        "city": "三明"
+      }
+    ],
+    "F": [
+      {
+        "shortPinyin": "fsc",
+        "name": "丰水村",
+        "code": "FSJ",
+        "pinyin": "fengshuicun",
+        "abbr": "fsc",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "fzh",
+        "name": "福州",
+        "code": "FZS",
+        "pinyin": "fuzhou",
+        "abbr": "fz",
+        "city": "福州"
+      },
+      {
+        "shortPinyin": "fzn",
+        "name": "福州南",
+        "code": "FYS",
+        "pinyin": "fuzhounan",
+        "abbr": "fzn",
+        "city": "福州"
+      },
+      {
+        "shortPinyin": "fcb",
+        "name": "防城港北",
+        "code": "FBZ",
+        "pinyin": "fangchenggangbei",
+        "abbr": "fcgb",
+        "city": "防城港"
+      },
+      {
+        "shortPinyin": "fdi",
+        "name": "福鼎",
+        "code": "FES",
+        "pinyin": "fuding",
+        "abbr": "fd",
+        "city": "宁德"
+      },
+      {
+        "shortPinyin": "fdo",
+        "name": "肥东",
+        "code": "FIH",
+        "pinyin": "feidong",
+        "abbr": "fd",
+        "city": "合肥"
+      },
+      {
+        "shortPinyin": "fdu",
+        "name": "丰都",
+        "code": "FUW",
+        "pinyin": "fengdu",
+        "abbr": "fd",
+        "city": "丰都"
+      },
+      {
+        "shortPinyin": "fer",
+        "name": "发耳",
+        "code": "FEM",
+        "pinyin": "faer",
+        "abbr": "fe",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "fgu",
+        "name": "府谷",
+        "code": "FUV",
+        "pinyin": "fugu",
+        "abbr": "fg",
+        "city": "榆林"
+      },
+      {
+        "shortPinyin": "fha",
+        "name": "福海",
+        "code": "FHR",
+        "pinyin": "fuhai",
+        "abbr": "fh",
+        "city": "阿勒泰"
+      },
+      {
+        "shortPinyin": "fhc",
+        "name": "凤凰机场",
+        "code": "FJQ",
+        "pinyin": "fenghuangjichang",
+        "abbr": "fhjc",
+        "city": "三亚"
+      },
+      {
+        "shortPinyin": "fhc",
+        "name": "凤凰城",
+        "code": "FHT",
+        "pinyin": "fenghuangcheng",
+        "abbr": "fhc",
+        "city": "丹东"
+      },
+      {
+        "shortPinyin": "fhe",
+        "name": "汾河",
+        "code": "FEV",
+        "pinyin": "fenhe",
+        "abbr": "fh",
+        "city": "太原"
+      },
+      {
+        "shortPinyin": "fhu",
+        "name": "奉化",
+        "code": "FHH",
+        "pinyin": "fenghua",
+        "abbr": "fh",
+        "city": "宁波"
+      },
+      {
+        "shortPinyin": "fji",
+        "name": "富锦",
+        "code": "FIB",
+        "pinyin": "fujin",
+        "abbr": "fj",
+        "city": "佳木斯"
+      },
+      {
+        "shortPinyin": "fjt",
+        "name": "范家屯",
+        "code": "FTT",
+        "pinyin": "fanjiatun",
+        "abbr": "fjt",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "flb",
+        "name": "涪陵北",
+        "code": "FEW",
+        "pinyin": "fulingbei",
+        "abbr": "flb",
+        "city": "涪陵"
+      },
+      {
+        "shortPinyin": "fld",
+        "name": "风陵渡",
+        "code": "FLV",
+        "pinyin": "fenglingdu",
+        "abbr": "fld",
+        "city": "运城"
+      },
+      {
+        "shortPinyin": "fld",
+        "name": "浮梁东",
+        "code": "FVG",
+        "pinyin": "fuliangdong",
+        "abbr": "fld",
+        "city": "景德镇"
+      },
+      {
+        "shortPinyin": "fli",
+        "name": "涪陵",
+        "code": "FLW",
+        "pinyin": "fuling",
+        "abbr": "fl",
+        "city": "涪陵"
+      },
+      {
+        "shortPinyin": "flj",
+        "name": "富拉尔基",
+        "code": "FRX",
+        "pinyin": "fulaerji",
+        "abbr": "flej",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "flq",
+        "name": "福利区",
+        "code": "FLJ",
+        "pinyin": "fuliqu",
+        "abbr": "flq",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "fnd",
+        "name": "阜宁东",
+        "code": "FDU",
+        "pinyin": "funingdong",
+        "abbr": "fnd",
+        "city": "盐城"
+      },
+      {
+        "shortPinyin": "fni",
+        "name": "富宁",
+        "code": "FNM",
+        "pinyin": "funing",
+        "abbr": "fn",
+        "city": "文山"
+      },
+      {
+        "shortPinyin": "fqi",
+        "name": "福清",
+        "code": "FQS",
+        "pinyin": "fuqing",
+        "abbr": "fq",
+        "city": "福州"
+      },
+      {
+        "shortPinyin": "fqu",
+        "name": "福泉",
+        "code": "VMW",
+        "pinyin": "fuquan",
+        "abbr": "fq",
+        "city": "都匀"
+      },
+      {
+        "shortPinyin": "frn",
+        "name": "芙蓉南",
+        "code": "KCQ",
+        "pinyin": "furongnan",
+        "abbr": "frn",
+        "city": "长沙"
+      },
+      {
+        "shortPinyin": "fs",
+        "name": "抚顺",
+        "code": "FET",
+        "pinyin": "fushun",
+        "abbr": "fs",
+        "city": "抚顺"
+      },
+      {
+        "shortPinyin": "fsh",
+        "name": "富顺",
+        "code": "FSE",
+        "pinyin": "fushun",
+        "abbr": "fs",
+        "city": "自贡"
+      },
+      {
+        "shortPinyin": "fsh",
+        "name": "佛山",
+        "code": "FSQ",
+        "pinyin": "foshan",
+        "abbr": "fs",
+        "city": "佛山"
+      },
+      {
+        "shortPinyin": "fsu",
+        "name": "扶绥",
+        "code": "FSZ",
+        "pinyin": "fusui",
+        "abbr": "fs",
+        "city": "崇左"
+      },
+      {
+        "shortPinyin": "fsx",
+        "name": "佛山西",
+        "code": "FOQ",
+        "pinyin": "foshanxi",
+        "abbr": "fsx",
+        "city": "佛山"
+      },
+      {
+        "shortPinyin": "fti",
+        "name": "福田",
+        "code": "NZQ",
+        "pinyin": "futian",
+        "abbr": "ft",
+        "city": "深圳"
+      },
+      {
+        "shortPinyin": "fxi",
+        "name": "飞霞",
+        "code": "FEA",
+        "pinyin": "feixia",
+        "abbr": "fx",
+        "city": "清远"
+      },
+      {
+        "shortPinyin": "fxi",
+        "name": "凤县",
+        "code": "FXY",
+        "pinyin": "fengxian",
+        "abbr": "fx",
+        "city": "宝鸡"
+      },
+      {
+        "shortPinyin": "fxi",
+        "name": "阜新",
+        "code": "FOT",
+        "pinyin": "fuxin",
+        "abbr": "fx",
+        "city": "阜新"
+      },
+      {
+        "shortPinyin": "fxi",
+        "name": "肥西",
+        "code": "FAH",
+        "pinyin": "feixi",
+        "abbr": "fx",
+        "city": "合肥"
+      },
+      {
+        "shortPinyin": "fxn",
+        "name": "阜新南",
+        "code": "FXD",
+        "pinyin": "fuxinnan",
+        "abbr": "fxn",
+        "city": "阜新"
+      },
+      {
+        "shortPinyin": "fya",
+        "name": "阜阳",
+        "code": "FYH",
+        "pinyin": "fuyang",
+        "abbr": "fy",
+        "city": "阜阳"
+      },
+      {
+        "shortPinyin": "fya",
+        "name": "富阳",
+        "code": "FYU",
+        "pinyin": "fuyang",
+        "abbr": "fy",
+        "city": "杭州"
+      },
+      {
+        "shortPinyin": "fyb",
+        "name": "扶余北",
+        "code": "FBT",
+        "pinyin": "fuyubei",
+        "abbr": "fyb",
+        "city": "松原"
+      },
+      {
+        "shortPinyin": "fyi",
+        "name": "分宜",
+        "code": "FYG",
+        "pinyin": "fenyi",
+        "abbr": "fy",
+        "city": "新余"
+      },
+      {
+        "shortPinyin": "fyu",
+        "name": "富蕴",
+        "code": "FYR",
+        "pinyin": "fuyun",
+        "abbr": "fyu",
+        "city": "阿勒泰"
+      },
+      {
+        "shortPinyin": "fyu",
+        "name": "富源",
+        "code": "FYM",
+        "pinyin": "fuyuan",
+        "abbr": "fy",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "fyu",
+        "name": "抚远",
+        "code": "FYB",
+        "pinyin": "fuyuan",
+        "abbr": "fy",
+        "city": "佳木斯"
+      },
+      {
+        "shortPinyin": "fyu",
+        "name": "富裕",
+        "code": "FYX",
+        "pinyin": "fuyu",
+        "abbr": "fy",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "fyx",
+        "name": "阜阳西",
+        "code": "FXU",
+        "pinyin": "fuyangxi",
+        "abbr": "fyx",
+        "city": "阜阳"
+      },
+      {
+        "shortPinyin": "fzh",
+        "name": "丰镇",
+        "code": "FZC",
+        "pinyin": "fengzhen",
+        "abbr": "fz",
+        "city": "乌兰察布"
+      },
+      {
+        "shortPinyin": "fzh",
+        "name": "凤州",
+        "code": "FZY",
+        "pinyin": "fengzhou",
+        "abbr": "fz",
+        "city": "宝鸡"
+      },
+      {
+        "shortPinyin": "fzh",
+        "name": "抚州",
+        "code": "FZG",
+        "pinyin": "fuzhou",
+        "abbr": "fz",
+        "city": "抚州"
+      },
+      {
+        "shortPinyin": "fzh",
+        "name": "方正",
+        "code": "FNB",
+        "pinyin": "fangzheng",
+        "abbr": "fz",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "fan",
+        "name": "福安",
+        "code": "FAS",
+        "pinyin": "fuan",
+        "abbr": "fa",
+        "city": "宁德"
+      },
+      {
+        "shortPinyin": "fcd",
+        "name": "丰城东",
+        "code": "FIG",
+        "pinyin": "fengchengdong",
+        "abbr": "fcd",
+        "city": "宜春"
+      },
+      {
+        "shortPinyin": "fcd",
+        "name": "凤城东",
+        "code": "FDT",
+        "pinyin": "fengchengdong",
+        "abbr": "fcd",
+        "city": "丹东"
+      },
+      {
+        "shortPinyin": "fch",
+        "name": "富川",
+        "code": "FDZ",
+        "pinyin": "fuchuan",
+        "abbr": "fc",
+        "city": "贺州"
+      },
+      {
+        "shortPinyin": "fch",
+        "name": "丰城",
+        "code": "FCG",
+        "pinyin": "fengcheng",
+        "abbr": "fc",
+        "city": "宜春"
+      },
+      {
+        "shortPinyin": "fch",
+        "name": "方城",
+        "code": "FNF",
+        "pinyin": "fangcheng",
+        "abbr": "fc",
+        "city": "南阳"
+      },
+      {
+        "shortPinyin": "fcn",
+        "name": "丰城南",
+        "code": "FNG",
+        "pinyin": "fengchengnan",
+        "abbr": "fcn",
+        "city": "宜春"
+      },
+      {
+        "shortPinyin": "fcx",
+        "name": "繁昌西",
+        "code": "PUH",
+        "pinyin": "fanchangxi",
+        "abbr": "fcx",
+        "city": "芜湖"
+      },
+      {
+        "shortPinyin": "fgn",
+        "name": "扶沟南",
+        "code": "FGF",
+        "pinyin": "fugounan",
+        "abbr": "fgn",
+        "city": "周口"
+      },
+      {
+        "shortPinyin": "fha",
+        "name": "富海",
+        "code": "FHX",
+        "pinyin": "fuhai",
+        "abbr": "fh",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "fhc",
+        "name": "凤凰古城",
+        "code": "FCA",
+        "pinyin": "fenghuanggucheng",
+        "abbr": "fhgc",
+        "city": "吉首"
+      },
+      {
+        "shortPinyin": "fhx",
+        "name": "福海西",
+        "code": "FHA",
+        "pinyin": "fuhaixi",
+        "abbr": "fhx",
+        "city": "深圳"
+      },
+      {
+        "shortPinyin": "fji",
+        "name": "奉节",
+        "code": "FJE",
+        "pinyin": "fengjie",
+        "abbr": "fj",
+        "city": "奉节"
+      },
+      {
+        "shortPinyin": "fli",
+        "name": "枫林",
+        "code": "FLN",
+        "pinyin": "fenglin",
+        "abbr": "fl",
+        "city": "黄石"
+      },
+      {
+        "shortPinyin": "flt",
+        "name": "福利屯",
+        "code": "FTB",
+        "pinyin": "fulitun",
+        "abbr": "flt",
+        "city": "双鸭山"
+      },
+      {
+        "shortPinyin": "flz",
+        "name": "丰乐镇",
+        "code": "FZB",
+        "pinyin": "fenglezhen",
+        "abbr": "flz",
+        "city": "双鸭山"
+      },
+      {
+        "shortPinyin": "fna",
+        "name": "阜南",
+        "code": "FNH",
+        "pinyin": "funan",
+        "abbr": "fn",
+        "city": "阜阳"
+      },
+      {
+        "shortPinyin": "fni",
+        "name": "抚宁",
+        "code": "FNP",
+        "pinyin": "funing",
+        "abbr": "fn",
+        "city": "秦皇岛"
+      },
+      {
+        "shortPinyin": "fni",
+        "name": "阜宁",
+        "code": "AKH",
+        "pinyin": "funing",
+        "abbr": "fn",
+        "city": "盐城"
+      },
+      {
+        "shortPinyin": "fnn",
+        "name": "阜宁南",
+        "code": "FNU",
+        "pinyin": "funingnan",
+        "abbr": "fnn",
+        "city": "盐城"
+      },
+      {
+        "shortPinyin": "fpi",
+        "name": "富平",
+        "code": "FPY",
+        "pinyin": "fuping",
+        "abbr": "fp",
+        "city": "富平"
+      },
+      {
+        "shortPinyin": "fpi",
+        "name": "佛坪",
+        "code": "FUY",
+        "pinyin": "foping",
+        "abbr": "fp",
+        "city": "汉中"
+      },
+      {
+        "shortPinyin": "fqi",
+        "name": "法启",
+        "code": "FQE",
+        "pinyin": "faqi",
+        "abbr": "fq",
+        "city": "毕节"
+      },
+      {
+        "shortPinyin": "fqx",
+        "name": "福清西",
+        "code": "FVS",
+        "pinyin": "fuqingxi",
+        "abbr": "fqx",
+        "city": "福州"
+      },
+      {
+        "shortPinyin": "frz",
+        "name": "芙蓉镇",
+        "code": "FRA",
+        "pinyin": "furongzhen",
+        "abbr": "frz",
+        "city": "吉首"
+      },
+      {
+        "shortPinyin": "fsb",
+        "name": "福山北",
+        "code": "YTK",
+        "pinyin": "fushanbei",
+        "abbr": "fsb",
+        "city": "烟台"
+      },
+      {
+        "shortPinyin": "fsd",
+        "name": "丰顺东",
+        "code": "FDA",
+        "pinyin": "fengshundong",
+        "abbr": "fsd",
+        "city": "梅州"
+      },
+      {
+        "shortPinyin": "fsh",
+        "name": "复盛",
+        "code": "FAW",
+        "pinyin": "fusheng",
+        "abbr": "fs",
+        "city": "江津"
+      },
+      {
+        "shortPinyin": "fsh",
+        "name": "丰顺",
+        "code": "FUQ",
+        "pinyin": "fengshun",
+        "abbr": "fs",
+        "city": "梅州"
+      },
+      {
+        "shortPinyin": "fsh",
+        "name": "繁峙",
+        "code": "FSV",
+        "pinyin": "fanshi",
+        "abbr": "fs",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "fsh",
+        "name": "福山",
+        "code": "FUK",
+        "pinyin": "fushan",
+        "abbr": "fs",
+        "city": "烟台"
+      },
+      {
+        "shortPinyin": "fsk",
+        "name": "福山口",
+        "code": "FKP",
+        "pinyin": "fushankou",
+        "abbr": "fsk",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "fsn",
+        "name": "扶绥南",
+        "code": "FNZ",
+        "pinyin": "fusuinan",
+        "abbr": "fsn",
+        "city": "崇左"
+      },
+      {
+        "shortPinyin": "fso",
+        "name": "抚松",
+        "code": "FSL",
+        "pinyin": "fusong",
+        "abbr": "fs",
+        "city": "白山"
+      },
+      {
+        "shortPinyin": "fsz",
+        "name": "福山镇",
+        "code": "FZQ",
+        "pinyin": "fushanzhen",
+        "abbr": "fsz",
+        "city": "澄迈"
+      },
+      {
+        "shortPinyin": "ftn",
+        "name": "凤台南",
+        "code": "FTU",
+        "pinyin": "fengtainan",
+        "abbr": "ftn",
+        "city": "淮南"
+      },
+      {
+        "shortPinyin": "ftu",
+        "name": "冯屯",
+        "code": "FTX",
+        "pinyin": "fengtun",
+        "abbr": "ft",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "fty",
+        "name": "浮图峪",
+        "code": "FYP",
+        "pinyin": "futuyu",
+        "abbr": "fty",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "fxb",
+        "name": "费县北",
+        "code": "FBK",
+        "pinyin": "feixianbei",
+        "abbr": "fxb",
+        "city": "临沂"
+      },
+      {
+        "shortPinyin": "fxd",
+        "name": "富县东",
+        "code": "FDY",
+        "pinyin": "fuxiandong",
+        "abbr": "fxd",
+        "city": "延安"
+      },
+      {
+        "shortPinyin": "fxi",
+        "name": "富县",
+        "code": "FEY",
+        "pinyin": "fuxian",
+        "abbr": "fx",
+        "city": "延安"
+      },
+      {
+        "shortPinyin": "fxi",
+        "name": "费县",
+        "code": "FXK",
+        "pinyin": "feixian",
+        "abbr": "fx",
+        "city": "临沂"
+      },
+      {
+        "shortPinyin": "fya",
+        "name": "汾阳",
+        "code": "FAV",
+        "pinyin": "fenyang",
+        "abbr": "fy",
+        "city": "吕梁"
+      },
+      {
+        "shortPinyin": "fya",
+        "name": "凤阳",
+        "code": "FUH",
+        "pinyin": "fengyang",
+        "abbr": "fy",
+        "city": "凤阳"
+      },
+      {
+        "shortPinyin": "fyb",
+        "name": "富源北",
+        "code": "FBM",
+        "pinyin": "fuyuanbei",
+        "abbr": "fyb",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "fyu",
+        "name": "扶余",
+        "code": "FYT",
+        "pinyin": "fuyu",
+        "abbr": "fy",
+        "city": "松原"
+      },
+      {
+        "shortPinyin": "fzb",
+        "name": "丰镇北",
+        "code": "FFC",
+        "pinyin": "fengzhenbei",
+        "abbr": "fzb",
+        "city": "乌兰察布"
+      },
+      {
+        "shortPinyin": "fzb",
+        "name": "抚州北",
+        "code": "FBG",
+        "pinyin": "fuzhoubei",
+        "abbr": "fzb",
+        "city": "抚州"
+      },
+      {
+        "shortPinyin": "fzd",
+        "name": "抚州东",
+        "code": "FDG",
+        "pinyin": "fuzhoudong",
+        "abbr": "fzd",
+        "city": "抚州"
+      },
+      {
+        "shortPinyin": "fzh",
+        "name": "范镇",
+        "code": "VZK",
+        "pinyin": "fanzhen",
+        "abbr": "fz",
+        "city": "泰安"
+      },
+      {
+        "shortPinyin": "fsh",
+        "name": "浮山",
+        "code": "FOV",
+        "pinyin": "fushan",
+        "abbr": "fs",
+        "city": "临汾"
+      },
+      {
+        "shortPinyin": "fyx",
+        "name": "富阳西",
+        "code": "FUU",
+        "pinyin": "fuyangxi",
+        "abbr": "fyx",
+        "city": "杭州"
+      }
+    ],
+    "G": [
+      {
+        "shortPinyin": "gcd",
+        "name": "甘草店",
+        "code": "GDJ",
+        "pinyin": "gancaodian",
+        "abbr": "gcd",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "gch",
+        "name": "钢城",
+        "code": "GAK",
+        "pinyin": "gangcheng",
+        "abbr": "gc",
+        "city": "济南"
+      },
+      {
+        "shortPinyin": "gjz",
+        "name": "孤家子",
+        "code": "GKT",
+        "pinyin": "gujiazi",
+        "abbr": "gjz",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "gnw",
+        "name": "广南卫",
+        "code": "GNM",
+        "pinyin": "guangnanwei",
+        "abbr": "gnw",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "gya",
+        "name": "贵阳",
+        "code": "GIW",
+        "pinyin": "guiyang",
+        "abbr": "gy",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "gyb",
+        "name": "贵阳北",
+        "code": "KQW",
+        "pinyin": "guiyangbei",
+        "abbr": "gyb",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "gyd",
+        "name": "贵阳东",
+        "code": "KEW",
+        "pinyin": "guiyangdong",
+        "abbr": "gyd",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "gzb",
+        "name": "广州北",
+        "code": "GBQ",
+        "pinyin": "guangzhoubei",
+        "abbr": "gzb",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "gzd",
+        "name": "广州东",
+        "code": "GGQ",
+        "pinyin": "guangzhoudong",
+        "abbr": "gzd",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "gzh",
+        "name": "广州",
+        "code": "GZQ",
+        "pinyin": "guangzhou",
+        "abbr": "gz",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "gzn",
+        "name": "广州南",
+        "code": "IZQ",
+        "pinyin": "guangzhounan",
+        "abbr": "gzn",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "gzx",
+        "name": "广州西",
+        "code": "GXQ",
+        "pinyin": "guangzhouxi",
+        "abbr": "gzx",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "gzy",
+        "name": "广州白云",
+        "code": "GBA",
+        "pinyin": "guangzhoubaiyun",
+        "abbr": "gzby",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "gan",
+        "name": "广安南",
+        "code": "VUW",
+        "pinyin": "guangannan",
+        "abbr": "gan",
+        "city": "广安"
+      },
+      {
+        "shortPinyin": "gan",
+        "name": "广安",
+        "code": "VJW",
+        "pinyin": "guangan",
+        "abbr": "ga",
+        "city": "广安"
+      },
+      {
+        "shortPinyin": "gan",
+        "name": "高安",
+        "code": "GCG",
+        "pinyin": "gaoan",
+        "abbr": "ga",
+        "city": "宜春"
+      },
+      {
+        "shortPinyin": "gan",
+        "name": "贵安",
+        "code": "GAE",
+        "pinyin": "guian",
+        "abbr": "ga",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "gbk",
+        "name": "古北口",
+        "code": "GKP",
+        "pinyin": "gubeikou",
+        "abbr": "gbk",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "gch",
+        "name": "藁城",
+        "code": "GEP",
+        "pinyin": "gaocheng",
+        "abbr": "gc",
+        "city": "石家庄"
+      },
+      {
+        "shortPinyin": "gcn",
+        "name": "藁城南",
+        "code": "GUP",
+        "pinyin": "gaochengnan",
+        "abbr": "gcn",
+        "city": "石家庄"
+      },
+      {
+        "shortPinyin": "gcu",
+        "name": "高村",
+        "code": "GCV",
+        "pinyin": "gaocun",
+        "abbr": "gc",
+        "city": "太原"
+      },
+      {
+        "shortPinyin": "gdo",
+        "name": "古东",
+        "code": "GDV",
+        "pinyin": "gudong",
+        "abbr": "gd",
+        "city": "太原"
+      },
+      {
+        "shortPinyin": "gem",
+        "name": "格尔木",
+        "code": "GRO",
+        "pinyin": "geermu",
+        "abbr": "gem",
+        "city": "格尔木"
+      },
+      {
+        "shortPinyin": "gga",
+        "name": "贵港",
+        "code": "GGZ",
+        "pinyin": "guigang",
+        "abbr": "gg",
+        "city": "贵港"
+      },
+      {
+        "shortPinyin": "ggu",
+        "name": "甘谷",
+        "code": "GGJ",
+        "pinyin": "gangu",
+        "abbr": "gg",
+        "city": "天水"
+      },
+      {
+        "shortPinyin": "ghe",
+        "name": "根河",
+        "code": "GEX",
+        "pinyin": "genhe",
+        "abbr": "gh",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "ghu",
+        "name": "高花",
+        "code": "HGD",
+        "pinyin": "gaohua",
+        "abbr": "gh",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "gji",
+        "name": "古交",
+        "code": "GJV",
+        "pinyin": "gujiao",
+        "abbr": "gj",
+        "city": "太原"
+      },
+      {
+        "shortPinyin": "gla",
+        "name": "皋兰",
+        "code": "GEJ",
+        "pinyin": "gaolan",
+        "abbr": "gl",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "glb",
+        "name": "桂林北",
+        "code": "GBZ",
+        "pinyin": "guilinbei",
+        "abbr": "glb",
+        "city": "桂林"
+      },
+      {
+        "shortPinyin": "gle",
+        "name": "高楞",
+        "code": "GLB",
+        "pinyin": "gaoleng",
+        "abbr": "gl",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "gli",
+        "name": "桂林",
+        "code": "GLZ",
+        "pinyin": "guilin",
+        "abbr": "gl",
+        "city": "桂林"
+      },
+      {
+        "shortPinyin": "gli",
+        "name": "古莲",
+        "code": "GRX",
+        "pinyin": "gulian",
+        "abbr": "gl",
+        "city": "加格达奇"
+      },
+      {
+        "shortPinyin": "gmz",
+        "name": "公庙子",
+        "code": "GMC",
+        "pinyin": "gongmiaozi",
+        "abbr": "gmz",
+        "city": "巴彦淖尔"
+      },
+      {
+        "shortPinyin": "gnx",
+        "name": "广南县",
+        "code": "GXM",
+        "pinyin": "guangnanxian",
+        "abbr": "gnx",
+        "city": "文山"
+      },
+      {
+        "shortPinyin": "gpi",
+        "name": "桂平",
+        "code": "GAZ",
+        "pinyin": "guiping",
+        "abbr": "gp",
+        "city": "贵港"
+      },
+      {
+        "shortPinyin": "gqc",
+        "name": "共青城",
+        "code": "GAG",
+        "pinyin": "gongqingcheng",
+        "abbr": "gqc",
+        "city": "九江"
+      },
+      {
+        "shortPinyin": "gsh",
+        "name": "固始",
+        "code": "GXN",
+        "pinyin": "gushi",
+        "abbr": "gs",
+        "city": "信阳"
+      },
+      {
+        "shortPinyin": "gsh",
+        "name": "广水",
+        "code": "GSN",
+        "pinyin": "guangshui",
+        "abbr": "gs",
+        "city": "随州"
+      },
+      {
+        "shortPinyin": "gsh",
+        "name": "谷山",
+        "code": "FFQ",
+        "pinyin": "gushan",
+        "abbr": "gs",
+        "city": "长沙"
+      },
+      {
+        "shortPinyin": "gsl",
+        "name": "观沙岭",
+        "code": "FKQ",
+        "pinyin": "guanshaling",
+        "abbr": "gsl",
+        "city": "长沙"
+      },
+      {
+        "shortPinyin": "gta",
+        "name": "干塘",
+        "code": "GNJ",
+        "pinyin": "gantang",
+        "abbr": "gt",
+        "city": "中卫"
+      },
+      {
+        "shortPinyin": "gtb",
+        "name": "广通北",
+        "code": "GPM",
+        "pinyin": "guangtongbei",
+        "abbr": "gtb",
+        "city": "楚雄"
+      },
+      {
+        "shortPinyin": "gtz",
+        "name": "古田会址",
+        "code": "STS",
+        "pinyin": "gutianhuizhi",
+        "abbr": "gthz",
+        "city": "龙岩"
+      },
+      {
+        "shortPinyin": "gxi",
+        "name": "高兴",
+        "code": "VWW",
+        "pinyin": "gaoxing",
+        "abbr": "gx",
+        "city": "广安"
+      },
+      {
+        "shortPinyin": "gxi",
+        "name": "冠县",
+        "code": "GHP",
+        "pinyin": "guanxian",
+        "abbr": "gx",
+        "city": "聊城"
+      },
+      {
+        "shortPinyin": "gya",
+        "name": "广阳",
+        "code": "LFP",
+        "pinyin": "guangyang",
+        "abbr": "gy",
+        "city": "廊坊"
+      },
+      {
+        "shortPinyin": "gyi",
+        "name": "高邑",
+        "code": "GIP",
+        "pinyin": "gaoyi",
+        "abbr": "gy",
+        "city": "石家庄"
+      },
+      {
+        "shortPinyin": "gyi",
+        "name": "巩义",
+        "code": "GXF",
+        "pinyin": "gongyi",
+        "abbr": "gy",
+        "city": "郑州"
+      },
+      {
+        "shortPinyin": "gyn",
+        "name": "巩义南",
+        "code": "GYF",
+        "pinyin": "gongyinan",
+        "abbr": "gyn",
+        "city": "郑州"
+      },
+      {
+        "shortPinyin": "gyu",
+        "name": "固原",
+        "code": "GUJ",
+        "pinyin": "guyuan",
+        "abbr": "gy",
+        "city": "固原"
+      },
+      {
+        "shortPinyin": "gyu",
+        "name": "广元",
+        "code": "GYW",
+        "pinyin": "guangyuan",
+        "abbr": "gy",
+        "city": "广元"
+      },
+      {
+        "shortPinyin": "gyu",
+        "name": "赣榆",
+        "code": "GYU",
+        "pinyin": "ganyu",
+        "abbr": "gy",
+        "city": "连云港"
+      },
+      {
+        "shortPinyin": "gyx",
+        "name": "高邑西",
+        "code": "GNP",
+        "pinyin": "gaoyixi",
+        "abbr": "gyx",
+        "city": "石家庄"
+      },
+      {
+        "shortPinyin": "gzh",
+        "name": "高州",
+        "code": "GSQ",
+        "pinyin": "gaozhou",
+        "abbr": "gz",
+        "city": "茂名"
+      },
+      {
+        "shortPinyin": "gzh",
+        "name": "赣州",
+        "code": "GZG",
+        "pinyin": "ganzhou",
+        "abbr": "gz",
+        "city": "赣州"
+      },
+      {
+        "shortPinyin": "gzl",
+        "name": "公主岭",
+        "code": "GLT",
+        "pinyin": "gongzhuling",
+        "abbr": "gzl",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "gzn",
+        "name": "公主岭南",
+        "code": "GBT",
+        "pinyin": "gongzhulingnan",
+        "abbr": "gzln",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "gzs",
+        "name": "冠豸山",
+        "code": "GPS",
+        "pinyin": "guanzhaishan",
+        "abbr": "gzs",
+        "city": "龙岩"
+      },
+      {
+        "shortPinyin": "gzx",
+        "name": "盖州西",
+        "code": "GAT",
+        "pinyin": "gaizhouxi",
+        "abbr": "gzx",
+        "city": "营口"
+      },
+      {
+        "shortPinyin": "gzx",
+        "name": "赣州西",
+        "code": "GOG",
+        "pinyin": "ganzhouxi",
+        "abbr": "gzx",
+        "city": "赣州"
+      },
+      {
+        "shortPinyin": "gad",
+        "name": "固安东",
+        "code": "GQP",
+        "pinyin": "guandong",
+        "abbr": "gad",
+        "city": "廊坊"
+      },
+      {
+        "shortPinyin": "gan",
+        "name": "固安",
+        "code": "GFP",
+        "pinyin": "guan",
+        "abbr": "ga",
+        "city": "廊坊"
+      },
+      {
+        "shortPinyin": "gbd",
+        "name": "高碑店东",
+        "code": "GMP",
+        "pinyin": "gaobeidiandong",
+        "abbr": "gbdd",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "gbd",
+        "name": "高碑店",
+        "code": "GBP",
+        "pinyin": "gaobeidian",
+        "abbr": "gbd",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "gbz",
+        "name": "沟帮子",
+        "code": "GBD",
+        "pinyin": "goubangzi",
+        "abbr": "gbz",
+        "city": "锦州"
+      },
+      {
+        "shortPinyin": "gcb",
+        "name": "谷城北",
+        "code": "GBN",
+        "pinyin": "guchengbei",
+        "abbr": "gcb",
+        "city": "襄阳"
+      },
+      {
+        "shortPinyin": "gcd",
+        "name": "古城东",
+        "code": "GUU",
+        "pinyin": "guchengdong",
+        "abbr": "gcd",
+        "city": "亳州"
+      },
+      {
+        "shortPinyin": "gch",
+        "name": "恭城",
+        "code": "GCZ",
+        "pinyin": "gongcheng",
+        "abbr": "gc",
+        "city": "桂林"
+      },
+      {
+        "shortPinyin": "gch",
+        "name": "谷城",
+        "code": "GCN",
+        "pinyin": "gucheng",
+        "abbr": "gc",
+        "city": "襄阳"
+      },
+      {
+        "shortPinyin": "gcz",
+        "name": "古城镇",
+        "code": "GZB",
+        "pinyin": "guchengzhen",
+        "abbr": "gcz",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "gdb",
+        "name": "贵定北",
+        "code": "FMW",
+        "pinyin": "guidingbei",
+        "abbr": "gdb",
+        "city": "都匀"
+      },
+      {
+        "shortPinyin": "gde",
+        "name": "广德",
+        "code": "GRH",
+        "pinyin": "guangde",
+        "abbr": "gd",
+        "city": "宣城"
+      },
+      {
+        "shortPinyin": "gdi",
+        "name": "贵定",
+        "code": "GTW",
+        "pinyin": "guiding",
+        "abbr": "gd",
+        "city": "都匀"
+      },
+      {
+        "shortPinyin": "gdn",
+        "name": "广德南",
+        "code": "GNU",
+        "pinyin": "guangdenan",
+        "abbr": "gdn",
+        "city": "宣城"
+      },
+      {
+        "shortPinyin": "gdn",
+        "name": "葛店南",
+        "code": "GNN",
+        "pinyin": "gediannan",
+        "abbr": "gdn",
+        "city": "鄂州"
+      },
+      {
+        "shortPinyin": "gdx",
+        "name": "贵定县",
+        "code": "KIW",
+        "pinyin": "guidingxian",
+        "abbr": "gdx",
+        "city": "都匀"
+      },
+      {
+        "shortPinyin": "gga",
+        "name": "岗嘎",
+        "code": "GAO",
+        "pinyin": "gangga",
+        "abbr": "gg",
+        "city": "岗嘎"
+      },
+      {
+        "shortPinyin": "gga",
+        "name": "贡嘎",
+        "code": "GGO",
+        "pinyin": "gongga",
+        "abbr": "gg",
+        "city": "贡嘎"
+      },
+      {
+        "shortPinyin": "gga",
+        "name": "官高",
+        "code": "GVP",
+        "pinyin": "guangao",
+        "abbr": "gg",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "ggm",
+        "name": "葛根庙",
+        "code": "GGT",
+        "pinyin": "gegenmiao",
+        "abbr": "ggm",
+        "city": "兴安"
+      },
+      {
+        "shortPinyin": "ggz",
+        "name": "高各庄",
+        "code": "GGP",
+        "pinyin": "gaogezhuang",
+        "abbr": "ggz",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "ghb",
+        "name": "广汉北",
+        "code": "GVW",
+        "pinyin": "guanghanbei",
+        "abbr": "ghb",
+        "city": "德阳"
+      },
+      {
+        "shortPinyin": "ghe",
+        "name": "甘河",
+        "code": "GAX",
+        "pinyin": "ganhe",
+        "abbr": "gh",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "gjd",
+        "name": "郭家店",
+        "code": "GDT",
+        "pinyin": "guojiadian",
+        "abbr": "gjd",
+        "city": "四平"
+      },
+      {
+        "shortPinyin": "gji",
+        "name": "个旧",
+        "code": "JJM",
+        "pinyin": "gejiu",
+        "abbr": "gj",
+        "city": "个旧"
+      },
+      {
+        "shortPinyin": "gla",
+        "name": "古浪",
+        "code": "GLJ",
+        "pinyin": "gulang",
+        "abbr": "gl",
+        "city": "武威"
+      },
+      {
+        "shortPinyin": "glb",
+        "name": "橄榄坝",
+        "code": "GVM",
+        "pinyin": "ganlanba",
+        "abbr": "glb",
+        "city": "景洪"
+      },
+      {
+        "shortPinyin": "glb",
+        "name": "古浪北",
+        "code": "GBJ",
+        "pinyin": "gulangbei",
+        "abbr": "glb",
+        "city": "武威"
+      },
+      {
+        "shortPinyin": "glh",
+        "name": "归流河",
+        "code": "GHT",
+        "pinyin": "guiliuhe",
+        "abbr": "glh",
+        "city": "兴安"
+      },
+      {
+        "shortPinyin": "gli",
+        "name": "关岭",
+        "code": "GLE",
+        "pinyin": "guanling",
+        "abbr": "gl",
+        "city": "安顺"
+      },
+      {
+        "shortPinyin": "gli",
+        "name": "关林",
+        "code": "GLF",
+        "pinyin": "guanlin",
+        "abbr": "gl",
+        "city": "洛阳"
+      },
+      {
+        "shortPinyin": "gln",
+        "name": "甘洛南",
+        "code": "GNE",
+        "pinyin": "ganluonan",
+        "abbr": "gln",
+        "city": "西昌"
+      },
+      {
+        "shortPinyin": "glx",
+        "name": "桂林西",
+        "code": "GEZ",
+        "pinyin": "guilinxi",
+        "abbr": "glx",
+        "city": "桂林"
+      },
+      {
+        "shortPinyin": "glz",
+        "name": "郭磊庄",
+        "code": "GLP",
+        "pinyin": "guoleizhuang",
+        "abbr": "glz",
+        "city": "张家口"
+      },
+      {
+        "shortPinyin": "gmb",
+        "name": "高密北",
+        "code": "GVK",
+        "pinyin": "gaomibei",
+        "abbr": "gmb",
+        "city": "潍坊"
+      },
+      {
+        "shortPinyin": "gmc",
+        "name": "光明城",
+        "code": "IMQ",
+        "pinyin": "guangmingcheng",
+        "abbr": "gmc",
+        "city": "深圳"
+      },
+      {
+        "shortPinyin": "gmi",
+        "name": "高密",
+        "code": "GMK",
+        "pinyin": "gaomi",
+        "abbr": "gm",
+        "city": "潍坊"
+      },
+      {
+        "shortPinyin": "gna",
+        "name": "灌南",
+        "code": "GIU",
+        "pinyin": "guannan",
+        "abbr": "gn",
+        "city": "连云港"
+      },
+      {
+        "shortPinyin": "gni",
+        "name": "广宁",
+        "code": "FBQ",
+        "pinyin": "guangning",
+        "abbr": "gn",
+        "city": "肇庆"
+      },
+      {
+        "shortPinyin": "gnn",
+        "name": "广宁寺南",
+        "code": "GNT",
+        "pinyin": "guangningsinan",
+        "abbr": "gnn",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "gns",
+        "name": "广宁寺",
+        "code": "GQT",
+        "pinyin": "guangningsi",
+        "abbr": "gns",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "gpd",
+        "name": "高平东",
+        "code": "GVF",
+        "pinyin": "gaopingdong",
+        "abbr": "gpd",
+        "city": "晋城"
+      },
+      {
+        "shortPinyin": "gpi",
+        "name": "高坪",
+        "code": "GGN",
+        "pinyin": "gaoping",
+        "abbr": "gp",
+        "city": "恩施"
+      },
+      {
+        "shortPinyin": "gpi",
+        "name": "广平",
+        "code": "GPP",
+        "pinyin": "guangping",
+        "abbr": "gp",
+        "city": "邯郸"
+      },
+      {
+        "shortPinyin": "gpi",
+        "name": "高平",
+        "code": "GPF",
+        "pinyin": "gaoping",
+        "abbr": "gp",
+        "city": "晋城"
+      },
+      {
+        "shortPinyin": "gpz",
+        "name": "弓棚子",
+        "code": "GPT",
+        "pinyin": "gongpengzi",
+        "abbr": "gpz",
+        "city": "松原"
+      },
+      {
+        "shortPinyin": "gqb",
+        "name": "甘泉北",
+        "code": "GEY",
+        "pinyin": "ganquanbei",
+        "abbr": "gqb",
+        "city": "延安"
+      },
+      {
+        "shortPinyin": "gqb",
+        "name": "官桥北",
+        "code": "GQA",
+        "pinyin": "guanqiaobei",
+        "abbr": "gqb",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "gqk",
+        "name": "甘旗卡",
+        "code": "GQD",
+        "pinyin": "ganqika",
+        "abbr": "gqk",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "gqu",
+        "name": "甘泉",
+        "code": "GQY",
+        "pinyin": "ganquan",
+        "abbr": "gq",
+        "city": "延安"
+      },
+      {
+        "shortPinyin": "gqz",
+        "name": "高桥镇",
+        "code": "GZD",
+        "pinyin": "gaoqiaozhen",
+        "abbr": "gqz",
+        "city": "葫芦岛"
+      },
+      {
+        "shortPinyin": "gsd",
+        "name": "赶水东",
+        "code": "GDE",
+        "pinyin": "ganshuidong",
+        "abbr": "gsd",
+        "city": "綦江"
+      },
+      {
+        "shortPinyin": "gsh",
+        "name": "光山",
+        "code": "GUN",
+        "pinyin": "guangshan",
+        "abbr": "gs",
+        "city": "信阳"
+      },
+      {
+        "shortPinyin": "gsh",
+        "name": "灌水",
+        "code": "GST",
+        "pinyin": "guanshui",
+        "abbr": "gs",
+        "city": "丹东"
+      },
+      {
+        "shortPinyin": "gsk",
+        "name": "孤山口",
+        "code": "GSP",
+        "pinyin": "gushankou",
+        "abbr": "gsk",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "gso",
+        "name": "果松",
+        "code": "GSL",
+        "pinyin": "guosong",
+        "abbr": "gs",
+        "city": "通化"
+      },
+      {
+        "shortPinyin": "gsz",
+        "name": "嘎什甸子",
+        "code": "GXD",
+        "pinyin": "gashidianzi",
+        "abbr": "gsdz",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "gsz",
+        "name": "高山子",
+        "code": "GSD",
+        "pinyin": "gaoshanzi",
+        "abbr": "gsz",
+        "city": "锦州"
+      },
+      {
+        "shortPinyin": "gta",
+        "name": "高滩",
+        "code": "GAY",
+        "pinyin": "gaotan",
+        "abbr": "gt",
+        "city": "安康"
+      },
+      {
+        "shortPinyin": "gta",
+        "name": "高台",
+        "code": "GTJ",
+        "pinyin": "gaotai",
+        "abbr": "gt",
+        "city": "张掖"
+      },
+      {
+        "shortPinyin": "gtb",
+        "name": "古田北",
+        "code": "GBS",
+        "pinyin": "gutianbei",
+        "abbr": "gtb",
+        "city": "宁德"
+      },
+      {
+        "shortPinyin": "gti",
+        "name": "古田",
+        "code": "GTS",
+        "pinyin": "gutian",
+        "abbr": "gt",
+        "city": "宁德"
+      },
+      {
+        "shortPinyin": "gti",
+        "name": "官厅",
+        "code": "GTP",
+        "pinyin": "guanting",
+        "abbr": "gt",
+        "city": "张家口"
+      },
+      {
+        "shortPinyin": "gtn",
+        "name": "高台南",
+        "code": "GAJ",
+        "pinyin": "gaotainan",
+        "abbr": "gtn",
+        "city": "张掖"
+      },
+      {
+        "shortPinyin": "gtx",
+        "name": "官厅西",
+        "code": "KEP",
+        "pinyin": "guantingxi",
+        "abbr": "gtx",
+        "city": "张家口"
+      },
+      {
+        "shortPinyin": "gxb",
+        "name": "赣县北",
+        "code": "GIG",
+        "pinyin": "ganxianbei",
+        "abbr": "gxb",
+        "city": "赣州"
+      },
+      {
+        "shortPinyin": "gxi",
+        "name": "贵溪",
+        "code": "GXG",
+        "pinyin": "guixi",
+        "abbr": "gx",
+        "city": "鹰潭"
+      },
+      {
+        "shortPinyin": "gya",
+        "name": "涡阳",
+        "code": "GYH",
+        "pinyin": "guoyang",
+        "abbr": "gy",
+        "city": "亳州"
+      },
+      {
+        "shortPinyin": "gyb",
+        "name": "高邮北",
+        "code": "GEU",
+        "pinyin": "gaoyoubei",
+        "abbr": "gyb",
+        "city": "扬州"
+      },
+      {
+        "shortPinyin": "gyc",
+        "name": "观音机场",
+        "code": "GCU",
+        "pinyin": "guanyinjichang",
+        "abbr": "gyjc",
+        "city": "徐州"
+      },
+      {
+        "shortPinyin": "gyo",
+        "name": "高邮",
+        "code": "GAU",
+        "pinyin": "gaoyou",
+        "abbr": "gy",
+        "city": "扬州"
+      },
+      {
+        "shortPinyin": "gyu",
+        "name": "灌云",
+        "code": "GOU",
+        "pinyin": "guanyun",
+        "abbr": "gy",
+        "city": "连云港"
+      },
+      {
+        "shortPinyin": "gyz",
+        "name": "公营子",
+        "code": "GYD",
+        "pinyin": "gongyingzi",
+        "abbr": "gyz",
+        "city": "朝阳"
+      },
+      {
+        "shortPinyin": "gze",
+        "name": "光泽",
+        "code": "GZS",
+        "pinyin": "guangze",
+        "abbr": "gz",
+        "city": "南平"
+      },
+      {
+        "shortPinyin": "gzh",
+        "name": "果珠",
+        "code": "GZE",
+        "pinyin": "guozhu",
+        "abbr": "gz",
+        "city": "昭通"
+      },
+      {
+        "shortPinyin": "gzh",
+        "name": "古镇",
+        "code": "GNQ",
+        "pinyin": "guzhen",
+        "abbr": "gz",
+        "city": "中山"
+      },
+      {
+        "shortPinyin": "gzh",
+        "name": "虢镇",
+        "code": "GZY",
+        "pinyin": "guozhen",
+        "abbr": "gz",
+        "city": "宝鸡"
+      },
+      {
+        "shortPinyin": "gzh",
+        "name": "盖州",
+        "code": "GXT",
+        "pinyin": "gaizhou",
+        "abbr": "gz",
+        "city": "营口"
+      },
+      {
+        "shortPinyin": "gzh",
+        "name": "瓜州",
+        "code": "GZJ",
+        "pinyin": "guazhou",
+        "abbr": "gz",
+        "city": "酒泉"
+      },
+      {
+        "shortPinyin": "gzh",
+        "name": "固镇",
+        "code": "GEH",
+        "pinyin": "guzhen",
+        "abbr": "gz",
+        "city": "蚌埠"
+      },
+      {
+        "shortPinyin": "gzj",
+        "name": "官字井",
+        "code": "GOT",
+        "pinyin": "guanzijing",
+        "abbr": "gzj",
+        "city": "松原"
+      },
+      {
+        "shortPinyin": "gzl",
+        "name": "广州长隆",
+        "code": "GCA",
+        "pinyin": "guangzhouchanglong",
+        "abbr": "gzcl",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "gzn",
+        "name": "冠豸山南",
+        "code": "GSS",
+        "pinyin": "guanzhaishannan",
+        "abbr": "gzn",
+        "city": "龙岩"
+      },
+      {
+        "shortPinyin": "gzs",
+        "name": "广州莲花山",
+        "code": "GLA",
+        "pinyin": "guangzhoulianhuashan",
+        "abbr": "gzlhs",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "gzx",
+        "name": "古丈西",
+        "code": "GXA",
+        "pinyin": "guzhangxi",
+        "abbr": "gzx",
+        "city": "吉首"
+      },
+      {
+        "shortPinyin": "gch",
+        "name": "高川",
+        "code": "GCE",
+        "pinyin": "gaochuan",
+        "abbr": "gc",
+        "city": "绵阳"
+      },
+      {
+        "shortPinyin": "gju",
+        "name": "革居",
+        "code": "GEM",
+        "pinyin": "geju",
+        "abbr": "gj",
+        "city": "兴义"
+      },
+      {
+        "shortPinyin": "glu",
+        "name": "古路",
+        "code": "GOE",
+        "pinyin": "gulu",
+        "abbr": "gl",
+        "city": "重庆"
+      }
+    ],
+    "H": [
+      {
+        "shortPinyin": "heb",
+        "name": "哈尔滨北",
+        "code": "HTB",
+        "pinyin": "haerbinbei",
+        "abbr": "hebb",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "heb",
+        "name": "哈尔滨",
+        "code": "HBB",
+        "pinyin": "haerbin",
+        "abbr": "heb",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "hed",
+        "name": "哈尔滨东",
+        "code": "VBB",
+        "pinyin": "haerbindong",
+        "abbr": "hebd",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "hex",
+        "name": "哈尔滨西",
+        "code": "VAB",
+        "pinyin": "haerbinxi",
+        "abbr": "hebx",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "hfc",
+        "name": "合肥北城",
+        "code": "COH",
+        "pinyin": "hefeibeicheng",
+        "abbr": "hfbc",
+        "city": "合肥"
+      },
+      {
+        "shortPinyin": "hfe",
+        "name": "合肥",
+        "code": "HFH",
+        "pinyin": "hefei",
+        "abbr": "hf",
+        "city": "合肥"
+      },
+      {
+        "shortPinyin": "hfn",
+        "name": "合肥南",
+        "code": "ENH",
+        "pinyin": "hefeinan",
+        "abbr": "hfn",
+        "city": "合肥"
+      },
+      {
+        "shortPinyin": "hgt",
+        "name": "皇姑屯",
+        "code": "HTT",
+        "pinyin": "huanggutun",
+        "abbr": "hgt",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "hhd",
+        "name": "呼和浩特东",
+        "code": "NDC",
+        "pinyin": "huhehaotedong",
+        "abbr": "hhhtd",
+        "city": "呼和浩特"
+      },
+      {
+        "shortPinyin": "hht",
+        "name": "呼和浩特",
+        "code": "HHC",
+        "pinyin": "huhehaote",
+        "abbr": "hhht",
+        "city": "呼和浩特"
+      },
+      {
+        "shortPinyin": "hkd",
+        "name": "海口东",
+        "code": "HMQ",
+        "pinyin": "haikoudong",
+        "abbr": "hkd",
+        "city": "海口"
+      },
+      {
+        "shortPinyin": "hko",
+        "name": "海口",
+        "code": "VUQ",
+        "pinyin": "haikou",
+        "abbr": "hk",
+        "city": "海口"
+      },
+      {
+        "shortPinyin": "hzd",
+        "name": "杭州东",
+        "code": "HGH",
+        "pinyin": "hangzhoudong",
+        "abbr": "hzd",
+        "city": "杭州"
+      },
+      {
+        "shortPinyin": "hzh",
+        "name": "杭州",
+        "code": "HZH",
+        "pinyin": "hangzhou",
+        "abbr": "hz",
+        "city": "杭州"
+      },
+      {
+        "shortPinyin": "hzn",
+        "name": "杭州南",
+        "code": "XHH",
+        "pinyin": "hangzhounan",
+        "abbr": "hzn",
+        "city": "杭州"
+      },
+      {
+        "shortPinyin": "had",
+        "name": "淮安东",
+        "code": "HAU",
+        "pinyin": "huaiandong",
+        "abbr": "had",
+        "city": "淮安"
+      },
+      {
+        "shortPinyin": "han",
+        "name": "淮安",
+        "code": "AUH",
+        "pinyin": "huaian",
+        "abbr": "ha",
+        "city": "淮安"
+      },
+      {
+        "shortPinyin": "hax",
+        "name": "红安西",
+        "code": "VXN",
+        "pinyin": "honganxi",
+        "abbr": "hax",
+        "city": "黄冈"
+      },
+      {
+        "shortPinyin": "hbe",
+        "name": "淮北",
+        "code": "HRH",
+        "pinyin": "huaibei",
+        "abbr": "hb",
+        "city": "淮北"
+      },
+      {
+        "shortPinyin": "hbe",
+        "name": "鹤北",
+        "code": "HMB",
+        "pinyin": "hebei",
+        "abbr": "hb",
+        "city": "佳木斯"
+      },
+      {
+        "shortPinyin": "hbi",
+        "name": "淮滨",
+        "code": "HVN",
+        "pinyin": "huaibin",
+        "abbr": "hb",
+        "city": "信阳"
+      },
+      {
+        "shortPinyin": "hbi",
+        "name": "河边",
+        "code": "HBV",
+        "pinyin": "hebian",
+        "abbr": "hb",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "hcd",
+        "name": "湖潮东",
+        "code": "HCE",
+        "pinyin": "huchaodong",
+        "abbr": "hcd",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "hch",
+        "name": "韩城",
+        "code": "HCY",
+        "pinyin": "hancheng",
+        "abbr": "hc",
+        "city": "渭南"
+      },
+      {
+        "shortPinyin": "hch",
+        "name": "合川",
+        "code": "WKW",
+        "pinyin": "hechuan",
+        "abbr": "hc",
+        "city": "合川"
+      },
+      {
+        "shortPinyin": "hch",
+        "name": "珲春",
+        "code": "HUL",
+        "pinyin": "hunchun",
+        "abbr": "hc",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "hch",
+        "name": "潢川",
+        "code": "KCN",
+        "pinyin": "huangchuan",
+        "abbr": "hc",
+        "city": "信阳"
+      },
+      {
+        "shortPinyin": "hch",
+        "name": "海城",
+        "code": "HCT",
+        "pinyin": "haicheng",
+        "abbr": "hc",
+        "city": "鞍山"
+      },
+      {
+        "shortPinyin": "hcj",
+        "name": "花城街",
+        "code": "HCA",
+        "pinyin": "huachengjie",
+        "abbr": "hcj",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "hcu",
+        "name": "黄村",
+        "code": "HCP",
+        "pinyin": "huangcun",
+        "abbr": "hc",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "hcx",
+        "name": "河池西",
+        "code": "HIZ",
+        "pinyin": "hechixi",
+        "abbr": "hcx",
+        "city": "河池"
+      },
+      {
+        "shortPinyin": "hcx",
+        "name": "海城西",
+        "code": "HXT",
+        "pinyin": "haichengxi",
+        "abbr": "hcx",
+        "city": "鞍山"
+      },
+      {
+        "shortPinyin": "hda",
+        "name": "邯郸",
+        "code": "HDP",
+        "pinyin": "handan",
+        "abbr": "hd",
+        "city": "邯郸"
+      },
+      {
+        "shortPinyin": "hdc",
+        "name": "河东机场",
+        "code": "HFJ",
+        "pinyin": "hedongjichang",
+        "abbr": "hdjc",
+        "city": "银川"
+      },
+      {
+        "shortPinyin": "hdd",
+        "name": "邯郸东",
+        "code": "HPP",
+        "pinyin": "handandong",
+        "abbr": "hdd",
+        "city": "邯郸"
+      },
+      {
+        "shortPinyin": "hdi",
+        "name": "横店",
+        "code": "HJU",
+        "pinyin": "hengdian",
+        "abbr": "hd",
+        "city": "金华"
+      },
+      {
+        "shortPinyin": "hdn",
+        "name": "惠东南",
+        "code": "KDQ",
+        "pinyin": "huidongnan",
+        "abbr": "hdn",
+        "city": "惠州"
+      },
+      {
+        "shortPinyin": "hdp",
+        "name": "哈达铺",
+        "code": "HDJ",
+        "pinyin": "hadapu",
+        "abbr": "hdp",
+        "city": "陇南"
+      },
+      {
+        "shortPinyin": "hdu",
+        "name": "花都",
+        "code": "HAA",
+        "pinyin": "huadu",
+        "abbr": "hd",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "hdx",
+        "name": "洪洞西",
+        "code": "HTV",
+        "pinyin": "hongtongxi",
+        "abbr": "hdx",
+        "city": "临汾"
+      },
+      {
+        "shortPinyin": "hdz",
+        "name": "横道河子",
+        "code": "HDB",
+        "pinyin": "hengdaohezi",
+        "abbr": "hdhz",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "hes",
+        "name": "霍尔果斯",
+        "code": "HFR",
+        "pinyin": "huoerguosi",
+        "abbr": "hegs",
+        "city": "伊宁"
+      },
+      {
+        "shortPinyin": "hga",
+        "name": "鹤岗",
+        "code": "HGB",
+        "pinyin": "hegang",
+        "abbr": "hg",
+        "city": "鹤岗"
+      },
+      {
+        "shortPinyin": "hgd",
+        "name": "黄冈东",
+        "code": "KAN",
+        "pinyin": "huanggangdong",
+        "abbr": "hgd",
+        "city": "黄冈"
+      },
+      {
+        "shortPinyin": "hgu",
+        "name": "红果",
+        "code": "HEM",
+        "pinyin": "hongguo",
+        "abbr": "hg",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "hgu",
+        "name": "汉沽",
+        "code": "HGP",
+        "pinyin": "hangu",
+        "abbr": "hg",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "hgz",
+        "name": "红光镇",
+        "code": "IGW",
+        "pinyin": "hongguangzhen",
+        "abbr": "hgz",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "hhe",
+        "name": "红河",
+        "code": "HHM",
+        "pinyin": "honghe",
+        "abbr": "hh",
+        "city": "蒙自"
+      },
+      {
+        "shortPinyin": "hhe",
+        "name": "黑河",
+        "code": "HJB",
+        "pinyin": "heihe",
+        "abbr": "hh",
+        "city": "黑河"
+      },
+      {
+        "shortPinyin": "hhn",
+        "name": "怀化南",
+        "code": "KAQ",
+        "pinyin": "huaihuanan",
+        "abbr": "hhn",
+        "city": "怀化"
+      },
+      {
+        "shortPinyin": "hhq",
+        "name": "黄河景区",
+        "code": "HCF",
+        "pinyin": "huanghejingqu",
+        "abbr": "hhjq",
+        "city": "郑州"
+      },
+      {
+        "shortPinyin": "hhu",
+        "name": "怀化",
+        "code": "HHQ",
+        "pinyin": "huaihua",
+        "abbr": "hh",
+        "city": "怀化"
+      },
+      {
+        "shortPinyin": "hhu",
+        "name": "后湖",
+        "code": "IHN",
+        "pinyin": "houhu",
+        "abbr": "hh",
+        "city": "武汉"
+      },
+      {
+        "shortPinyin": "hji",
+        "name": "环江",
+        "code": "HFZ",
+        "pinyin": "huanjiang",
+        "abbr": "hj",
+        "city": "河池"
+      },
+      {
+        "shortPinyin": "hji",
+        "name": "和静",
+        "code": "HJR",
+        "pinyin": "hejing",
+        "abbr": "hj",
+        "city": "库尔勒"
+      },
+      {
+        "shortPinyin": "hji",
+        "name": "河津",
+        "code": "HJV",
+        "pinyin": "hejin",
+        "abbr": "hj",
+        "city": "运城"
+      },
+      {
+        "shortPinyin": "hji",
+        "name": "怀集",
+        "code": "FAQ",
+        "pinyin": "huaiji",
+        "abbr": "hj",
+        "city": "肇庆"
+      },
+      {
+        "shortPinyin": "hji",
+        "name": "华家",
+        "code": "HJT",
+        "pinyin": "huajia",
+        "abbr": "hj",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "hkb",
+        "name": "河口北",
+        "code": "HBM",
+        "pinyin": "hekoubei",
+        "abbr": "hkb",
+        "city": "蒙自"
+      },
+      {
+        "shortPinyin": "hkl",
+        "name": "宏克力",
+        "code": "OKB",
+        "pinyin": "hongkeli",
+        "abbr": "hkl",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "hkn",
+        "name": "河口南",
+        "code": "HKJ",
+        "pinyin": "hekounan",
+        "abbr": "hkn",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "hko",
+        "name": "汉口",
+        "code": "HKN",
+        "pinyin": "hankou",
+        "abbr": "hk",
+        "city": "武汉"
+      },
+      {
+        "shortPinyin": "hla",
+        "name": "呼兰",
+        "code": "HUB",
+        "pinyin": "hulan",
+        "abbr": "hl",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "hlb",
+        "name": "葫芦岛北",
+        "code": "HPD",
+        "pinyin": "huludaobei",
+        "abbr": "hldb",
+        "city": "葫芦岛"
+      },
+      {
+        "shortPinyin": "hld",
+        "name": "葫芦岛",
+        "code": "HLD",
+        "pinyin": "huludao",
+        "abbr": "hld",
+        "city": "葫芦岛"
+      },
+      {
+        "shortPinyin": "hle",
+        "name": "海拉尔",
+        "code": "HRX",
+        "pinyin": "hailaer",
+        "abbr": "hle",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "hlh",
+        "name": "哈拉海",
+        "code": "HIT",
+        "pinyin": "halahai",
+        "abbr": "hlh",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "hli",
+        "name": "寒岭",
+        "code": "HAT",
+        "pinyin": "hanling",
+        "abbr": "hl",
+        "city": "辽阳"
+      },
+      {
+        "shortPinyin": "hli",
+        "name": "海林",
+        "code": "HRB",
+        "pinyin": "hailin",
+        "abbr": "hl",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "hli",
+        "name": "虎林",
+        "code": "VLB",
+        "pinyin": "hulin",
+        "abbr": "hl",
+        "city": "鸡西"
+      },
+      {
+        "shortPinyin": "hll",
+        "name": "霍林郭勒",
+        "code": "HWD",
+        "pinyin": "huolinguole",
+        "abbr": "hlgl",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "hln",
+        "name": "黄陵南",
+        "code": "VLY",
+        "pinyin": "huanglingnan",
+        "abbr": "hln",
+        "city": "延安"
+      },
+      {
+        "shortPinyin": "hlu",
+        "name": "海伦",
+        "code": "HLB",
+        "pinyin": "hailun",
+        "abbr": "hl",
+        "city": "绥化"
+      },
+      {
+        "shortPinyin": "hma",
+        "name": "侯马",
+        "code": "HMV",
+        "pinyin": "houma",
+        "abbr": "hm",
+        "city": "临汾"
+      },
+      {
+        "shortPinyin": "hmd",
+        "name": "黄梅东",
+        "code": "HDU",
+        "pinyin": "huangmeidong",
+        "abbr": "hmd",
+        "city": "黄冈"
+      },
+      {
+        "shortPinyin": "hme",
+        "name": "鲘门",
+        "code": "KMQ",
+        "pinyin": "houmen",
+        "abbr": "hm",
+        "city": "汕尾"
+      },
+      {
+        "shortPinyin": "hme",
+        "name": "海门",
+        "code": "HMU",
+        "pinyin": "haimen",
+        "abbr": "hm",
+        "city": "南通"
+      },
+      {
+        "shortPinyin": "hmi",
+        "name": "哈密",
+        "code": "HMR",
+        "pinyin": "hami",
+        "abbr": "hm",
+        "city": "哈密"
+      },
+      {
+        "shortPinyin": "hmx",
+        "name": "侯马西",
+        "code": "HPV",
+        "pinyin": "houmaxi",
+        "abbr": "hmx",
+        "city": "临汾"
+      },
+      {
+        "shortPinyin": "hna",
+        "name": "淮南",
+        "code": "HAH",
+        "pinyin": "huainan",
+        "abbr": "hn",
+        "city": "淮南"
+      },
+      {
+        "shortPinyin": "hna",
+        "name": "桦南",
+        "code": "HNB",
+        "pinyin": "huanan",
+        "abbr": "hn",
+        "city": "桦南"
+      },
+      {
+        "shortPinyin": "hnd",
+        "name": "淮南东",
+        "code": "HOH",
+        "pinyin": "huainandong",
+        "abbr": "hnd",
+        "city": "淮南"
+      },
+      {
+        "shortPinyin": "hnn",
+        "name": "淮南南",
+        "code": "HNU",
+        "pinyin": "huainannan",
+        "abbr": "hnn",
+        "city": "淮南"
+      },
+      {
+        "shortPinyin": "hnx",
+        "name": "海宁西",
+        "code": "EUH",
+        "pinyin": "hainingxi",
+        "abbr": "hnx",
+        "city": "嘉兴"
+      },
+      {
+        "shortPinyin": "hqi",
+        "name": "鹤庆",
+        "code": "HQM",
+        "pinyin": "heqing",
+        "abbr": "hq",
+        "city": "大理"
+      },
+      {
+        "shortPinyin": "hrb",
+        "name": "怀柔北",
+        "code": "HBP",
+        "pinyin": "huairoubei",
+        "abbr": "hrb",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "hrd",
+        "name": "怀仁东",
+        "code": "HFV",
+        "pinyin": "huairendong",
+        "abbr": "hrd",
+        "city": "朔州"
+      },
+      {
+        "shortPinyin": "hrn",
+        "name": "怀柔南",
+        "code": "IMP",
+        "pinyin": "huairounan",
+        "abbr": "hrn",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "hro",
+        "name": "怀柔",
+        "code": "HRP",
+        "pinyin": "huairou",
+        "abbr": "hr",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "hsb",
+        "name": "华山北",
+        "code": "HDY",
+        "pinyin": "huashanbei",
+        "abbr": "hsb",
+        "city": "华阴"
+      },
+      {
+        "shortPinyin": "hsb",
+        "name": "衡水北",
+        "code": "IHP",
+        "pinyin": "hengshuibei",
+        "abbr": "hsb",
+        "city": "衡水"
+      },
+      {
+        "shortPinyin": "hsb",
+        "name": "黄山北",
+        "code": "NYH",
+        "pinyin": "huangshanbei",
+        "abbr": "hsb",
+        "city": "黄山"
+      },
+      {
+        "shortPinyin": "hsd",
+        "name": "黄石东",
+        "code": "OSN",
+        "pinyin": "huangshidong",
+        "abbr": "hsd",
+        "city": "黄石"
+      },
+      {
+        "shortPinyin": "hsg",
+        "name": "和什托洛盖",
+        "code": "VSR",
+        "pinyin": "heshituoluogai",
+        "abbr": "hstlg",
+        "city": "塔城"
+      },
+      {
+        "shortPinyin": "hsh",
+        "name": "华山",
+        "code": "HGY",
+        "pinyin": "huashan",
+        "abbr": "hs",
+        "city": "华阴"
+      },
+      {
+        "shortPinyin": "hsh",
+        "name": "和硕",
+        "code": "VUR",
+        "pinyin": "heshuo",
+        "abbr": "hs",
+        "city": "库尔勒"
+      },
+      {
+        "shortPinyin": "hsh",
+        "name": "黑水",
+        "code": "HOT",
+        "pinyin": "heishui",
+        "abbr": "hs",
+        "city": "白城"
+      },
+      {
+        "shortPinyin": "hsh",
+        "name": "衡水",
+        "code": "HSP",
+        "pinyin": "hengshui",
+        "abbr": "hs",
+        "city": "衡水"
+      },
+      {
+        "shortPinyin": "hsh",
+        "name": "黄石",
+        "code": "HSN",
+        "pinyin": "huangshi",
+        "abbr": "hs",
+        "city": "黄石"
+      },
+      {
+        "shortPinyin": "hsh",
+        "name": "黄山",
+        "code": "HKH",
+        "pinyin": "huangshan",
+        "abbr": "hs",
+        "city": "黄山"
+      },
+      {
+        "shortPinyin": "hsn",
+        "name": "花山南",
+        "code": "KNN",
+        "pinyin": "huashannan",
+        "abbr": "hsn",
+        "city": "武汉"
+      },
+      {
+        "shortPinyin": "hss",
+        "name": "黑山寺",
+        "code": "HVP",
+        "pinyin": "heishansi",
+        "abbr": "hss",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "hsw",
+        "name": "海石湾",
+        "code": "HSO",
+        "pinyin": "haishiwan",
+        "abbr": "hsw",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "hsx",
+        "name": "和顺县",
+        "code": "HOP",
+        "pinyin": "heshunxian",
+        "abbr": "hsx",
+        "city": "晋中"
+      },
+      {
+        "shortPinyin": "hsx",
+        "name": "黄山西",
+        "code": "HWU",
+        "pinyin": "huangshanxi",
+        "abbr": "hsx",
+        "city": "黄山"
+      },
+      {
+        "shortPinyin": "hsz",
+        "name": "花山镇",
+        "code": "HZA",
+        "pinyin": "huashanzhen",
+        "abbr": "hsz",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "htd",
+        "name": "黄土店",
+        "code": "HKP",
+        "pinyin": "huangtudian",
+        "abbr": "htd",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "hti",
+        "name": "和田",
+        "code": "VTR",
+        "pinyin": "hetian",
+        "abbr": "ht",
+        "city": "和田"
+      },
+      {
+        "shortPinyin": "hto",
+        "name": "会同",
+        "code": "VTQ",
+        "pinyin": "huitong",
+        "abbr": "ht",
+        "city": "怀化"
+      },
+      {
+        "shortPinyin": "hwa",
+        "name": "海湾",
+        "code": "RWH",
+        "pinyin": "haiwan",
+        "abbr": "hw",
+        "city": "上海"
+      },
+      {
+        "shortPinyin": "hxc",
+        "name": "花溪大学城",
+        "code": "HDE",
+        "pinyin": "huaxidaxuecheng",
+        "abbr": "hxdxc",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "hxi",
+        "name": "环县",
+        "code": "KXJ",
+        "pinyin": "huanxian",
+        "abbr": "hx",
+        "city": "庆阳"
+      },
+      {
+        "shortPinyin": "hxn",
+        "name": "花溪南",
+        "code": "HNE",
+        "pinyin": "huaxinan",
+        "abbr": "hxn",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "hxx",
+        "name": "花溪西",
+        "code": "HUE",
+        "pinyin": "huaxixi",
+        "abbr": "hxx",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "hya",
+        "name": "惠阳",
+        "code": "KNQ",
+        "pinyin": "huiyang",
+        "abbr": "hy",
+        "city": "惠州"
+      },
+      {
+        "shortPinyin": "hya",
+        "name": "衡阳",
+        "code": "HYQ",
+        "pinyin": "hengyang",
+        "abbr": "hy",
+        "city": "衡阳"
+      },
+      {
+        "shortPinyin": "hya",
+        "name": "海阳",
+        "code": "KYK",
+        "pinyin": "haiyang",
+        "abbr": "hy",
+        "city": "烟台"
+      },
+      {
+        "shortPinyin": "hyd",
+        "name": "河源东",
+        "code": "HEA",
+        "pinyin": "heyuandong",
+        "abbr": "hyd",
+        "city": "河源"
+      },
+      {
+        "shortPinyin": "hyd",
+        "name": "衡阳东",
+        "code": "HVQ",
+        "pinyin": "hengyangdong",
+        "abbr": "hyd",
+        "city": "衡阳"
+      },
+      {
+        "shortPinyin": "hyi",
+        "name": "华蓥",
+        "code": "HUW",
+        "pinyin": "huaying",
+        "abbr": "hy",
+        "city": "广安"
+      },
+      {
+        "shortPinyin": "hyi",
+        "name": "鄠邑",
+        "code": "KXY",
+        "pinyin": "huyi",
+        "abbr": "hyi",
+        "city": "西安"
+      },
+      {
+        "shortPinyin": "hyu",
+        "name": "汉源",
+        "code": "WHW",
+        "pinyin": "hanyuan",
+        "abbr": "hy",
+        "city": "雅安"
+      },
+      {
+        "shortPinyin": "hyu",
+        "name": "河源",
+        "code": "VIQ",
+        "pinyin": "heyuan",
+        "abbr": "hy",
+        "city": "河源"
+      },
+      {
+        "shortPinyin": "hyu",
+        "name": "湟源",
+        "code": "HNO",
+        "pinyin": "huangyuan",
+        "abbr": "hy",
+        "city": "西宁"
+      },
+      {
+        "shortPinyin": "hzb",
+        "name": "惠州北",
+        "code": "HUA",
+        "pinyin": "huizhoubei",
+        "abbr": "hzb",
+        "city": "惠州"
+      },
+      {
+        "shortPinyin": "hzd",
+        "name": "菏泽东",
+        "code": "KDK",
+        "pinyin": "hezedong",
+        "abbr": "hzd",
+        "city": "菏泽"
+      },
+      {
+        "shortPinyin": "hze",
+        "name": "菏泽",
+        "code": "HIK",
+        "pinyin": "heze",
+        "abbr": "hz",
+        "city": "菏泽"
+      },
+      {
+        "shortPinyin": "hzh",
+        "name": "贺州",
+        "code": "HXZ",
+        "pinyin": "hezhou",
+        "abbr": "hz",
+        "city": "贺州"
+      },
+      {
+        "shortPinyin": "hzh",
+        "name": "华州",
+        "code": "HXY",
+        "pinyin": "huazhou",
+        "abbr": "hz",
+        "city": "渭南"
+      },
+      {
+        "shortPinyin": "hzh",
+        "name": "湖州",
+        "code": "VZH",
+        "pinyin": "huzhou",
+        "abbr": "hz",
+        "city": "湖州"
+      },
+      {
+        "shortPinyin": "hzh",
+        "name": "汉中",
+        "code": "HOY",
+        "pinyin": "hanzhong",
+        "abbr": "hz",
+        "city": "汉中"
+      },
+      {
+        "shortPinyin": "hzh",
+        "name": "惠州",
+        "code": "HCQ",
+        "pinyin": "huizhou",
+        "abbr": "hz",
+        "city": "惠州"
+      },
+      {
+        "shortPinyin": "xgl",
+        "name": "香港西九龙",
+        "code": "XJA",
+        "pinyin": "hkwestkowloon",
+        "abbr": "xgxjl",
+        "city": "香港"
+      },
+      {
+        "shortPinyin": "han",
+        "name": "红安",
+        "code": "HWN",
+        "pinyin": "hongan",
+        "abbr": "ha",
+        "city": "黄冈"
+      },
+      {
+        "shortPinyin": "han",
+        "name": "海安",
+        "code": "HIH",
+        "pinyin": "haian",
+        "abbr": "ha",
+        "city": "南通"
+      },
+      {
+        "shortPinyin": "han",
+        "name": "淮安南",
+        "code": "AMH",
+        "pinyin": "huaiannan",
+        "abbr": "han",
+        "city": "淮安"
+      },
+      {
+        "shortPinyin": "han",
+        "name": "怀安",
+        "code": "QAP",
+        "pinyin": "huaian",
+        "abbr": "ha",
+        "city": "张家口"
+      },
+      {
+        "shortPinyin": "han",
+        "name": "惠安",
+        "code": "HNS",
+        "pinyin": "huian",
+        "abbr": "ha",
+        "city": "泉州"
+      },
+      {
+        "shortPinyin": "hap",
+        "name": "惠安堡",
+        "code": "KBJ",
+        "pinyin": "huianpu",
+        "abbr": "hap",
+        "city": "吴忠"
+      },
+      {
+        "shortPinyin": "hba",
+        "name": "黄柏",
+        "code": "HBL",
+        "pinyin": "huangbai",
+        "abbr": "hb",
+        "city": "通化"
+      },
+      {
+        "shortPinyin": "hbb",
+        "name": "淮北北",
+        "code": "PLH",
+        "pinyin": "huaibeibei",
+        "abbr": "hbb",
+        "city": "淮北"
+      },
+      {
+        "shortPinyin": "hbd",
+        "name": "鹤壁东",
+        "code": "HFF",
+        "pinyin": "hebidong",
+        "abbr": "hbd",
+        "city": "鹤壁"
+      },
+      {
+        "shortPinyin": "hbe",
+        "name": "海北",
+        "code": "HEB",
+        "pinyin": "haibei",
+        "abbr": "hb",
+        "city": "绥化"
+      },
+      {
+        "shortPinyin": "hbi",
+        "name": "鹤壁",
+        "code": "HAF",
+        "pinyin": "hebi",
+        "abbr": "hb",
+        "city": "鹤壁"
+      },
+      {
+        "shortPinyin": "hbu",
+        "name": "灰埠",
+        "code": "KBK",
+        "pinyin": "huibu",
+        "abbr": "hb",
+        "city": "青岛"
+      },
+      {
+        "shortPinyin": "hcb",
+        "name": "会昌北",
+        "code": "XEG",
+        "pinyin": "huichangbei",
+        "abbr": "hcb",
+        "city": "赣州"
+      },
+      {
+        "shortPinyin": "hcg",
+        "name": "寒葱沟",
+        "code": "HKB",
+        "pinyin": "hanconggou",
+        "abbr": "hcg",
+        "city": "佳木斯"
+      },
+      {
+        "shortPinyin": "hch",
+        "name": "河唇",
+        "code": "HCZ",
+        "pinyin": "hechun",
+        "abbr": "hc",
+        "city": "湛江"
+      },
+      {
+        "shortPinyin": "hch",
+        "name": "华城",
+        "code": "VCQ",
+        "pinyin": "huacheng",
+        "abbr": "hc",
+        "city": "梅州"
+      },
+      {
+        "shortPinyin": "hch",
+        "name": "霍城",
+        "code": "SER",
+        "pinyin": "huocheng",
+        "abbr": "hc",
+        "city": "伊宁"
+      },
+      {
+        "shortPinyin": "hch",
+        "name": "汉川",
+        "code": "HCN",
+        "pinyin": "hanchuan",
+        "abbr": "hc",
+        "city": "孝感"
+      },
+      {
+        "shortPinyin": "hct",
+        "name": "黑冲滩",
+        "code": "HCJ",
+        "pinyin": "heichongtan",
+        "abbr": "hct",
+        "city": "武威"
+      },
+      {
+        "shortPinyin": "hda",
+        "name": "红岛",
+        "code": "HQK",
+        "pinyin": "hongdao",
+        "abbr": "hd",
+        "city": "青岛"
+      },
+      {
+        "shortPinyin": "hdd",
+        "name": "横道河子东",
+        "code": "KUX",
+        "pinyin": "hengdaohezidong",
+        "abbr": "hdhzd",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "hde",
+        "name": "化德",
+        "code": "HGC",
+        "pinyin": "huade",
+        "abbr": "hd",
+        "city": "乌兰察布"
+      },
+      {
+        "shortPinyin": "hdl",
+        "name": "河东里",
+        "code": "KLJ",
+        "pinyin": "hedongli",
+        "abbr": "hdl",
+        "city": "酒泉"
+      },
+      {
+        "shortPinyin": "hdo",
+        "name": "海东",
+        "code": "LVO",
+        "pinyin": "haidong",
+        "abbr": "hd",
+        "city": "海东"
+      },
+      {
+        "shortPinyin": "hdo",
+        "name": "洪洞",
+        "code": "HDV",
+        "pinyin": "hongtong",
+        "abbr": "hd",
+        "city": "临汾"
+      },
+      {
+        "shortPinyin": "hdx",
+        "name": "海东西",
+        "code": "HDO",
+        "pinyin": "haidongxi",
+        "abbr": "hdx",
+        "city": "海东"
+      },
+      {
+        "shortPinyin": "hfe",
+        "name": "横峰",
+        "code": "HFG",
+        "pinyin": "hengfeng",
+        "abbr": "hf",
+        "city": "上饶"
+      },
+      {
+        "shortPinyin": "hfw",
+        "name": "韩府湾",
+        "code": "HXJ",
+        "pinyin": "hanfuwan",
+        "abbr": "hfw",
+        "city": "中卫"
+      },
+      {
+        "shortPinyin": "hga",
+        "name": "黄冈",
+        "code": "KGN",
+        "pinyin": "huanggang",
+        "abbr": "hg",
+        "city": "黄冈"
+      },
+      {
+        "shortPinyin": "hgd",
+        "name": "横沟桥东",
+        "code": "HNN",
+        "pinyin": "henggouqiaodong",
+        "abbr": "hgqd",
+        "city": "咸宁"
+      },
+      {
+        "shortPinyin": "hgx",
+        "name": "黄冈西",
+        "code": "KXN",
+        "pinyin": "huanggangxi",
+        "abbr": "hgx",
+        "city": "黄冈"
+      },
+      {
+        "shortPinyin": "hhe",
+        "name": "洪河",
+        "code": "HPB",
+        "pinyin": "honghe",
+        "abbr": "hh",
+        "city": "佳木斯"
+      },
+      {
+        "shortPinyin": "hhg",
+        "name": "红花沟",
+        "code": "VHD",
+        "pinyin": "honghuagou",
+        "abbr": "hhg",
+        "city": "赤峰"
+      },
+      {
+        "shortPinyin": "hht",
+        "name": "黄花筒",
+        "code": "HUD",
+        "pinyin": "huanghuatong",
+        "abbr": "hht",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "hhu",
+        "name": "惠环",
+        "code": "KHQ",
+        "pinyin": "huihuan",
+        "abbr": "hh",
+        "city": "惠州"
+      },
+      {
+        "shortPinyin": "hhu",
+        "name": "花湖",
+        "code": "KHN",
+        "pinyin": "huahu",
+        "abbr": "hh",
+        "city": "黄石"
+      },
+      {
+        "shortPinyin": "hjd",
+        "name": "贺家店",
+        "code": "HJJ",
+        "pinyin": "hejiadian",
+        "abbr": "hjd",
+        "city": "天水"
+      },
+      {
+        "shortPinyin": "hji",
+        "name": "厚街",
+        "code": "HJA",
+        "pinyin": "houjie",
+        "abbr": "hj",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "hji",
+        "name": "黑井",
+        "code": "HIM",
+        "pinyin": "heijing",
+        "abbr": "hj",
+        "city": "楚雄"
+      },
+      {
+        "shortPinyin": "hji",
+        "name": "涵江",
+        "code": "HJS",
+        "pinyin": "hanjiang",
+        "abbr": "hj",
+        "city": "莆田"
+      },
+      {
+        "shortPinyin": "hji",
+        "name": "获嘉",
+        "code": "HJF",
+        "pinyin": "huojia",
+        "abbr": "hj",
+        "city": "新乡"
+      },
+      {
+        "shortPinyin": "hjq",
+        "name": "杭锦后旗",
+        "code": "HDC",
+        "pinyin": "hangjinhouqi",
+        "abbr": "hjhq",
+        "city": "巴彦淖尔"
+      },
+      {
+        "shortPinyin": "hjx",
+        "name": "河间西",
+        "code": "HXP",
+        "pinyin": "hejianxi",
+        "abbr": "hjx",
+        "city": "沧州"
+      },
+      {
+        "shortPinyin": "hjz",
+        "name": "花家庄",
+        "code": "HJM",
+        "pinyin": "huajiazhuang",
+        "abbr": "hjz",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "hko",
+        "name": "黄口",
+        "code": "KOH",
+        "pinyin": "huangkou",
+        "abbr": "hk",
+        "city": "宿州"
+      },
+      {
+        "shortPinyin": "hko",
+        "name": "湖口",
+        "code": "HKG",
+        "pinyin": "hukou",
+        "abbr": "hk",
+        "city": "九江"
+      },
+      {
+        "shortPinyin": "hla",
+        "name": "惠来",
+        "code": "HGA",
+        "pinyin": "huilai",
+        "abbr": "hl",
+        "city": "揭阳"
+      },
+      {
+        "shortPinyin": "hla",
+        "name": "怀来",
+        "code": "VQP",
+        "pinyin": "huailai",
+        "abbr": "hl",
+        "city": "张家口"
+      },
+      {
+        "shortPinyin": "hlb",
+        "name": "海林北",
+        "code": "KBX",
+        "pinyin": "hailinbei",
+        "abbr": "hlb",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "hld",
+        "name": "黄陵东",
+        "code": "ULY",
+        "pinyin": "huanglingdong",
+        "abbr": "hld",
+        "city": "延安"
+      },
+      {
+        "shortPinyin": "hle",
+        "name": "和乐",
+        "code": "HLA",
+        "pinyin": "hele",
+        "abbr": "hl",
+        "city": "万宁"
+      },
+      {
+        "shortPinyin": "hlh",
+        "name": "浩良河",
+        "code": "HHB",
+        "pinyin": "haolianghe",
+        "abbr": "hlh",
+        "city": "伊春"
+      },
+      {
+        "shortPinyin": "hli",
+        "name": "黄流",
+        "code": "KLQ",
+        "pinyin": "huangliu",
+        "abbr": "hl",
+        "city": "乐东"
+      },
+      {
+        "shortPinyin": "hli",
+        "name": "鹤立",
+        "code": "HOB",
+        "pinyin": "heli",
+        "abbr": "hl",
+        "city": "佳木斯"
+      },
+      {
+        "shortPinyin": "hli",
+        "name": "桦林",
+        "code": "HIB",
+        "pinyin": "hualin",
+        "abbr": "hl",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "hlo",
+        "name": "和龙",
+        "code": "HLL",
+        "pinyin": "helong",
+        "abbr": "hl",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "hlo",
+        "name": "海龙",
+        "code": "HIL",
+        "pinyin": "hailong",
+        "abbr": "hl",
+        "city": "通化"
+      },
+      {
+        "shortPinyin": "hls",
+        "name": "哈拉苏",
+        "code": "HAX",
+        "pinyin": "halasu",
+        "abbr": "hls",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "hlt",
+        "name": "呼鲁斯太",
+        "code": "VTJ",
+        "pinyin": "hulusitai",
+        "abbr": "hlst",
+        "city": "阿拉善"
+      },
+      {
+        "shortPinyin": "hmb",
+        "name": "虎门北",
+        "code": "HBA",
+        "pinyin": "humenbei",
+        "abbr": "hmb",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "hmd",
+        "name": "虎门东",
+        "code": "HDA",
+        "pinyin": "humendong",
+        "abbr": "hmd",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "hme",
+        "name": "黄梅",
+        "code": "VEH",
+        "pinyin": "huangmei",
+        "abbr": "hm",
+        "city": "黄冈"
+      },
+      {
+        "shortPinyin": "hme",
+        "name": "虎门",
+        "code": "IUQ",
+        "pinyin": "humen",
+        "abbr": "hm",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "hme",
+        "name": "洪梅",
+        "code": "HMA",
+        "pinyin": "hongmei",
+        "abbr": "hm",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "hmy",
+        "name": "韩麻营",
+        "code": "HYP",
+        "pinyin": "hanmaying",
+        "abbr": "hmy",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "hna",
+        "name": "衡南",
+        "code": "HNG",
+        "pinyin": "hengnan",
+        "abbr": "hn",
+        "city": "衡阳"
+      },
+      {
+        "shortPinyin": "hnd",
+        "name": "桦南东",
+        "code": "KNB",
+        "pinyin": "huanandong",
+        "abbr": "hnd",
+        "city": "桦南"
+      },
+      {
+        "shortPinyin": "hnh",
+        "name": "黄泥河",
+        "code": "HHL",
+        "pinyin": "huangnihe",
+        "abbr": "hnh",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "hni",
+        "name": "化念",
+        "code": "HDM",
+        "pinyin": "huanian",
+        "abbr": "hn",
+        "city": "峨山"
+      },
+      {
+        "shortPinyin": "hni",
+        "name": "海宁",
+        "code": "HNH",
+        "pinyin": "haining",
+        "abbr": "hn",
+        "city": "嘉兴"
+      },
+      {
+        "shortPinyin": "hni",
+        "name": "怀宁",
+        "code": "APH",
+        "pinyin": "huaining",
+        "abbr": "hn",
+        "city": "安庆"
+      },
+      {
+        "shortPinyin": "hnn",
+        "name": "惠农南",
+        "code": "KNJ",
+        "pinyin": "huinongnan",
+        "abbr": "hnn",
+        "city": "石嘴山"
+      },
+      {
+        "shortPinyin": "hno",
+        "name": "惠农",
+        "code": "HMJ",
+        "pinyin": "huinong",
+        "abbr": "hn",
+        "city": "石嘴山"
+      },
+      {
+        "shortPinyin": "hpb",
+        "name": "和平北",
+        "code": "HPA",
+        "pinyin": "hepingbei",
+        "abbr": "hpb",
+        "city": "河源"
+      },
+      {
+        "shortPinyin": "hpi",
+        "name": "和平",
+        "code": "VAQ",
+        "pinyin": "heping",
+        "abbr": "hp",
+        "city": "河源"
+      },
+      {
+        "shortPinyin": "hpu",
+        "name": "合浦",
+        "code": "HVZ",
+        "pinyin": "hepu",
+        "abbr": "hp",
+        "city": "北海"
+      },
+      {
+        "shortPinyin": "hpz",
+        "name": "花棚子",
+        "code": "HZM",
+        "pinyin": "huapengzi",
+        "abbr": "hpz",
+        "city": "攀枝花"
+      },
+      {
+        "shortPinyin": "hqb",
+        "name": "横琴北",
+        "code": "HOA",
+        "pinyin": "hengqinbei",
+        "abbr": "hqb",
+        "city": "珠海"
+      },
+      {
+        "shortPinyin": "hqi",
+        "name": "霍邱",
+        "code": "FBH",
+        "pinyin": "huoqiu",
+        "abbr": "hq",
+        "city": "六安"
+      },
+      {
+        "shortPinyin": "hqi",
+        "name": "宏庆",
+        "code": "HEY",
+        "pinyin": "hongqing",
+        "abbr": "hq",
+        "city": "陇南"
+      },
+      {
+        "shortPinyin": "hqi",
+        "name": "横琴",
+        "code": "HQA",
+        "pinyin": "hengqin",
+        "abbr": "hq",
+        "city": "珠海"
+      },
+      {
+        "shortPinyin": "hqi",
+        "name": "花桥",
+        "code": "VQH",
+        "pinyin": "huaqiao",
+        "abbr": "hq",
+        "city": "苏州"
+      },
+      {
+        "shortPinyin": "hqq",
+        "name": "红旗渠",
+        "code": "HQF",
+        "pinyin": "hongqiqu",
+        "abbr": "hqq",
+        "city": "安阳"
+      },
+      {
+        "shortPinyin": "hrd",
+        "name": "华容东",
+        "code": "HPN",
+        "pinyin": "huarongdong",
+        "abbr": "hrd",
+        "city": "鄂州"
+      },
+      {
+        "shortPinyin": "hre",
+        "name": "怀仁",
+        "code": "HRV",
+        "pinyin": "huairen",
+        "abbr": "hr",
+        "city": "朔州"
+      },
+      {
+        "shortPinyin": "hrn",
+        "name": "华容南",
+        "code": "KRN",
+        "pinyin": "huarongnan",
+        "abbr": "hrn",
+        "city": "鄂州"
+      },
+      {
+        "shortPinyin": "hro",
+        "name": "华容",
+        "code": "HRN",
+        "pinyin": "huarong",
+        "abbr": "hr",
+        "city": "鄂州"
+      },
+      {
+        "shortPinyin": "hsb",
+        "name": "红寺堡",
+        "code": "HSJ",
+        "pinyin": "hongsibu",
+        "abbr": "hsp",
+        "city": "吴忠"
+      },
+      {
+        "shortPinyin": "hsb",
+        "name": "红寺堡北",
+        "code": "HEJ",
+        "pinyin": "hongsibubei",
+        "abbr": "hsbb",
+        "city": "吴忠"
+      },
+      {
+        "shortPinyin": "hsb",
+        "name": "黑山北",
+        "code": "HQT",
+        "pinyin": "heishanbei",
+        "abbr": "hsb",
+        "city": "锦州"
+      },
+      {
+        "shortPinyin": "hsb",
+        "name": "黄石北",
+        "code": "KSN",
+        "pinyin": "huangshibei",
+        "abbr": "hsb",
+        "city": "黄石"
+      },
+      {
+        "shortPinyin": "hsd",
+        "name": "贺胜桥东",
+        "code": "HLN",
+        "pinyin": "heshengqiaodong",
+        "abbr": "hsqd",
+        "city": "咸宁"
+      },
+      {
+        "shortPinyin": "hsd",
+        "name": "黄松甸",
+        "code": "HDL",
+        "pinyin": "huangsongdian",
+        "abbr": "hsd",
+        "city": "吉林"
+      },
+      {
+        "shortPinyin": "hsh",
+        "name": "汉寿",
+        "code": "HHA",
+        "pinyin": "hanshou",
+        "abbr": "hs",
+        "city": "常德"
+      },
+      {
+        "shortPinyin": "hsh",
+        "name": "衡山",
+        "code": "HSQ",
+        "pinyin": "hengshan",
+        "abbr": "hs",
+        "city": "衡阳"
+      },
+      {
+        "shortPinyin": "hsh",
+        "name": "虎什哈",
+        "code": "HHP",
+        "pinyin": "hushiha",
+        "abbr": "hsh",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "hsh",
+        "name": "惠山",
+        "code": "VCH",
+        "pinyin": "huishan",
+        "abbr": "hs",
+        "city": "无锡"
+      },
+      {
+        "shortPinyin": "hsh",
+        "name": "红山",
+        "code": "VSB",
+        "pinyin": "hongshan",
+        "abbr": "hs",
+        "city": "伊春"
+      },
+      {
+        "shortPinyin": "hsn",
+        "name": "汉寿南",
+        "code": "VSQ",
+        "pinyin": "hanshounan",
+        "abbr": "hsn",
+        "city": "常德"
+      },
+      {
+        "shortPinyin": "hsn",
+        "name": "含山南",
+        "code": "HSU",
+        "pinyin": "hanshannan",
+        "abbr": "hsn",
+        "city": "马鞍山"
+      },
+      {
+        "shortPinyin": "hsx",
+        "name": "红砂岘",
+        "code": "VSJ",
+        "pinyin": "hongshaxian",
+        "abbr": "hsx",
+        "city": "白银"
+      },
+      {
+        "shortPinyin": "hsx",
+        "name": "衡山西",
+        "code": "HEQ",
+        "pinyin": "hengshanxi",
+        "abbr": "hsx",
+        "city": "衡阳"
+      },
+      {
+        "shortPinyin": "hta",
+        "name": "荷塘",
+        "code": "KXQ",
+        "pinyin": "hetang",
+        "abbr": "ht",
+        "city": "湘潭"
+      },
+      {
+        "shortPinyin": "hta",
+        "name": "桓台",
+        "code": "VTK",
+        "pinyin": "huantai",
+        "abbr": "ht",
+        "city": "淄博"
+      },
+      {
+        "shortPinyin": "hta",
+        "name": "黑台",
+        "code": "HQB",
+        "pinyin": "heitai",
+        "abbr": "ht",
+        "city": "鸡西"
+      },
+      {
+        "shortPinyin": "htb",
+        "name": "黄桶北",
+        "code": "HBE",
+        "pinyin": "huangtongbei",
+        "abbr": "htb",
+        "city": "安顺"
+      },
+      {
+        "shortPinyin": "hwa",
+        "name": "黑旺",
+        "code": "HWK",
+        "pinyin": "heiwang",
+        "abbr": "hw",
+        "city": "淄博"
+      },
+      {
+        "shortPinyin": "hxi",
+        "name": "徽县",
+        "code": "HYY",
+        "pinyin": "huixian",
+        "abbr": "hx",
+        "city": "陇南"
+      },
+      {
+        "shortPinyin": "hxi",
+        "name": "红星",
+        "code": "VXB",
+        "pinyin": "hongxing",
+        "abbr": "hx",
+        "city": "伊春"
+      },
+      {
+        "shortPinyin": "hxl",
+        "name": "红兴隆",
+        "code": "VHB",
+        "pinyin": "hongxinglong",
+        "abbr": "hxl",
+        "city": "双鸭山"
+      },
+      {
+        "shortPinyin": "hxt",
+        "name": "红岘台",
+        "code": "HTJ",
+        "pinyin": "hongxiantai",
+        "abbr": "hxt",
+        "city": "白银"
+      },
+      {
+        "shortPinyin": "hxt",
+        "name": "换新天",
+        "code": "VTB",
+        "pinyin": "huanxintian",
+        "abbr": "hxt",
+        "city": "佳木斯"
+      },
+      {
+        "shortPinyin": "hxu",
+        "name": "滑浚",
+        "code": "HWF",
+        "pinyin": "huaxun",
+        "abbr": "hx",
+        "city": "安阳"
+      },
+      {
+        "shortPinyin": "hya",
+        "name": "合阳",
+        "code": "HAY",
+        "pinyin": "heyang",
+        "abbr": "hy",
+        "city": "渭南"
+      },
+      {
+        "shortPinyin": "hya",
+        "name": "海晏",
+        "code": "HFO",
+        "pinyin": "haiyan",
+        "abbr": "hy",
+        "city": "海北州"
+      },
+      {
+        "shortPinyin": "hya",
+        "name": "红彦",
+        "code": "VIX",
+        "pinyin": "hongyan",
+        "abbr": "hy",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "hyb",
+        "name": "合阳北",
+        "code": "HTY",
+        "pinyin": "heyangbei",
+        "abbr": "hyb",
+        "city": "渭南"
+      },
+      {
+        "shortPinyin": "hyb",
+        "name": "河源北",
+        "code": "HYA",
+        "pinyin": "heyuanbei",
+        "abbr": "hyb",
+        "city": "河源"
+      },
+      {
+        "shortPinyin": "hyb",
+        "name": "海阳北",
+        "code": "HEK",
+        "pinyin": "haiyangbei",
+        "abbr": "hyb",
+        "city": "烟台"
+      },
+      {
+        "shortPinyin": "hyi",
+        "name": "汉阴",
+        "code": "HQY",
+        "pinyin": "hanyin",
+        "abbr": "hy",
+        "city": "安康"
+      },
+      {
+        "shortPinyin": "hyi",
+        "name": "槐荫",
+        "code": "IYN",
+        "pinyin": "huaiyin",
+        "abbr": "hy",
+        "city": "孝感"
+      },
+      {
+        "shortPinyin": "hyk",
+        "name": "花园口",
+        "code": "HYT",
+        "pinyin": "huayuankou",
+        "abbr": "hyk",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "hyn",
+        "name": "淮阳南",
+        "code": "HVF",
+        "pinyin": "huaiyangnan",
+        "abbr": "hyn",
+        "city": "周口"
+      },
+      {
+        "shortPinyin": "hyt",
+        "name": "黄羊滩",
+        "code": "HGJ",
+        "pinyin": "huangyangtan",
+        "abbr": "hyt",
+        "city": "中卫"
+      },
+      {
+        "shortPinyin": "hyu",
+        "name": "花园",
+        "code": "HUN",
+        "pinyin": "huayuan",
+        "abbr": "hy",
+        "city": "孝感"
+      },
+      {
+        "shortPinyin": "hyz",
+        "name": "黄羊镇",
+        "code": "HYJ",
+        "pinyin": "huangyangzhen",
+        "abbr": "hyz",
+        "city": "武威"
+      },
+      {
+        "shortPinyin": "hzd",
+        "name": "湖州东",
+        "code": "HKU",
+        "pinyin": "huzhoudong",
+        "abbr": "hzd",
+        "city": "湖州"
+      },
+      {
+        "shortPinyin": "hzd",
+        "name": "霍州东",
+        "code": "HWV",
+        "pinyin": "huozhoudong",
+        "abbr": "hzd",
+        "city": "临汾"
+      },
+      {
+        "shortPinyin": "hzh",
+        "name": "黄州",
+        "code": "VON",
+        "pinyin": "huangzhou",
+        "abbr": "hz",
+        "city": "黄冈"
+      },
+      {
+        "shortPinyin": "hzh",
+        "name": "壶镇",
+        "code": "HUU",
+        "pinyin": "huzhen",
+        "abbr": "hz",
+        "city": "丽水"
+      },
+      {
+        "shortPinyin": "hzh",
+        "name": "化州",
+        "code": "HZZ",
+        "pinyin": "huazhou",
+        "abbr": "hz",
+        "city": "茂名"
+      },
+      {
+        "shortPinyin": "hzh",
+        "name": "霍州",
+        "code": "HZV",
+        "pinyin": "huozhou",
+        "abbr": "hz",
+        "city": "临汾"
+      },
+      {
+        "shortPinyin": "hzh",
+        "name": "横州",
+        "code": "HGZ",
+        "pinyin": "hengzhou",
+        "abbr": "hz",
+        "city": "南宁"
+      },
+      {
+        "shortPinyin": "hzx",
+        "name": "湖州南浔",
+        "code": "KIU",
+        "pinyin": "huzhounanxun",
+        "abbr": "hznx",
+        "city": "湖州"
+      },
+      {
+        "shortPinyin": "hzx",
+        "name": "惠州西",
+        "code": "VXQ",
+        "pinyin": "huizhouxi",
+        "abbr": "hzx",
+        "city": "惠州"
+      },
+      {
+        "shortPinyin": "hbs",
+        "name": "花博山",
+        "code": "KBT",
+        "pinyin": "huaboshan",
+        "abbr": "hbs",
+        "city": "丹东"
+      },
+      {
+        "shortPinyin": "hdb",
+        "name": "洪洞北",
+        "code": "HLV",
+        "pinyin": "hongtongbei",
+        "abbr": "hdb",
+        "city": "临汾"
+      },
+      {
+        "shortPinyin": "hdo",
+        "name": "惠东",
+        "code": "KDA",
+        "pinyin": "huidong",
+        "abbr": "hd",
+        "city": "惠州"
+      },
+      {
+        "shortPinyin": "hlz",
+        "name": "黄龙九寨",
+        "code": "HIE",
+        "pinyin": "huanglongjiuzhai",
+        "abbr": "hljz",
+        "city": "阿坝藏族羌族自治州"
+      },
+      {
+        "shortPinyin": "hsg",
+        "name": "黄胜关",
+        "code": "HGE",
+        "pinyin": "huangshengguan",
+        "abbr": "hsg",
+        "city": "阿坝藏族羌族自治州"
+      },
+      {
+        "shortPinyin": "hsh",
+        "name": "黄水",
+        "code": "SZE",
+        "pinyin": "huangshui",
+        "abbr": "hs",
+        "city": "石柱县"
+      },
+      {
+        "shortPinyin": "hto",
+        "name": "海头",
+        "code": "FTQ",
+        "pinyin": "haitou",
+        "abbr": "ht",
+        "city": "儋州"
+      },
+      {
+        "shortPinyin": "hzn",
+        "name": "惠州南",
+        "code": "KNA",
+        "pinyin": "huizhounan",
+        "abbr": "hzn",
+        "city": "惠州"
+      },
+      {
+        "shortPinyin": "hzx",
+        "name": "杭州西",
+        "code": "HVU",
+        "pinyin": "hangzhouxi",
+        "abbr": "hzx",
+        "city": "杭州"
+      }
+    ],
+    "J": [
+      {
+        "shortPinyin": "jmc",
+        "name": "金马村",
+        "code": "JMM",
+        "pinyin": "jinmacun",
+        "abbr": "jmc",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "jna",
+        "name": "济南",
+        "code": "JNK",
+        "pinyin": "jinan",
+        "abbr": "jn",
+        "city": "济南"
+      },
+      {
+        "shortPinyin": "jnd",
+        "name": "济南东",
+        "code": "MDK",
+        "pinyin": "jinandong",
+        "abbr": "jnd",
+        "city": "济南"
+      },
+      {
+        "shortPinyin": "jnx",
+        "name": "济南西",
+        "code": "JGK",
+        "pinyin": "jinanxi",
+        "abbr": "jnx",
+        "city": "济南"
+      },
+      {
+        "shortPinyin": "jan",
+        "name": "吉安",
+        "code": "VAG",
+        "pinyin": "jian",
+        "abbr": "ja",
+        "city": "吉安"
+      },
+      {
+        "shortPinyin": "jan",
+        "name": "集安",
+        "code": "JAL",
+        "pinyin": "jian",
+        "abbr": "ja",
+        "city": "通化"
+      },
+      {
+        "shortPinyin": "jan",
+        "name": "建安",
+        "code": "JUL",
+        "pinyin": "jianan",
+        "abbr": "ja",
+        "city": "辽源"
+      },
+      {
+        "shortPinyin": "jax",
+        "name": "吉安西",
+        "code": "JIG",
+        "pinyin": "jianxi",
+        "abbr": "jax",
+        "city": "吉安"
+      },
+      {
+        "shortPinyin": "jbc",
+        "name": "江边村",
+        "code": "JBG",
+        "pinyin": "jiangbiancun",
+        "abbr": "jbc",
+        "city": "江边村"
+      },
+      {
+        "shortPinyin": "jcd",
+        "name": "晋城东",
+        "code": "JGF",
+        "pinyin": "jinchengdong",
+        "abbr": "jcd",
+        "city": "晋城"
+      },
+      {
+        "shortPinyin": "jch",
+        "name": "金昌",
+        "code": "JCJ",
+        "pinyin": "jinchang",
+        "abbr": "jc",
+        "city": "金昌"
+      },
+      {
+        "shortPinyin": "jch",
+        "name": "晋城",
+        "code": "JCF",
+        "pinyin": "jincheng",
+        "abbr": "jc",
+        "city": "晋城"
+      },
+      {
+        "shortPinyin": "jcj",
+        "name": "金城江",
+        "code": "JJZ",
+        "pinyin": "jinchengjiang",
+        "abbr": "jcj",
+        "city": "河池"
+      },
+      {
+        "shortPinyin": "jdb",
+        "name": "景德镇北",
+        "code": "JDG",
+        "pinyin": "jingdezhenbei",
+        "abbr": "jdzb",
+        "city": "景德镇"
+      },
+      {
+        "shortPinyin": "jde",
+        "name": "建德",
+        "code": "JDU",
+        "pinyin": "jiande",
+        "abbr": "jd",
+        "city": "杭州"
+      },
+      {
+        "shortPinyin": "jdo",
+        "name": "鸡东",
+        "code": "JOB",
+        "pinyin": "jidong",
+        "abbr": "jd",
+        "city": "鸡西"
+      },
+      {
+        "shortPinyin": "jdz",
+        "name": "景德镇",
+        "code": "JCG",
+        "pinyin": "jingdezhen",
+        "abbr": "jdz",
+        "city": "景德镇"
+      },
+      {
+        "shortPinyin": "jfe",
+        "name": "嘉峰",
+        "code": "JFF",
+        "pinyin": "jiafeng",
+        "abbr": "jf",
+        "city": "晋城"
+      },
+      {
+        "shortPinyin": "jgq",
+        "name": "加格达奇",
+        "code": "JGX",
+        "pinyin": "jiagedaqi",
+        "abbr": "jgdq",
+        "city": "加格达奇"
+      },
+      {
+        "shortPinyin": "jgs",
+        "name": "井冈山",
+        "code": "JGG",
+        "pinyin": "jinggangshan",
+        "abbr": "jgs",
+        "city": "吉安"
+      },
+      {
+        "shortPinyin": "jha",
+        "name": "近海",
+        "code": "JHD",
+        "pinyin": "jinhai",
+        "abbr": "jh",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "jha",
+        "name": "静海",
+        "code": "JHP",
+        "pinyin": "jinghai",
+        "abbr": "jh",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "jhe",
+        "name": "蛟河",
+        "code": "JHL",
+        "pinyin": "jiaohe",
+        "abbr": "jh",
+        "city": "吉林"
+      },
+      {
+        "shortPinyin": "jhn",
+        "name": "精河南",
+        "code": "JIR",
+        "pinyin": "jinghenan",
+        "abbr": "jhn",
+        "city": "博乐"
+      },
+      {
+        "shortPinyin": "jhn",
+        "name": "金华南",
+        "code": "RNH",
+        "pinyin": "jinhuanan",
+        "abbr": "jhn",
+        "city": "金华"
+      },
+      {
+        "shortPinyin": "jhu",
+        "name": "金华",
+        "code": "JBH",
+        "pinyin": "jinhua",
+        "abbr": "jh",
+        "city": "金华"
+      },
+      {
+        "shortPinyin": "jhx",
+        "name": "蛟河西",
+        "code": "JOL",
+        "pinyin": "jiaohexi",
+        "abbr": "jhx",
+        "city": "吉林"
+      },
+      {
+        "shortPinyin": "jhz",
+        "name": "金华镇",
+        "code": "JZE",
+        "pinyin": "jinhuazhen",
+        "abbr": "jhz",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "jji",
+        "name": "晋江",
+        "code": "JJS",
+        "pinyin": "jinjiang",
+        "abbr": "jj",
+        "city": "泉州"
+      },
+      {
+        "shortPinyin": "jji",
+        "name": "九江",
+        "code": "JJG",
+        "pinyin": "jiujiang",
+        "abbr": "jj",
+        "city": "九江"
+      },
+      {
+        "shortPinyin": "jlb",
+        "name": "军粮城北",
+        "code": "JMP",
+        "pinyin": "junliangchengbei",
+        "abbr": "jlcb",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "jlh",
+        "name": "贾鲁河",
+        "code": "JLF",
+        "pinyin": "jialuhe",
+        "abbr": "jlh",
+        "city": "郑州"
+      },
+      {
+        "shortPinyin": "jli",
+        "name": "吉林",
+        "code": "JLL",
+        "pinyin": "jilin",
+        "abbr": "jl",
+        "city": "吉林"
+      },
+      {
+        "shortPinyin": "jmb",
+        "name": "即墨北",
+        "code": "JVK",
+        "pinyin": "jimobei",
+        "abbr": "jmb",
+        "city": "青岛"
+      },
+      {
+        "shortPinyin": "jme",
+        "name": "江门",
+        "code": "JOQ",
+        "pinyin": "jiangmen",
+        "abbr": "jm",
+        "city": "江门"
+      },
+      {
+        "shortPinyin": "jme",
+        "name": "荆门",
+        "code": "JMN",
+        "pinyin": "jingmen",
+        "abbr": "jm",
+        "city": "荆门"
+      },
+      {
+        "shortPinyin": "jmg",
+        "name": "剑门关",
+        "code": "JME",
+        "pinyin": "jianmenguan",
+        "abbr": "jmg",
+        "city": "广元"
+      },
+      {
+        "shortPinyin": "jms",
+        "name": "佳木斯",
+        "code": "JMB",
+        "pinyin": "jiamusi",
+        "abbr": "jms",
+        "city": "佳木斯"
+      },
+      {
+        "shortPinyin": "jmx",
+        "name": "荆门西",
+        "code": "MXN",
+        "pinyin": "jingmenxi",
+        "abbr": "jmx",
+        "city": "荆门"
+      },
+      {
+        "shortPinyin": "jna",
+        "name": "井南",
+        "code": "JNP",
+        "pinyin": "jingnan",
+        "abbr": "jn",
+        "city": "石家庄"
+      },
+      {
+        "shortPinyin": "jnb",
+        "name": "建宁县北",
+        "code": "JCS",
+        "pinyin": "jianningxianbei",
+        "abbr": "jnxb",
+        "city": "建宁"
+      },
+      {
+        "shortPinyin": "jni",
+        "name": "济宁",
+        "code": "JIK",
+        "pinyin": "jining",
+        "abbr": "jn",
+        "city": "济宁"
+      },
+      {
+        "shortPinyin": "jni",
+        "name": "江宁",
+        "code": "JJH",
+        "pinyin": "jiangning",
+        "abbr": "jn",
+        "city": "南京"
+      },
+      {
+        "shortPinyin": "jnn",
+        "name": "集宁南",
+        "code": "JAC",
+        "pinyin": "jiningnan",
+        "abbr": "jnn",
+        "city": "乌兰察布"
+      },
+      {
+        "shortPinyin": "jnx",
+        "name": "江宁西",
+        "code": "OKH",
+        "pinyin": "jiangningxi",
+        "abbr": "jnx",
+        "city": "南京"
+      },
+      {
+        "shortPinyin": "jpe",
+        "name": "经棚",
+        "code": "JPC",
+        "pinyin": "jingpeng",
+        "abbr": "jp",
+        "city": "赤峰"
+      },
+      {
+        "shortPinyin": "jpi",
+        "name": "建平",
+        "code": "JAD",
+        "pinyin": "jianping",
+        "abbr": "jp",
+        "city": "朝阳"
+      },
+      {
+        "shortPinyin": "jqn",
+        "name": "酒泉南",
+        "code": "JNJ",
+        "pinyin": "jiuquannan",
+        "abbr": "jqn",
+        "city": "酒泉"
+      },
+      {
+        "shortPinyin": "jqu",
+        "name": "酒泉",
+        "code": "JQJ",
+        "pinyin": "jiuquan",
+        "abbr": "jq",
+        "city": "酒泉"
+      },
+      {
+        "shortPinyin": "jsb",
+        "name": "金山北",
+        "code": "EGH",
+        "pinyin": "jinshanbei",
+        "abbr": "jsb",
+        "city": "上海"
+      },
+      {
+        "shortPinyin": "jsd",
+        "name": "吉首东",
+        "code": "JDA",
+        "pinyin": "jishoudong",
+        "abbr": "jsd",
+        "city": "吉首"
+      },
+      {
+        "shortPinyin": "jsh",
+        "name": "吉首",
+        "code": "JIQ",
+        "pinyin": "jishou",
+        "abbr": "js",
+        "city": "吉首"
+      },
+      {
+        "shortPinyin": "jsh",
+        "name": "江山",
+        "code": "JUH",
+        "pinyin": "jiangshan",
+        "abbr": "js",
+        "city": "衢州"
+      },
+      {
+        "shortPinyin": "jsh",
+        "name": "尖山",
+        "code": "JPQ",
+        "pinyin": "jianshan",
+        "abbr": "js",
+        "city": "长沙"
+      },
+      {
+        "shortPinyin": "jsj",
+        "name": "建三江",
+        "code": "JIB",
+        "pinyin": "jiansanjiang",
+        "abbr": "jsj",
+        "city": "佳木斯"
+      },
+      {
+        "shortPinyin": "jsn",
+        "name": "界首南",
+        "code": "JKU",
+        "pinyin": "jieshounan",
+        "abbr": "jsn",
+        "city": "阜阳"
+      },
+      {
+        "shortPinyin": "jta",
+        "name": "九台",
+        "code": "JTL",
+        "pinyin": "jiutai",
+        "abbr": "jt",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "jtn",
+        "name": "九台南",
+        "code": "JNL",
+        "pinyin": "jiutainan",
+        "abbr": "jtn",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "jts",
+        "name": "镜铁山",
+        "code": "JVJ",
+        "pinyin": "jingtieshan",
+        "abbr": "jts",
+        "city": "嘉峪关"
+      },
+      {
+        "shortPinyin": "jxb",
+        "name": "绩溪北",
+        "code": "NRH",
+        "pinyin": "jixibei",
+        "abbr": "jxb",
+        "city": "宣城"
+      },
+      {
+        "shortPinyin": "jxd",
+        "name": "介休东",
+        "code": "JDV",
+        "pinyin": "jiexiudong",
+        "abbr": "jxd",
+        "city": "晋中"
+      },
+      {
+        "shortPinyin": "jxi",
+        "name": "介休",
+        "code": "JXV",
+        "pinyin": "jiexiu",
+        "abbr": "jx",
+        "city": "晋中"
+      },
+      {
+        "shortPinyin": "jxi",
+        "name": "靖西",
+        "code": "JMZ",
+        "pinyin": "jingxi",
+        "abbr": "jx",
+        "city": "百色"
+      },
+      {
+        "shortPinyin": "jxi",
+        "name": "嘉兴",
+        "code": "JXH",
+        "pinyin": "jiaxing",
+        "abbr": "jx",
+        "city": "嘉兴"
+      },
+      {
+        "shortPinyin": "jxi",
+        "name": "鸡西",
+        "code": "JXB",
+        "pinyin": "jixi",
+        "abbr": "jx",
+        "city": "鸡西"
+      },
+      {
+        "shortPinyin": "jxi",
+        "name": "井陉",
+        "code": "JJP",
+        "pinyin": "jingxing",
+        "abbr": "jx",
+        "city": "石家庄"
+      },
+      {
+        "shortPinyin": "jxi",
+        "name": "进贤",
+        "code": "JUG",
+        "pinyin": "jinxian",
+        "abbr": "jx",
+        "city": "南昌"
+      },
+      {
+        "shortPinyin": "jxn",
+        "name": "嘉兴南",
+        "code": "EPH",
+        "pinyin": "jiaxingnan",
+        "abbr": "jxn",
+        "city": "嘉兴"
+      },
+      {
+        "shortPinyin": "jxn",
+        "name": "进贤南",
+        "code": "JXG",
+        "pinyin": "jinxiannan",
+        "abbr": "jxn",
+        "city": "南昌"
+      },
+      {
+        "shortPinyin": "jxx",
+        "name": "绩溪县",
+        "code": "JRH",
+        "pinyin": "jixixian",
+        "abbr": "jxx",
+        "city": "宣城"
+      },
+      {
+        "shortPinyin": "jxx",
+        "name": "鸡西西",
+        "code": "JAB",
+        "pinyin": "jixixi",
+        "abbr": "jxx",
+        "city": "鸡西"
+      },
+      {
+        "shortPinyin": "jya",
+        "name": "金阳",
+        "code": "JYE",
+        "pinyin": "jinyang",
+        "abbr": "jy",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "jye",
+        "name": "巨野",
+        "code": "JYK",
+        "pinyin": "juye",
+        "abbr": "jy",
+        "city": "菏泽"
+      },
+      {
+        "shortPinyin": "jyg",
+        "name": "嘉峪关",
+        "code": "JGJ",
+        "pinyin": "jiayuguan",
+        "abbr": "jyg",
+        "city": "嘉峪关"
+      },
+      {
+        "shortPinyin": "jyn",
+        "name": "嘉峪关南",
+        "code": "JBJ",
+        "pinyin": "jiayuguannan",
+        "abbr": "jygn",
+        "city": "嘉峪关"
+      },
+      {
+        "shortPinyin": "jyn",
+        "name": "金阳南",
+        "code": "JNE",
+        "pinyin": "jinyangnan",
+        "abbr": "jyn",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "jyn",
+        "name": "简阳南",
+        "code": "JOW",
+        "pinyin": "jianyangnan",
+        "abbr": "jyn",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "jyo",
+        "name": "江油",
+        "code": "JFW",
+        "pinyin": "jiangyou",
+        "abbr": "jy",
+        "city": "绵阳"
+      },
+      {
+        "shortPinyin": "jyt",
+        "name": "金银潭",
+        "code": "JTN",
+        "pinyin": "jinyintan",
+        "abbr": "jyt",
+        "city": "武汉"
+      },
+      {
+        "shortPinyin": "jyu",
+        "name": "靖宇",
+        "code": "JYL",
+        "pinyin": "jingyu",
+        "abbr": "jy",
+        "city": "白山"
+      },
+      {
+        "shortPinyin": "jzb",
+        "name": "锦州北",
+        "code": "JFT",
+        "pinyin": "jinzhoubei",
+        "abbr": "jzb",
+        "city": "锦州"
+      },
+      {
+        "shortPinyin": "jzb",
+        "name": "蓟州北",
+        "code": "JKP",
+        "pinyin": "jizhoubei",
+        "abbr": "jzb",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "jzh",
+        "name": "荆州",
+        "code": "JBN",
+        "pinyin": "jingzhou",
+        "abbr": "jz",
+        "city": "荆州"
+      },
+      {
+        "shortPinyin": "jzh",
+        "name": "金寨",
+        "code": "JZH",
+        "pinyin": "jinzhai",
+        "abbr": "jz",
+        "city": "六安"
+      },
+      {
+        "shortPinyin": "jzh",
+        "name": "锦州",
+        "code": "JZD",
+        "pinyin": "jinzhou",
+        "abbr": "jz",
+        "city": "锦州"
+      },
+      {
+        "shortPinyin": "jzh",
+        "name": "金州",
+        "code": "JZT",
+        "pinyin": "jinzhou",
+        "abbr": "jz",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "jzh",
+        "name": "晋州",
+        "code": "JXP",
+        "pinyin": "jinzhou",
+        "abbr": "jz",
+        "city": "石家庄"
+      },
+      {
+        "shortPinyin": "jzh",
+        "name": "蓟州",
+        "code": "JIP",
+        "pinyin": "jizhou",
+        "abbr": "jz",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "jzn",
+        "name": "锦州南",
+        "code": "JOD",
+        "pinyin": "jinzhounan",
+        "abbr": "jzn",
+        "city": "锦州"
+      },
+      {
+        "shortPinyin": "jzu",
+        "name": "焦作",
+        "code": "JOF",
+        "pinyin": "jiaozuo",
+        "abbr": "jz",
+        "city": "焦作"
+      },
+      {
+        "shortPinyin": "jzx",
+        "name": "焦作西",
+        "code": "JIF",
+        "pinyin": "jiaozuoxi",
+        "abbr": "jzx",
+        "city": "焦作"
+      },
+      {
+        "shortPinyin": "jbi",
+        "name": "靖边",
+        "code": "JIY",
+        "pinyin": "jingbian",
+        "abbr": "jb",
+        "city": "榆林"
+      },
+      {
+        "shortPinyin": "jbt",
+        "name": "金宝屯",
+        "code": "JBD",
+        "pinyin": "jinbaotun",
+        "abbr": "jbt",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "jcb",
+        "name": "晋城北",
+        "code": "JEF",
+        "pinyin": "jinchengbei",
+        "abbr": "jcb",
+        "city": "晋城"
+      },
+      {
+        "shortPinyin": "jch",
+        "name": "交城",
+        "code": "JNV",
+        "pinyin": "jiaocheng",
+        "abbr": "jc",
+        "city": "吕梁"
+      },
+      {
+        "shortPinyin": "jch",
+        "name": "建昌",
+        "code": "JFD",
+        "pinyin": "jianchang",
+        "abbr": "jc",
+        "city": "葫芦岛"
+      },
+      {
+        "shortPinyin": "jch",
+        "name": "加查",
+        "code": "JIO",
+        "pinyin": "jiacha",
+        "abbr": "jc",
+        "city": "加查"
+      },
+      {
+        "shortPinyin": "jch",
+        "name": "泾川",
+        "code": "JAJ",
+        "pinyin": "jingchuan",
+        "abbr": "jc",
+        "city": "平凉"
+      },
+      {
+        "shortPinyin": "jch",
+        "name": "碱厂",
+        "code": "JUT",
+        "pinyin": "jianchang",
+        "abbr": "jc",
+        "city": "本溪"
+      },
+      {
+        "shortPinyin": "jch",
+        "name": "鄄城",
+        "code": "JCK",
+        "pinyin": "juancheng",
+        "abbr": "jc",
+        "city": "菏泽"
+      },
+      {
+        "shortPinyin": "jde",
+        "name": "旌德",
+        "code": "NSH",
+        "pinyin": "jingde",
+        "abbr": "jd",
+        "city": "宣城"
+      },
+      {
+        "shortPinyin": "jde",
+        "name": "峻德",
+        "code": "JDB",
+        "pinyin": "junde",
+        "abbr": "jd",
+        "city": "鹤岗"
+      },
+      {
+        "shortPinyin": "jdi",
+        "name": "井店",
+        "code": "JFP",
+        "pinyin": "jingdian",
+        "abbr": "jd",
+        "city": "邯郸"
+      },
+      {
+        "shortPinyin": "jdu",
+        "name": "江都",
+        "code": "UDH",
+        "pinyin": "jiangdu",
+        "abbr": "jd",
+        "city": "扬州"
+      },
+      {
+        "shortPinyin": "jfe",
+        "name": "尖峰",
+        "code": "PFQ",
+        "pinyin": "jianfeng",
+        "abbr": "jf",
+        "city": "乐东"
+      },
+      {
+        "shortPinyin": "jgt",
+        "name": "金沟屯",
+        "code": "VGP",
+        "pinyin": "jingoutun",
+        "abbr": "jgt",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "jha",
+        "name": "江海",
+        "code": "JNQ",
+        "pinyin": "jianghai",
+        "abbr": "jh",
+        "city": "江门"
+      },
+      {
+        "shortPinyin": "jhe",
+        "name": "精河",
+        "code": "JHR",
+        "pinyin": "jinghe",
+        "abbr": "jh",
+        "city": "博乐"
+      },
+      {
+        "shortPinyin": "jhe",
+        "name": "金河",
+        "code": "JHX",
+        "pinyin": "jinhe",
+        "abbr": "jh",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "jhe",
+        "name": "锦河",
+        "code": "JHB",
+        "pinyin": "jinhe",
+        "abbr": "jh",
+        "city": "黑河"
+      },
+      {
+        "shortPinyin": "jhs",
+        "name": "九华山",
+        "code": "JSU",
+        "pinyin": "jiuhuashan",
+        "abbr": "jhs",
+        "city": "池州"
+      },
+      {
+        "shortPinyin": "jhu",
+        "name": "江华",
+        "code": "JHZ",
+        "pinyin": "jianghua",
+        "abbr": "jh",
+        "city": "永州"
+      },
+      {
+        "shortPinyin": "jhu",
+        "name": "建湖",
+        "code": "AJH",
+        "pinyin": "jianhu",
+        "abbr": "jh",
+        "city": "盐城"
+      },
+      {
+        "shortPinyin": "jjb",
+        "name": "江津北",
+        "code": "JAE",
+        "pinyin": "jiangjinbei",
+        "abbr": "jjb",
+        "city": "重庆"
+      },
+      {
+        "shortPinyin": "jjg",
+        "name": "纪家沟",
+        "code": "VJD",
+        "pinyin": "jijiagou",
+        "abbr": "jjg",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "jji",
+        "name": "夹江",
+        "code": "UTW",
+        "pinyin": "jiajiang",
+        "abbr": "jj",
+        "city": "乐山"
+      },
+      {
+        "shortPinyin": "jji",
+        "name": "锦界",
+        "code": "JEY",
+        "pinyin": "jinjie",
+        "abbr": "jj",
+        "city": "榆林"
+      },
+      {
+        "shortPinyin": "jji",
+        "name": "姜家",
+        "code": "JJB",
+        "pinyin": "jiangjia",
+        "abbr": "jj",
+        "city": "大庆"
+      },
+      {
+        "shortPinyin": "jkn",
+        "name": "金口河南",
+        "code": "JHE",
+        "pinyin": "jinkouhenan",
+        "abbr": "jkgn",
+        "city": "乐山"
+      },
+      {
+        "shortPinyin": "jle",
+        "name": "将乐",
+        "code": "JLS",
+        "pinyin": "jiangle",
+        "abbr": "jl",
+        "city": "三明"
+      },
+      {
+        "shortPinyin": "jli",
+        "name": "芨岭",
+        "code": "JLJ",
+        "pinyin": "jiling",
+        "abbr": "jl",
+        "city": "金昌"
+      },
+      {
+        "shortPinyin": "jls",
+        "name": "九郎山",
+        "code": "KJQ",
+        "pinyin": "jiulangshan",
+        "abbr": "jls",
+        "city": "株洲"
+      },
+      {
+        "shortPinyin": "jmd",
+        "name": "江门东",
+        "code": "JWQ",
+        "pinyin": "jiangmendong",
+        "abbr": "jmd",
+        "city": "江门"
+      },
+      {
+        "shortPinyin": "jme",
+        "name": "角美",
+        "code": "JES",
+        "pinyin": "jiaomei",
+        "abbr": "jm",
+        "city": "漳州"
+      },
+      {
+        "shortPinyin": "jmx",
+        "name": "佳木斯西",
+        "code": "JUB",
+        "pinyin": "jiamusixi",
+        "abbr": "jmsx",
+        "city": "佳木斯"
+      },
+      {
+        "shortPinyin": "jna",
+        "name": "莒南",
+        "code": "JOK",
+        "pinyin": "junan",
+        "abbr": "jn",
+        "city": "临沂"
+      },
+      {
+        "shortPinyin": "jnb",
+        "name": "莒南北",
+        "code": "VNK",
+        "pinyin": "junanbei",
+        "abbr": "jnb",
+        "city": "临沂"
+      },
+      {
+        "shortPinyin": "jnb",
+        "name": "济宁北",
+        "code": "MIK",
+        "pinyin": "jiningbei",
+        "abbr": "jnb",
+        "city": "济宁"
+      },
+      {
+        "shortPinyin": "jnd",
+        "name": "济宁东",
+        "code": "MNK",
+        "pinyin": "jiningdong",
+        "abbr": "jnd",
+        "city": "济宁"
+      },
+      {
+        "shortPinyin": "jnn",
+        "name": "建宁南",
+        "code": "JQS",
+        "pinyin": "jianningnan",
+        "abbr": "jnn",
+        "city": "建宁"
+      },
+      {
+        "shortPinyin": "jod",
+        "name": "建瓯东",
+        "code": "JZS",
+        "pinyin": "jianoudong",
+        "abbr": "jod",
+        "city": "南平"
+      },
+      {
+        "shortPinyin": "jou",
+        "name": "建瓯",
+        "code": "JVS",
+        "pinyin": "jianou",
+        "abbr": "jo",
+        "city": "南平"
+      },
+      {
+        "shortPinyin": "jox",
+        "name": "建瓯西",
+        "code": "JUS",
+        "pinyin": "jianouxi",
+        "abbr": "jox",
+        "city": "南平"
+      },
+      {
+        "shortPinyin": "jpu",
+        "name": "金普",
+        "code": "PWT",
+        "pinyin": "jinpu",
+        "abbr": "jp",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "jqi",
+        "name": "建桥",
+        "code": "JQA",
+        "pinyin": "jianqiao",
+        "abbr": "jq",
+        "city": "梅州"
+      },
+      {
+        "shortPinyin": "jqi",
+        "name": "江桥",
+        "code": "JQX",
+        "pinyin": "jiangqiao",
+        "abbr": "jq",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "jrx",
+        "name": "句容西",
+        "code": "JWH",
+        "pinyin": "jurongxi",
+        "abbr": "jrx",
+        "city": "镇江"
+      },
+      {
+        "shortPinyin": "jsa",
+        "name": "九三",
+        "code": "SSX",
+        "pinyin": "jiusan",
+        "abbr": "js",
+        "city": "黑河"
+      },
+      {
+        "shortPinyin": "jsh",
+        "name": "金山",
+        "code": "JSR",
+        "pinyin": "jinshan",
+        "abbr": "js",
+        "city": "巴音郭楞蒙古自治州"
+      },
+      {
+        "shortPinyin": "jsh",
+        "name": "建始",
+        "code": "JRN",
+        "pinyin": "jianshi",
+        "abbr": "js",
+        "city": "恩施"
+      },
+      {
+        "shortPinyin": "jsh",
+        "name": "建水",
+        "code": "JSM",
+        "pinyin": "jianshui",
+        "abbr": "js",
+        "city": "蒙自"
+      },
+      {
+        "shortPinyin": "jsh",
+        "name": "稷山",
+        "code": "JVV",
+        "pinyin": "jishan",
+        "abbr": "js",
+        "city": "运城"
+      },
+      {
+        "shortPinyin": "jsh",
+        "name": "吉舒",
+        "code": "JSL",
+        "pinyin": "jishu",
+        "abbr": "js",
+        "city": "吉林"
+      },
+      {
+        "shortPinyin": "jsh",
+        "name": "建设",
+        "code": "JET",
+        "pinyin": "jianshe",
+        "abbr": "js",
+        "city": "白城"
+      },
+      {
+        "shortPinyin": "jsh",
+        "name": "甲山",
+        "code": "JOP",
+        "pinyin": "jiashan",
+        "abbr": "js",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "jsh",
+        "name": "京山",
+        "code": "JCN",
+        "pinyin": "jingshan",
+        "abbr": "js",
+        "city": "荆门"
+      },
+      {
+        "shortPinyin": "jsh",
+        "name": "嘉善",
+        "code": "JSH",
+        "pinyin": "jiashan",
+        "abbr": "js",
+        "city": "嘉兴"
+      },
+      {
+        "shortPinyin": "jsn",
+        "name": "嘉善南",
+        "code": "EAH",
+        "pinyin": "jiashannan",
+        "abbr": "jsn",
+        "city": "嘉兴"
+      },
+      {
+        "shortPinyin": "jss",
+        "name": "界首市",
+        "code": "JUN",
+        "pinyin": "jieshoushi",
+        "abbr": "jss",
+        "city": "阜阳"
+      },
+      {
+        "shortPinyin": "jst",
+        "name": "江所田",
+        "code": "JOM",
+        "pinyin": "jiangsuotian",
+        "abbr": "jst",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "jst",
+        "name": "金山屯",
+        "code": "JTB",
+        "pinyin": "jinshantun",
+        "abbr": "jst",
+        "city": "伊春"
+      },
+      {
+        "shortPinyin": "jsx",
+        "name": "吉水西",
+        "code": "JSG",
+        "pinyin": "jishuixi",
+        "abbr": "jsx",
+        "city": "吉安"
+      },
+      {
+        "shortPinyin": "jta",
+        "name": "景泰",
+        "code": "JTJ",
+        "pinyin": "jingtai",
+        "abbr": "jt",
+        "city": "白银"
+      },
+      {
+        "shortPinyin": "jta",
+        "name": "金塔",
+        "code": "JIJ",
+        "pinyin": "jinta",
+        "abbr": "jt",
+        "city": "酒泉"
+      },
+      {
+        "shortPinyin": "jwa",
+        "name": "井湾",
+        "code": "JWA",
+        "pinyin": "jingwan",
+        "abbr": "jw",
+        "city": "珠海"
+      },
+      {
+        "shortPinyin": "jwe",
+        "name": "吉文",
+        "code": "JWX",
+        "pinyin": "jiwen",
+        "abbr": "jw",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "jxb",
+        "name": "嘉祥北",
+        "code": "MXK",
+        "pinyin": "jiaxiangbei",
+        "abbr": "jxb",
+        "city": "济宁"
+      },
+      {
+        "shortPinyin": "jxb",
+        "name": "进贤北",
+        "code": "JHG",
+        "pinyin": "jinxianbei",
+        "abbr": "jxb",
+        "city": "南昌"
+      },
+      {
+        "shortPinyin": "jxi",
+        "name": "泾县",
+        "code": "LOH",
+        "pinyin": "jingxian",
+        "abbr": "jx",
+        "city": "宣城"
+      },
+      {
+        "shortPinyin": "jxi",
+        "name": "莒县",
+        "code": "JKK",
+        "pinyin": "juxian",
+        "abbr": "jx",
+        "city": "日照"
+      },
+      {
+        "shortPinyin": "jxi",
+        "name": "嘉祥",
+        "code": "JUK",
+        "pinyin": "jiaxiang",
+        "abbr": "jx",
+        "city": "济宁"
+      },
+      {
+        "shortPinyin": "jxi",
+        "name": "郏县",
+        "code": "JXF",
+        "pinyin": "jiaxian",
+        "abbr": "jx",
+        "city": "平顶山"
+      },
+      {
+        "shortPinyin": "jxz",
+        "name": "夹心子",
+        "code": "JXT",
+        "pinyin": "jiaxinzi",
+        "abbr": "jxz",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "jya",
+        "name": "揭阳",
+        "code": "JYA",
+        "pinyin": "jieyang",
+        "abbr": "jy",
+        "city": "揭阳"
+      },
+      {
+        "shortPinyin": "jya",
+        "name": "建阳",
+        "code": "JYS",
+        "pinyin": "jianyang",
+        "abbr": "jy",
+        "city": "南平"
+      },
+      {
+        "shortPinyin": "jya",
+        "name": "蛟洋",
+        "code": "JBS",
+        "pinyin": "jiaoyang",
+        "abbr": "jy",
+        "city": "上杭"
+      },
+      {
+        "shortPinyin": "jya",
+        "name": "姜堰",
+        "code": "UEH",
+        "pinyin": "jiangyan",
+        "abbr": "jy",
+        "city": "泰州"
+      },
+      {
+        "shortPinyin": "jyb",
+        "name": "江油北",
+        "code": "JBE",
+        "pinyin": "jiangyoubei",
+        "abbr": "jyb",
+        "city": "绵阳"
+      },
+      {
+        "shortPinyin": "jyb",
+        "name": "巨野北",
+        "code": "MYK",
+        "pinyin": "juyebei",
+        "abbr": "jyb",
+        "city": "菏泽"
+      },
+      {
+        "shortPinyin": "jyc",
+        "name": "揭阳机场",
+        "code": "JUA",
+        "pinyin": "jieyangjichang",
+        "abbr": "jyjc",
+        "city": "揭阳"
+      },
+      {
+        "shortPinyin": "jyn",
+        "name": "揭阳南",
+        "code": "JRQ",
+        "pinyin": "jieyangnan",
+        "abbr": "jyn",
+        "city": "揭阳"
+      },
+      {
+        "shortPinyin": "jyo",
+        "name": "江永",
+        "code": "JYZ",
+        "pinyin": "jiangyong",
+        "abbr": "jy",
+        "city": "永州"
+      },
+      {
+        "shortPinyin": "jyu",
+        "name": "江源",
+        "code": "SZL",
+        "pinyin": "jiangyuan",
+        "abbr": "jy",
+        "city": "白山"
+      },
+      {
+        "shortPinyin": "jyu",
+        "name": "靖远",
+        "code": "JYJ",
+        "pinyin": "jingyuan",
+        "abbr": "jy",
+        "city": "白银"
+      },
+      {
+        "shortPinyin": "jyu",
+        "name": "缙云",
+        "code": "JYH",
+        "pinyin": "jinyun",
+        "abbr": "jy",
+        "city": "丽水"
+      },
+      {
+        "shortPinyin": "jyu",
+        "name": "济源",
+        "code": "JYF",
+        "pinyin": "jiyuan",
+        "abbr": "jy",
+        "city": "济源"
+      },
+      {
+        "shortPinyin": "jyw",
+        "name": "金月湾",
+        "code": "PYQ",
+        "pinyin": "jinyuewan",
+        "abbr": "jyw",
+        "city": "东方"
+      },
+      {
+        "shortPinyin": "jyx",
+        "name": "靖远西",
+        "code": "JXJ",
+        "pinyin": "jingyuanxi",
+        "abbr": "jyx",
+        "city": "白银"
+      },
+      {
+        "shortPinyin": "jyx",
+        "name": "缙云西",
+        "code": "PYH",
+        "pinyin": "jinyunxi",
+        "abbr": "jyx",
+        "city": "丽水"
+      },
+      {
+        "shortPinyin": "jzb",
+        "name": "胶州北",
+        "code": "JZK",
+        "pinyin": "jiaozhoubei",
+        "abbr": "jzb",
+        "city": "青岛"
+      },
+      {
+        "shortPinyin": "jzd",
+        "name": "焦作东",
+        "code": "WEF",
+        "pinyin": "jiaozuodong",
+        "abbr": "jzd",
+        "city": "焦作"
+      },
+      {
+        "shortPinyin": "jzh",
+        "name": "晋中",
+        "code": "JZV",
+        "pinyin": "jinzhong",
+        "abbr": "jz",
+        "city": "晋中"
+      },
+      {
+        "shortPinyin": "jzh",
+        "name": "靖州",
+        "code": "JEQ",
+        "pinyin": "jingzhou",
+        "abbr": "jz",
+        "city": "怀化"
+      },
+      {
+        "shortPinyin": "jzh",
+        "name": "景州",
+        "code": "JEP",
+        "pinyin": "jingzhou",
+        "abbr": "jz",
+        "city": "衡水"
+      },
+      {
+        "shortPinyin": "jzh",
+        "name": "胶州",
+        "code": "JXK",
+        "pinyin": "jiaozhou",
+        "abbr": "jz",
+        "city": "青岛"
+      },
+      {
+        "shortPinyin": "jzw",
+        "name": "旧庄窝",
+        "code": "JVP",
+        "pinyin": "jiuzhuangwo",
+        "abbr": "jzw",
+        "city": "张家口"
+      },
+      {
+        "shortPinyin": "jzz",
+        "name": "金杖子",
+        "code": "JYD",
+        "pinyin": "jinzhangzi",
+        "abbr": "jzz",
+        "city": "朝阳"
+      },
+      {
+        "shortPinyin": "jbc",
+        "name": "江北机场",
+        "code": "JCE",
+        "pinyin": "jiangbeijichang",
+        "abbr": "jbjc",
+        "city": "重庆"
+      },
+      {
+        "shortPinyin": "jro",
+        "name": "句容",
+        "code": "JRU",
+        "pinyin": "jurong",
+        "abbr": "jr",
+        "city": "镇江"
+      },
+      {
+        "shortPinyin": "jta",
+        "name": "金坛",
+        "code": "JTU",
+        "pinyin": "jintan",
+        "abbr": "jt",
+        "city": "常州"
+      },
+      {
+        "shortPinyin": "jyb",
+        "name": "靖远北",
+        "code": "JOJ",
+        "pinyin": "jingyuanbei",
+        "abbr": "jyb",
+        "city": "白银"
+      },
+      {
+        "shortPinyin": "jyi",
+        "name": "江阴",
+        "code": "KYH",
+        "pinyin": "jiangyin",
+        "abbr": "jy",
+        "city": "无锡"
+      },
+      {
+        "shortPinyin": "jzh",
+        "name": "绛帐",
+        "code": "JZY",
+        "pinyin": "jiangzhang",
+        "abbr": "jz",
+        "city": "宝鸡"
+      }
+    ],
+    "K": [
+      {
+        "shortPinyin": "kmi",
+        "name": "昆明",
+        "code": "KMM",
+        "pinyin": "kunming",
+        "abbr": "km",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "kmn",
+        "name": "昆明南",
+        "code": "KOM",
+        "pinyin": "kunmingnan",
+        "abbr": "kmn",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "kan",
+        "name": "开安",
+        "code": "KAT",
+        "pinyin": "kaian",
+        "abbr": "ka",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "kch",
+        "name": "库车",
+        "code": "KCR",
+        "pinyin": "kuche",
+        "abbr": "kc",
+        "city": "阿克苏"
+      },
+      {
+        "shortPinyin": "kde",
+        "name": "库都尔",
+        "code": "KDX",
+        "pinyin": "kuduer",
+        "abbr": "kde",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "kel",
+        "name": "库尔勒",
+        "code": "KLR",
+        "pinyin": "kuerle",
+        "abbr": "kel",
+        "city": "库尔勒"
+      },
+      {
+        "shortPinyin": "kfb",
+        "name": "开封北",
+        "code": "KBF",
+        "pinyin": "kaifengbei",
+        "abbr": "kfb",
+        "city": "开封"
+      },
+      {
+        "shortPinyin": "kfe",
+        "name": "开封",
+        "code": "KFF",
+        "pinyin": "kaifeng",
+        "abbr": "kf",
+        "city": "开封"
+      },
+      {
+        "shortPinyin": "kfs",
+        "name": "开福寺",
+        "code": "FLQ",
+        "pinyin": "kaifusi",
+        "abbr": "kfs",
+        "city": "长沙"
+      },
+      {
+        "shortPinyin": "khu",
+        "name": "开化",
+        "code": "KHU",
+        "pinyin": "kaihua",
+        "abbr": "kh",
+        "city": "衢州"
+      },
+      {
+        "shortPinyin": "kjj",
+        "name": "康金井",
+        "code": "KJB",
+        "pinyin": "kangjinjing",
+        "abbr": "kjj",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "kla",
+        "name": "岢岚",
+        "code": "KLV",
+        "pinyin": "kelan",
+        "abbr": "kl",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "kli",
+        "name": "凯里",
+        "code": "KLW",
+        "pinyin": "kaili",
+        "abbr": "kl",
+        "city": "凯里"
+      },
+      {
+        "shortPinyin": "kln",
+        "name": "凯里南",
+        "code": "QKW",
+        "pinyin": "kailinan",
+        "abbr": "kln",
+        "city": "凯里"
+      },
+      {
+        "shortPinyin": "klu",
+        "name": "库伦",
+        "code": "KLD",
+        "pinyin": "kulun",
+        "abbr": "kl",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "klu",
+        "name": "开鲁",
+        "code": "KLC",
+        "pinyin": "kailu",
+        "abbr": "kl",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "kly",
+        "name": "克拉玛依",
+        "code": "KHR",
+        "pinyin": "kelamayi",
+        "abbr": "klmy",
+        "city": "克拉玛依"
+      },
+      {
+        "shortPinyin": "ksh",
+        "name": "喀什",
+        "code": "KSR",
+        "pinyin": "kashi",
+        "abbr": "ks",
+        "city": "喀什"
+      },
+      {
+        "shortPinyin": "ksh",
+        "name": "昆山",
+        "code": "KSH",
+        "pinyin": "kunshan",
+        "abbr": "ks",
+        "city": "苏州"
+      },
+      {
+        "shortPinyin": "ksh",
+        "name": "克山",
+        "code": "KSB",
+        "pinyin": "keshan",
+        "abbr": "ks",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "ksn",
+        "name": "昆山南",
+        "code": "KNH",
+        "pinyin": "kunshannan",
+        "abbr": "ksn",
+        "city": "苏州"
+      },
+      {
+        "shortPinyin": "ktu",
+        "name": "奎屯",
+        "code": "KTR",
+        "pinyin": "kuitun",
+        "abbr": "kt",
+        "city": "伊宁"
+      },
+      {
+        "shortPinyin": "kya",
+        "name": "开阳",
+        "code": "KVW",
+        "pinyin": "kaiyang",
+        "abbr": "ky",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "kya",
+        "name": "昆阳",
+        "code": "KAM",
+        "pinyin": "kunyang",
+        "abbr": "ky",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "kyu",
+        "name": "开原",
+        "code": "KYT",
+        "pinyin": "kaiyuan",
+        "abbr": "ky",
+        "city": "铁岭"
+      },
+      {
+        "shortPinyin": "kyx",
+        "name": "开原西",
+        "code": "KXT",
+        "pinyin": "kaiyuanxi",
+        "abbr": "kyx",
+        "city": "铁岭"
+      },
+      {
+        "shortPinyin": "kzh",
+        "name": "康庄",
+        "code": "KZP",
+        "pinyin": "kangzhuang",
+        "abbr": "kz",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "kzu",
+        "name": "喀左",
+        "code": "KZT",
+        "pinyin": "kazuo",
+        "abbr": "kz",
+        "city": "朝阳"
+      },
+      {
+        "shortPinyin": "kch",
+        "name": "康城",
+        "code": "KCP",
+        "pinyin": "kangcheng",
+        "abbr": "kc",
+        "city": "邯郸"
+      },
+      {
+        "shortPinyin": "kdi",
+        "name": "宽甸",
+        "code": "KDT",
+        "pinyin": "kuandian",
+        "abbr": "kd",
+        "city": "丹东"
+      },
+      {
+        "shortPinyin": "kdo",
+        "name": "克东",
+        "code": "KOB",
+        "pinyin": "kedong",
+        "abbr": "kd",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "kdz",
+        "name": "昆都仑召",
+        "code": "KDC",
+        "pinyin": "kundulunzhao",
+        "abbr": "kdlz",
+        "city": "包头"
+      },
+      {
+        "shortPinyin": "key",
+        "name": "库尔木依",
+        "code": "VPR",
+        "pinyin": "kuermuyi",
+        "abbr": "kemy",
+        "city": "库尔勒"
+      },
+      {
+        "shortPinyin": "kji",
+        "name": "开江",
+        "code": "KAW",
+        "pinyin": "kaijiang",
+        "abbr": "kj",
+        "city": "达州"
+      },
+      {
+        "shortPinyin": "klq",
+        "name": "喀喇其",
+        "code": "KQX",
+        "pinyin": "kalaqi",
+        "abbr": "klq",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "kpn",
+        "name": "开平南",
+        "code": "PVQ",
+        "pinyin": "kaipingnan",
+        "abbr": "kpn",
+        "city": "江门"
+      },
+      {
+        "shortPinyin": "kqi",
+        "name": "口前",
+        "code": "KQL",
+        "pinyin": "kouqian",
+        "abbr": "kq",
+        "city": "吉林"
+      },
+      {
+        "shortPinyin": "ksh",
+        "name": "奎山",
+        "code": "KAB",
+        "pinyin": "kuishan",
+        "abbr": "ks",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "kta",
+        "name": "葵潭",
+        "code": "KTQ",
+        "pinyin": "kuitan",
+        "abbr": "kt",
+        "city": "揭阳"
+      },
+      {
+        "shortPinyin": "kxl",
+        "name": "康熙岭",
+        "code": "KXZ",
+        "pinyin": "kangxiling",
+        "abbr": "kxl",
+        "city": "钦州"
+      },
+      {
+        "shortPinyin": "kyh",
+        "name": "克一河",
+        "code": "KHX",
+        "pinyin": "keyihe",
+        "abbr": "kyh",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "kyn",
+        "name": "开远南",
+        "code": "KUM",
+        "pinyin": "kaiyuannan",
+        "abbr": "kyn",
+        "city": "蒙自"
+      },
+      {
+        "shortPinyin": "kyu",
+        "name": "昆玉",
+        "code": "ESR",
+        "pinyin": "kunyu",
+        "abbr": "ky",
+        "city": "和田"
+      }
+    ],
+    "M": [
+      {
+        "shortPinyin": "msz",
+        "name": "茂舍祖",
+        "code": "MOM",
+        "pinyin": "maoshezu",
+        "abbr": "msz",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "mad",
+        "name": "马鞍山东",
+        "code": "OMH",
+        "pinyin": "maanshandong",
+        "abbr": "masd",
+        "city": "马鞍山"
+      },
+      {
+        "shortPinyin": "mcb",
+        "name": "麻城北",
+        "code": "MBN",
+        "pinyin": "machengbei",
+        "abbr": "mcb",
+        "city": "黄冈"
+      },
+      {
+        "shortPinyin": "mch",
+        "name": "麻城",
+        "code": "MCN",
+        "pinyin": "macheng",
+        "abbr": "mc",
+        "city": "黄冈"
+      },
+      {
+        "shortPinyin": "mcn",
+        "name": "渑池南",
+        "code": "MNF",
+        "pinyin": "mianchinan",
+        "abbr": "mcn",
+        "city": "三门峡"
+      },
+      {
+        "shortPinyin": "mdh",
+        "name": "免渡河",
+        "code": "MDX",
+        "pinyin": "mianduhe",
+        "abbr": "mdh",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "mdi",
+        "name": "磨丁",
+        "code": "VBM",
+        "pinyin": "moding",
+        "abbr": "md",
+        "city": "磨丁"
+      },
+      {
+        "shortPinyin": "mdj",
+        "name": "牡丹江",
+        "code": "MDB",
+        "pinyin": "mudanjiang",
+        "abbr": "mdj",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "meg",
+        "name": "莫尔道嘎",
+        "code": "MRX",
+        "pinyin": "moerdaoga",
+        "abbr": "medg",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "mes",
+        "name": "帽儿山",
+        "code": "MRB",
+        "pinyin": "maoershan",
+        "abbr": "mes",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "mex",
+        "name": "帽儿山西",
+        "code": "MUB",
+        "pinyin": "mershanxi",
+        "abbr": "mesx",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "mgu",
+        "name": "明光",
+        "code": "MGH",
+        "pinyin": "mingguang",
+        "abbr": "mg",
+        "city": "滁州"
+      },
+      {
+        "shortPinyin": "mgu",
+        "name": "满归",
+        "code": "MHX",
+        "pinyin": "mangui",
+        "abbr": "mg",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "mgu",
+        "name": "孟关",
+        "code": "MGE",
+        "pinyin": "mengguan",
+        "abbr": "mg",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "mha",
+        "name": "磨憨",
+        "code": "MHM",
+        "pinyin": "mohan",
+        "abbr": "mh",
+        "city": "勐腊"
+      },
+      {
+        "shortPinyin": "mhe",
+        "name": "漠河",
+        "code": "MVX",
+        "pinyin": "mohe",
+        "abbr": "mh",
+        "city": "加格达奇"
+      },
+      {
+        "shortPinyin": "mhk",
+        "name": "梅河口",
+        "code": "MHL",
+        "pinyin": "meihekou",
+        "abbr": "mhk",
+        "city": "通化"
+      },
+      {
+        "shortPinyin": "mhn",
+        "name": "民和南",
+        "code": "MNO",
+        "pinyin": "minhenan",
+        "abbr": "mhn",
+        "city": "海东"
+      },
+      {
+        "shortPinyin": "mjg",
+        "name": "孟家岗",
+        "code": "MGB",
+        "pinyin": "mengjiagang",
+        "abbr": "mjg",
+        "city": "佳木斯"
+      },
+      {
+        "shortPinyin": "mla",
+        "name": "米兰",
+        "code": "MIR",
+        "pinyin": "milan",
+        "abbr": "ml",
+        "city": "库尔勒"
+      },
+      {
+        "shortPinyin": "mla",
+        "name": "勐腊",
+        "code": "MWM",
+        "pinyin": "mengla",
+        "abbr": "ml",
+        "city": "勐腊"
+      },
+      {
+        "shortPinyin": "mla",
+        "name": "美兰",
+        "code": "MHQ",
+        "pinyin": "meilan",
+        "abbr": "ml",
+        "city": "海口"
+      },
+      {
+        "shortPinyin": "mle",
+        "name": "弥勒",
+        "code": "MLM",
+        "pinyin": "mile",
+        "abbr": "ml",
+        "city": "蒙自"
+      },
+      {
+        "shortPinyin": "mli",
+        "name": "穆棱",
+        "code": "MLB",
+        "pinyin": "muling",
+        "abbr": "ml",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "mmi",
+        "name": "茂名",
+        "code": "MDQ",
+        "pinyin": "maoming",
+        "abbr": "mm",
+        "city": "茂名"
+      },
+      {
+        "shortPinyin": "mmx",
+        "name": "茂名西",
+        "code": "MMZ",
+        "pinyin": "maomingxi",
+        "abbr": "mmx",
+        "city": "茂名"
+      },
+      {
+        "shortPinyin": "mni",
+        "name": "冕宁",
+        "code": "UGW",
+        "pinyin": "mianning",
+        "abbr": "mn",
+        "city": "西昌"
+      },
+      {
+        "shortPinyin": "mns",
+        "name": "玛纳斯",
+        "code": "MSR",
+        "pinyin": "manasi",
+        "abbr": "mns",
+        "city": "昌吉"
+      },
+      {
+        "shortPinyin": "mqb",
+        "name": "闽清北",
+        "code": "MBS",
+        "pinyin": "minqingbei",
+        "abbr": "mqb",
+        "city": "福州"
+      },
+      {
+        "shortPinyin": "mqu",
+        "name": "民权",
+        "code": "MQF",
+        "pinyin": "minquan",
+        "abbr": "mq",
+        "city": "商丘"
+      },
+      {
+        "shortPinyin": "msd",
+        "name": "眉山东",
+        "code": "IUW",
+        "pinyin": "meishandong",
+        "abbr": "msd",
+        "city": "眉山"
+      },
+      {
+        "shortPinyin": "msh",
+        "name": "名山",
+        "code": "MSE",
+        "pinyin": "mingshan",
+        "abbr": "ms",
+        "city": "雅安"
+      },
+      {
+        "shortPinyin": "msh",
+        "name": "密山",
+        "code": "MSB",
+        "pinyin": "mishan",
+        "abbr": "ms",
+        "city": "鸡西"
+      },
+      {
+        "shortPinyin": "msh",
+        "name": "庙山",
+        "code": "MSN",
+        "pinyin": "miaoshan",
+        "abbr": "ms",
+        "city": "武汉"
+      },
+      {
+        "shortPinyin": "msj",
+        "name": "马三家",
+        "code": "MJT",
+        "pinyin": "masanjia",
+        "abbr": "msj",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "msz",
+        "name": "米沙子",
+        "code": "MST",
+        "pinyin": "mishazi",
+        "abbr": "msz",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "mwe",
+        "name": "麻尾",
+        "code": "VAW",
+        "pinyin": "mawei",
+        "abbr": "mw",
+        "city": "都匀"
+      },
+      {
+        "shortPinyin": "mxi",
+        "name": "岷县",
+        "code": "MXJ",
+        "pinyin": "minxian",
+        "abbr": "mx",
+        "city": "定西"
+      },
+      {
+        "shortPinyin": "mxi",
+        "name": "勉县",
+        "code": "MVY",
+        "pinyin": "mianxian",
+        "abbr": "mx",
+        "city": "汉中"
+      },
+      {
+        "shortPinyin": "mya",
+        "name": "茫崖",
+        "code": "HTO",
+        "pinyin": "mangya",
+        "abbr": "my",
+        "city": "茫崖"
+      },
+      {
+        "shortPinyin": "mya",
+        "name": "绵阳",
+        "code": "MYW",
+        "pinyin": "mianyang",
+        "abbr": "my",
+        "city": "绵阳"
+      },
+      {
+        "shortPinyin": "myb",
+        "name": "密云北",
+        "code": "MUP",
+        "pinyin": "miyunbei",
+        "abbr": "myb",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "myu",
+        "name": "孟塬",
+        "code": "HSY",
+        "pinyin": "mengyuan",
+        "abbr": "my",
+        "city": "渭南"
+      },
+      {
+        "shortPinyin": "myu",
+        "name": "墨玉",
+        "code": "MUR",
+        "pinyin": "moyu",
+        "abbr": "my",
+        "city": "和田"
+      },
+      {
+        "shortPinyin": "myu",
+        "name": "门源",
+        "code": "MYO",
+        "pinyin": "menyuan",
+        "abbr": "my",
+        "city": "海北州"
+      },
+      {
+        "shortPinyin": "myu",
+        "name": "暮云",
+        "code": "KIQ",
+        "pinyin": "muyun",
+        "abbr": "my",
+        "city": "长沙"
+      },
+      {
+        "shortPinyin": "myu",
+        "name": "密云",
+        "code": "MYP",
+        "pinyin": "miyun",
+        "abbr": "my",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "mzh",
+        "name": "梅州",
+        "code": "MOQ",
+        "pinyin": "meizhou",
+        "abbr": "mz",
+        "city": "梅州"
+      },
+      {
+        "shortPinyin": "mzh",
+        "name": "孟庄",
+        "code": "MZF",
+        "pinyin": "mengzhuang",
+        "abbr": "mz",
+        "city": "郑州"
+      },
+      {
+        "shortPinyin": "mzi",
+        "name": "蒙自",
+        "code": "MZM",
+        "pinyin": "mengzi",
+        "abbr": "mz",
+        "city": "蒙自"
+      },
+      {
+        "shortPinyin": "mzl",
+        "name": "满洲里",
+        "code": "MLX",
+        "pinyin": "manzhouli",
+        "abbr": "mzl",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "mzx",
+        "name": "梅州西",
+        "code": "MXA",
+        "pinyin": "meizhouxi",
+        "abbr": "mzx",
+        "city": "梅州"
+      },
+      {
+        "shortPinyin": "man",
+        "name": "马鞍",
+        "code": "MAE",
+        "pinyin": "maan",
+        "abbr": "ma",
+        "city": "南充"
+      },
+      {
+        "shortPinyin": "mas",
+        "name": "马鞍山",
+        "code": "MAH",
+        "pinyin": "maanshan",
+        "abbr": "mas",
+        "city": "马鞍山"
+      },
+      {
+        "shortPinyin": "mba",
+        "name": "毛坝",
+        "code": "MBY",
+        "pinyin": "maoba",
+        "abbr": "mb",
+        "city": "达州"
+      },
+      {
+        "shortPinyin": "mbg",
+        "name": "毛坝关",
+        "code": "MGY",
+        "pinyin": "maobaguan",
+        "abbr": "mbg",
+        "city": "安康"
+      },
+      {
+        "shortPinyin": "mch",
+        "name": "麻涌",
+        "code": "MIA",
+        "pinyin": "machong",
+        "abbr": "mc",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "mch",
+        "name": "明城",
+        "code": "MCL",
+        "pinyin": "mingcheng",
+        "abbr": "mc",
+        "city": "吉林"
+      },
+      {
+        "shortPinyin": "mch",
+        "name": "毛陈",
+        "code": "MHN",
+        "pinyin": "maochen",
+        "abbr": "mc",
+        "city": "孝感"
+      },
+      {
+        "shortPinyin": "mch",
+        "name": "渑池",
+        "code": "MCF",
+        "pinyin": "mianchi",
+        "abbr": "mc",
+        "city": "三门峡"
+      },
+      {
+        "shortPinyin": "mch",
+        "name": "庙城",
+        "code": "MAP",
+        "pinyin": "miaocheng",
+        "abbr": "mc",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "mcp",
+        "name": "茅草坪",
+        "code": "KPM",
+        "pinyin": "maocaoping",
+        "abbr": "mcp",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "mdh",
+        "name": "猛洞河",
+        "code": "MUQ",
+        "pinyin": "mengdonghe",
+        "abbr": "mdh",
+        "city": "吉首"
+      },
+      {
+        "shortPinyin": "mds",
+        "name": "磨刀石",
+        "code": "MOB",
+        "pinyin": "modaoshi",
+        "abbr": "mds",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "mfe",
+        "name": "民丰",
+        "code": "MFR",
+        "pinyin": "minfeng",
+        "abbr": "mf",
+        "city": "和田"
+      },
+      {
+        "shortPinyin": "mga",
+        "name": "明港",
+        "code": "MGN",
+        "pinyin": "minggang",
+        "abbr": "mg",
+        "city": "信阳"
+      },
+      {
+        "shortPinyin": "mgd",
+        "name": "明港东",
+        "code": "MDN",
+        "pinyin": "minggangdong",
+        "abbr": "mgd",
+        "city": "信阳"
+      },
+      {
+        "shortPinyin": "mhu",
+        "name": "马皇",
+        "code": "MHZ",
+        "pinyin": "mahuang",
+        "abbr": "mh",
+        "city": "钦州"
+      },
+      {
+        "shortPinyin": "mji",
+        "name": "墨江",
+        "code": "MJM",
+        "pinyin": "mojiang",
+        "abbr": "mj",
+        "city": "墨江"
+      },
+      {
+        "shortPinyin": "mji",
+        "name": "闵集",
+        "code": "MJN",
+        "pinyin": "minji",
+        "abbr": "mj",
+        "city": "孝感"
+      },
+      {
+        "shortPinyin": "mla",
+        "name": "马兰",
+        "code": "MLR",
+        "pinyin": "malan",
+        "abbr": "ml",
+        "city": "库尔勒"
+      },
+      {
+        "shortPinyin": "mld",
+        "name": "汨罗东",
+        "code": "MQQ",
+        "pinyin": "miluodong",
+        "abbr": "mld",
+        "city": "岳阳"
+      },
+      {
+        "shortPinyin": "mle",
+        "name": "民乐",
+        "code": "MBJ",
+        "pinyin": "minle",
+        "abbr": "ml",
+        "city": "张掖"
+      },
+      {
+        "shortPinyin": "mlh",
+        "name": "马莲河",
+        "code": "MHB",
+        "pinyin": "malianhe",
+        "abbr": "mlh",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "mli",
+        "name": "茅岭",
+        "code": "MLZ",
+        "pinyin": "maoling",
+        "abbr": "ml",
+        "city": "防城港"
+      },
+      {
+        "shortPinyin": "mli",
+        "name": "庙岭",
+        "code": "MLL",
+        "pinyin": "miaoling",
+        "abbr": "ml",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "mli",
+        "name": "米林",
+        "code": "MIO",
+        "pinyin": "milin",
+        "abbr": "ml",
+        "city": "米林"
+      },
+      {
+        "shortPinyin": "mli",
+        "name": "麻柳",
+        "code": "MLY",
+        "pinyin": "maliu",
+        "abbr": "ml",
+        "city": "安康"
+      },
+      {
+        "shortPinyin": "mli",
+        "name": "茂林",
+        "code": "MLD",
+        "pinyin": "maolin",
+        "abbr": "ml",
+        "city": "四平"
+      },
+      {
+        "shortPinyin": "mlo",
+        "name": "马龙",
+        "code": "MGM",
+        "pinyin": "malong",
+        "abbr": "ml",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "mlt",
+        "name": "木里图",
+        "code": "MUD",
+        "pinyin": "mulitu",
+        "abbr": "mlt",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "mlu",
+        "name": "汨罗",
+        "code": "MLQ",
+        "pinyin": "miluo",
+        "abbr": "ml",
+        "city": "岳阳"
+      },
+      {
+        "shortPinyin": "mnh",
+        "name": "玛纳斯湖",
+        "code": "MNR",
+        "pinyin": "manasihu",
+        "abbr": "mnsh",
+        "city": "塔城"
+      },
+      {
+        "shortPinyin": "mpi",
+        "name": "牟平",
+        "code": "MBK",
+        "pinyin": "muping",
+        "abbr": "mp",
+        "city": "烟台"
+      },
+      {
+        "shortPinyin": "mqb",
+        "name": "民权北",
+        "code": "MIF",
+        "pinyin": "minquanbei",
+        "abbr": "mqb",
+        "city": "商丘"
+      },
+      {
+        "shortPinyin": "mqh",
+        "name": "马桥河",
+        "code": "MQB",
+        "pinyin": "maqiaohe",
+        "abbr": "mqh",
+        "city": "马桥河"
+      },
+      {
+        "shortPinyin": "mqi",
+        "name": "闽清",
+        "code": "MQS",
+        "pinyin": "minqing",
+        "abbr": "mq",
+        "city": "福州"
+      },
+      {
+        "shortPinyin": "msa",
+        "name": "孟赛",
+        "code": "VFM",
+        "pinyin": "mengsai",
+        "abbr": "ms",
+        "city": "孟赛"
+      },
+      {
+        "shortPinyin": "msh",
+        "name": "眉山",
+        "code": "MSW",
+        "pinyin": "meishan",
+        "abbr": "ms",
+        "city": "眉山"
+      },
+      {
+        "shortPinyin": "msh",
+        "name": "明水河",
+        "code": "MUT",
+        "pinyin": "mingshuihe",
+        "abbr": "msh",
+        "city": "兴安"
+      },
+      {
+        "shortPinyin": "msh",
+        "name": "蒙山",
+        "code": "MOK",
+        "pinyin": "mengshan",
+        "abbr": "ms",
+        "city": "临沂"
+      },
+      {
+        "shortPinyin": "msh",
+        "name": "麻山",
+        "code": "MAB",
+        "pinyin": "mashan",
+        "abbr": "ms",
+        "city": "鸡西"
+      },
+      {
+        "shortPinyin": "msx",
+        "name": "马山县",
+        "code": "MAZ",
+        "pinyin": "mashanxian",
+        "abbr": "msx",
+        "city": "南宁"
+      },
+      {
+        "shortPinyin": "mta",
+        "name": "马踏",
+        "code": "PWQ",
+        "pinyin": "mata",
+        "abbr": "mt",
+        "city": "茂名"
+      },
+      {
+        "shortPinyin": "mxd",
+        "name": "眉县东",
+        "code": "CXY",
+        "pinyin": "meixiandong",
+        "abbr": "mxd",
+        "city": "宝鸡"
+      },
+      {
+        "shortPinyin": "mxi",
+        "name": "美溪",
+        "code": "MEB",
+        "pinyin": "meixi",
+        "abbr": "mx",
+        "city": "伊春"
+      },
+      {
+        "shortPinyin": "mya",
+        "name": "麻阳",
+        "code": "MVQ",
+        "pinyin": "mayang",
+        "abbr": "my",
+        "city": "怀化"
+      },
+      {
+        "shortPinyin": "myd",
+        "name": "米易东",
+        "code": "MDE",
+        "pinyin": "miyidong",
+        "abbr": "myd",
+        "city": "攀枝花"
+      },
+      {
+        "shortPinyin": "myu",
+        "name": "麦园",
+        "code": "MYS",
+        "pinyin": "maiyuan",
+        "abbr": "my",
+        "city": "麦园"
+      },
+      {
+        "shortPinyin": "myx",
+        "name": "麻阳西",
+        "code": "MYA",
+        "pinyin": "mayangxi",
+        "abbr": "myx",
+        "city": "怀化"
+      },
+      {
+        "shortPinyin": "mzh",
+        "name": "庙庄",
+        "code": "MZJ",
+        "pinyin": "miaozhuang",
+        "abbr": "mz",
+        "city": "平凉"
+      },
+      {
+        "shortPinyin": "mzh",
+        "name": "米脂",
+        "code": "MEY",
+        "pinyin": "mizhi",
+        "abbr": "mz",
+        "city": "榆林"
+      },
+      {
+        "shortPinyin": "mzh",
+        "name": "明珠",
+        "code": "MFQ",
+        "pinyin": "mingzhu",
+        "abbr": "mz",
+        "city": "珠海"
+      },
+      {
+        "shortPinyin": "mxi",
+        "name": "茂县",
+        "code": "MXE",
+        "pinyin": "maoxian",
+        "abbr": "mx",
+        "city": "阿坝藏族羌族自治州"
+      },
+      {
+        "shortPinyin": "mxi",
+        "name": "明溪",
+        "code": "MOS",
+        "pinyin": "mingxi",
+        "abbr": "mx",
+        "city": "三明"
+      },
+      {
+        "shortPinyin": "mzn",
+        "name": "绵竹南",
+        "code": "MNE",
+        "pinyin": "mianzhunan",
+        "abbr": "mzn",
+        "city": "德阳"
+      }
+    ],
+    "N": [
+      {
+        "shortPinyin": "ncd",
+        "name": "南昌东",
+        "code": "NUG",
+        "pinyin": "nanchangdong",
+        "abbr": "ncd",
+        "city": "南昌"
+      },
+      {
+        "shortPinyin": "nch",
+        "name": "南昌",
+        "code": "NCG",
+        "pinyin": "nanchang",
+        "abbr": "nc",
+        "city": "南昌"
+      },
+      {
+        "shortPinyin": "ncn",
+        "name": "南昌南",
+        "code": "HOG",
+        "pinyin": "nanchangnan",
+        "abbr": "ncn",
+        "city": "南昌"
+      },
+      {
+        "shortPinyin": "ncu",
+        "name": "宁村",
+        "code": "NCZ",
+        "pinyin": "ningcun",
+        "abbr": "nc",
+        "city": "南宁"
+      },
+      {
+        "shortPinyin": "ncx",
+        "name": "南昌西",
+        "code": "NXG",
+        "pinyin": "nanchangxi",
+        "abbr": "ncx",
+        "city": "南昌"
+      },
+      {
+        "shortPinyin": "nji",
+        "name": "南京",
+        "code": "NJH",
+        "pinyin": "nanjing",
+        "abbr": "nj",
+        "city": "南京"
+      },
+      {
+        "shortPinyin": "njn",
+        "name": "南京南",
+        "code": "NKH",
+        "pinyin": "nanjingnan",
+        "abbr": "njn",
+        "city": "南京"
+      },
+      {
+        "shortPinyin": "nlu",
+        "name": "那罗",
+        "code": "ULZ",
+        "pinyin": "naluo",
+        "abbr": "nl",
+        "city": "南宁"
+      },
+      {
+        "shortPinyin": "nnb",
+        "name": "南宁北",
+        "code": "NRZ",
+        "pinyin": "nanningbei",
+        "abbr": "nnb",
+        "city": "南宁"
+      },
+      {
+        "shortPinyin": "nnd",
+        "name": "南宁东",
+        "code": "NFZ",
+        "pinyin": "nanningdong",
+        "abbr": "nnd",
+        "city": "南宁"
+      },
+      {
+        "shortPinyin": "nni",
+        "name": "南宁",
+        "code": "NNZ",
+        "pinyin": "nanning",
+        "abbr": "nn",
+        "city": "南宁"
+      },
+      {
+        "shortPinyin": "nnx",
+        "name": "南宁西",
+        "code": "NXZ",
+        "pinyin": "nanningxi",
+        "abbr": "nnx",
+        "city": "南宁"
+      },
+      {
+        "shortPinyin": "npu",
+        "name": "那铺",
+        "code": "NPZ",
+        "pinyin": "napu",
+        "abbr": "np",
+        "city": "南宁"
+      },
+      {
+        "shortPinyin": "nqu",
+        "name": "暖泉",
+        "code": "NQJ",
+        "pinyin": "nuanquan",
+        "abbr": "nq",
+        "city": "银川"
+      },
+      {
+        "shortPinyin": "nan",
+        "name": "宁安",
+        "code": "NAB",
+        "pinyin": "ningan",
+        "abbr": "na",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "nan",
+        "name": "农安",
+        "code": "NAT",
+        "pinyin": "nongan",
+        "abbr": "na",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "nbd",
+        "name": "宁波东",
+        "code": "NVH",
+        "pinyin": "ningbodong",
+        "abbr": "nbd",
+        "city": "宁波"
+      },
+      {
+        "shortPinyin": "nbo",
+        "name": "宁波",
+        "code": "NGH",
+        "pinyin": "ningbo",
+        "abbr": "nb",
+        "city": "宁波"
+      },
+      {
+        "shortPinyin": "nbu",
+        "name": "南部",
+        "code": "NBE",
+        "pinyin": "nanbu",
+        "abbr": "nb",
+        "city": "南充"
+      },
+      {
+        "shortPinyin": "nca",
+        "name": "南曹",
+        "code": "NEF",
+        "pinyin": "nancao",
+        "abbr": "nc",
+        "city": "郑州"
+      },
+      {
+        "shortPinyin": "ncb",
+        "name": "南充北",
+        "code": "NCE",
+        "pinyin": "nanchongbei",
+        "abbr": "ncb",
+        "city": "南充"
+      },
+      {
+        "shortPinyin": "nch",
+        "name": "南充",
+        "code": "NCW",
+        "pinyin": "nanchong",
+        "abbr": "nc",
+        "city": "南充"
+      },
+      {
+        "shortPinyin": "nch",
+        "name": "南城",
+        "code": "NDG",
+        "pinyin": "nancheng",
+        "abbr": "nc",
+        "city": "抚州"
+      },
+      {
+        "shortPinyin": "nch",
+        "name": "南岔",
+        "code": "NCB",
+        "pinyin": "nancha",
+        "abbr": "nc",
+        "city": "伊春"
+      },
+      {
+        "shortPinyin": "nda",
+        "name": "南丹",
+        "code": "NDZ",
+        "pinyin": "nandan",
+        "abbr": "nd",
+        "city": "河池"
+      },
+      {
+        "shortPinyin": "nde",
+        "name": "宁德",
+        "code": "NES",
+        "pinyin": "ningde",
+        "abbr": "nd",
+        "city": "宁德"
+      },
+      {
+        "shortPinyin": "ndm",
+        "name": "南大庙",
+        "code": "NMP",
+        "pinyin": "nandamiao",
+        "abbr": "ndm",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "ndn",
+        "name": "宁东南",
+        "code": "NDJ",
+        "pinyin": "ningdongnan",
+        "abbr": "ndn",
+        "city": "银川"
+      },
+      {
+        "shortPinyin": "ndo",
+        "name": "宁东",
+        "code": "NOJ",
+        "pinyin": "ningdong",
+        "abbr": "nd",
+        "city": "银川"
+      },
+      {
+        "shortPinyin": "nfe",
+        "name": "南芬",
+        "code": "NFT",
+        "pinyin": "nanfen",
+        "abbr": "nf",
+        "city": "本溪"
+      },
+      {
+        "shortPinyin": "nfe",
+        "name": "南丰",
+        "code": "NFG",
+        "pinyin": "nanfeng",
+        "abbr": "nf",
+        "city": "抚州"
+      },
+      {
+        "shortPinyin": "nha",
+        "name": "宁海",
+        "code": "NHH",
+        "pinyin": "ninghai",
+        "abbr": "nh",
+        "city": "宁波"
+      },
+      {
+        "shortPinyin": "nhd",
+        "name": "南湖东",
+        "code": "NDN",
+        "pinyin": "nanhudong",
+        "abbr": "nhd",
+        "city": "武汉"
+      },
+      {
+        "shortPinyin": "nhe",
+        "name": "讷河",
+        "code": "NHX",
+        "pinyin": "nehe",
+        "abbr": "nh",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "nhl",
+        "name": "牛河梁",
+        "code": "LKT",
+        "pinyin": "niuheliang",
+        "abbr": "nhl",
+        "city": "朝阳"
+      },
+      {
+        "shortPinyin": "njb",
+        "name": "内江北",
+        "code": "NKW",
+        "pinyin": "neijiangbei",
+        "abbr": "njb",
+        "city": "内江"
+      },
+      {
+        "shortPinyin": "nji",
+        "name": "内江",
+        "code": "NJW",
+        "pinyin": "neijiang",
+        "abbr": "nj",
+        "city": "内江"
+      },
+      {
+        "shortPinyin": "nji",
+        "name": "嫩江",
+        "code": "NGX",
+        "pinyin": "nenjiang",
+        "abbr": "nj",
+        "city": "黑河"
+      },
+      {
+        "shortPinyin": "nji",
+        "name": "南江",
+        "code": "FIW",
+        "pinyin": "nanjiang",
+        "abbr": "nj",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "nji",
+        "name": "牛家",
+        "code": "NJB",
+        "pinyin": "niujia",
+        "abbr": "nj",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "nko",
+        "name": "南口",
+        "code": "NKP",
+        "pinyin": "nankou",
+        "abbr": "nk",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "nls",
+        "name": "牛栏山",
+        "code": "NLP",
+        "pinyin": "niulanshan",
+        "abbr": "nls",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "nlx",
+        "name": "宁陵县",
+        "code": "NLF",
+        "pinyin": "ninglingxian",
+        "abbr": "nlx",
+        "city": "商丘"
+      },
+      {
+        "shortPinyin": "nma",
+        "name": "奈曼",
+        "code": "NMD",
+        "pinyin": "naiman",
+        "abbr": "nm",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "nmu",
+        "name": "尼木",
+        "code": "NMO",
+        "pinyin": "nimu",
+        "abbr": "nm",
+        "city": "拉萨"
+      },
+      {
+        "shortPinyin": "nps",
+        "name": "南平市",
+        "code": "NOS",
+        "pinyin": "nanpingshi",
+        "abbr": "nps",
+        "city": "南平"
+      },
+      {
+        "shortPinyin": "nqn",
+        "name": "宁强南",
+        "code": "NOY",
+        "pinyin": "ningqiangnan",
+        "abbr": "nqn",
+        "city": "汉中"
+      },
+      {
+        "shortPinyin": "nqu",
+        "name": "那曲",
+        "code": "NQO",
+        "pinyin": "naqu",
+        "abbr": "nq",
+        "city": "那曲"
+      },
+      {
+        "shortPinyin": "nto",
+        "name": "南通",
+        "code": "NUH",
+        "pinyin": "nantong",
+        "abbr": "nt",
+        "city": "南通"
+      },
+      {
+        "shortPinyin": "ntx",
+        "name": "南通西",
+        "code": "NXU",
+        "pinyin": "nantongxi",
+        "abbr": "ntx",
+        "city": "南通"
+      },
+      {
+        "shortPinyin": "nwu",
+        "name": "宁武",
+        "code": "NWV",
+        "pinyin": "ningwu",
+        "abbr": "nw",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "nxb",
+        "name": "南翔北",
+        "code": "NEH",
+        "pinyin": "nanxiangbei",
+        "abbr": "nxb",
+        "city": "上海"
+      },
+      {
+        "shortPinyin": "nxi",
+        "name": "南雄",
+        "code": "NCQ",
+        "pinyin": "nanxiong",
+        "abbr": "nx",
+        "city": "韶关"
+      },
+      {
+        "shortPinyin": "nxi",
+        "name": "宁乡",
+        "code": "NXQ",
+        "pinyin": "ningxiang",
+        "abbr": "nx",
+        "city": "长沙"
+      },
+      {
+        "shortPinyin": "nya",
+        "name": "南阳",
+        "code": "NFF",
+        "pinyin": "nanyang",
+        "abbr": "ny",
+        "city": "南阳"
+      },
+      {
+        "shortPinyin": "nyd",
+        "name": "南阳东",
+        "code": "NOF",
+        "pinyin": "nanyangdong",
+        "abbr": "nyd",
+        "city": "南阳"
+      },
+      {
+        "shortPinyin": "nyo",
+        "name": "纳雍",
+        "code": "NYE",
+        "pinyin": "nayong",
+        "abbr": "ny",
+        "city": "毕节"
+      },
+      {
+        "shortPinyin": "nyu",
+        "name": "南峪",
+        "code": "NUP",
+        "pinyin": "nanyu",
+        "abbr": "ny",
+        "city": "石家庄"
+      },
+      {
+        "shortPinyin": "nyz",
+        "name": "南阳寨",
+        "code": "NYF",
+        "pinyin": "nanyangzhai",
+        "abbr": "nyz",
+        "city": "郑州"
+      },
+      {
+        "shortPinyin": "nzs",
+        "name": "碾子山",
+        "code": "NZX",
+        "pinyin": "nianzishan",
+        "abbr": "nzs",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "nbs",
+        "name": "南博山",
+        "code": "NBK",
+        "pinyin": "nanboshan",
+        "abbr": "nbs",
+        "city": "淄博"
+      },
+      {
+        "shortPinyin": "nch",
+        "name": "牛车河",
+        "code": "NHA",
+        "pinyin": "niuchehe",
+        "abbr": "nch",
+        "city": "常德"
+      },
+      {
+        "shortPinyin": "nch",
+        "name": "宁城",
+        "code": "NCD",
+        "pinyin": "ningcheng",
+        "abbr": "nc",
+        "city": "赤峰"
+      },
+      {
+        "shortPinyin": "nch",
+        "name": "南仇",
+        "code": "NCK",
+        "pinyin": "nanqiu",
+        "abbr": "nc",
+        "city": "淄博"
+      },
+      {
+        "shortPinyin": "ncs",
+        "name": "南城司",
+        "code": "NSP",
+        "pinyin": "nanchengsi",
+        "abbr": "ncs",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "ndu",
+        "name": "纳堆",
+        "code": "VCM",
+        "pinyin": "nadui",
+        "abbr": "nd",
+        "city": "纳堆"
+      },
+      {
+        "shortPinyin": "ndu",
+        "name": "宁都",
+        "code": "NIG",
+        "pinyin": "ningdu",
+        "abbr": "ndu",
+        "city": "赣州"
+      },
+      {
+        "shortPinyin": "ner",
+        "name": "宁洱",
+        "code": "NEM",
+        "pinyin": "ninger",
+        "abbr": "ne",
+        "city": "宁洱"
+      },
+      {
+        "shortPinyin": "nfb",
+        "name": "南芬北",
+        "code": "NUT",
+        "pinyin": "nanfenbei",
+        "abbr": "nfb",
+        "city": "本溪"
+      },
+      {
+        "shortPinyin": "ngc",
+        "name": "南观村",
+        "code": "NGP",
+        "pinyin": "nanguancun",
+        "abbr": "ngc",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "ngd",
+        "name": "南宫东",
+        "code": "NFP",
+        "pinyin": "nangongdong",
+        "abbr": "ngd",
+        "city": "邢台"
+      },
+      {
+        "shortPinyin": "ngn",
+        "name": "宁国南",
+        "code": "NIU",
+        "pinyin": "ningguonan",
+        "abbr": "ngn",
+        "city": "宣城"
+      },
+      {
+        "shortPinyin": "ngu",
+        "name": "宁国",
+        "code": "NNH",
+        "pinyin": "ningguo",
+        "abbr": "ng",
+        "city": "宣城"
+      },
+      {
+        "shortPinyin": "nhc",
+        "name": "南河川",
+        "code": "NHJ",
+        "pinyin": "nanhechuan",
+        "abbr": "nhc",
+        "city": "天水"
+      },
+      {
+        "shortPinyin": "nhu",
+        "name": "南华",
+        "code": "NAM",
+        "pinyin": "nanhua",
+        "abbr": "nh",
+        "city": "楚雄"
+      },
+      {
+        "shortPinyin": "nhu",
+        "name": "宁化",
+        "code": "NHS",
+        "pinyin": "ninghua",
+        "abbr": "nh",
+        "city": "三明"
+      },
+      {
+        "shortPinyin": "nhu",
+        "name": "内黄",
+        "code": "NUF",
+        "pinyin": "neihuang",
+        "abbr": "nh",
+        "city": "安阳"
+      },
+      {
+        "shortPinyin": "nhz",
+        "name": "泥河子",
+        "code": "NHD",
+        "pinyin": "nihezi",
+        "abbr": "nhz",
+        "city": "锦州"
+      },
+      {
+        "shortPinyin": "njd",
+        "name": "内江东",
+        "code": "NDE",
+        "pinyin": "neijiangdong",
+        "abbr": "njd",
+        "city": "内江"
+      },
+      {
+        "shortPinyin": "nji",
+        "name": "宁家",
+        "code": "NVT",
+        "pinyin": "ningjia",
+        "abbr": "nj",
+        "city": "兴安"
+      },
+      {
+        "shortPinyin": "nji",
+        "name": "能家",
+        "code": "NJD",
+        "pinyin": "nengjia",
+        "abbr": "nj",
+        "city": "朝阳"
+      },
+      {
+        "shortPinyin": "nji",
+        "name": "南靖",
+        "code": "NJS",
+        "pinyin": "nanjing",
+        "abbr": "nj",
+        "city": "漳州"
+      },
+      {
+        "shortPinyin": "njk",
+        "name": "南江口",
+        "code": "NDQ",
+        "pinyin": "nanjiangkou",
+        "abbr": "njk",
+        "city": "云浮"
+      },
+      {
+        "shortPinyin": "nkq",
+        "name": "南口前",
+        "code": "NKT",
+        "pinyin": "nankouqian",
+        "abbr": "nkq",
+        "city": "抚顺"
+      },
+      {
+        "shortPinyin": "nla",
+        "name": "南朗",
+        "code": "NNQ",
+        "pinyin": "nanlang",
+        "abbr": "nl",
+        "city": "中山"
+      },
+      {
+        "shortPinyin": "nle",
+        "name": "南乐",
+        "code": "NWF",
+        "pinyin": "nanle",
+        "abbr": "nl",
+        "city": "濮阳"
+      },
+      {
+        "shortPinyin": "nlg",
+        "name": "奈林皋",
+        "code": "NGT",
+        "pinyin": "nailingao",
+        "abbr": "nlg",
+        "city": "朝阳"
+      },
+      {
+        "shortPinyin": "nli",
+        "name": "乃林",
+        "code": "NLD",
+        "pinyin": "nailin",
+        "abbr": "nl",
+        "city": "赤峰"
+      },
+      {
+        "shortPinyin": "nli",
+        "name": "南陵",
+        "code": "LLH",
+        "pinyin": "nanling",
+        "abbr": "nl",
+        "city": "芜湖"
+      },
+      {
+        "shortPinyin": "nlk",
+        "name": "尼勒克",
+        "code": "NIR",
+        "pinyin": "nileke",
+        "abbr": "nlk",
+        "city": "伊宁"
+      },
+      {
+        "shortPinyin": "nmi",
+        "name": "宁明",
+        "code": "NMZ",
+        "pinyin": "ningming",
+        "abbr": "nm",
+        "city": "崇左"
+      },
+      {
+        "shortPinyin": "nmu",
+        "name": "南木",
+        "code": "NMX",
+        "pinyin": "nanmu",
+        "abbr": "nm",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "npb",
+        "name": "南堡北",
+        "code": "TLP",
+        "pinyin": "nanpubei",
+        "abbr": "npb",
+        "city": "唐山"
+      },
+      {
+        "shortPinyin": "nqi",
+        "name": "南桥",
+        "code": "NQD",
+        "pinyin": "nanqiao",
+        "abbr": "nq",
+        "city": "葫芦岛"
+      },
+      {
+        "shortPinyin": "nsb",
+        "name": "南山北",
+        "code": "NEQ",
+        "pinyin": "nanshanbei",
+        "abbr": "nsb",
+        "city": "三亚"
+      },
+      {
+        "shortPinyin": "nto",
+        "name": "南头",
+        "code": "NOQ",
+        "pinyin": "nantou",
+        "abbr": "nt",
+        "city": "中山"
+      },
+      {
+        "shortPinyin": "ntu",
+        "name": "南屯",
+        "code": "NTR",
+        "pinyin": "nantun",
+        "abbr": "nt",
+        "city": "巴音郭楞蒙古自治州"
+      },
+      {
+        "shortPinyin": "nwz",
+        "name": "南湾子",
+        "code": "NWP",
+        "pinyin": "nanwanzi",
+        "abbr": "nwz",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "nxi",
+        "name": "泥溪",
+        "code": "NIE",
+        "pinyin": "nixi",
+        "abbr": "nxi",
+        "city": "宜宾"
+      },
+      {
+        "shortPinyin": "nxi",
+        "name": "南溪",
+        "code": "NEE",
+        "pinyin": "nanxi",
+        "abbr": "nx",
+        "city": "宜宾"
+      },
+      {
+        "shortPinyin": "nxi",
+        "name": "宁县",
+        "code": "AXJ",
+        "pinyin": "ningxian",
+        "abbr": "nx",
+        "city": "庆阳"
+      },
+      {
+        "shortPinyin": "nxi",
+        "name": "内乡",
+        "code": "NXF",
+        "pinyin": "neixiang",
+        "abbr": "nx",
+        "city": "南阳"
+      },
+      {
+        "shortPinyin": "nxj",
+        "name": "楠溪江",
+        "code": "NJU",
+        "pinyin": "nanxijiang",
+        "abbr": "nxj",
+        "city": "温州"
+      },
+      {
+        "shortPinyin": "nxx",
+        "name": "宁乡西",
+        "code": "NXA",
+        "pinyin": "ningxiangxi",
+        "abbr": "nxx",
+        "city": "长沙"
+      },
+      {
+        "shortPinyin": "nzg",
+        "name": "娘子关",
+        "code": "NIP",
+        "pinyin": "niangziguan",
+        "abbr": "nzg",
+        "city": "阳泉"
+      },
+      {
+        "shortPinyin": "nzh",
+        "name": "南漳",
+        "code": "NZN",
+        "pinyin": "nanzhang",
+        "abbr": "nz",
+        "city": "襄阳"
+      },
+      {
+        "shortPinyin": "nzh",
+        "name": "南召",
+        "code": "NAF",
+        "pinyin": "nanzhao",
+        "abbr": "nz",
+        "city": "南阳"
+      },
+      {
+        "shortPinyin": "nzm",
+        "name": "南杂木",
+        "code": "NZT",
+        "pinyin": "nanzamu",
+        "abbr": "nzm",
+        "city": "抚顺"
+      },
+      {
+        "shortPinyin": "nab",
+        "name": "南安北",
+        "code": "NUS",
+        "pinyin": "nananbei",
+        "abbr": "nab",
+        "city": "泉州"
+      },
+      {
+        "shortPinyin": "npe",
+        "name": "南彭",
+        "code": "NAE",
+        "pinyin": "nanpeng",
+        "abbr": "np",
+        "city": "重庆"
+      },
+      {
+        "shortPinyin": "nqi",
+        "name": "宁强",
+        "code": "NQY",
+        "pinyin": "ningqiang",
+        "abbr": "nq",
+        "city": "汉中"
+      },
+      {
+        "shortPinyin": "nxb",
+        "name": "南溪北",
+        "code": "NOE",
+        "pinyin": "nanxibei",
+        "abbr": "nxb",
+        "city": "宜宾"
+      }
+    ],
+    "P": [
+      {
+        "shortPinyin": "pdx",
+        "name": "坡底下",
+        "code": "PXJ",
+        "pinyin": "podixia",
+        "abbr": "pdx",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "pan",
+        "name": "普安",
+        "code": "PAN",
+        "pinyin": "puan",
+        "abbr": "pa",
+        "city": "武汉"
+      },
+      {
+        "shortPinyin": "pcd",
+        "name": "蒲城东",
+        "code": "PEY",
+        "pinyin": "puchengdong",
+        "abbr": "pcd",
+        "city": "渭南"
+      },
+      {
+        "shortPinyin": "pch",
+        "name": "平昌",
+        "code": "PCE",
+        "pinyin": "pingchang",
+        "abbr": "pc",
+        "city": "巴中"
+      },
+      {
+        "shortPinyin": "pdi",
+        "name": "平定",
+        "code": "PIP",
+        "pinyin": "pingding",
+        "abbr": "pd",
+        "city": "阳泉"
+      },
+      {
+        "shortPinyin": "pds",
+        "name": "平顶山",
+        "code": "PEN",
+        "pinyin": "pingdingshan",
+        "abbr": "pds",
+        "city": "平顶山"
+      },
+      {
+        "shortPinyin": "pdu",
+        "name": "平度",
+        "code": "PNK",
+        "pinyin": "pingdu",
+        "abbr": "pd",
+        "city": "青岛"
+      },
+      {
+        "shortPinyin": "pdx",
+        "name": "平度西",
+        "code": "PAK",
+        "pinyin": "pingduxi",
+        "abbr": "pdx",
+        "city": "青岛"
+      },
+      {
+        "shortPinyin": "pdx",
+        "name": "平顶山西",
+        "code": "PDF",
+        "pinyin": "pingdingshanxi",
+        "abbr": "pdsx",
+        "city": "平顶山"
+      },
+      {
+        "shortPinyin": "per",
+        "name": "普洱",
+        "code": "PEM",
+        "pinyin": "puer",
+        "abbr": "pe",
+        "city": "普洱"
+      },
+      {
+        "shortPinyin": "pfa",
+        "name": "平房",
+        "code": "PFB",
+        "pinyin": "pingfang",
+        "abbr": "pf",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "pjb",
+        "name": "盘锦北",
+        "code": "PBD",
+        "pinyin": "panjinbei",
+        "abbr": "pjb",
+        "city": "盘锦"
+      },
+      {
+        "shortPinyin": "pji",
+        "name": "盘锦",
+        "code": "PVD",
+        "pinyin": "panjin",
+        "abbr": "pj",
+        "city": "盘锦"
+      },
+      {
+        "shortPinyin": "pji",
+        "name": "蒲江",
+        "code": "PJE",
+        "pinyin": "pujiang",
+        "abbr": "pj",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "pla",
+        "name": "蓬莱",
+        "code": "POK",
+        "pinyin": "penglai",
+        "abbr": "pl",
+        "city": "烟台"
+      },
+      {
+        "shortPinyin": "plc",
+        "name": "盘龙城",
+        "code": "PNN",
+        "pinyin": "panlongcheng",
+        "abbr": "plc",
+        "city": "武汉"
+      },
+      {
+        "shortPinyin": "pld",
+        "name": "普兰店",
+        "code": "PLT",
+        "pinyin": "pulandian",
+        "abbr": "pld",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "pli",
+        "name": "平凉",
+        "code": "PIJ",
+        "pinyin": "pingliang",
+        "abbr": "pl",
+        "city": "平凉"
+      },
+      {
+        "shortPinyin": "pln",
+        "name": "平凉南",
+        "code": "POJ",
+        "pinyin": "pingliangnan",
+        "abbr": "pln",
+        "city": "平凉"
+      },
+      {
+        "shortPinyin": "pni",
+        "name": "普宁",
+        "code": "PEQ",
+        "pinyin": "puning",
+        "abbr": "pn",
+        "city": "揭阳"
+      },
+      {
+        "shortPinyin": "pqb",
+        "name": "平泉北",
+        "code": "PBP",
+        "pinyin": "pingquanbei",
+        "abbr": "pqb",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "pqu",
+        "name": "平泉",
+        "code": "PQP",
+        "pinyin": "pingquan",
+        "abbr": "pq",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "psh",
+        "name": "皮山",
+        "code": "PSR",
+        "pinyin": "pishan",
+        "abbr": "ps",
+        "city": "和田"
+      },
+      {
+        "shortPinyin": "psh",
+        "name": "磐石",
+        "code": "PSL",
+        "pinyin": "panshi",
+        "abbr": "ps",
+        "city": "吉林"
+      },
+      {
+        "shortPinyin": "psh",
+        "name": "坪石",
+        "code": "PSQ",
+        "pinyin": "pingshi",
+        "abbr": "ps",
+        "city": "韶关"
+      },
+      {
+        "shortPinyin": "psh",
+        "name": "平山",
+        "code": "PSB",
+        "pinyin": "pingshan",
+        "abbr": "ps",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "pta",
+        "name": "平潭",
+        "code": "PIS",
+        "pinyin": "pingtan",
+        "abbr": "pt",
+        "city": "福州"
+      },
+      {
+        "shortPinyin": "pti",
+        "name": "莆田",
+        "code": "PTS",
+        "pinyin": "putian",
+        "abbr": "pt",
+        "city": "莆田"
+      },
+      {
+        "shortPinyin": "pxb",
+        "name": "萍乡北",
+        "code": "PBG",
+        "pinyin": "pingxiangbei",
+        "abbr": "pxb",
+        "city": "萍乡"
+      },
+      {
+        "shortPinyin": "pxi",
+        "name": "凭祥",
+        "code": "PXZ",
+        "pinyin": "pingxiang",
+        "abbr": "px",
+        "city": "崇左"
+      },
+      {
+        "shortPinyin": "pxi",
+        "name": "萍乡",
+        "code": "PXG",
+        "pinyin": "pingxiang",
+        "abbr": "px",
+        "city": "萍乡"
+      },
+      {
+        "shortPinyin": "pxi",
+        "name": "普雄",
+        "code": "POW",
+        "pinyin": "puxiong",
+        "abbr": "px",
+        "city": "西昌"
+      },
+      {
+        "shortPinyin": "pxi",
+        "name": "郫县",
+        "code": "PWW",
+        "pinyin": "pixian",
+        "abbr": "px",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "pxx",
+        "name": "郫县西",
+        "code": "PCW",
+        "pinyin": "pixianxi",
+        "abbr": "pxx",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "pya",
+        "name": "濮阳",
+        "code": "PYF",
+        "pinyin": "puyang",
+        "abbr": "py",
+        "city": "濮阳"
+      },
+      {
+        "shortPinyin": "pya",
+        "name": "平阳",
+        "code": "ARH",
+        "pinyin": "pingyang",
+        "abbr": "py",
+        "city": "温州"
+      },
+      {
+        "shortPinyin": "pyc",
+        "name": "平遥古城",
+        "code": "PDV",
+        "pinyin": "pingyaogucheng",
+        "abbr": "pygc",
+        "city": "晋中"
+      },
+      {
+        "shortPinyin": "pyd",
+        "name": "濮阳东",
+        "code": "PUF",
+        "pinyin": "puyangdong",
+        "abbr": "pyd",
+        "city": "濮阳"
+      },
+      {
+        "shortPinyin": "pyd",
+        "name": "平原东",
+        "code": "PUK",
+        "pinyin": "pingyuandong",
+        "abbr": "pyd",
+        "city": "德州"
+      },
+      {
+        "shortPinyin": "pze",
+        "name": "彭泽",
+        "code": "PZG",
+        "pinyin": "pengze",
+        "abbr": "pz",
+        "city": "九江"
+      },
+      {
+        "shortPinyin": "pzh",
+        "name": "普者黑",
+        "code": "PZM",
+        "pinyin": "puzhehei",
+        "abbr": "pzh",
+        "city": "文山"
+      },
+      {
+        "shortPinyin": "pzh",
+        "name": "盘州",
+        "code": "PAE",
+        "pinyin": "panzhou",
+        "abbr": "pz",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "pzh",
+        "name": "攀枝花",
+        "code": "PRW",
+        "pinyin": "panzhihua",
+        "abbr": "pzh",
+        "city": "攀枝花"
+      },
+      {
+        "shortPinyin": "pzh",
+        "name": "彭州",
+        "code": "PMW",
+        "pinyin": "pengzhou",
+        "abbr": "pz",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "pzn",
+        "name": "攀枝花南",
+        "code": "PNE",
+        "pinyin": "panzhihuanan",
+        "abbr": "pzhn",
+        "city": "攀枝花"
+      },
+      {
+        "shortPinyin": "pzn",
+        "name": "彭州南",
+        "code": "PKW",
+        "pinyin": "pengzhounan",
+        "abbr": "pzn",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "pan",
+        "name": "蓬安",
+        "code": "PAW",
+        "pinyin": "pengan",
+        "abbr": "pa",
+        "city": "南充"
+      },
+      {
+        "shortPinyin": "pan",
+        "name": "平安",
+        "code": "PAL",
+        "pinyin": "pingan",
+        "abbr": "pa",
+        "city": "吉林"
+      },
+      {
+        "shortPinyin": "pan",
+        "name": "磐安",
+        "code": "PAU",
+        "pinyin": "panan",
+        "abbr": "pa",
+        "city": "金华"
+      },
+      {
+        "shortPinyin": "pan",
+        "name": "磐安南",
+        "code": "PNU",
+        "pinyin": "panannan",
+        "abbr": "pan",
+        "city": "金华"
+      },
+      {
+        "shortPinyin": "pax",
+        "name": "普安县",
+        "code": "PUE",
+        "pinyin": "puanxian",
+        "abbr": "pax",
+        "city": "兴义"
+      },
+      {
+        "shortPinyin": "pax",
+        "name": "蓬安西",
+        "code": "PXE",
+        "pinyin": "penganxi",
+        "abbr": "pax",
+        "city": "南充"
+      },
+      {
+        "shortPinyin": "pay",
+        "name": "平安驿",
+        "code": "PNO",
+        "pinyin": "pinganyi",
+        "abbr": "pay",
+        "city": "海东"
+      },
+      {
+        "shortPinyin": "paz",
+        "name": "平安镇",
+        "code": "PZT",
+        "pinyin": "pinganzhen",
+        "abbr": "paz",
+        "city": "白城"
+      },
+      {
+        "shortPinyin": "paz",
+        "name": "磐安镇",
+        "code": "PAJ",
+        "pinyin": "pananzhen",
+        "abbr": "paz",
+        "city": "天水"
+      },
+      {
+        "shortPinyin": "pbi",
+        "name": "屏边",
+        "code": "PBM",
+        "pinyin": "pingbian",
+        "abbr": "pb",
+        "city": "蒙自"
+      },
+      {
+        "shortPinyin": "pbn",
+        "name": "平坝南",
+        "code": "PBE",
+        "pinyin": "pingbanan",
+        "abbr": "pbn",
+        "city": "安顺"
+      },
+      {
+        "shortPinyin": "pch",
+        "name": "蒲城",
+        "code": "PCY",
+        "pinyin": "pucheng",
+        "abbr": "pc",
+        "city": "渭南"
+      },
+      {
+        "shortPinyin": "pde",
+        "name": "裴德",
+        "code": "PDB",
+        "pinyin": "peide",
+        "abbr": "pd",
+        "city": "鸡西"
+      },
+      {
+        "shortPinyin": "pdi",
+        "name": "普定",
+        "code": "PGW",
+        "pinyin": "puding",
+        "abbr": "pd",
+        "city": "安顺"
+      },
+      {
+        "shortPinyin": "pdi",
+        "name": "偏店",
+        "code": "PRP",
+        "pinyin": "piandian",
+        "abbr": "pd",
+        "city": "邯郸"
+      },
+      {
+        "shortPinyin": "pga",
+        "name": "平岗",
+        "code": "PGL",
+        "pinyin": "pinggang",
+        "abbr": "pg",
+        "city": "辽源"
+      },
+      {
+        "shortPinyin": "pgu",
+        "name": "平果",
+        "code": "PGZ",
+        "pinyin": "pingguo",
+        "abbr": "pg",
+        "city": "百色"
+      },
+      {
+        "shortPinyin": "pgu",
+        "name": "平关",
+        "code": "PGM",
+        "pinyin": "pingguan",
+        "abbr": "pg",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "pgu",
+        "name": "盘关",
+        "code": "PAM",
+        "pinyin": "panguan",
+        "abbr": "pg",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "phb",
+        "name": "徘徊北",
+        "code": "PHP",
+        "pinyin": "paihuaibei",
+        "abbr": "phb",
+        "city": "邯郸"
+      },
+      {
+        "shortPinyin": "phk",
+        "name": "平河口",
+        "code": "PHM",
+        "pinyin": "pinghekou",
+        "abbr": "phk",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "phu",
+        "name": "平湖",
+        "code": "PHQ",
+        "pinyin": "pinghu",
+        "abbr": "ph",
+        "city": "深圳"
+      },
+      {
+        "shortPinyin": "pjd",
+        "name": "潘家店",
+        "code": "PDP",
+        "pinyin": "panjiadian",
+        "abbr": "pjd",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "pji",
+        "name": "浦江",
+        "code": "PJU",
+        "pinyin": "pujiang",
+        "abbr": "pj",
+        "city": "金华"
+      },
+      {
+        "shortPinyin": "pkn",
+        "name": "皮口南",
+        "code": "PKT",
+        "pinyin": "pikounan",
+        "abbr": "pk",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "pko",
+        "name": "皮口",
+        "code": "PUT",
+        "pinyin": "pikou",
+        "abbr": "pk",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "pna",
+        "name": "屏南",
+        "code": "PNS",
+        "pinyin": "pingnan",
+        "abbr": "pn",
+        "city": "宁德"
+      },
+      {
+        "shortPinyin": "pnn",
+        "name": "平南南",
+        "code": "PAZ",
+        "pinyin": "pingnannan",
+        "abbr": "pnn",
+        "city": "贵港"
+      },
+      {
+        "shortPinyin": "ppu",
+        "name": "朋普",
+        "code": "PRM",
+        "pinyin": "pengpu",
+        "abbr": "pp",
+        "city": "蒙自"
+      },
+      {
+        "shortPinyin": "psb",
+        "name": "彭山北",
+        "code": "PPW",
+        "pinyin": "pengshanbei",
+        "abbr": "psb",
+        "city": "眉山"
+      },
+      {
+        "shortPinyin": "psh",
+        "name": "蒲石",
+        "code": "PSY",
+        "pinyin": "pushi",
+        "abbr": "ps",
+        "city": "蒲城"
+      },
+      {
+        "shortPinyin": "psh",
+        "name": "彭山",
+        "code": "PSW",
+        "pinyin": "pengshan",
+        "abbr": "ps",
+        "city": "眉山"
+      },
+      {
+        "shortPinyin": "psh",
+        "name": "彭水",
+        "code": "PHW",
+        "pinyin": "pengshui",
+        "abbr": "ps",
+        "city": "彭水"
+      },
+      {
+        "shortPinyin": "psh",
+        "name": "屏山",
+        "code": "PSE",
+        "pinyin": "pingshan",
+        "abbr": "psh",
+        "city": "宜宾"
+      },
+      {
+        "shortPinyin": "psh",
+        "name": "平社",
+        "code": "PSV",
+        "pinyin": "pingshe",
+        "abbr": "ps",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "psh",
+        "name": "盘山",
+        "code": "PUD",
+        "pinyin": "panshan",
+        "abbr": "ps",
+        "city": "盘锦"
+      },
+      {
+        "shortPinyin": "psh",
+        "name": "坪上",
+        "code": "PSK",
+        "pinyin": "pingshang",
+        "abbr": "ps",
+        "city": "临沂"
+      },
+      {
+        "shortPinyin": "pta",
+        "name": "平台",
+        "code": "PVT",
+        "pinyin": "pingtai",
+        "abbr": "pt",
+        "city": "白城"
+      },
+      {
+        "shortPinyin": "pti",
+        "name": "平田",
+        "code": "PTM",
+        "pinyin": "pingtian",
+        "abbr": "pt",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "ptq",
+        "name": "葡萄菁",
+        "code": "PTW",
+        "pinyin": "putaojing",
+        "abbr": "ptq",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "pwa",
+        "name": "平旺",
+        "code": "PWV",
+        "pinyin": "pingwang",
+        "abbr": "pw",
+        "city": "大同"
+      },
+      {
+        "shortPinyin": "pxg",
+        "name": "平型关",
+        "code": "PGV",
+        "pinyin": "pingxingguan",
+        "abbr": "pxg",
+        "city": "大同"
+      },
+      {
+        "shortPinyin": "pxi",
+        "name": "蓬溪",
+        "code": "KZW",
+        "pinyin": "pengxi",
+        "abbr": "px",
+        "city": "遂宁"
+      },
+      {
+        "shortPinyin": "pya",
+        "name": "平遥",
+        "code": "PYV",
+        "pinyin": "pingyao",
+        "abbr": "py",
+        "city": "晋中"
+      },
+      {
+        "shortPinyin": "pya",
+        "name": "彭阳",
+        "code": "PYJ",
+        "pinyin": "pengyang",
+        "abbr": "py",
+        "city": "固原"
+      },
+      {
+        "shortPinyin": "pya",
+        "name": "鄱阳",
+        "code": "POG",
+        "pinyin": "poyang",
+        "abbr": "py",
+        "city": "上饶"
+      },
+      {
+        "shortPinyin": "pya",
+        "name": "平洋",
+        "code": "PYX",
+        "pinyin": "pingyang",
+        "abbr": "py",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "pyb",
+        "name": "鄱阳北",
+        "code": "PYG",
+        "pinyin": "poyangbei",
+        "abbr": "pyb",
+        "city": "上饶"
+      },
+      {
+        "shortPinyin": "pyi",
+        "name": "平邑",
+        "code": "PIK",
+        "pinyin": "pingyi",
+        "abbr": "py",
+        "city": "临沂"
+      },
+      {
+        "shortPinyin": "pyp",
+        "name": "平原堡",
+        "code": "PPJ",
+        "pinyin": "pingyuanpu",
+        "abbr": "pyp",
+        "city": "张掖"
+      },
+      {
+        "shortPinyin": "pyu",
+        "name": "平原",
+        "code": "PYK",
+        "pinyin": "pingyuan",
+        "abbr": "py",
+        "city": "德州"
+      },
+      {
+        "shortPinyin": "pyu",
+        "name": "番禺",
+        "code": "PYA",
+        "pinyin": "panyu",
+        "abbr": "py",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "pyu",
+        "name": "平峪",
+        "code": "PYP",
+        "pinyin": "pingyu",
+        "abbr": "py",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "pzb",
+        "name": "平庄北",
+        "code": "PZD",
+        "pinyin": "pingzhuangbei",
+        "abbr": "pzb",
+        "city": "赤峰"
+      },
+      {
+        "shortPinyin": "pzd",
+        "name": "邳州东",
+        "code": "PIU",
+        "pinyin": "pizhoudong",
+        "abbr": "pzd",
+        "city": "徐州"
+      },
+      {
+        "shortPinyin": "pzh",
+        "name": "平庄",
+        "code": "PAD",
+        "pinyin": "pingzhuang",
+        "abbr": "pz",
+        "city": "赤峰"
+      },
+      {
+        "shortPinyin": "pzh",
+        "name": "邳州",
+        "code": "PJH",
+        "pinyin": "pizhou",
+        "abbr": "pz",
+        "city": "徐州"
+      },
+      {
+        "shortPinyin": "pzi",
+        "name": "泡子",
+        "code": "POD",
+        "pinyin": "paozi",
+        "abbr": "pz",
+        "city": "阜新"
+      },
+      {
+        "shortPinyin": "pzn",
+        "name": "平庄南",
+        "code": "PND",
+        "pinyin": "pingzhuangnan",
+        "abbr": "pzn",
+        "city": "赤峰"
+      },
+      {
+        "shortPinyin": "pcx",
+        "name": "平川西",
+        "code": "PCJ",
+        "pinyin": "pingchuanxi",
+        "abbr": "pcx",
+        "city": "白银"
+      },
+      {
+        "shortPinyin": "pxi",
+        "name": "蒲县",
+        "code": "PXV",
+        "pinyin": "puxian",
+        "abbr": "px",
+        "city": "临汾"
+      }
+    ],
+    "Q": [
+      {
+        "shortPinyin": "qdi",
+        "name": "七甸",
+        "code": "QDM",
+        "pinyin": "qidian",
+        "abbr": "qd",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "qan",
+        "name": "庆安",
+        "code": "QAB",
+        "pinyin": "qingan",
+        "abbr": "qa",
+        "city": "绥化"
+      },
+      {
+        "shortPinyin": "qbd",
+        "name": "青白江东",
+        "code": "QFW",
+        "pinyin": "qingbaijiangdong",
+        "abbr": "qbjd",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "qch",
+        "name": "清城",
+        "code": "QCA",
+        "pinyin": "qingcheng",
+        "abbr": "qc",
+        "city": "清远"
+      },
+      {
+        "shortPinyin": "qch",
+        "name": "蕲春",
+        "code": "QRN",
+        "pinyin": "qichun",
+        "abbr": "qc",
+        "city": "蕲春"
+      },
+      {
+        "shortPinyin": "qch",
+        "name": "青川",
+        "code": "QCE",
+        "pinyin": "qingchuan",
+        "abbr": "qc",
+        "city": "广元"
+      },
+      {
+        "shortPinyin": "qch",
+        "name": "黔城",
+        "code": "QEQ",
+        "pinyin": "qiancheng",
+        "abbr": "qc",
+        "city": "怀化"
+      },
+      {
+        "shortPinyin": "qcs",
+        "name": "青城山",
+        "code": "QSW",
+        "pinyin": "qingchengshan",
+        "abbr": "qcs",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "qda",
+        "name": "青岛",
+        "code": "QDK",
+        "pinyin": "qingdao",
+        "abbr": "qd",
+        "city": "青岛"
+      },
+      {
+        "shortPinyin": "qdb",
+        "name": "青岛北",
+        "code": "QHK",
+        "pinyin": "qingdaobei",
+        "abbr": "qdb",
+        "city": "青岛"
+      },
+      {
+        "shortPinyin": "qdh",
+        "name": "千岛湖",
+        "code": "QDU",
+        "pinyin": "qiandaohu",
+        "abbr": "qdh",
+        "city": "杭州"
+      },
+      {
+        "shortPinyin": "qdo",
+        "name": "启东",
+        "code": "QOU",
+        "pinyin": "qidong",
+        "abbr": "qd",
+        "city": "南通"
+      },
+      {
+        "shortPinyin": "qdx",
+        "name": "青岛西",
+        "code": "QUK",
+        "pinyin": "qingdaoxi",
+        "abbr": "qdx",
+        "city": "青岛"
+      },
+      {
+        "shortPinyin": "qfd",
+        "name": "曲阜东",
+        "code": "QAK",
+        "pinyin": "qufudong",
+        "abbr": "qfd",
+        "city": "济宁"
+      },
+      {
+        "shortPinyin": "qfe",
+        "name": "前锋",
+        "code": "QFB",
+        "pinyin": "qianfeng",
+        "abbr": "qf",
+        "city": "佳木斯"
+      },
+      {
+        "shortPinyin": "qfu",
+        "name": "曲阜",
+        "code": "QFK",
+        "pinyin": "qufu",
+        "abbr": "qf",
+        "city": "济宁"
+      },
+      {
+        "shortPinyin": "qha",
+        "name": "琼海",
+        "code": "QYQ",
+        "pinyin": "qionghai",
+        "abbr": "qh",
+        "city": "琼海"
+      },
+      {
+        "shortPinyin": "qhc",
+        "name": "清河城",
+        "code": "QYP",
+        "pinyin": "qinghecheng",
+        "abbr": "qhc",
+        "city": "邢台"
+      },
+      {
+        "shortPinyin": "qhd",
+        "name": "秦皇岛",
+        "code": "QTP",
+        "pinyin": "qinhuangdao",
+        "abbr": "qhd",
+        "city": "秦皇岛"
+      },
+      {
+        "shortPinyin": "qhe",
+        "name": "清河",
+        "code": "QIP",
+        "pinyin": "qinghe",
+        "abbr": "qh",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "qhy",
+        "name": "清华园",
+        "code": "QHP",
+        "pinyin": "qinghuayuan",
+        "abbr": "qhy",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "qjb",
+        "name": "曲靖北",
+        "code": "QBM",
+        "pinyin": "qujingbei",
+        "abbr": "qjb",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "qjd",
+        "name": "綦江东",
+        "code": "QDE",
+        "pinyin": "qijiangdong",
+        "abbr": "qjd",
+        "city": "綦江"
+      },
+      {
+        "shortPinyin": "qji",
+        "name": "黔江",
+        "code": "QNW",
+        "pinyin": "qianjiang",
+        "abbr": "qj",
+        "city": "黔江"
+      },
+      {
+        "shortPinyin": "qji",
+        "name": "曲靖",
+        "code": "QJM",
+        "pinyin": "qujing",
+        "abbr": "qj",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "qjz",
+        "name": "前进镇",
+        "code": "QEB",
+        "pinyin": "qianjinzhen",
+        "abbr": "qjz",
+        "city": "佳木斯"
+      },
+      {
+        "shortPinyin": "qla",
+        "name": "邛崃",
+        "code": "QLE",
+        "pinyin": "qionglai",
+        "abbr": "ql",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "qli",
+        "name": "清流",
+        "code": "QLS",
+        "pinyin": "qingliu",
+        "abbr": "ql",
+        "city": "三明"
+      },
+      {
+        "shortPinyin": "qqe",
+        "name": "齐齐哈尔",
+        "code": "QHX",
+        "pinyin": "qiqihaer",
+        "abbr": "qqhe",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "qqn",
+        "name": "齐齐哈尔南",
+        "code": "QNB",
+        "pinyin": "qiqihaernan",
+        "abbr": "qqhen",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "qsh",
+        "name": "潜山",
+        "code": "QSU",
+        "pinyin": "qianshan",
+        "abbr": "qs",
+        "city": "安庆"
+      },
+      {
+        "shortPinyin": "qsh",
+        "name": "庆盛",
+        "code": "QSQ",
+        "pinyin": "qingsheng",
+        "abbr": "qs",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "qsx",
+        "name": "曲水县",
+        "code": "QSO",
+        "pinyin": "qushuixian",
+        "abbr": "qsx",
+        "city": "拉萨"
+      },
+      {
+        "shortPinyin": "qth",
+        "name": "七台河",
+        "code": "QTB",
+        "pinyin": "qitaihe",
+        "abbr": "qth",
+        "city": "七台河"
+      },
+      {
+        "shortPinyin": "qtx",
+        "name": "青铜峡",
+        "code": "QTJ",
+        "pinyin": "qingtongxia",
+        "abbr": "qtx",
+        "city": "吴忠"
+      },
+      {
+        "shortPinyin": "qtx",
+        "name": "七台河西",
+        "code": "QXB",
+        "pinyin": "qitaihexi",
+        "abbr": "qthx",
+        "city": "七台河"
+      },
+      {
+        "shortPinyin": "qxi",
+        "name": "渠县",
+        "code": "QRW",
+        "pinyin": "quxian",
+        "abbr": "qx",
+        "city": "达州"
+      },
+      {
+        "shortPinyin": "qxi",
+        "name": "沁县",
+        "code": "QVV",
+        "pinyin": "qinxian",
+        "abbr": "qx",
+        "city": "长治"
+      },
+      {
+        "shortPinyin": "qxu",
+        "name": "清徐",
+        "code": "QUV",
+        "pinyin": "qingxu",
+        "abbr": "qx",
+        "city": "太原"
+      },
+      {
+        "shortPinyin": "qya",
+        "name": "庆阳",
+        "code": "QOJ",
+        "pinyin": "qingyang",
+        "abbr": "qy",
+        "city": "庆阳"
+      },
+      {
+        "shortPinyin": "qyu",
+        "name": "清远",
+        "code": "QBQ",
+        "pinyin": "qingyuan",
+        "abbr": "qy",
+        "city": "清远"
+      },
+      {
+        "shortPinyin": "qyu",
+        "name": "庆元",
+        "code": "QYU",
+        "pinyin": "qingyuan",
+        "abbr": "qy",
+        "city": "丽水"
+      },
+      {
+        "shortPinyin": "qzd",
+        "name": "钦州东",
+        "code": "QDZ",
+        "pinyin": "qinzhoudong",
+        "abbr": "qzd",
+        "city": "钦州"
+      },
+      {
+        "shortPinyin": "qzd",
+        "name": "乔庄东",
+        "code": "QEP",
+        "pinyin": "qiaozhuangdong",
+        "abbr": "qzd",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "qzh",
+        "name": "衢州",
+        "code": "QEH",
+        "pinyin": "quzhou",
+        "abbr": "qz",
+        "city": "衢州"
+      },
+      {
+        "shortPinyin": "qzh",
+        "name": "泉州",
+        "code": "QYS",
+        "pinyin": "quanzhou",
+        "abbr": "qz",
+        "city": "泉州"
+      },
+      {
+        "shortPinyin": "qzn",
+        "name": "全州南",
+        "code": "QNZ",
+        "pinyin": "quanzhounan",
+        "abbr": "qzn",
+        "city": "桂林"
+      },
+      {
+        "shortPinyin": "qzx",
+        "name": "清镇西",
+        "code": "QUE",
+        "pinyin": "qingzhenxi",
+        "abbr": "qzx",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "qan",
+        "name": "乾安",
+        "code": "QOT",
+        "pinyin": "qianan",
+        "abbr": "qa",
+        "city": "松原"
+      },
+      {
+        "shortPinyin": "qan",
+        "name": "迁安",
+        "code": "QQP",
+        "pinyin": "qianan",
+        "abbr": "qa",
+        "city": "唐山"
+      },
+      {
+        "shortPinyin": "qan",
+        "name": "秦安",
+        "code": "QGJ",
+        "pinyin": "qinan",
+        "abbr": "qa",
+        "city": "天水"
+      },
+      {
+        "shortPinyin": "qch",
+        "name": "庆城",
+        "code": "QHJ",
+        "pinyin": "qingcheng",
+        "abbr": "qc",
+        "city": "庆阳"
+      },
+      {
+        "shortPinyin": "qcn",
+        "name": "蕲春南",
+        "code": "QCN",
+        "pinyin": "qichunnan",
+        "abbr": "qcn",
+        "city": "蕲春"
+      },
+      {
+        "shortPinyin": "qdb",
+        "name": "祁东北",
+        "code": "QRQ",
+        "pinyin": "qidongbei",
+        "abbr": "qd",
+        "city": "衡阳"
+      },
+      {
+        "shortPinyin": "qdc",
+        "name": "青岛机场",
+        "code": "QJK",
+        "pinyin": "qingdaojichang",
+        "abbr": "qdjc",
+        "city": "青岛"
+      },
+      {
+        "shortPinyin": "qdo",
+        "name": "祁东",
+        "code": "QMQ",
+        "pinyin": "qidong",
+        "abbr": "qd",
+        "city": "衡阳"
+      },
+      {
+        "shortPinyin": "qdu",
+        "name": "青堆",
+        "code": "QET",
+        "pinyin": "qingdui",
+        "abbr": "qd",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "qfn",
+        "name": "曲阜南",
+        "code": "QQK",
+        "pinyin": "qufunan",
+        "abbr": "qfn",
+        "city": "济宁"
+      },
+      {
+        "shortPinyin": "qft",
+        "name": "奇峰塔",
+        "code": "QVP",
+        "pinyin": "qifengta",
+        "abbr": "qft",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "qga",
+        "name": "泉港",
+        "code": "QGS",
+        "pinyin": "quangang",
+        "abbr": "qg",
+        "city": "泉州"
+      },
+      {
+        "shortPinyin": "qhb",
+        "name": "清河门北",
+        "code": "QBD",
+        "pinyin": "qinghemenbei",
+        "abbr": "qhmb",
+        "city": "阜新"
+      },
+      {
+        "shortPinyin": "qhe",
+        "name": "千河",
+        "code": "QUY",
+        "pinyin": "qianhe",
+        "abbr": "qh",
+        "city": "宝鸡"
+      },
+      {
+        "shortPinyin": "qhe",
+        "name": "齐河",
+        "code": "QIK",
+        "pinyin": "qihe",
+        "abbr": "qh",
+        "city": "德州"
+      },
+      {
+        "shortPinyin": "qhm",
+        "name": "清河门",
+        "code": "QHD",
+        "pinyin": "qinghemen",
+        "abbr": "qhm",
+        "city": "阜新"
+      },
+      {
+        "shortPinyin": "qji",
+        "name": "渠旧",
+        "code": "QJZ",
+        "pinyin": "qujiu",
+        "abbr": "qj",
+        "city": "崇左"
+      },
+      {
+        "shortPinyin": "qji",
+        "name": "潜江",
+        "code": "QJN",
+        "pinyin": "qianjiang",
+        "abbr": "qj",
+        "city": "潜江"
+      },
+      {
+        "shortPinyin": "qji",
+        "name": "曲江",
+        "code": "QIM",
+        "pinyin": "qujiang",
+        "abbr": "qj",
+        "city": "蒙自"
+      },
+      {
+        "shortPinyin": "qji",
+        "name": "全椒",
+        "code": "INH",
+        "pinyin": "quanjiao",
+        "abbr": "qj",
+        "city": "滁州"
+      },
+      {
+        "shortPinyin": "qji",
+        "name": "秦家",
+        "code": "QJB",
+        "pinyin": "qinjia",
+        "abbr": "qj",
+        "city": "绥化"
+      },
+      {
+        "shortPinyin": "qjp",
+        "name": "祁家堡",
+        "code": "QBT",
+        "pinyin": "qijiapu",
+        "abbr": "qjp",
+        "city": "本溪"
+      },
+      {
+        "shortPinyin": "qjx",
+        "name": "清涧县",
+        "code": "QNY",
+        "pinyin": "qingjianxian",
+        "abbr": "qjx",
+        "city": "榆林"
+      },
+      {
+        "shortPinyin": "qjz",
+        "name": "秦家庄",
+        "code": "QZV",
+        "pinyin": "qinjiazhuang",
+        "abbr": "qjz",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "qlh",
+        "name": "七里河",
+        "code": "QLD",
+        "pinyin": "qilihe",
+        "abbr": "qlh",
+        "city": "锦州"
+      },
+      {
+        "shortPinyin": "qli",
+        "name": "渠黎",
+        "code": "QLZ",
+        "pinyin": "quli",
+        "abbr": "ql",
+        "city": "崇左"
+      },
+      {
+        "shortPinyin": "qli",
+        "name": "秦岭",
+        "code": "QLY",
+        "pinyin": "qinling",
+        "abbr": "ql",
+        "city": "宝鸡"
+      },
+      {
+        "shortPinyin": "qli",
+        "name": "青莲",
+        "code": "QEW",
+        "pinyin": "qinglian",
+        "abbr": "ql",
+        "city": "绵阳"
+      },
+      {
+        "shortPinyin": "qlo",
+        "name": "青龙",
+        "code": "QIB",
+        "pinyin": "qinglong",
+        "abbr": "ql",
+        "city": "鸡西"
+      },
+      {
+        "shortPinyin": "qls",
+        "name": "青龙山",
+        "code": "QGH",
+        "pinyin": "qinglongshan",
+        "abbr": "qls",
+        "city": "淮北"
+      },
+      {
+        "shortPinyin": "qme",
+        "name": "祁门",
+        "code": "QIH",
+        "pinyin": "qimen",
+        "abbr": "qm",
+        "city": "黄山"
+      },
+      {
+        "shortPinyin": "qmn",
+        "name": "祁门南",
+        "code": "QNU",
+        "pinyin": "qimennan",
+        "abbr": "qmn",
+        "city": "黄山"
+      },
+      {
+        "shortPinyin": "qmo",
+        "name": "且末",
+        "code": "QMR",
+        "pinyin": "qiemo",
+        "abbr": "qm",
+        "city": "巴音郭楞蒙古自治州"
+      },
+      {
+        "shortPinyin": "qmt",
+        "name": "前磨头",
+        "code": "QMP",
+        "pinyin": "qianmotou",
+        "abbr": "qmt",
+        "city": "衡水"
+      },
+      {
+        "shortPinyin": "qsb",
+        "name": "清水北",
+        "code": "QEJ",
+        "pinyin": "qingshuibei",
+        "abbr": "qsb",
+        "city": "酒泉"
+      },
+      {
+        "shortPinyin": "qsh",
+        "name": "青神",
+        "code": "QVW",
+        "pinyin": "qingshen",
+        "abbr": "qs",
+        "city": "眉山"
+      },
+      {
+        "shortPinyin": "qsh",
+        "name": "岐山",
+        "code": "QAY",
+        "pinyin": "qishan",
+        "abbr": "qs",
+        "city": "宝鸡"
+      },
+      {
+        "shortPinyin": "qsh",
+        "name": "前山",
+        "code": "QXQ",
+        "pinyin": "qianshan",
+        "abbr": "qs",
+        "city": "珠海"
+      },
+      {
+        "shortPinyin": "qsh",
+        "name": "确山",
+        "code": "QSN",
+        "pinyin": "queshan",
+        "abbr": "qs",
+        "city": "驻马店"
+      },
+      {
+        "shortPinyin": "qsh",
+        "name": "清水",
+        "code": "QUJ",
+        "pinyin": "qingshui",
+        "abbr": "qs",
+        "city": "酒泉"
+      },
+      {
+        "shortPinyin": "qsh",
+        "name": "青山",
+        "code": "QSB",
+        "pinyin": "qingshan",
+        "abbr": "qs",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "qsx",
+        "name": "清水县",
+        "code": "QIJ",
+        "pinyin": "qingshuixian",
+        "abbr": "qsx",
+        "city": "天水"
+      },
+      {
+        "shortPinyin": "qsy",
+        "name": "戚墅堰",
+        "code": "QYH",
+        "pinyin": "qishuyan",
+        "abbr": "qsy",
+        "city": "常州"
+      },
+      {
+        "shortPinyin": "qti",
+        "name": "青田",
+        "code": "QVH",
+        "pinyin": "qingtian",
+        "abbr": "qt",
+        "city": "丽水"
+      },
+      {
+        "shortPinyin": "qto",
+        "name": "桥头",
+        "code": "QAT",
+        "pinyin": "qiaotou",
+        "abbr": "qt",
+        "city": "本溪"
+      },
+      {
+        "shortPinyin": "qwe",
+        "name": "犍为",
+        "code": "JWE",
+        "pinyin": "qianwei",
+        "abbr": "qwe",
+        "city": "乐山"
+      },
+      {
+        "shortPinyin": "qwe",
+        "name": "前卫",
+        "code": "QWD",
+        "pinyin": "qianwei",
+        "abbr": "qw",
+        "city": "葫芦岛"
+      },
+      {
+        "shortPinyin": "qwt",
+        "name": "前苇塘",
+        "code": "QWP",
+        "pinyin": "qianweitang",
+        "abbr": "qwt",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "qxd",
+        "name": "祁县东",
+        "code": "QGV",
+        "pinyin": "qixiandong",
+        "abbr": "qxd",
+        "city": "晋中"
+      },
+      {
+        "shortPinyin": "qxi",
+        "name": "黔西",
+        "code": "QXE",
+        "pinyin": "qianxi",
+        "abbr": "qx",
+        "city": "毕节"
+      },
+      {
+        "shortPinyin": "qxi",
+        "name": "祁县",
+        "code": "QXV",
+        "pinyin": "qixian",
+        "abbr": "qx",
+        "city": "晋中"
+      },
+      {
+        "shortPinyin": "qxi",
+        "name": "乾县",
+        "code": "QBY",
+        "pinyin": "qianxian",
+        "abbr": "qx",
+        "city": "咸阳"
+      },
+      {
+        "shortPinyin": "qxi",
+        "name": "青县",
+        "code": "QXP",
+        "pinyin": "qingxian",
+        "abbr": "qx",
+        "city": "沧州"
+      },
+      {
+        "shortPinyin": "qxi",
+        "name": "桥西",
+        "code": "QXJ",
+        "pinyin": "qiaoxi",
+        "abbr": "qx",
+        "city": "嘉峪关"
+      },
+      {
+        "shortPinyin": "qxn",
+        "name": "旗下营南",
+        "code": "QNC",
+        "pinyin": "qixiayingnan",
+        "abbr": "qxyn",
+        "city": "乌兰察布"
+      },
+      {
+        "shortPinyin": "qxy",
+        "name": "旗下营",
+        "code": "QXC",
+        "pinyin": "qixiaying",
+        "abbr": "qxy",
+        "city": "乌兰察布"
+      },
+      {
+        "shortPinyin": "qya",
+        "name": "千阳",
+        "code": "QOY",
+        "pinyin": "qianyang",
+        "abbr": "qy",
+        "city": "宝鸡"
+      },
+      {
+        "shortPinyin": "qya",
+        "name": "祁阳",
+        "code": "QWQ",
+        "pinyin": "qiyang",
+        "abbr": "qy",
+        "city": "永州"
+      },
+      {
+        "shortPinyin": "qya",
+        "name": "沁阳",
+        "code": "QYF",
+        "pinyin": "qinyang",
+        "abbr": "qy",
+        "city": "焦作"
+      },
+      {
+        "shortPinyin": "qyb",
+        "name": "祁阳北",
+        "code": "QVQ",
+        "pinyin": "qiyangbei",
+        "abbr": "qy",
+        "city": "永州"
+      },
+      {
+        "shortPinyin": "qyi",
+        "name": "七营",
+        "code": "QYJ",
+        "pinyin": "qiying",
+        "abbr": "qy",
+        "city": "固原"
+      },
+      {
+        "shortPinyin": "qys",
+        "name": "庆阳山",
+        "code": "QSJ",
+        "pinyin": "qingyangshan",
+        "abbr": "qys",
+        "city": "白银"
+      },
+      {
+        "shortPinyin": "qyu",
+        "name": "清原",
+        "code": "QYT",
+        "pinyin": "qingyuan",
+        "abbr": "qy",
+        "city": "抚顺"
+      },
+      {
+        "shortPinyin": "qzb",
+        "name": "青州市北",
+        "code": "QOK",
+        "pinyin": "qingzhoushibei",
+        "abbr": "qzsb",
+        "city": "潍坊"
+      },
+      {
+        "shortPinyin": "qzd",
+        "name": "泉州东",
+        "code": "QRS",
+        "pinyin": "quanzhoudong",
+        "abbr": "qzd",
+        "city": "泉州"
+      },
+      {
+        "shortPinyin": "qzh",
+        "name": "钦州",
+        "code": "QRZ",
+        "pinyin": "qinzhou",
+        "abbr": "qz",
+        "city": "钦州"
+      },
+      {
+        "shortPinyin": "qzi",
+        "name": "曲子",
+        "code": "QJJ",
+        "pinyin": "quzi",
+        "abbr": "qz",
+        "city": "庆阳"
+      },
+      {
+        "shortPinyin": "qzn",
+        "name": "泉州南",
+        "code": "QNS",
+        "pinyin": "quanzhounan",
+        "abbr": "qzn",
+        "city": "泉州"
+      },
+      {
+        "shortPinyin": "qzs",
+        "name": "青州市",
+        "code": "QZK",
+        "pinyin": "qingzhoushi",
+        "abbr": "qzs",
+        "city": "潍坊"
+      },
+      {
+        "shortPinyin": "qzw",
+        "name": "棋子湾",
+        "code": "QZQ",
+        "pinyin": "qiziwan",
+        "abbr": "qzw",
+        "city": "昌江"
+      },
+      {
+        "shortPinyin": "qwc",
+        "name": "秦王川",
+        "code": "QWJ",
+        "pinyin": "qinwangchuan",
+        "abbr": "qwc",
+        "city": "兰州"
+      }
+    ],
+    "X": [
+      {
+        "shortPinyin": "xab",
+        "name": "西安北",
+        "code": "EAY",
+        "pinyin": "xianbei",
+        "abbr": "xab",
+        "city": "西安"
+      },
+      {
+        "shortPinyin": "xan",
+        "name": "西安",
+        "code": "XAY",
+        "pinyin": "xian",
+        "abbr": "xa",
+        "city": "西安"
+      },
+      {
+        "shortPinyin": "xgc",
+        "name": "西固城",
+        "code": "XUJ",
+        "pinyin": "xigucheng",
+        "abbr": "xgc",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "xjk",
+        "name": "西街口",
+        "code": "EKM",
+        "pinyin": "xijiekou",
+        "abbr": "xjk",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "xjt",
+        "name": "许家台",
+        "code": "XTJ",
+        "pinyin": "xujiatai",
+        "abbr": "xjt",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "xni",
+        "name": "西宁",
+        "code": "XNO",
+        "pinyin": "xining",
+        "abbr": "xn",
+        "city": "西宁"
+      },
+      {
+        "shortPinyin": "xsh",
+        "name": "小哨",
+        "code": "XAM",
+        "pinyin": "xiaoshao",
+        "abbr": "xs",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "xta",
+        "name": "新塘",
+        "code": "XWQ",
+        "pinyin": "xintang",
+        "abbr": "xt",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "xye",
+        "name": "雪野",
+        "code": "XYK",
+        "pinyin": "xueye",
+        "abbr": "xy",
+        "city": "济南"
+      },
+      {
+        "shortPinyin": "xab",
+        "name": "兴安北",
+        "code": "XDZ",
+        "pinyin": "xinganbei",
+        "abbr": "xab",
+        "city": "桂林"
+      },
+      {
+        "shortPinyin": "xan",
+        "name": "雄安",
+        "code": "IQP",
+        "pinyin": "xiongan",
+        "abbr": "xa",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "xax",
+        "name": "西安西",
+        "code": "EGY",
+        "pinyin": "xianxi",
+        "abbr": "xax",
+        "city": "西安"
+      },
+      {
+        "shortPinyin": "xcd",
+        "name": "许昌东",
+        "code": "XVF",
+        "pinyin": "xuchangdong",
+        "abbr": "xcd",
+        "city": "许昌"
+      },
+      {
+        "shortPinyin": "xch",
+        "name": "兴城",
+        "code": "XCD",
+        "pinyin": "xingcheng",
+        "abbr": "xc",
+        "city": "葫芦岛"
+      },
+      {
+        "shortPinyin": "xch",
+        "name": "宣城",
+        "code": "ECH",
+        "pinyin": "xuancheng",
+        "abbr": "xc",
+        "city": "宣城"
+      },
+      {
+        "shortPinyin": "xch",
+        "name": "西昌",
+        "code": "ECW",
+        "pinyin": "xichang",
+        "abbr": "xc",
+        "city": "西昌"
+      },
+      {
+        "shortPinyin": "xch",
+        "name": "许昌",
+        "code": "XCF",
+        "pinyin": "xuchang",
+        "abbr": "xc",
+        "city": "许昌"
+      },
+      {
+        "shortPinyin": "xcx",
+        "name": "西昌西",
+        "code": "XCE",
+        "pinyin": "xichangxi",
+        "abbr": "xcx",
+        "city": "西昌"
+      },
+      {
+        "shortPinyin": "xdd",
+        "name": "新都东",
+        "code": "EWW",
+        "pinyin": "xindudong",
+        "abbr": "xdd",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "xfa",
+        "name": "香坊",
+        "code": "XFB",
+        "pinyin": "xiangfang",
+        "abbr": "xf",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "xfe",
+        "name": "咸丰",
+        "code": "XFA",
+        "pinyin": "xianfeng",
+        "abbr": "xf",
+        "city": "恩施"
+      },
+      {
+        "shortPinyin": "xfe",
+        "name": "西丰",
+        "code": "XFT",
+        "pinyin": "xifeng",
+        "abbr": "xf",
+        "city": "铁岭"
+      },
+      {
+        "shortPinyin": "xfe",
+        "name": "息烽",
+        "code": "XFW",
+        "pinyin": "xifeng",
+        "abbr": "xf",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "xfe",
+        "name": "先锋",
+        "code": "NQQ",
+        "pinyin": "xianfeng",
+        "abbr": "xf",
+        "city": "长沙"
+      },
+      {
+        "shortPinyin": "xfl",
+        "name": "湘府路",
+        "code": "FVQ",
+        "pinyin": "xiangfulu",
+        "abbr": "xfl",
+        "city": "长沙"
+      },
+      {
+        "shortPinyin": "xga",
+        "name": "轩岗",
+        "code": "XGV",
+        "pinyin": "xuangang",
+        "abbr": "xg",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "xgb",
+        "name": "孝感北",
+        "code": "XJN",
+        "pinyin": "xiaoganbei",
+        "abbr": "xgb",
+        "city": "孝感"
+      },
+      {
+        "shortPinyin": "xgd",
+        "name": "孝感东",
+        "code": "GDN",
+        "pinyin": "xiaogandong",
+        "abbr": "xgd",
+        "city": "孝感"
+      },
+      {
+        "shortPinyin": "xgu",
+        "name": "兴国",
+        "code": "EUG",
+        "pinyin": "xingguo",
+        "abbr": "xg",
+        "city": "赣州"
+      },
+      {
+        "shortPinyin": "xgu",
+        "name": "西固",
+        "code": "XIJ",
+        "pinyin": "xigu",
+        "abbr": "xg",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "xgy",
+        "name": "夏官营",
+        "code": "XGJ",
+        "pinyin": "xiaguanying",
+        "abbr": "xgy",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "xha",
+        "name": "宣汉",
+        "code": "XHY",
+        "pinyin": "xuanhan",
+        "abbr": "xh",
+        "city": "达州"
+      },
+      {
+        "shortPinyin": "xhb",
+        "name": "兴和北",
+        "code": "EBC",
+        "pinyin": "xinghebei",
+        "abbr": "xhb",
+        "city": "乌兰察布"
+      },
+      {
+        "shortPinyin": "xhb",
+        "name": "下花园北",
+        "code": "OKP",
+        "pinyin": "xiahuayuanbei",
+        "abbr": "xhyb",
+        "city": "张家口"
+      },
+      {
+        "shortPinyin": "xhn",
+        "name": "新化南",
+        "code": "EJQ",
+        "pinyin": "xinhuanan",
+        "abbr": "xhn",
+        "city": "娄底"
+      },
+      {
+        "shortPinyin": "xhu",
+        "name": "新会",
+        "code": "EFQ",
+        "pinyin": "xinhui",
+        "abbr": "xh",
+        "city": "江门"
+      },
+      {
+        "shortPinyin": "xhu",
+        "name": "新晃",
+        "code": "XLQ",
+        "pinyin": "xinhuang",
+        "abbr": "xh",
+        "city": "怀化"
+      },
+      {
+        "shortPinyin": "xhx",
+        "name": "兴和西",
+        "code": "XEC",
+        "pinyin": "xinghexi",
+        "abbr": "xhx",
+        "city": "乌兰察布"
+      },
+      {
+        "shortPinyin": "xhx",
+        "name": "新晃西",
+        "code": "EWQ",
+        "pinyin": "xinhuangxi",
+        "abbr": "xhx",
+        "city": "怀化"
+      },
+      {
+        "shortPinyin": "xji",
+        "name": "新津",
+        "code": "IRW",
+        "pinyin": "xinjin",
+        "abbr": "xj",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "xji",
+        "name": "辛集",
+        "code": "ENP",
+        "pinyin": "xinji",
+        "abbr": "xj",
+        "city": "石家庄"
+      },
+      {
+        "shortPinyin": "xji",
+        "name": "徐家",
+        "code": "XJB",
+        "pinyin": "xujia",
+        "abbr": "xj",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "xjk",
+        "name": "小金口",
+        "code": "NKQ",
+        "pinyin": "xiaojinkou",
+        "abbr": "xjk",
+        "city": "惠州"
+      },
+      {
+        "shortPinyin": "xjn",
+        "name": "新津南",
+        "code": "ITW",
+        "pinyin": "xinjinnan",
+        "abbr": "xjn",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "xjn",
+        "name": "辛集南",
+        "code": "IJP",
+        "pinyin": "xinjinan",
+        "abbr": "xjn",
+        "city": "石家庄"
+      },
+      {
+        "shortPinyin": "xjz",
+        "name": "谢家镇",
+        "code": "XMT",
+        "pinyin": "xiejiazhen",
+        "abbr": "xjz",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "xla",
+        "name": "西来",
+        "code": "XLE",
+        "pinyin": "xilai",
+        "abbr": "xl",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "xld",
+        "name": "兴隆店",
+        "code": "XDD",
+        "pinyin": "xinglongdian",
+        "abbr": "xld",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "xle",
+        "name": "新乐",
+        "code": "ELP",
+        "pinyin": "xinle",
+        "abbr": "xl",
+        "city": "石家庄"
+      },
+      {
+        "shortPinyin": "xli",
+        "name": "仙林",
+        "code": "XPH",
+        "pinyin": "xianlin",
+        "abbr": "xl",
+        "city": "南京"
+      },
+      {
+        "shortPinyin": "xli",
+        "name": "小岭",
+        "code": "XLB",
+        "pinyin": "xiaoling",
+        "abbr": "xl",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "xlt",
+        "name": "锡林浩特",
+        "code": "XTC",
+        "pinyin": "xilinhaote",
+        "abbr": "xlht",
+        "city": "锡林郭勒"
+      },
+      {
+        "shortPinyin": "xlx",
+        "name": "兴隆县",
+        "code": "EXP",
+        "pinyin": "xinglongxian",
+        "abbr": "xlx",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "xlz",
+        "name": "新立镇",
+        "code": "XGT",
+        "pinyin": "xinlizhen",
+        "abbr": "xlz",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "xlz",
+        "name": "兴隆镇",
+        "code": "XZB",
+        "pinyin": "xinglongzhen",
+        "abbr": "xlz",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "xmb",
+        "name": "厦门北",
+        "code": "XKS",
+        "pinyin": "xiamenbei",
+        "abbr": "xmb",
+        "city": "厦门"
+      },
+      {
+        "shortPinyin": "xmb",
+        "name": "新民北",
+        "code": "XOT",
+        "pinyin": "xinminbei",
+        "abbr": "xmb",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "xme",
+        "name": "厦门",
+        "code": "XMS",
+        "pinyin": "xiamen",
+        "abbr": "xm",
+        "city": "厦门"
+      },
+      {
+        "shortPinyin": "xmi",
+        "name": "新民",
+        "code": "XMD",
+        "pinyin": "xinmin",
+        "abbr": "xm",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "xmq",
+        "name": "厦门高崎",
+        "code": "XBS",
+        "pinyin": "xiamengaoqi",
+        "abbr": "xmgq",
+        "city": "厦门"
+      },
+      {
+        "shortPinyin": "xnn",
+        "name": "咸宁南",
+        "code": "UNN",
+        "pinyin": "xianningnan",
+        "abbr": "xnn",
+        "city": "咸宁"
+      },
+      {
+        "shortPinyin": "xpd",
+        "name": "犀浦东",
+        "code": "XAW",
+        "pinyin": "xipudong",
+        "abbr": "xpd",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "xpn",
+        "name": "溆浦南",
+        "code": "EMQ",
+        "pinyin": "xupunan",
+        "abbr": "xpn",
+        "city": "怀化"
+      },
+      {
+        "shortPinyin": "xpu",
+        "name": "霞浦",
+        "code": "XOS",
+        "pinyin": "xiapu",
+        "abbr": "xp",
+        "city": "宁德"
+      },
+      {
+        "shortPinyin": "xpu",
+        "name": "溆浦",
+        "code": "EPQ",
+        "pinyin": "xupu",
+        "abbr": "xp",
+        "city": "怀化"
+      },
+      {
+        "shortPinyin": "xpu",
+        "name": "犀浦",
+        "code": "XIW",
+        "pinyin": "xipu",
+        "abbr": "xp",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "xsh",
+        "name": "秀山",
+        "code": "ETW",
+        "pinyin": "xiushan",
+        "abbr": "xs",
+        "city": "秀山"
+      },
+      {
+        "shortPinyin": "xsh",
+        "name": "小市",
+        "code": "XST",
+        "pinyin": "xiaoshi",
+        "abbr": "xs",
+        "city": "本溪"
+      },
+      {
+        "shortPinyin": "xsh",
+        "name": "兴山",
+        "code": "EMN",
+        "pinyin": "xingshan",
+        "abbr": "xs",
+        "city": "宜昌"
+      },
+      {
+        "shortPinyin": "xsn",
+        "name": "西双版纳",
+        "code": "ENM",
+        "pinyin": "xishuangbanna",
+        "abbr": "xsbn",
+        "city": "景洪"
+      },
+      {
+        "shortPinyin": "xsp",
+        "name": "新松浦",
+        "code": "XOB",
+        "pinyin": "xinsongpu",
+        "abbr": "xsp",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "xta",
+        "name": "仙桃",
+        "code": "VTN",
+        "pinyin": "xiantao",
+        "abbr": "xt",
+        "city": "仙桃"
+      },
+      {
+        "shortPinyin": "xta",
+        "name": "湘潭",
+        "code": "XTQ",
+        "pinyin": "xiangtan",
+        "abbr": "xt",
+        "city": "湘潭"
+      },
+      {
+        "shortPinyin": "xta",
+        "name": "向塘",
+        "code": "XTG",
+        "pinyin": "xiangtang",
+        "abbr": "xt",
+        "city": "南昌"
+      },
+      {
+        "shortPinyin": "xtd",
+        "name": "邢台东",
+        "code": "EDP",
+        "pinyin": "xingtaidong",
+        "abbr": "xtd",
+        "city": "邢台"
+      },
+      {
+        "shortPinyin": "xtn",
+        "name": "新塘南",
+        "code": "NUQ",
+        "pinyin": "xintangnan",
+        "abbr": "xtn",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "xwe",
+        "name": "兴文",
+        "code": "XNE",
+        "pinyin": "xingwen",
+        "abbr": "xw",
+        "city": "宜宾"
+      },
+      {
+        "shortPinyin": "xwe",
+        "name": "宣威",
+        "code": "XWM",
+        "pinyin": "xuanwei",
+        "abbr": "xw",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "xwx",
+        "name": "修文县",
+        "code": "XWE",
+        "pinyin": "xiuwenxian",
+        "abbr": "xwx",
+        "city": "贵阳"
+      },
+      {
+        "shortPinyin": "xxb",
+        "name": "萧县北",
+        "code": "QSH",
+        "pinyin": "xiaoxianbei",
+        "abbr": "xxb",
+        "city": "宿州"
+      },
+      {
+        "shortPinyin": "xxb",
+        "name": "新香坊北",
+        "code": "RHB",
+        "pinyin": "xinxiangfangbei",
+        "abbr": "xxfb",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "xxd",
+        "name": "新乡东",
+        "code": "EGF",
+        "pinyin": "xinxiangdong",
+        "abbr": "xxd",
+        "city": "新乡"
+      },
+      {
+        "shortPinyin": "xxi",
+        "name": "孝西",
+        "code": "XOV",
+        "pinyin": "xiaoxi",
+        "abbr": "xx",
+        "city": "吕梁"
+      },
+      {
+        "shortPinyin": "xxi",
+        "name": "西乡",
+        "code": "XQY",
+        "pinyin": "xixiang",
+        "abbr": "xx",
+        "city": "汉中"
+      },
+      {
+        "shortPinyin": "xxi",
+        "name": "西峡",
+        "code": "XIF",
+        "pinyin": "xixia",
+        "abbr": "xx",
+        "city": "南阳"
+      },
+      {
+        "shortPinyin": "xxi",
+        "name": "新乡",
+        "code": "XXF",
+        "pinyin": "xinxiang",
+        "abbr": "xx",
+        "city": "新乡"
+      },
+      {
+        "shortPinyin": "xxj",
+        "name": "小新街",
+        "code": "XXM",
+        "pinyin": "xiaoxinjie",
+        "abbr": "xxj",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "xya",
+        "name": "昔阳",
+        "code": "XEP",
+        "pinyin": "xiyang",
+        "abbr": "xy",
+        "city": "晋中"
+      },
+      {
+        "shortPinyin": "xya",
+        "name": "信阳",
+        "code": "XUN",
+        "pinyin": "xinyang",
+        "abbr": "xy",
+        "city": "信阳"
+      },
+      {
+        "shortPinyin": "xya",
+        "name": "旬阳",
+        "code": "XUY",
+        "pinyin": "xunyang",
+        "abbr": "xy",
+        "city": "安康"
+      },
+      {
+        "shortPinyin": "xya",
+        "name": "咸阳",
+        "code": "XYY",
+        "pinyin": "xianyang",
+        "abbr": "xy",
+        "city": "咸阳"
+      },
+      {
+        "shortPinyin": "xya",
+        "name": "岫岩",
+        "code": "XXT",
+        "pinyin": "xiuyan",
+        "abbr": "xy",
+        "city": "鞍山"
+      },
+      {
+        "shortPinyin": "xya",
+        "name": "襄阳",
+        "code": "XFN",
+        "pinyin": "xiangyang",
+        "abbr": "xy",
+        "city": "襄阳"
+      },
+      {
+        "shortPinyin": "xyb",
+        "name": "叙永北",
+        "code": "XEE",
+        "pinyin": "xuyongbei",
+        "abbr": "xyb",
+        "city": "泸州"
+      },
+      {
+        "shortPinyin": "xyb",
+        "name": "新余北",
+        "code": "XBG",
+        "pinyin": "xinyubei",
+        "abbr": "xyb",
+        "city": "新余"
+      },
+      {
+        "shortPinyin": "xyc",
+        "name": "熊岳城",
+        "code": "XYT",
+        "pinyin": "xiongyuecheng",
+        "abbr": "xyc",
+        "city": "营口"
+      },
+      {
+        "shortPinyin": "xyd",
+        "name": "信阳东",
+        "code": "OYN",
+        "pinyin": "xinyangdong",
+        "abbr": "xyd",
+        "city": "信阳"
+      },
+      {
+        "shortPinyin": "xyd",
+        "name": "襄阳东",
+        "code": "EKN",
+        "pinyin": "xiangyangdong",
+        "abbr": "xyd",
+        "city": "襄阳"
+      },
+      {
+        "shortPinyin": "xyi",
+        "name": "兴义",
+        "code": "XRZ",
+        "pinyin": "xingyi",
+        "abbr": "xy",
+        "city": "兴义"
+      },
+      {
+        "shortPinyin": "xyi",
+        "name": "信宜",
+        "code": "EEQ",
+        "pinyin": "xinyi",
+        "abbr": "xy",
+        "city": "茂名"
+      },
+      {
+        "shortPinyin": "xyi",
+        "name": "秀英",
+        "code": "XYA",
+        "pinyin": "xiuying",
+        "abbr": "xy",
+        "city": "海口"
+      },
+      {
+        "shortPinyin": "xyu",
+        "name": "祥云",
+        "code": "XQM",
+        "pinyin": "xiangyun",
+        "abbr": "xy",
+        "city": "大理"
+      },
+      {
+        "shortPinyin": "xyu",
+        "name": "新余",
+        "code": "XUG",
+        "pinyin": "xinyu",
+        "abbr": "xy",
+        "city": "新余"
+      },
+      {
+        "shortPinyin": "xyx",
+        "name": "咸阳西",
+        "code": "XOY",
+        "pinyin": "xianyangxi",
+        "abbr": "xyx",
+        "city": "咸阳"
+      },
+      {
+        "shortPinyin": "xzc",
+        "name": "新郑机场",
+        "code": "EZF",
+        "pinyin": "xinzhengjichang",
+        "abbr": "xzjc",
+        "city": "郑州"
+      },
+      {
+        "shortPinyin": "xzd",
+        "name": "徐州东",
+        "code": "UUH",
+        "pinyin": "xuzhoudong",
+        "abbr": "xzd",
+        "city": "徐州"
+      },
+      {
+        "shortPinyin": "xzh",
+        "name": "忻州",
+        "code": "XXV",
+        "pinyin": "xinzhou",
+        "abbr": "xz",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "xzh",
+        "name": "新肇",
+        "code": "XZT",
+        "pinyin": "xinzhao",
+        "abbr": "xz",
+        "city": "大庆"
+      },
+      {
+        "shortPinyin": "xzh",
+        "name": "襄州",
+        "code": "XWN",
+        "pinyin": "xiangzhou",
+        "abbr": "xz",
+        "city": "襄阳"
+      },
+      {
+        "shortPinyin": "xzh",
+        "name": "徐州",
+        "code": "XCH",
+        "pinyin": "xuzhou",
+        "abbr": "xz",
+        "city": "徐州"
+      },
+      {
+        "shortPinyin": "xzl",
+        "name": "香樟路",
+        "code": "FNQ",
+        "pinyin": "xiangzhanglu",
+        "abbr": "xzl",
+        "city": "长沙"
+      },
+      {
+        "shortPinyin": "xzx",
+        "name": "忻州西",
+        "code": "IXV",
+        "pinyin": "xinzhouxi",
+        "abbr": "xzx",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "xan",
+        "name": "兴安",
+        "code": "XAZ",
+        "pinyin": "xingan",
+        "abbr": "xa",
+        "city": "桂林"
+      },
+      {
+        "shortPinyin": "xan",
+        "name": "新安",
+        "code": "EAM",
+        "pinyin": "xinan",
+        "abbr": "xa",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "xax",
+        "name": "新安县",
+        "code": "XAF",
+        "pinyin": "xinanxian",
+        "abbr": "xax",
+        "city": "洛阳"
+      },
+      {
+        "shortPinyin": "xba",
+        "name": "新保安",
+        "code": "XAP",
+        "pinyin": "xinbaoan",
+        "abbr": "xba",
+        "city": "张家口"
+      },
+      {
+        "shortPinyin": "xbc",
+        "name": "下板城",
+        "code": "EBP",
+        "pinyin": "xiabancheng",
+        "abbr": "xbc",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "xbl",
+        "name": "西八里",
+        "code": "XLP",
+        "pinyin": "xibali",
+        "abbr": "xbl",
+        "city": "张家口"
+      },
+      {
+        "shortPinyin": "xcb",
+        "name": "新昌北",
+        "code": "XBU",
+        "pinyin": "xinchangbei",
+        "abbr": "xcb",
+        "city": "绍兴"
+      },
+      {
+        "shortPinyin": "xcb",
+        "name": "许昌北",
+        "code": "EBF",
+        "pinyin": "xuchangbei",
+        "abbr": "xcb",
+        "city": "许昌"
+      },
+      {
+        "shortPinyin": "xch",
+        "name": "项城",
+        "code": "ERN",
+        "pinyin": "xiangcheng",
+        "abbr": "xc",
+        "city": "周口"
+      },
+      {
+        "shortPinyin": "xcu",
+        "name": "小村",
+        "code": "XEM",
+        "pinyin": "xiaocun",
+        "abbr": "xc",
+        "city": "楚雄"
+      },
+      {
+        "shortPinyin": "xcx",
+        "name": "兴城西",
+        "code": "XXD",
+        "pinyin": "xingchengxi",
+        "abbr": "xcx",
+        "city": "葫芦岛"
+      },
+      {
+        "shortPinyin": "xcy",
+        "name": "新绰源",
+        "code": "XRX",
+        "pinyin": "xinchuoyuan",
+        "abbr": "xcy",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "xcz",
+        "name": "下城子",
+        "code": "XCB",
+        "pinyin": "xiachengzi",
+        "abbr": "xcz",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "xde",
+        "name": "喜德",
+        "code": "EDW",
+        "pinyin": "xide",
+        "abbr": "xd",
+        "city": "西昌"
+      },
+      {
+        "shortPinyin": "xdj",
+        "name": "小得江",
+        "code": "EJM",
+        "pinyin": "xiaodejiang",
+        "abbr": "xdj",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "xdm",
+        "name": "西大庙",
+        "code": "XMP",
+        "pinyin": "xidamiao",
+        "abbr": "xdm",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "xdo",
+        "name": "小董",
+        "code": "XEZ",
+        "pinyin": "xiaodong",
+        "abbr": "xd",
+        "city": "钦州"
+      },
+      {
+        "shortPinyin": "xdo",
+        "name": "小东",
+        "code": "XOD",
+        "pinyin": "xiaodong",
+        "abbr": "xd",
+        "city": "锦州"
+      },
+      {
+        "shortPinyin": "xdu",
+        "name": "西渡",
+        "code": "XDA",
+        "pinyin": "xidu",
+        "abbr": "xd",
+        "city": "衡阳"
+      },
+      {
+        "shortPinyin": "xdx",
+        "name": "喜德西",
+        "code": "XXE",
+        "pinyin": "xidexi",
+        "abbr": "xdx",
+        "city": "西昌"
+      },
+      {
+        "shortPinyin": "xfe",
+        "name": "襄汾",
+        "code": "XFV",
+        "pinyin": "xiangfen",
+        "abbr": "xf",
+        "city": "临汾"
+      },
+      {
+        "shortPinyin": "xfe",
+        "name": "信丰",
+        "code": "EFG",
+        "pinyin": "xinfeng",
+        "abbr": "xf",
+        "city": "赣州"
+      },
+      {
+        "shortPinyin": "xfx",
+        "name": "襄汾西",
+        "code": "XTV",
+        "pinyin": "xiangfenxi",
+        "abbr": "xfx",
+        "city": "临汾"
+      },
+      {
+        "shortPinyin": "xfx",
+        "name": "信丰西",
+        "code": "XFG",
+        "pinyin": "xinfengxi",
+        "abbr": "xfx",
+        "city": "赣州"
+      },
+      {
+        "shortPinyin": "xga",
+        "name": "新干",
+        "code": "EGG",
+        "pinyin": "xingan",
+        "abbr": "xg",
+        "city": "吉安"
+      },
+      {
+        "shortPinyin": "xga",
+        "name": "孝感",
+        "code": "XGN",
+        "pinyin": "xiaogan",
+        "abbr": "xg",
+        "city": "孝感"
+      },
+      {
+        "shortPinyin": "xgd",
+        "name": "新干东",
+        "code": "XGG",
+        "pinyin": "xingandong",
+        "abbr": "xgd",
+        "city": "吉安"
+      },
+      {
+        "shortPinyin": "xgx",
+        "name": "兴国西",
+        "code": "XIG",
+        "pinyin": "xingguoxi",
+        "abbr": "xgx",
+        "city": "赣州"
+      },
+      {
+        "shortPinyin": "xgz",
+        "name": "夏格庄",
+        "code": "XZK",
+        "pinyin": "xiagezhuang",
+        "abbr": "xgz",
+        "city": "青岛"
+      },
+      {
+        "shortPinyin": "xgz",
+        "name": "西岗子",
+        "code": "NBB",
+        "pinyin": "xigangzi",
+        "abbr": "xgz",
+        "city": "黑河"
+      },
+      {
+        "shortPinyin": "xhb",
+        "name": "宣化北",
+        "code": "VJP",
+        "pinyin": "xuanhuabei",
+        "abbr": "xhb",
+        "city": "张家口"
+      },
+      {
+        "shortPinyin": "xhd",
+        "name": "西湖东",
+        "code": "WDQ",
+        "pinyin": "xihudong",
+        "abbr": "xhd",
+        "city": "惠州"
+      },
+      {
+        "shortPinyin": "xhe",
+        "name": "新和",
+        "code": "XIR",
+        "pinyin": "xinhe",
+        "abbr": "xh",
+        "city": "阿克苏"
+      },
+      {
+        "shortPinyin": "xhe",
+        "name": "宣和",
+        "code": "XWJ",
+        "pinyin": "xuanhe",
+        "abbr": "xh",
+        "city": "中卫"
+      },
+      {
+        "shortPinyin": "xhe",
+        "name": "香河",
+        "code": "XHI",
+        "pinyin": "xianghe",
+        "abbr": "xh",
+        "city": "廊坊"
+      },
+      {
+        "shortPinyin": "xhe",
+        "name": "襄河",
+        "code": "XXB",
+        "pinyin": "xianghe",
+        "abbr": "xh",
+        "city": "黑河"
+      },
+      {
+        "shortPinyin": "xhj",
+        "name": "斜河涧",
+        "code": "EEP",
+        "pinyin": "xiehejian",
+        "abbr": "xhj",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "xht",
+        "name": "新华屯",
+        "code": "XAX",
+        "pinyin": "xinhuatun",
+        "abbr": "xht",
+        "city": "大庆"
+      },
+      {
+        "shortPinyin": "xhu",
+        "name": "新华",
+        "code": "XHB",
+        "pinyin": "xinhua",
+        "abbr": "xh",
+        "city": "鹤岗"
+      },
+      {
+        "shortPinyin": "xhu",
+        "name": "新化",
+        "code": "EHQ",
+        "pinyin": "xinhua",
+        "abbr": "xh",
+        "city": "娄底"
+      },
+      {
+        "shortPinyin": "xhu",
+        "name": "宣化",
+        "code": "XHP",
+        "pinyin": "xuanhua",
+        "abbr": "xh",
+        "city": "张家口"
+      },
+      {
+        "shortPinyin": "xhu",
+        "name": "西华",
+        "code": "EHF",
+        "pinyin": "xihua",
+        "abbr": "xh",
+        "city": "周口"
+      },
+      {
+        "shortPinyin": "xhy",
+        "name": "下花园",
+        "code": "XYP",
+        "pinyin": "xiahuayuan",
+        "abbr": "xhy",
+        "city": "张家口"
+      },
+      {
+        "shortPinyin": "xhz",
+        "name": "小河镇",
+        "code": "EKY",
+        "pinyin": "xiaohezhen",
+        "abbr": "xhz",
+        "city": "安康"
+      },
+      {
+        "shortPinyin": "xjd",
+        "name": "徐家店",
+        "code": "HYK",
+        "pinyin": "xujiadian",
+        "abbr": "xjd",
+        "city": "烟台"
+      },
+      {
+        "shortPinyin": "xji",
+        "name": "峡江",
+        "code": "EJG",
+        "pinyin": "xiajiang",
+        "abbr": "xj",
+        "city": "吉安"
+      },
+      {
+        "shortPinyin": "xji",
+        "name": "新绛",
+        "code": "XJV",
+        "pinyin": "xinjiang",
+        "abbr": "xj",
+        "city": "运城"
+      },
+      {
+        "shortPinyin": "xjn",
+        "name": "仙居南",
+        "code": "XNU",
+        "pinyin": "xianjunan",
+        "abbr": "xjn",
+        "city": "台州"
+      },
+      {
+        "shortPinyin": "xjt",
+        "name": "许家屯",
+        "code": "XJT",
+        "pinyin": "xujiatun",
+        "abbr": "xjt",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "xju",
+        "name": "仙居",
+        "code": "XJU",
+        "pinyin": "xianju",
+        "abbr": "xj",
+        "city": "台州"
+      },
+      {
+        "shortPinyin": "xka",
+        "name": "兴凯",
+        "code": "EKB",
+        "pinyin": "xingkai",
+        "abbr": "xk",
+        "city": "鸡西"
+      },
+      {
+        "shortPinyin": "xko",
+        "name": "溪口",
+        "code": "XKU",
+        "pinyin": "xikou",
+        "abbr": "xk",
+        "city": "宁波"
+      },
+      {
+        "shortPinyin": "xla",
+        "name": "小榄",
+        "code": "EAQ",
+        "pinyin": "xiaolan",
+        "abbr": "xl",
+        "city": "中山"
+      },
+      {
+        "shortPinyin": "xla",
+        "name": "香兰",
+        "code": "XNB",
+        "pinyin": "xianglan",
+        "abbr": "xl",
+        "city": "佳木斯"
+      },
+      {
+        "shortPinyin": "xli",
+        "name": "新李",
+        "code": "XLJ",
+        "pinyin": "xinli",
+        "abbr": "xl",
+        "city": "平凉"
+      },
+      {
+        "shortPinyin": "xli",
+        "name": "西柳",
+        "code": "GCT",
+        "pinyin": "xiliu",
+        "abbr": "xl",
+        "city": "鞍山"
+      },
+      {
+        "shortPinyin": "xli",
+        "name": "西林",
+        "code": "XYB",
+        "pinyin": "xilin",
+        "abbr": "xl",
+        "city": "伊春"
+      },
+      {
+        "shortPinyin": "xli",
+        "name": "新林",
+        "code": "XPX",
+        "pinyin": "xinlin",
+        "abbr": "xl",
+        "city": "加格达奇"
+      },
+      {
+        "shortPinyin": "xlt",
+        "name": "新立屯",
+        "code": "XLD",
+        "pinyin": "xinlitun",
+        "abbr": "xlt",
+        "city": "锦州"
+      },
+      {
+        "shortPinyin": "xlx",
+        "name": "兴隆县西",
+        "code": "IRP",
+        "pinyin": "xinglongxianxi",
+        "abbr": "xlxx",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "xms",
+        "name": "西麻山",
+        "code": "XMB",
+        "pinyin": "ximashan",
+        "abbr": "xms",
+        "city": "鸡西"
+      },
+      {
+        "shortPinyin": "xmt",
+        "name": "下马塘",
+        "code": "XAT",
+        "pinyin": "xiamatang",
+        "abbr": "xmt",
+        "city": "本溪"
+      },
+      {
+        "shortPinyin": "xna",
+        "name": "孝南",
+        "code": "XNV",
+        "pinyin": "xiaonan",
+        "abbr": "xn",
+        "city": "吕梁"
+      },
+      {
+        "shortPinyin": "xnb",
+        "name": "咸宁北",
+        "code": "XRN",
+        "pinyin": "xianningbei",
+        "abbr": "xnb",
+        "city": "咸宁"
+      },
+      {
+        "shortPinyin": "xnd",
+        "name": "咸宁东",
+        "code": "XKN",
+        "pinyin": "xianningdong",
+        "abbr": "xnd",
+        "city": "咸宁"
+      },
+      {
+        "shortPinyin": "xni",
+        "name": "兴宁",
+        "code": "ENQ",
+        "pinyin": "xingning",
+        "abbr": "xn",
+        "city": "梅州"
+      },
+      {
+        "shortPinyin": "xni",
+        "name": "咸宁",
+        "code": "XNN",
+        "pinyin": "xianning",
+        "abbr": "xn",
+        "city": "咸宁"
+      },
+      {
+        "shortPinyin": "xnn",
+        "name": "兴宁南",
+        "code": "XNA",
+        "pinyin": "xingningnan",
+        "abbr": "xnn",
+        "city": "梅州"
+      },
+      {
+        "shortPinyin": "xpi",
+        "name": "兴平",
+        "code": "XPY",
+        "pinyin": "xingping",
+        "abbr": "xp",
+        "city": "咸阳"
+      },
+      {
+        "shortPinyin": "xpi",
+        "name": "西平",
+        "code": "XPN",
+        "pinyin": "xiping",
+        "abbr": "xp",
+        "city": "驻马店"
+      },
+      {
+        "shortPinyin": "xpt",
+        "name": "新坪田",
+        "code": "XPM",
+        "pinyin": "xinpingtian",
+        "abbr": "xpt",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "xpx",
+        "name": "西平西",
+        "code": "EGQ",
+        "pinyin": "xipingxi",
+        "abbr": "xpx",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "xqi",
+        "name": "新邱",
+        "code": "XQD",
+        "pinyin": "xinqiu",
+        "abbr": "xq",
+        "city": "阜新"
+      },
+      {
+        "shortPinyin": "xqi",
+        "name": "新青",
+        "code": "XQB",
+        "pinyin": "xinqing",
+        "abbr": "xq",
+        "city": "伊春"
+      },
+      {
+        "shortPinyin": "xqp",
+        "name": "兴泉堡",
+        "code": "XQJ",
+        "pinyin": "xingquanbu",
+        "abbr": "xqp",
+        "city": "白银"
+      },
+      {
+        "shortPinyin": "xsg",
+        "name": "小寺沟",
+        "code": "ESP",
+        "pinyin": "xiaosigou",
+        "abbr": "xsg",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "xsh",
+        "name": "夏石",
+        "code": "XIZ",
+        "pinyin": "xiashi",
+        "abbr": "xs",
+        "city": "崇左"
+      },
+      {
+        "shortPinyin": "xsh",
+        "name": "浠水",
+        "code": "XZN",
+        "pinyin": "xishui",
+        "abbr": "xs",
+        "city": "浠水"
+      },
+      {
+        "shortPinyin": "xsh",
+        "name": "杏树",
+        "code": "XSB",
+        "pinyin": "xingshu",
+        "abbr": "xs",
+        "city": "七台河"
+      },
+      {
+        "shortPinyin": "xsh",
+        "name": "下社",
+        "code": "XSV",
+        "pinyin": "xiashe",
+        "abbr": "xs",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "xsh",
+        "name": "徐水",
+        "code": "XSP",
+        "pinyin": "xushui",
+        "abbr": "xs",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "xsn",
+        "name": "浠水南",
+        "code": "VNN",
+        "pinyin": "xishuinan",
+        "abbr": "xsn",
+        "city": "浠水"
+      },
+      {
+        "shortPinyin": "xst",
+        "name": "杏树屯",
+        "code": "XDT",
+        "pinyin": "xingshutun",
+        "abbr": "xst",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "xsw",
+        "name": "许三湾",
+        "code": "XSJ",
+        "pinyin": "xusanwan",
+        "abbr": "xsw",
+        "city": "张掖"
+      },
+      {
+        "shortPinyin": "xsx",
+        "name": "响水县",
+        "code": "XSU",
+        "pinyin": "xiangshuixian",
+        "abbr": "xsx",
+        "city": "盐城"
+      },
+      {
+        "shortPinyin": "xta",
+        "name": "邢台",
+        "code": "XTP",
+        "pinyin": "xingtai",
+        "abbr": "xt",
+        "city": "邢台"
+      },
+      {
+        "shortPinyin": "xtb",
+        "name": "湘潭北",
+        "code": "EDQ",
+        "pinyin": "xiangtanbei",
+        "abbr": "xtb",
+        "city": "湘潭"
+      },
+      {
+        "shortPinyin": "xtx",
+        "name": "仙桃西",
+        "code": "XAN",
+        "pinyin": "xiantaoxi",
+        "abbr": "xtx",
+        "city": "仙桃"
+      },
+      {
+        "shortPinyin": "xtz",
+        "name": "下台子",
+        "code": "EIP",
+        "pinyin": "xiataizi",
+        "abbr": "xtz",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "xwd",
+        "name": "小湾东",
+        "code": "XNM",
+        "pinyin": "xiaowandong",
+        "abbr": "xwd",
+        "city": "南涧"
+      },
+      {
+        "shortPinyin": "xwe",
+        "name": "徐闻",
+        "code": "XJQ",
+        "pinyin": "xuwen",
+        "abbr": "xw",
+        "city": "湛江"
+      },
+      {
+        "shortPinyin": "xwn",
+        "name": "兴文南",
+        "code": "XAE",
+        "pinyin": "xingwennan",
+        "abbr": "xwn",
+        "city": "宜宾"
+      },
+      {
+        "shortPinyin": "xwp",
+        "name": "新窝铺",
+        "code": "EPD",
+        "pinyin": "xinwopu",
+        "abbr": "xwp",
+        "city": "赤峰"
+      },
+      {
+        "shortPinyin": "xwq",
+        "name": "西乌旗",
+        "code": "XWD",
+        "pinyin": "xiwuqi",
+        "abbr": "xwq",
+        "city": "兴安"
+      },
+      {
+        "shortPinyin": "xwu",
+        "name": "修武",
+        "code": "XWF",
+        "pinyin": "xiuwu",
+        "abbr": "xw",
+        "city": "焦作"
+      },
+      {
+        "shortPinyin": "xwx",
+        "name": "修武西",
+        "code": "EXF",
+        "pinyin": "xiuwuxi",
+        "abbr": "xwx",
+        "city": "焦作"
+      },
+      {
+        "shortPinyin": "xxi",
+        "name": "新县",
+        "code": "XSN",
+        "pinyin": "xinxian",
+        "abbr": "xx",
+        "city": "信阳"
+      },
+      {
+        "shortPinyin": "xxi",
+        "name": "息县",
+        "code": "ENN",
+        "pinyin": "xixian",
+        "abbr": "xx",
+        "city": "信阳"
+      },
+      {
+        "shortPinyin": "xxi",
+        "name": "湘乡",
+        "code": "XXQ",
+        "pinyin": "xiangxiang",
+        "abbr": "xx",
+        "city": "湘潭"
+      },
+      {
+        "shortPinyin": "xxi",
+        "name": "萧县",
+        "code": "EOH",
+        "pinyin": "xiaoxian",
+        "abbr": "xx",
+        "city": "宿州"
+      },
+      {
+        "shortPinyin": "xxn",
+        "name": "新乡南",
+        "code": "ENF",
+        "pinyin": "xinxiangnan",
+        "abbr": "xxn",
+        "city": "新乡"
+      },
+      {
+        "shortPinyin": "xxx",
+        "name": "新兴县",
+        "code": "XGQ",
+        "pinyin": "xinxingxian",
+        "abbr": "xxx",
+        "city": "云浮"
+      },
+      {
+        "shortPinyin": "xxz",
+        "name": "西小召",
+        "code": "XZC",
+        "pinyin": "xixiaozhao",
+        "abbr": "xxz",
+        "city": "巴彦淖尔"
+      },
+      {
+        "shortPinyin": "xxz",
+        "name": "小西庄",
+        "code": "XXP",
+        "pinyin": "xiaoxizhuang",
+        "abbr": "xxz",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "xya",
+        "name": "向阳",
+        "code": "XDB",
+        "pinyin": "xiangyang",
+        "abbr": "xy",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "xyb",
+        "name": "旬阳北",
+        "code": "XBY",
+        "pinyin": "xunyangbei",
+        "abbr": "xyb",
+        "city": "安康"
+      },
+      {
+        "shortPinyin": "xyb",
+        "name": "咸阳北",
+        "code": "EBY",
+        "pinyin": "xianyangbei",
+        "abbr": "xyb",
+        "city": "咸阳"
+      },
+      {
+        "shortPinyin": "xyd",
+        "name": "襄垣东",
+        "code": "EAF",
+        "pinyin": "xiangyuandong",
+        "abbr": "xyd",
+        "city": "长治"
+      },
+      {
+        "shortPinyin": "xye",
+        "name": "兴业",
+        "code": "SNZ",
+        "pinyin": "xingye",
+        "abbr": "xy",
+        "city": "玉林"
+      },
+      {
+        "shortPinyin": "xyg",
+        "name": "小雨谷",
+        "code": "XHM",
+        "pinyin": "xiaoyugu",
+        "abbr": "xyg",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "xyi",
+        "name": "新沂",
+        "code": "VIH",
+        "pinyin": "xinyi",
+        "abbr": "xy",
+        "city": "徐州"
+      },
+      {
+        "shortPinyin": "xyj",
+        "name": "小月旧",
+        "code": "XFM",
+        "pinyin": "xiaoyuejiu",
+        "abbr": "xyj",
+        "city": "楚雄"
+      },
+      {
+        "shortPinyin": "xyn",
+        "name": "兴业南",
+        "code": "XKZ",
+        "pinyin": "xingyenan",
+        "abbr": "xyn",
+        "city": "玉林"
+      },
+      {
+        "shortPinyin": "xyn",
+        "name": "新沂南",
+        "code": "XYU",
+        "pinyin": "xinyinan",
+        "abbr": "xyn",
+        "city": "徐州"
+      },
+      {
+        "shortPinyin": "xyo",
+        "name": "仙游",
+        "code": "XWS",
+        "pinyin": "xianyou",
+        "abbr": "xy",
+        "city": "莆田"
+      },
+      {
+        "shortPinyin": "xyq",
+        "name": "小扬气",
+        "code": "XYX",
+        "pinyin": "xiaoyangqi",
+        "abbr": "xyq",
+        "city": "加格达奇"
+      },
+      {
+        "shortPinyin": "xyu",
+        "name": "襄垣",
+        "code": "EIF",
+        "pinyin": "xiangyuan",
+        "abbr": "xy",
+        "city": "长治"
+      },
+      {
+        "shortPinyin": "xyx",
+        "name": "夏邑县",
+        "code": "EJH",
+        "pinyin": "xiayixian",
+        "abbr": "xyx",
+        "city": "商丘"
+      },
+      {
+        "shortPinyin": "xyy",
+        "name": "新友谊",
+        "code": "EYB",
+        "pinyin": "xinyouyi",
+        "abbr": "xyy",
+        "city": "双鸭山"
+      },
+      {
+        "shortPinyin": "xyz",
+        "name": "新阳镇",
+        "code": "XZJ",
+        "pinyin": "xinyangzhen",
+        "abbr": "xyz",
+        "city": "天水"
+      },
+      {
+        "shortPinyin": "xzf",
+        "name": "新帐房",
+        "code": "XZX",
+        "pinyin": "xinzhangfang",
+        "abbr": "xzf",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "xzh",
+        "name": "悬钟",
+        "code": "XRP",
+        "pinyin": "xuanzhong",
+        "abbr": "xz",
+        "city": "邯郸"
+      },
+      {
+        "shortPinyin": "xzi",
+        "name": "汐子",
+        "code": "XZD",
+        "pinyin": "xizi",
+        "abbr": "xz",
+        "city": "赤峰"
+      },
+      {
+        "shortPinyin": "xzm",
+        "name": "西哲里木",
+        "code": "XRD",
+        "pinyin": "xizhelimu",
+        "abbr": "xzlm",
+        "city": "兴安"
+      },
+      {
+        "shortPinyin": "xzz",
+        "name": "新杖子",
+        "code": "ERP",
+        "pinyin": "xinzhangzi",
+        "abbr": "xzz",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "xgl",
+        "name": "香格里拉",
+        "code": "EUM",
+        "pinyin": "xianggelila",
+        "abbr": "xgll",
+        "city": "香格里拉"
+      },
+      {
+        "shortPinyin": "xxi",
+        "name": "隰县",
+        "code": "EAV",
+        "pinyin": "xixian",
+        "abbr": "xx",
+        "city": "临汾"
+      },
+      {
+        "shortPinyin": "xyc",
+        "name": "西阳村",
+        "code": "XQF",
+        "pinyin": "xiyangcun",
+        "abbr": "xyc",
+        "city": "晋城"
+      },
+      {
+        "shortPinyin": "xzd",
+        "name": "小中甸",
+        "code": "EDM",
+        "pinyin": "xiaozhongdian",
+        "abbr": "xzd",
+        "city": "香格里拉"
+      }
+    ],
+    "Y": [
+      {
+        "shortPinyin": "ych",
+        "name": "银川",
+        "code": "YIJ",
+        "pinyin": "yinchuan",
+        "abbr": "yc",
+        "city": "银川"
+      },
+      {
+        "shortPinyin": "yfy",
+        "name": "永丰营",
+        "code": "YYM",
+        "pinyin": "yongfengying",
+        "abbr": "yfy",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "yjp",
+        "name": "一间堡",
+        "code": "YJT",
+        "pinyin": "yijianpu",
+        "abbr": "yjp",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "yna",
+        "name": "宜耐",
+        "code": "YVM",
+        "pinyin": "yinai",
+        "abbr": "yn",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "ypu",
+        "name": "羊堡",
+        "code": "ABM",
+        "pinyin": "yangpu",
+        "abbr": "yp",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "yst",
+        "name": "榆树台",
+        "code": "YUT",
+        "pinyin": "yushutai",
+        "abbr": "yst",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "yzh",
+        "name": "引镇",
+        "code": "CAY",
+        "pinyin": "yinzhen",
+        "abbr": "yz",
+        "city": "西安"
+      },
+      {
+        "shortPinyin": "yan",
+        "name": "雅安",
+        "code": "YAE",
+        "pinyin": "yaan",
+        "abbr": "ya",
+        "city": "雅安"
+      },
+      {
+        "shortPinyin": "yan",
+        "name": "延安",
+        "code": "YWY",
+        "pinyin": "yanan",
+        "abbr": "ya",
+        "city": "延安"
+      },
+      {
+        "shortPinyin": "yan",
+        "name": "永安南",
+        "code": "YQS",
+        "pinyin": "yongannan",
+        "abbr": "yan",
+        "city": "三明"
+      },
+      {
+        "shortPinyin": "yan",
+        "name": "依安",
+        "code": "YAX",
+        "pinyin": "yian",
+        "abbr": "ya",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "ybl",
+        "name": "迎宾路",
+        "code": "YFW",
+        "pinyin": "yingbinlu",
+        "abbr": "ybl",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "ybl",
+        "name": "亚布力",
+        "code": "YBB",
+        "pinyin": "yabuli",
+        "abbr": "ybl",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "ybn",
+        "name": "亚布力南",
+        "code": "YWB",
+        "pinyin": "yabulinan",
+        "abbr": "ybln",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "ybs",
+        "name": "叶柏寿",
+        "code": "YBD",
+        "pinyin": "yebaishou",
+        "abbr": "ybs",
+        "city": "朝阳"
+      },
+      {
+        "shortPinyin": "ybx",
+        "name": "宜宾西",
+        "code": "YXE",
+        "pinyin": "yibinxi",
+        "abbr": "ybx",
+        "city": "宜宾"
+      },
+      {
+        "shortPinyin": "ybx",
+        "name": "亚布力西",
+        "code": "YSB",
+        "pinyin": "yabulixi",
+        "abbr": "yblx",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "ycb",
+        "name": "运城北",
+        "code": "ABV",
+        "pinyin": "yunchengbei",
+        "abbr": "ycb",
+        "city": "运城"
+      },
+      {
+        "shortPinyin": "ycb",
+        "name": "盐城北",
+        "code": "AEH",
+        "pinyin": "yanchengbei",
+        "abbr": "ycb",
+        "city": "盐城"
+      },
+      {
+        "shortPinyin": "ycd",
+        "name": "永川东",
+        "code": "WMW",
+        "pinyin": "yongchuandong",
+        "abbr": "ycd",
+        "city": "永川"
+      },
+      {
+        "shortPinyin": "ycd",
+        "name": "宜昌东",
+        "code": "HAN",
+        "pinyin": "yichangdong",
+        "abbr": "ycd",
+        "city": "宜昌"
+      },
+      {
+        "shortPinyin": "ych",
+        "name": "岳池",
+        "code": "AWW",
+        "pinyin": "yuechi",
+        "abbr": "yc",
+        "city": "广安"
+      },
+      {
+        "shortPinyin": "ych",
+        "name": "叶城",
+        "code": "YER",
+        "pinyin": "yecheng",
+        "abbr": "yc",
+        "city": "喀什"
+      },
+      {
+        "shortPinyin": "ych",
+        "name": "阳春",
+        "code": "YQQ",
+        "pinyin": "yangchun",
+        "abbr": "yc",
+        "city": "阳江"
+      },
+      {
+        "shortPinyin": "ych",
+        "name": "宜春",
+        "code": "YEG",
+        "pinyin": "yichun",
+        "abbr": "yc",
+        "city": "宜春"
+      },
+      {
+        "shortPinyin": "ych",
+        "name": "运城",
+        "code": "YNV",
+        "pinyin": "yuncheng",
+        "abbr": "yc",
+        "city": "运城"
+      },
+      {
+        "shortPinyin": "ych",
+        "name": "宜昌",
+        "code": "YCN",
+        "pinyin": "yichang",
+        "abbr": "yc",
+        "city": "宜昌"
+      },
+      {
+        "shortPinyin": "ych",
+        "name": "盐城",
+        "code": "AFH",
+        "pinyin": "yancheng",
+        "abbr": "yc",
+        "city": "盐城"
+      },
+      {
+        "shortPinyin": "ych",
+        "name": "伊春",
+        "code": "YCB",
+        "pinyin": "yichun",
+        "abbr": "yc",
+        "city": "伊春"
+      },
+      {
+        "shortPinyin": "yci",
+        "name": "榆次",
+        "code": "YCV",
+        "pinyin": "yuci",
+        "abbr": "yc",
+        "city": "晋中"
+      },
+      {
+        "shortPinyin": "ycu",
+        "name": "杨村",
+        "code": "YBP",
+        "pinyin": "yangcun",
+        "abbr": "yc",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "yde",
+        "name": "永登",
+        "code": "YDJ",
+        "pinyin": "yongdeng",
+        "abbr": "yd",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "yds",
+        "name": "雁荡山",
+        "code": "YGH",
+        "pinyin": "yandangshan",
+        "abbr": "yds",
+        "city": "温州"
+      },
+      {
+        "shortPinyin": "ydu",
+        "name": "于都",
+        "code": "YDG",
+        "pinyin": "yudu",
+        "abbr": "yd",
+        "city": "于都"
+      },
+      {
+        "shortPinyin": "ydu",
+        "name": "姚渡",
+        "code": "AOJ",
+        "pinyin": "yaodu",
+        "abbr": "yd",
+        "city": "广元"
+      },
+      {
+        "shortPinyin": "ydx",
+        "name": "英德西",
+        "code": "IIQ",
+        "pinyin": "yingdexi",
+        "abbr": "ydx",
+        "city": "清远"
+      },
+      {
+        "shortPinyin": "yfd",
+        "name": "云浮东",
+        "code": "IXQ",
+        "pinyin": "yunfudong",
+        "abbr": "yfd",
+        "city": "云浮"
+      },
+      {
+        "shortPinyin": "yga",
+        "name": "燕岗",
+        "code": "YGW",
+        "pinyin": "yangang",
+        "abbr": "yg",
+        "city": "乐山"
+      },
+      {
+        "shortPinyin": "yjb",
+        "name": "永济北",
+        "code": "AJV",
+        "pinyin": "yongjibei",
+        "abbr": "yjb",
+        "city": "运城"
+      },
+      {
+        "shortPinyin": "yji",
+        "name": "延吉",
+        "code": "YJL",
+        "pinyin": "yanji",
+        "abbr": "yj",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "yji",
+        "name": "阳江",
+        "code": "WRQ",
+        "pinyin": "yangjiang",
+        "abbr": "yj",
+        "city": "阳江"
+      },
+      {
+        "shortPinyin": "yji",
+        "name": "永济",
+        "code": "YIV",
+        "pinyin": "yongji",
+        "abbr": "yj",
+        "city": "运城"
+      },
+      {
+        "shortPinyin": "yji",
+        "name": "燕郊",
+        "code": "AJP",
+        "pinyin": "yanjiao",
+        "abbr": "yj",
+        "city": "廊坊"
+      },
+      {
+        "shortPinyin": "yji",
+        "name": "姚家",
+        "code": "YAT",
+        "pinyin": "yaojia",
+        "abbr": "yj",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "yjs",
+        "name": "英吉沙",
+        "code": "YIR",
+        "pinyin": "yingjisha",
+        "abbr": "yjs",
+        "city": "喀什"
+      },
+      {
+        "shortPinyin": "yjx",
+        "name": "延吉西",
+        "code": "YXL",
+        "pinyin": "yanjixi",
+        "abbr": "yjx",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "ykd",
+        "name": "营口东",
+        "code": "YGT",
+        "pinyin": "yingkoudong",
+        "abbr": "ykd",
+        "city": "营口"
+      },
+      {
+        "shortPinyin": "ykn",
+        "name": "永康南",
+        "code": "QUH",
+        "pinyin": "yongkangnan",
+        "abbr": "ykn",
+        "city": "金华"
+      },
+      {
+        "shortPinyin": "yko",
+        "name": "营口",
+        "code": "YKT",
+        "pinyin": "yingkou",
+        "abbr": "yk",
+        "city": "营口"
+      },
+      {
+        "shortPinyin": "yks",
+        "name": "牙克石",
+        "code": "YKX",
+        "pinyin": "yakeshi",
+        "abbr": "yks",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "yla",
+        "name": "依兰",
+        "code": "YEB",
+        "pinyin": "yilan",
+        "abbr": "yl",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "ylb",
+        "name": "玉林北",
+        "code": "ABZ",
+        "pinyin": "yulinbei",
+        "abbr": "ylb",
+        "city": "玉林"
+      },
+      {
+        "shortPinyin": "ylb",
+        "name": "宜良北",
+        "code": "YSM",
+        "pinyin": "yiliangbei",
+        "abbr": "ylb",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "yld",
+        "name": "永乐店",
+        "code": "YDY",
+        "pinyin": "yongledian",
+        "abbr": "yld",
+        "city": "西安"
+      },
+      {
+        "shortPinyin": "yli",
+        "name": "玉林",
+        "code": "YLZ",
+        "pinyin": "yulin",
+        "abbr": "yl",
+        "city": "玉林"
+      },
+      {
+        "shortPinyin": "yli",
+        "name": "榆林",
+        "code": "ALY",
+        "pinyin": "yulin",
+        "abbr": "yl",
+        "city": "榆林"
+      },
+      {
+        "shortPinyin": "yli",
+        "name": "杨陵",
+        "code": "YSY",
+        "pinyin": "yangling",
+        "abbr": "yl",
+        "city": "咸阳"
+      },
+      {
+        "shortPinyin": "yli",
+        "name": "炎陵",
+        "code": "YAG",
+        "pinyin": "yanling",
+        "abbr": "yl",
+        "city": "株洲"
+      },
+      {
+        "shortPinyin": "yli",
+        "name": "阎良",
+        "code": "YNY",
+        "pinyin": "yanliang",
+        "abbr": "yl",
+        "city": "西安"
+      },
+      {
+        "shortPinyin": "yli",
+        "name": "杨林",
+        "code": "YLM",
+        "pinyin": "yanglin",
+        "abbr": "yl",
+        "city": "昆明"
+      },
+      {
+        "shortPinyin": "yln",
+        "name": "杨陵南",
+        "code": "YEY",
+        "pinyin": "yanglingnan",
+        "abbr": "yln",
+        "city": "咸阳"
+      },
+      {
+        "shortPinyin": "ylp",
+        "name": "余粮堡",
+        "code": "YLD",
+        "pinyin": "yuliangpu",
+        "abbr": "ylp",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "ylq",
+        "name": "杨柳青",
+        "code": "YQP",
+        "pinyin": "yangliuqing",
+        "abbr": "ylq",
+        "city": "天津"
+      },
+      {
+        "shortPinyin": "ylw",
+        "name": "亚龙湾",
+        "code": "TWQ",
+        "pinyin": "yalongwan",
+        "abbr": "ylw",
+        "city": "三亚"
+      },
+      {
+        "shortPinyin": "yma",
+        "name": "羊马",
+        "code": "YME",
+        "pinyin": "yangma",
+        "abbr": "ym",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "ymb",
+        "name": "一面坡北",
+        "code": "YXB",
+        "pinyin": "yimianpobei",
+        "abbr": "ympb",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "ymd",
+        "name": "云梦东",
+        "code": "YRN",
+        "pinyin": "yunmengdong",
+        "abbr": "ymd",
+        "city": "孝感"
+      },
+      {
+        "shortPinyin": "yme",
+        "name": "玉门",
+        "code": "YXJ",
+        "pinyin": "yumen",
+        "abbr": "ym",
+        "city": "酒泉"
+      },
+      {
+        "shortPinyin": "ymp",
+        "name": "一面坡",
+        "code": "YPB",
+        "pinyin": "yimianpo",
+        "abbr": "ymp",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "ymx",
+        "name": "元谋西",
+        "code": "AMM",
+        "pinyin": "yuanmouxi",
+        "abbr": "ymx",
+        "city": "楚雄"
+      },
+      {
+        "shortPinyin": "yna",
+        "name": "郁南",
+        "code": "YKQ",
+        "pinyin": "yunan",
+        "abbr": "yn",
+        "city": "云浮"
+      },
+      {
+        "shortPinyin": "ynd",
+        "name": "伊宁东",
+        "code": "YNR",
+        "pinyin": "yiningdong",
+        "abbr": "ynd",
+        "city": "伊宁"
+      },
+      {
+        "shortPinyin": "yni",
+        "name": "伊宁",
+        "code": "YMR",
+        "pinyin": "yining",
+        "abbr": "yn",
+        "city": "伊宁"
+      },
+      {
+        "shortPinyin": "ypd",
+        "name": "延平东",
+        "code": "ADS",
+        "pinyin": "yanpingdong",
+        "abbr": "ypd",
+        "city": "南平"
+      },
+      {
+        "shortPinyin": "ypg",
+        "name": "阳平关",
+        "code": "YAY",
+        "pinyin": "yangpingguan",
+        "abbr": "ypg",
+        "city": "汉中"
+      },
+      {
+        "shortPinyin": "ypi",
+        "name": "玉屏",
+        "code": "YZW",
+        "pinyin": "yuping",
+        "abbr": "yp",
+        "city": "铜仁"
+      },
+      {
+        "shortPinyin": "ypi",
+        "name": "延平",
+        "code": "YPS",
+        "pinyin": "yanping",
+        "abbr": "yp",
+        "city": "南平"
+      },
+      {
+        "shortPinyin": "ypi",
+        "name": "原平",
+        "code": "YPV",
+        "pinyin": "yuanping",
+        "abbr": "yp",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "ypx",
+        "name": "延平西",
+        "code": "YWS",
+        "pinyin": "yanpingxi",
+        "abbr": "ypx",
+        "city": "南平"
+      },
+      {
+        "shortPinyin": "ypx",
+        "name": "原平西",
+        "code": "IPV",
+        "pinyin": "yuanpingxi",
+        "abbr": "ypx",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "yqb",
+        "name": "阳泉北",
+        "code": "YPP",
+        "pinyin": "yangquanbei",
+        "abbr": "yqb",
+        "city": "阳泉"
+      },
+      {
+        "shortPinyin": "yqd",
+        "name": "阳泉东",
+        "code": "AYP",
+        "pinyin": "yangquandong",
+        "abbr": "yqd",
+        "city": "阳泉"
+      },
+      {
+        "shortPinyin": "yqd",
+        "name": "永清东",
+        "code": "YDI",
+        "pinyin": "yongqingdong",
+        "abbr": "yqd",
+        "city": "廊坊"
+      },
+      {
+        "shortPinyin": "yqh",
+        "name": "雁栖湖",
+        "code": "FGP",
+        "pinyin": "yanqihu",
+        "abbr": "yqh",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "yqi",
+        "name": "焉耆",
+        "code": "YSR",
+        "pinyin": "yanqi",
+        "abbr": "yq",
+        "city": "库尔勒"
+      },
+      {
+        "shortPinyin": "yqi",
+        "name": "乐清",
+        "code": "UPH",
+        "pinyin": "yueqing",
+        "abbr": "yq",
+        "city": "温州"
+      },
+      {
+        "shortPinyin": "yqi",
+        "name": "延庆",
+        "code": "YNP",
+        "pinyin": "yanqing",
+        "abbr": "yq",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "yqq",
+        "name": "阳泉曲",
+        "code": "YYV",
+        "pinyin": "yangquanqu",
+        "abbr": "yqq",
+        "city": "吕梁"
+      },
+      {
+        "shortPinyin": "yqt",
+        "name": "姚千户屯",
+        "code": "YQT",
+        "pinyin": "yaoqianhutun",
+        "abbr": "yqht",
+        "city": "沈阳"
+      },
+      {
+        "shortPinyin": "yqu",
+        "name": "阳泉",
+        "code": "AQP",
+        "pinyin": "yangquan",
+        "abbr": "yq",
+        "city": "阳泉"
+      },
+      {
+        "shortPinyin": "yqu",
+        "name": "阳曲",
+        "code": "YQV",
+        "pinyin": "yangqu",
+        "abbr": "yq",
+        "city": "太原"
+      },
+      {
+        "shortPinyin": "yqu",
+        "name": "玉泉",
+        "code": "YQB",
+        "pinyin": "yuquan",
+        "abbr": "yq",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "yqx",
+        "name": "阳曲西",
+        "code": "IQV",
+        "pinyin": "yangquxi",
+        "abbr": "yqx",
+        "city": "太原"
+      },
+      {
+        "shortPinyin": "ysh",
+        "name": "榆社",
+        "code": "YSV",
+        "pinyin": "yushe",
+        "abbr": "ys",
+        "city": "晋中"
+      },
+      {
+        "shortPinyin": "ysh",
+        "name": "玉山",
+        "code": "YNG",
+        "pinyin": "yushan",
+        "abbr": "ys",
+        "city": "上饶"
+      },
+      {
+        "shortPinyin": "ysh",
+        "name": "营山",
+        "code": "NUW",
+        "pinyin": "yingshan",
+        "abbr": "ys",
+        "city": "南充"
+      },
+      {
+        "shortPinyin": "ysh",
+        "name": "榆树",
+        "code": "YRT",
+        "pinyin": "yushu",
+        "abbr": "ys",
+        "city": "长春"
+      },
+      {
+        "shortPinyin": "ysh",
+        "name": "元氏",
+        "code": "YSP",
+        "pinyin": "yuanshi",
+        "abbr": "ys",
+        "city": "石家庄"
+      },
+      {
+        "shortPinyin": "ysh",
+        "name": "燕山",
+        "code": "AOP",
+        "pinyin": "yanshan",
+        "abbr": "ys",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "ysn",
+        "name": "玉山南",
+        "code": "YGG",
+        "pinyin": "yushannan",
+        "abbr": "ysn",
+        "city": "上饶"
+      },
+      {
+        "shortPinyin": "yst",
+        "name": "榆树屯",
+        "code": "YSX",
+        "pinyin": "yushutun",
+        "abbr": "yst",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "yta",
+        "name": "银滩",
+        "code": "CTQ",
+        "pinyin": "yintan",
+        "abbr": "yt",
+        "city": "儋州"
+      },
+      {
+        "shortPinyin": "yta",
+        "name": "烟台",
+        "code": "YAK",
+        "pinyin": "yantai",
+        "abbr": "yt",
+        "city": "烟台"
+      },
+      {
+        "shortPinyin": "yta",
+        "name": "鹰潭",
+        "code": "YTG",
+        "pinyin": "yingtan",
+        "abbr": "yt",
+        "city": "鹰潭"
+      },
+      {
+        "shortPinyin": "yta",
+        "name": "永泰",
+        "code": "YTS",
+        "pinyin": "yongtai",
+        "abbr": "yt",
+        "city": "福州"
+      },
+      {
+        "shortPinyin": "ytb",
+        "name": "鹰潭北",
+        "code": "YKG",
+        "pinyin": "yingtanbei",
+        "abbr": "ytb",
+        "city": "鹰潭"
+      },
+      {
+        "shortPinyin": "yth",
+        "name": "伊图里河",
+        "code": "YEX",
+        "pinyin": "yitulihe",
+        "abbr": "ytlh",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "ytk",
+        "name": "依吞布拉克",
+        "code": "YVR",
+        "pinyin": "yitunbulake",
+        "abbr": "ytblk",
+        "city": "库尔勒"
+      },
+      {
+        "shortPinyin": "ytn",
+        "name": "烟台南",
+        "code": "YLK",
+        "pinyin": "yantainan",
+        "abbr": "ytn",
+        "city": "烟台"
+      },
+      {
+        "shortPinyin": "yts",
+        "name": "烟筒山",
+        "code": "YSL",
+        "pinyin": "yantongshan",
+        "abbr": "yts",
+        "city": "吉林"
+      },
+      {
+        "shortPinyin": "ytx",
+        "name": "玉田县",
+        "code": "ATP",
+        "pinyin": "yutianxian",
+        "abbr": "ytx",
+        "city": "唐山"
+      },
+      {
+        "shortPinyin": "ywu",
+        "name": "义乌",
+        "code": "YWH",
+        "pinyin": "yiwu",
+        "abbr": "yw",
+        "city": "金华"
+      },
+      {
+        "shortPinyin": "yxi",
+        "name": "玉溪",
+        "code": "AXM",
+        "pinyin": "yuxi",
+        "abbr": "yx",
+        "city": "玉溪"
+      },
+      {
+        "shortPinyin": "yxi",
+        "name": "云霄",
+        "code": "YBS",
+        "pinyin": "yunxiao",
+        "abbr": "yx",
+        "city": "漳州"
+      },
+      {
+        "shortPinyin": "yxi",
+        "name": "义县",
+        "code": "YXD",
+        "pinyin": "yixian",
+        "abbr": "yx",
+        "city": "锦州"
+      },
+      {
+        "shortPinyin": "yxi",
+        "name": "阳新",
+        "code": "YON",
+        "pinyin": "yangxin",
+        "abbr": "yx",
+        "city": "黄石"
+      },
+      {
+        "shortPinyin": "yxi",
+        "name": "宜兴",
+        "code": "YUH",
+        "pinyin": "yixing",
+        "abbr": "yx",
+        "city": "无锡"
+      },
+      {
+        "shortPinyin": "yxi",
+        "name": "尤溪",
+        "code": "YXS",
+        "pinyin": "youxi",
+        "abbr": "yx",
+        "city": "三明"
+      },
+      {
+        "shortPinyin": "yya",
+        "name": "益阳",
+        "code": "AEQ",
+        "pinyin": "yiyang",
+        "abbr": "yy",
+        "city": "益阳"
+      },
+      {
+        "shortPinyin": "yya",
+        "name": "岳阳",
+        "code": "YYQ",
+        "pinyin": "yueyang",
+        "abbr": "yy",
+        "city": "岳阳"
+      },
+      {
+        "shortPinyin": "yyd",
+        "name": "岳阳东",
+        "code": "YIQ",
+        "pinyin": "yueyangdong",
+        "abbr": "yyd",
+        "city": "岳阳"
+      },
+      {
+        "shortPinyin": "yyn",
+        "name": "益阳南",
+        "code": "YAA",
+        "pinyin": "yiyangnan",
+        "abbr": "yyn",
+        "city": "益阳"
+      },
+      {
+        "shortPinyin": "yzd",
+        "name": "扬州东",
+        "code": "YDU",
+        "pinyin": "yangzhoudong",
+        "abbr": "yzd",
+        "city": "扬州"
+      },
+      {
+        "shortPinyin": "yzh",
+        "name": "崖州",
+        "code": "YUQ",
+        "pinyin": "yazhou",
+        "abbr": "yz",
+        "city": "三亚"
+      },
+      {
+        "shortPinyin": "yzh",
+        "name": "永州",
+        "code": "AOQ",
+        "pinyin": "yongzhou",
+        "abbr": "yz",
+        "city": "永州"
+      },
+      {
+        "shortPinyin": "yzh",
+        "name": "兖州",
+        "code": "YZK",
+        "pinyin": "yanzhou",
+        "abbr": "yz",
+        "city": "济宁"
+      },
+      {
+        "shortPinyin": "yzh",
+        "name": "扬州",
+        "code": "YLH",
+        "pinyin": "yangzhou",
+        "abbr": "yz",
+        "city": "扬州"
+      },
+      {
+        "shortPinyin": "yzh",
+        "name": "亦庄",
+        "code": "YUP",
+        "pinyin": "yizhuang",
+        "abbr": "yz",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "yzh",
+        "name": "榆中",
+        "code": "IZJ",
+        "pinyin": "yuzhong",
+        "abbr": "yz",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "yan",
+        "name": "永安",
+        "code": "YAS",
+        "pinyin": "yongan",
+        "abbr": "ya",
+        "city": "三明"
+      },
+      {
+        "shortPinyin": "yax",
+        "name": "永安乡",
+        "code": "YNB",
+        "pinyin": "yonganxiang",
+        "abbr": "yax",
+        "city": "鸡西"
+      },
+      {
+        "shortPinyin": "yaz",
+        "name": "永安镇",
+        "code": "YQZ",
+        "pinyin": "yonganzhen",
+        "abbr": "yaz",
+        "city": "河池"
+      },
+      {
+        "shortPinyin": "ybi",
+        "name": "盐边",
+        "code": "YBE",
+        "pinyin": "yanbian",
+        "abbr": "yb",
+        "city": "攀枝花"
+      },
+      {
+        "shortPinyin": "yca",
+        "name": "羊草",
+        "code": "YAB",
+        "pinyin": "yangcao",
+        "abbr": "yc",
+        "city": "绥化"
+      },
+      {
+        "shortPinyin": "ycb",
+        "name": "永城北",
+        "code": "RGH",
+        "pinyin": "yongchengbei",
+        "abbr": "ycb",
+        "city": "商丘"
+      },
+      {
+        "shortPinyin": "ycd",
+        "name": "秧草地",
+        "code": "YKM",
+        "pinyin": "yangcaodi",
+        "abbr": "ycd",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "ycd",
+        "name": "禹城东",
+        "code": "YSK",
+        "pinyin": "yuchengdong",
+        "abbr": "ycd",
+        "city": "德州"
+      },
+      {
+        "shortPinyin": "ycf",
+        "name": "盐城大丰",
+        "code": "YFU",
+        "pinyin": "yanchengdafeng",
+        "abbr": "ycdf",
+        "city": "盐城"
+      },
+      {
+        "shortPinyin": "ych",
+        "name": "砚川",
+        "code": "YYY",
+        "pinyin": "yanchuan",
+        "abbr": "yc",
+        "city": "商洛"
+      },
+      {
+        "shortPinyin": "ych",
+        "name": "盐池",
+        "code": "YKJ",
+        "pinyin": "yanchi",
+        "abbr": "yc",
+        "city": "吴忠"
+      },
+      {
+        "shortPinyin": "ych",
+        "name": "阳岔",
+        "code": "YAL",
+        "pinyin": "yangcha",
+        "abbr": "yc",
+        "city": "通化"
+      },
+      {
+        "shortPinyin": "ych",
+        "name": "应城",
+        "code": "YHN",
+        "pinyin": "yingcheng",
+        "abbr": "yc",
+        "city": "孝感"
+      },
+      {
+        "shortPinyin": "ych",
+        "name": "宜城",
+        "code": "YIN",
+        "pinyin": "yicheng",
+        "abbr": "yc",
+        "city": "襄阳"
+      },
+      {
+        "shortPinyin": "ych",
+        "name": "郓城",
+        "code": "YPK",
+        "pinyin": "yuncheng",
+        "abbr": "yc",
+        "city": "菏泽"
+      },
+      {
+        "shortPinyin": "ych",
+        "name": "晏城",
+        "code": "YEK",
+        "pinyin": "yancheng",
+        "abbr": "yc",
+        "city": "德州"
+      },
+      {
+        "shortPinyin": "ych",
+        "name": "禹城",
+        "code": "YCK",
+        "pinyin": "yucheng",
+        "abbr": "yc",
+        "city": "德州"
+      },
+      {
+        "shortPinyin": "ych",
+        "name": "阳澄湖",
+        "code": "AIH",
+        "pinyin": "yangchenghu",
+        "abbr": "ych",
+        "city": "苏州"
+      },
+      {
+        "shortPinyin": "ych",
+        "name": "阳城",
+        "code": "YNF",
+        "pinyin": "yangcheng",
+        "abbr": "yc",
+        "city": "晋城"
+      },
+      {
+        "shortPinyin": "ych",
+        "name": "迎春",
+        "code": "YYB",
+        "pinyin": "yingchun",
+        "abbr": "yc",
+        "city": "鸡西"
+      },
+      {
+        "shortPinyin": "ych",
+        "name": "雁翅",
+        "code": "YAP",
+        "pinyin": "yanchi",
+        "abbr": "yc",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "ycl",
+        "name": "云彩岭",
+        "code": "ACP",
+        "pinyin": "yuncailing",
+        "abbr": "ycl",
+        "city": "大同"
+      },
+      {
+        "shortPinyin": "ycn",
+        "name": "永川南",
+        "code": "YNE",
+        "pinyin": "yongchuannan",
+        "abbr": "ycn",
+        "city": "重庆"
+      },
+      {
+        "shortPinyin": "ycx",
+        "name": "虞城县",
+        "code": "IXH",
+        "pinyin": "yuchengxian",
+        "abbr": "ycx",
+        "city": "商丘"
+      },
+      {
+        "shortPinyin": "ycz",
+        "name": "营城子",
+        "code": "YCT",
+        "pinyin": "yingchengzi",
+        "abbr": "ycz",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "ydb",
+        "name": "于都北",
+        "code": "YYG",
+        "pinyin": "yudubei",
+        "abbr": "ydb",
+        "city": "于都"
+      },
+      {
+        "shortPinyin": "ydb",
+        "name": "永登北",
+        "code": "ABJ",
+        "pinyin": "yongdengbei",
+        "abbr": "ydb",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "yde",
+        "name": "英德",
+        "code": "YDQ",
+        "pinyin": "yingde",
+        "abbr": "yd",
+        "city": "清远"
+      },
+      {
+        "shortPinyin": "ydh",
+        "name": "云东海",
+        "code": "NAQ",
+        "pinyin": "yundonghai",
+        "abbr": "ydh",
+        "city": "佛山"
+      },
+      {
+        "shortPinyin": "ydi",
+        "name": "尹地",
+        "code": "YDM",
+        "pinyin": "yindi",
+        "abbr": "yd",
+        "city": "楚雄"
+      },
+      {
+        "shortPinyin": "ydi",
+        "name": "永定",
+        "code": "YGS",
+        "pinyin": "yongding",
+        "abbr": "yd",
+        "city": "龙岩"
+      },
+      {
+        "shortPinyin": "ydo",
+        "name": "阳东",
+        "code": "WLQ",
+        "pinyin": "yangdong",
+        "abbr": "yd",
+        "city": "阳江"
+      },
+      {
+        "shortPinyin": "ydu",
+        "name": "园墩",
+        "code": "YAJ",
+        "pinyin": "yuandun",
+        "abbr": "yd",
+        "city": "武威"
+      },
+      {
+        "shortPinyin": "yfn",
+        "name": "永福南",
+        "code": "YBZ",
+        "pinyin": "yongfunan",
+        "abbr": "yfn",
+        "city": "桂林"
+      },
+      {
+        "shortPinyin": "yga",
+        "name": "余干",
+        "code": "YFG",
+        "pinyin": "yugan",
+        "abbr": "yg",
+        "city": "上饶"
+      },
+      {
+        "shortPinyin": "yga",
+        "name": "阳高",
+        "code": "YOV",
+        "pinyin": "yanggao",
+        "abbr": "yg",
+        "city": "大同"
+      },
+      {
+        "shortPinyin": "yga",
+        "name": "杨岗",
+        "code": "YRB",
+        "pinyin": "yanggang",
+        "abbr": "yg",
+        "city": "鸡西"
+      },
+      {
+        "shortPinyin": "yge",
+        "name": "雨格",
+        "code": "VTM",
+        "pinyin": "yuge",
+        "abbr": "yg",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "ygn",
+        "name": "阳高南",
+        "code": "AGV",
+        "pinyin": "yanggaonan",
+        "abbr": "ygn",
+        "city": "大同"
+      },
+      {
+        "shortPinyin": "ygu",
+        "name": "阳谷",
+        "code": "YIK",
+        "pinyin": "yanggu",
+        "abbr": "yg",
+        "city": "聊城"
+      },
+      {
+        "shortPinyin": "yha",
+        "name": "友好",
+        "code": "YOB",
+        "pinyin": "youhao",
+        "abbr": "yh",
+        "city": "伊春"
+      },
+      {
+        "shortPinyin": "yhc",
+        "name": "沿河城",
+        "code": "YHP",
+        "pinyin": "yanhecheng",
+        "abbr": "yhc",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "yhe",
+        "name": "洋河",
+        "code": "GTH",
+        "pinyin": "yanghe",
+        "abbr": "yh",
+        "city": "宿迁"
+      },
+      {
+        "shortPinyin": "yhu",
+        "name": "燕湖",
+        "code": "YHA",
+        "pinyin": "yanhu",
+        "abbr": "yh",
+        "city": "清远"
+      },
+      {
+        "shortPinyin": "yhu",
+        "name": "月华",
+        "code": "YQW",
+        "pinyin": "yuehua",
+        "abbr": "yh",
+        "city": "西昌"
+      },
+      {
+        "shortPinyin": "yhu",
+        "name": "岩会",
+        "code": "AEP",
+        "pinyin": "yanhui",
+        "abbr": "yh",
+        "city": "阳泉"
+      },
+      {
+        "shortPinyin": "yjh",
+        "name": "羊臼河",
+        "code": "YHM",
+        "pinyin": "yangjiuhe",
+        "abbr": "yjh",
+        "city": "楚雄"
+      },
+      {
+        "shortPinyin": "yji",
+        "name": "元江",
+        "code": "AJM",
+        "pinyin": "yuanjiang",
+        "abbr": "yj",
+        "city": "元江"
+      },
+      {
+        "shortPinyin": "yji",
+        "name": "叶集",
+        "code": "YCH",
+        "pinyin": "yeji",
+        "abbr": "yj",
+        "city": "六安"
+      },
+      {
+        "shortPinyin": "yji",
+        "name": "营街",
+        "code": "YAM",
+        "pinyin": "yingjie",
+        "abbr": "yj",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "yji",
+        "name": "余江",
+        "code": "YHG",
+        "pinyin": "yujiang",
+        "abbr": "yj",
+        "city": "鹰潭"
+      },
+      {
+        "shortPinyin": "yjj",
+        "name": "岳家井",
+        "code": "YGJ",
+        "pinyin": "yuejiajing",
+        "abbr": "yjj",
+        "city": "阿拉善"
+      },
+      {
+        "shortPinyin": "yjs",
+        "name": "云居寺",
+        "code": "AFP",
+        "pinyin": "yunjusi",
+        "abbr": "yjs",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "yjz",
+        "name": "燕家庄",
+        "code": "AZK",
+        "pinyin": "yanjiazhuang",
+        "abbr": "yjz",
+        "city": "泰安"
+      },
+      {
+        "shortPinyin": "yka",
+        "name": "永康",
+        "code": "RFH",
+        "pinyin": "yongkang",
+        "abbr": "yk",
+        "city": "金华"
+      },
+      {
+        "shortPinyin": "ykl",
+        "name": "英库勒",
+        "code": "YLR",
+        "pinyin": "yinfkule",
+        "abbr": "ykl",
+        "city": "库尔勒"
+      },
+      {
+        "shortPinyin": "yla",
+        "name": "银浪",
+        "code": "YJX",
+        "pinyin": "yinlang",
+        "abbr": "yl",
+        "city": "大庆"
+      },
+      {
+        "shortPinyin": "yle",
+        "name": "以勒",
+        "code": "YPE",
+        "pinyin": "yile",
+        "abbr": "yl",
+        "city": "昭通"
+      },
+      {
+        "shortPinyin": "ylh",
+        "name": "运粮河",
+        "code": "YEF",
+        "pinyin": "yunlianghe",
+        "abbr": "ylh",
+        "city": "开封"
+      },
+      {
+        "shortPinyin": "ylh",
+        "name": "伊拉哈",
+        "code": "YLX",
+        "pinyin": "yilaha",
+        "abbr": "ylh",
+        "city": "黑河"
+      },
+      {
+        "shortPinyin": "yli",
+        "name": "尉犁",
+        "code": "WRR",
+        "pinyin": "yuli",
+        "abbr": "yl",
+        "city": "库尔勒"
+      },
+      {
+        "shortPinyin": "yli",
+        "name": "鄢陵",
+        "code": "YIF",
+        "pinyin": "yanling",
+        "abbr": "yl",
+        "city": "许昌"
+      },
+      {
+        "shortPinyin": "yli",
+        "name": "伊林",
+        "code": "YLB",
+        "pinyin": "yilin",
+        "abbr": "yl",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "ylo",
+        "name": "仪陇",
+        "code": "YCE",
+        "pinyin": "yilong",
+        "abbr": "yl",
+        "city": "南充"
+      },
+      {
+        "shortPinyin": "ylt",
+        "name": "月亮田",
+        "code": "YUM",
+        "pinyin": "yueliangtian",
+        "abbr": "ylt",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "yma",
+        "name": "义马",
+        "code": "YMF",
+        "pinyin": "yima",
+        "abbr": "ym",
+        "city": "三门峡"
+      },
+      {
+        "shortPinyin": "ymb",
+        "name": "阳明堡",
+        "code": "YVV",
+        "pinyin": "yangmingbu",
+        "abbr": "ymb",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "yme",
+        "name": "云梦",
+        "code": "YMN",
+        "pinyin": "yunmeng",
+        "abbr": "ym",
+        "city": "孝感"
+      },
+      {
+        "shortPinyin": "ymi",
+        "name": "伊敏",
+        "code": "YMX",
+        "pinyin": "yimin",
+        "abbr": "ym",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "yms",
+        "name": "一面山",
+        "code": "YST",
+        "pinyin": "yimianshan",
+        "abbr": "yms",
+        "city": "丹东"
+      },
+      {
+        "shortPinyin": "yna",
+        "name": "沂南",
+        "code": "YNK",
+        "pinyin": "yinan",
+        "abbr": "yn",
+        "city": "临沂"
+      },
+      {
+        "shortPinyin": "yny",
+        "name": "云南驿",
+        "code": "ANM",
+        "pinyin": "yunnanyi",
+        "abbr": "yny",
+        "city": "大理"
+      },
+      {
+        "shortPinyin": "ypi",
+        "name": "银瓶",
+        "code": "KPQ",
+        "pinyin": "yinping",
+        "abbr": "yp",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "yps",
+        "name": "营盘水",
+        "code": "YZJ",
+        "pinyin": "yingpanshui",
+        "abbr": "yps",
+        "city": "中卫"
+      },
+      {
+        "shortPinyin": "yqd",
+        "name": "乐清东",
+        "code": "OLH",
+        "pinyin": "yueqingdong",
+        "abbr": "yqd",
+        "city": "温州"
+      },
+      {
+        "shortPinyin": "yqi",
+        "name": "永庆",
+        "code": "YQL",
+        "pinyin": "yongqing",
+        "abbr": "yq",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "yqi",
+        "name": "杨桥",
+        "code": "YQA",
+        "pinyin": "yangqiao",
+        "abbr": "yq",
+        "city": "邵阳"
+      },
+      {
+        "shortPinyin": "yqi",
+        "name": "源迁",
+        "code": "AQK",
+        "pinyin": "yuanqian",
+        "abbr": "yq",
+        "city": "淄博"
+      },
+      {
+        "shortPinyin": "yqz",
+        "name": "玉泉镇",
+        "code": "YFR",
+        "pinyin": "yuquanzhen",
+        "abbr": "yqz",
+        "city": "和田"
+      },
+      {
+        "shortPinyin": "yre",
+        "name": "永仁",
+        "code": "ARM",
+        "pinyin": "yongren",
+        "abbr": "yr",
+        "city": "楚雄"
+      },
+      {
+        "shortPinyin": "ysb",
+        "name": "颍上北",
+        "code": "YBU",
+        "pinyin": "yingshangbei",
+        "abbr": "ysb",
+        "city": "阜阳"
+      },
+      {
+        "shortPinyin": "ysg",
+        "name": "野三关",
+        "code": "BNN",
+        "pinyin": "yesanguan",
+        "abbr": "ysg",
+        "city": "恩施"
+      },
+      {
+        "shortPinyin": "ysg",
+        "name": "榆树沟",
+        "code": "YGP",
+        "pinyin": "yushugou",
+        "abbr": "ysg",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "ysh",
+        "name": "玉石",
+        "code": "YSJ",
+        "pinyin": "yushi",
+        "abbr": "ys",
+        "city": "金昌"
+      },
+      {
+        "shortPinyin": "ysh",
+        "name": "阳朔",
+        "code": "YCZ",
+        "pinyin": "yangshuo",
+        "abbr": "ys",
+        "city": "桂林"
+      },
+      {
+        "shortPinyin": "ysh",
+        "name": "永寿",
+        "code": "ASY",
+        "pinyin": "yongshou",
+        "abbr": "ys",
+        "city": "咸阳"
+      },
+      {
+        "shortPinyin": "ysh",
+        "name": "云山",
+        "code": "KZQ",
+        "pinyin": "yunshan",
+        "abbr": "ys",
+        "city": "惠州"
+      },
+      {
+        "shortPinyin": "ysh",
+        "name": "窑上",
+        "code": "ASP",
+        "pinyin": "yaoshang",
+        "abbr": "ys",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "ysh",
+        "name": "玉舍",
+        "code": "AUM",
+        "pinyin": "yushe",
+        "abbr": "ys",
+        "city": "六盘水"
+      },
+      {
+        "shortPinyin": "ysh",
+        "name": "沂水",
+        "code": "YUK",
+        "pinyin": "yishui",
+        "abbr": "ys",
+        "city": "临沂"
+      },
+      {
+        "shortPinyin": "ysh",
+        "name": "颍上",
+        "code": "YVH",
+        "pinyin": "yingshang",
+        "abbr": "ys",
+        "city": "阜阳"
+      },
+      {
+        "shortPinyin": "ysh",
+        "name": "偃师",
+        "code": "YSF",
+        "pinyin": "yanshi",
+        "abbr": "ys",
+        "city": "洛阳"
+      },
+      {
+        "shortPinyin": "ysh",
+        "name": "月山",
+        "code": "YBF",
+        "pinyin": "yueshan",
+        "abbr": "ys",
+        "city": "焦作"
+      },
+      {
+        "shortPinyin": "ysl",
+        "name": "杨树岭",
+        "code": "YAD",
+        "pinyin": "yangshuling",
+        "abbr": "ysl",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "ysn",
+        "name": "雁石南",
+        "code": "YMS",
+        "pinyin": "yanshinan",
+        "abbr": "ysn",
+        "city": "龙岩"
+      },
+      {
+        "shortPinyin": "ysp",
+        "name": "野三坡",
+        "code": "AIP",
+        "pinyin": "yesanpo",
+        "abbr": "ysp",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "ysx",
+        "name": "榆社西",
+        "code": "AXV",
+        "pinyin": "yushexi",
+        "abbr": "ysx",
+        "city": "晋中"
+      },
+      {
+        "shortPinyin": "ysx",
+        "name": "永寿西",
+        "code": "AUY",
+        "pinyin": "yongshouxi",
+        "abbr": "ysx",
+        "city": "咸阳"
+      },
+      {
+        "shortPinyin": "ysz",
+        "name": "鹰手营子",
+        "code": "YIP",
+        "pinyin": "yingshouyingzi",
+        "abbr": "ysyz",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "yta",
+        "name": "源潭",
+        "code": "YTQ",
+        "pinyin": "yuantan",
+        "abbr": "yt",
+        "city": "清远"
+      },
+      {
+        "shortPinyin": "yti",
+        "name": "于田",
+        "code": "YWR",
+        "pinyin": "yutian",
+        "abbr": "yt",
+        "city": "和田"
+      },
+      {
+        "shortPinyin": "ytn",
+        "name": "玉田南",
+        "code": "YTI",
+        "pinyin": "yutiannan",
+        "abbr": "ytn",
+        "city": "唐山"
+      },
+      {
+        "shortPinyin": "yto",
+        "name": "伊通",
+        "code": "YTL",
+        "pinyin": "yitong",
+        "abbr": "yt",
+        "city": "四平"
+      },
+      {
+        "shortPinyin": "ytp",
+        "name": "牙屯堡",
+        "code": "YTZ",
+        "pinyin": "yatunpu",
+        "abbr": "ytp",
+        "city": "怀化"
+      },
+      {
+        "shortPinyin": "ytt",
+        "name": "烟筒屯",
+        "code": "YUX",
+        "pinyin": "yantongtun",
+        "abbr": "ytt",
+        "city": "大庆"
+      },
+      {
+        "shortPinyin": "ytx",
+        "name": "烟台西",
+        "code": "DCK",
+        "pinyin": "yantaixi",
+        "abbr": "ytx",
+        "city": "烟台"
+      },
+      {
+        "shortPinyin": "yws",
+        "name": "羊尾哨",
+        "code": "YWM",
+        "pinyin": "yangweishao",
+        "abbr": "yws",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "yxd",
+        "name": "黟县东",
+        "code": "YIU",
+        "pinyin": "yixiandong",
+        "abbr": "yxd",
+        "city": "黄山"
+      },
+      {
+        "shortPinyin": "yxg",
+        "name": "野象谷",
+        "code": "AGM",
+        "pinyin": "yexianggu",
+        "abbr": "yxg",
+        "city": "景洪"
+      },
+      {
+        "shortPinyin": "yxi",
+        "name": "阳西",
+        "code": "WMQ",
+        "pinyin": "yangxi",
+        "abbr": "yx",
+        "city": "阳江"
+      },
+      {
+        "shortPinyin": "yxi",
+        "name": "云县",
+        "code": "AIM",
+        "pinyin": "yunxian",
+        "abbr": "yx",
+        "city": "临沧"
+      },
+      {
+        "shortPinyin": "yxi",
+        "name": "阳信",
+        "code": "YVK",
+        "pinyin": "yangxin",
+        "abbr": "yx",
+        "city": "滨州"
+      },
+      {
+        "shortPinyin": "yxi",
+        "name": "应县",
+        "code": "YZV",
+        "pinyin": "yingxian",
+        "abbr": "yx",
+        "city": "朔州"
+      },
+      {
+        "shortPinyin": "yxi",
+        "name": "攸县",
+        "code": "YOG",
+        "pinyin": "youxian",
+        "abbr": "yx",
+        "city": "株洲"
+      },
+      {
+        "shortPinyin": "yxi",
+        "name": "永修",
+        "code": "ACG",
+        "pinyin": "yongxiu",
+        "abbr": "yx",
+        "city": "九江"
+      },
+      {
+        "shortPinyin": "yxn",
+        "name": "攸县南",
+        "code": "YXG",
+        "pinyin": "youxiannan",
+        "abbr": "yxn",
+        "city": "株洲"
+      },
+      {
+        "shortPinyin": "yxx",
+        "name": "洋县西",
+        "code": "YXY",
+        "pinyin": "yangxianxi",
+        "abbr": "yxx",
+        "city": "汉中"
+      },
+      {
+        "shortPinyin": "yxx",
+        "name": "义县西",
+        "code": "YSD",
+        "pinyin": "yixianxi",
+        "abbr": "yxx",
+        "city": "锦州"
+      },
+      {
+        "shortPinyin": "yya",
+        "name": "云阳",
+        "code": "YUE",
+        "pinyin": "yunyang",
+        "abbr": "yy",
+        "city": "云阳"
+      },
+      {
+        "shortPinyin": "yya",
+        "name": "酉阳",
+        "code": "AFW",
+        "pinyin": "youyang",
+        "abbr": "yy",
+        "city": "酉阳"
+      },
+      {
+        "shortPinyin": "yya",
+        "name": "弋阳",
+        "code": "YIG",
+        "pinyin": "yiyang",
+        "abbr": "yy",
+        "city": "上饶"
+      },
+      {
+        "shortPinyin": "yya",
+        "name": "余姚",
+        "code": "YYH",
+        "pinyin": "yuyao",
+        "abbr": "yy",
+        "city": "宁波"
+      },
+      {
+        "shortPinyin": "yyb",
+        "name": "余姚北",
+        "code": "CTH",
+        "pinyin": "yuyaobei",
+        "abbr": "yyb",
+        "city": "宁波"
+      },
+      {
+        "shortPinyin": "yyi",
+        "name": "阳邑",
+        "code": "ARP",
+        "pinyin": "yangyi",
+        "abbr": "yy",
+        "city": "邯郸"
+      },
+      {
+        "shortPinyin": "yyn",
+        "name": "岳阳南",
+        "code": "RWQ",
+        "pinyin": "yueyangnan",
+        "abbr": "yyn",
+        "city": "岳阳"
+      },
+      {
+        "shortPinyin": "yyu",
+        "name": "杨源",
+        "code": "AYS",
+        "pinyin": "yangyuan",
+        "abbr": "yy",
+        "city": "三明"
+      },
+      {
+        "shortPinyin": "yyz",
+        "name": "鸳鸯镇",
+        "code": "YYJ",
+        "pinyin": "yuanyangzhen",
+        "abbr": "yyz",
+        "city": "天水"
+      },
+      {
+        "shortPinyin": "yzb",
+        "name": "燕子砭",
+        "code": "YZY",
+        "pinyin": "yanzibian",
+        "abbr": "yzb",
+        "city": "汉中"
+      },
+      {
+        "shortPinyin": "yzh",
+        "name": "宜州",
+        "code": "YSZ",
+        "pinyin": "yizhou",
+        "abbr": "yz",
+        "city": "河池"
+      },
+      {
+        "shortPinyin": "yzh",
+        "name": "银盏",
+        "code": "YZA",
+        "pinyin": "yinzhan",
+        "abbr": "yz",
+        "city": "清远"
+      },
+      {
+        "shortPinyin": "yzh",
+        "name": "仪征",
+        "code": "UZH",
+        "pinyin": "yizheng",
+        "abbr": "yz",
+        "city": "仪征"
+      },
+      {
+        "shortPinyin": "yzh",
+        "name": "耀州",
+        "code": "YOY",
+        "pinyin": "yaozhou",
+        "abbr": "yz",
+        "city": "铜川"
+      },
+      {
+        "shortPinyin": "yzh",
+        "name": "禹州",
+        "code": "YZF",
+        "pinyin": "yuzhou",
+        "abbr": "yz",
+        "city": "许昌"
+      },
+      {
+        "shortPinyin": "yzi",
+        "name": "迤资",
+        "code": "YQM",
+        "pinyin": "yizi",
+        "abbr": "yz",
+        "city": "攀枝花"
+      },
+      {
+        "shortPinyin": "yzw",
+        "name": "崖州湾",
+        "code": "YWA",
+        "pinyin": "yazhouwan",
+        "abbr": "yzw",
+        "city": "三亚"
+      },
+      {
+        "shortPinyin": "yzw",
+        "name": "羊者窝",
+        "code": "AEM",
+        "pinyin": "yangzhewo",
+        "abbr": "yzw",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "yzz",
+        "name": "杨杖子",
+        "code": "YZD",
+        "pinyin": "yangzhangzi",
+        "abbr": "yzz",
+        "city": "朝阳"
+      },
+      {
+        "shortPinyin": "ybd",
+        "name": "宜宾东",
+        "code": "EDE",
+        "pinyin": "yibindong",
+        "abbr": "ybd",
+        "city": "宜宾"
+      },
+      {
+        "shortPinyin": "ybi",
+        "name": "宜宾",
+        "code": "YKE",
+        "pinyin": "yibin",
+        "abbr": "yb",
+        "city": "宜宾"
+      },
+      {
+        "shortPinyin": "ybi",
+        "name": "漾濞",
+        "code": "AVM",
+        "pinyin": "yangbi",
+        "abbr": "yb",
+        "city": "漾濞"
+      },
+      {
+        "shortPinyin": "ych",
+        "name": "永春",
+        "code": "ACS",
+        "pinyin": "yongchun",
+        "abbr": "yc",
+        "city": "泉州"
+      },
+      {
+        "shortPinyin": "yhu",
+        "name": "银花",
+        "code": "YWE",
+        "pinyin": "yinhua",
+        "abbr": "yh",
+        "city": "重庆"
+      },
+      {
+        "shortPinyin": "ylo",
+        "name": "迎龙",
+        "code": "YVE",
+        "pinyin": "yinglong",
+        "abbr": "yl",
+        "city": "重庆"
+      },
+      {
+        "shortPinyin": "ymg",
+        "name": "雁门关",
+        "code": "RDV",
+        "pinyin": "yanmenguan",
+        "abbr": "ymg",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "ypx",
+        "name": "永平县",
+        "code": "APM",
+        "pinyin": "yongpingxian",
+        "abbr": "ypx",
+        "city": "永平"
+      },
+      {
+        "shortPinyin": "yta",
+        "name": "沿滩",
+        "code": "YTE",
+        "pinyin": "yantan",
+        "abbr": "yt",
+        "city": "自贡"
+      },
+      {
+        "shortPinyin": "yxi",
+        "name": "越西",
+        "code": "YIE",
+        "pinyin": "yuexi",
+        "abbr": "yx",
+        "city": "西昌"
+      },
+      {
+        "shortPinyin": "yxx",
+        "name": "应县西",
+        "code": "AAV",
+        "pinyin": "yingxianxi",
+        "abbr": "yxx",
+        "city": "朔州"
+      }
+    ],
+    "Z": [
+      {
+        "shortPinyin": "zjy",
+        "name": "朱家窑",
+        "code": "ZUJ",
+        "pinyin": "zhujiayao",
+        "abbr": "zjy",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "zqn",
+        "name": "章丘南",
+        "code": "VQK",
+        "pinyin": "zhangqiunan",
+        "abbr": "zqn",
+        "city": "济南"
+      },
+      {
+        "shortPinyin": "zzd",
+        "name": "郑州东",
+        "code": "ZAF",
+        "pinyin": "zhengzhoudong",
+        "abbr": "zzd",
+        "city": "郑州"
+      },
+      {
+        "shortPinyin": "zzg",
+        "name": "郑州航空港",
+        "code": "ZIF",
+        "pinyin": "zhengzhouhangkonggang",
+        "abbr": "zzhkg",
+        "city": "郑州"
+      },
+      {
+        "shortPinyin": "zzh",
+        "name": "郑州",
+        "code": "ZZF",
+        "pinyin": "zhengzhou",
+        "abbr": "zz",
+        "city": "郑州"
+      },
+      {
+        "shortPinyin": "zzx",
+        "name": "郑州西",
+        "code": "XPF",
+        "pinyin": "zhengzhouxi",
+        "abbr": "zzx",
+        "city": "郑州"
+      },
+      {
+        "shortPinyin": "zan",
+        "name": "诏安",
+        "code": "ZDS",
+        "pinyin": "zhaoan",
+        "abbr": "za",
+        "city": "漳州"
+      },
+      {
+        "shortPinyin": "zbb",
+        "name": "淄博北",
+        "code": "ZRK",
+        "pinyin": "zibobei",
+        "abbr": "zbb",
+        "city": "淄博"
+      },
+      {
+        "shortPinyin": "zbo",
+        "name": "淄博",
+        "code": "ZBK",
+        "pinyin": "zibo",
+        "abbr": "zb",
+        "city": "淄博"
+      },
+      {
+        "shortPinyin": "zcd",
+        "name": "镇城底",
+        "code": "ZDV",
+        "pinyin": "zhenchengdi",
+        "abbr": "zcd",
+        "city": "太原"
+      },
+      {
+        "shortPinyin": "zdc",
+        "name": "正定机场",
+        "code": "ZHP",
+        "pinyin": "zhengdingjichang",
+        "abbr": "zdjc",
+        "city": "石家庄"
+      },
+      {
+        "shortPinyin": "zdi",
+        "name": "正定",
+        "code": "ZDP",
+        "pinyin": "zhengding",
+        "abbr": "zd",
+        "city": "石家庄"
+      },
+      {
+        "shortPinyin": "zfd",
+        "name": "纸坊东",
+        "code": "ZMN",
+        "pinyin": "zhifangdong",
+        "abbr": "zfd",
+        "city": "武汉"
+      },
+      {
+        "shortPinyin": "zga",
+        "name": "柘皋",
+        "code": "ZGU",
+        "pinyin": "zhegao",
+        "abbr": "zg",
+        "city": "合肥"
+      },
+      {
+        "shortPinyin": "zgb",
+        "name": "自贡北",
+        "code": "ZGW",
+        "pinyin": "zigongbei",
+        "abbr": "zgb",
+        "city": "自贡"
+      },
+      {
+        "shortPinyin": "zgo",
+        "name": "自贡",
+        "code": "ZGE",
+        "pinyin": "zigong",
+        "abbr": "zg",
+        "city": "自贡"
+      },
+      {
+        "shortPinyin": "zha",
+        "name": "珠海",
+        "code": "ZHQ",
+        "pinyin": "zhuhai",
+        "abbr": "zh",
+        "city": "珠海"
+      },
+      {
+        "shortPinyin": "zhb",
+        "name": "庄河北",
+        "code": "ZUT",
+        "pinyin": "zhuanghebei",
+        "abbr": "zhb",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "zhb",
+        "name": "珠海北",
+        "code": "ZIQ",
+        "pinyin": "zhuhaibei",
+        "abbr": "zhb",
+        "city": "珠海"
+      },
+      {
+        "shortPinyin": "zhc",
+        "name": "珠海机场",
+        "code": "ZJA",
+        "pinyin": "zhuhaijichang",
+        "abbr": "zhjc",
+        "city": "珠海"
+      },
+      {
+        "shortPinyin": "zhl",
+        "name": "珠海长隆",
+        "code": "ZLA",
+        "pinyin": "zhuhaichanglong",
+        "abbr": "zhcl",
+        "city": "珠海"
+      },
+      {
+        "shortPinyin": "zhm",
+        "name": "中华门",
+        "code": "VNH",
+        "pinyin": "zhonghuamen",
+        "abbr": "zhm",
+        "city": "南京"
+      },
+      {
+        "shortPinyin": "zjc",
+        "name": "张家川",
+        "code": "ZIJ",
+        "pinyin": "zhangjiachuan",
+        "abbr": "zjc",
+        "city": "天水"
+      },
+      {
+        "shortPinyin": "zjg",
+        "name": "张家港",
+        "code": "ZAU",
+        "pinyin": "zhangjiagang",
+        "abbr": "zjg",
+        "city": "苏州"
+      },
+      {
+        "shortPinyin": "zji",
+        "name": "湛江",
+        "code": "ZJZ",
+        "pinyin": "zhanjiang",
+        "abbr": "zj",
+        "city": "湛江"
+      },
+      {
+        "shortPinyin": "zji",
+        "name": "织金",
+        "code": "IZW",
+        "pinyin": "zhijin",
+        "abbr": "zj",
+        "city": "毕节"
+      },
+      {
+        "shortPinyin": "zji",
+        "name": "治江",
+        "code": "ZIY",
+        "pinyin": "zhijiang",
+        "abbr": "zj",
+        "city": "汉中"
+      },
+      {
+        "shortPinyin": "zji",
+        "name": "芷江",
+        "code": "ZPQ",
+        "pinyin": "zhijiang",
+        "abbr": "zj",
+        "city": "怀化"
+      },
+      {
+        "shortPinyin": "zji",
+        "name": "诸暨",
+        "code": "ZDH",
+        "pinyin": "zhuji",
+        "abbr": "zj",
+        "city": "绍兴"
+      },
+      {
+        "shortPinyin": "zji",
+        "name": "镇江",
+        "code": "ZJH",
+        "pinyin": "zhenjiang",
+        "abbr": "zj",
+        "city": "镇江"
+      },
+      {
+        "shortPinyin": "zji",
+        "name": "周家",
+        "code": "ZOB",
+        "pinyin": "zhoujia",
+        "abbr": "zj",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "zjj",
+        "name": "张家界",
+        "code": "DIQ",
+        "pinyin": "zhangjiajie",
+        "abbr": "zjj",
+        "city": "张家界"
+      },
+      {
+        "shortPinyin": "zjk",
+        "name": "张家口",
+        "code": "ZMP",
+        "pinyin": "zhangjiakou",
+        "abbr": "zjk",
+        "city": "张家口"
+      },
+      {
+        "shortPinyin": "zjn",
+        "name": "张家口南",
+        "code": "IXP",
+        "pinyin": "zhangjiakounan",
+        "abbr": "zjkn",
+        "city": "张家口"
+      },
+      {
+        "shortPinyin": "zjn",
+        "name": "镇江南",
+        "code": "ZEH",
+        "pinyin": "zhenjiangnan",
+        "abbr": "zjn",
+        "city": "镇江"
+      },
+      {
+        "shortPinyin": "zjx",
+        "name": "湛江西",
+        "code": "ZWQ",
+        "pinyin": "zhanjiangxi",
+        "abbr": "zjx",
+        "city": "湛江"
+      },
+      {
+        "shortPinyin": "zjx",
+        "name": "张家界西",
+        "code": "JXA",
+        "pinyin": "zhangjiajiexi",
+        "abbr": "zjjx",
+        "city": "张家界"
+      },
+      {
+        "shortPinyin": "zkd",
+        "name": "周口东",
+        "code": "ZKF",
+        "pinyin": "zhoukoudong",
+        "abbr": "zkd",
+        "city": "周口"
+      },
+      {
+        "shortPinyin": "zko",
+        "name": "周口",
+        "code": "ZKN",
+        "pinyin": "zhoukou",
+        "abbr": "zk",
+        "city": "周口"
+      },
+      {
+        "shortPinyin": "zla",
+        "name": "镇赉",
+        "code": "ZLT",
+        "pinyin": "zhenlai",
+        "abbr": "zl",
+        "city": "白城"
+      },
+      {
+        "shortPinyin": "zli",
+        "name": "庄里",
+        "code": "ZLY",
+        "pinyin": "zhuangli",
+        "abbr": "zl",
+        "city": "富平"
+      },
+      {
+        "shortPinyin": "zli",
+        "name": "左岭",
+        "code": "ZSN",
+        "pinyin": "zuoling",
+        "abbr": "zl",
+        "city": "武汉"
+      },
+      {
+        "shortPinyin": "zlt",
+        "name": "扎兰屯",
+        "code": "ZTX",
+        "pinyin": "zhalantun",
+        "abbr": "zlt",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "zlx",
+        "name": "扎赉诺尔西",
+        "code": "ZXX",
+        "pinyin": "zhalainuoerxi",
+        "abbr": "zlnex",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "zmd",
+        "name": "驻马店",
+        "code": "ZDN",
+        "pinyin": "zhumadian",
+        "abbr": "zmd",
+        "city": "驻马店"
+      },
+      {
+        "shortPinyin": "zmu",
+        "name": "中牟",
+        "code": "ZGF",
+        "pinyin": "zhongmu",
+        "abbr": "zm",
+        "city": "郑州"
+      },
+      {
+        "shortPinyin": "zmx",
+        "name": "驻马店西",
+        "code": "ZLN",
+        "pinyin": "zhumadianxi",
+        "abbr": "zmdx",
+        "city": "驻马店"
+      },
+      {
+        "shortPinyin": "zpi",
+        "name": "漳平",
+        "code": "ZPS",
+        "pinyin": "zhangping",
+        "abbr": "zp",
+        "city": "龙岩"
+      },
+      {
+        "shortPinyin": "zpu",
+        "name": "泽普",
+        "code": "ZPR",
+        "pinyin": "zepu",
+        "abbr": "zp",
+        "city": "喀什"
+      },
+      {
+        "shortPinyin": "zpx",
+        "name": "漳平西",
+        "code": "ZXG",
+        "pinyin": "zhangpingxi",
+        "abbr": "zpx",
+        "city": "龙岩"
+      },
+      {
+        "shortPinyin": "zqb",
+        "name": "章丘北",
+        "code": "ZVK",
+        "pinyin": "zhangqiubei",
+        "abbr": "zqb",
+        "city": "济南"
+      },
+      {
+        "shortPinyin": "zqd",
+        "name": "肇庆东",
+        "code": "FCQ",
+        "pinyin": "zhaoqingdong",
+        "abbr": "zqd",
+        "city": "肇庆"
+      },
+      {
+        "shortPinyin": "zqi",
+        "name": "肇庆",
+        "code": "ZVQ",
+        "pinyin": "zhaoqing",
+        "abbr": "zq",
+        "city": "肇庆"
+      },
+      {
+        "shortPinyin": "zqi",
+        "name": "章丘",
+        "code": "ZTK",
+        "pinyin": "zhangqiu",
+        "abbr": "zq",
+        "city": "济南"
+      },
+      {
+        "shortPinyin": "zqu",
+        "name": "左权",
+        "code": "ZNP",
+        "pinyin": "zuoquan",
+        "abbr": "zq",
+        "city": "晋中"
+      },
+      {
+        "shortPinyin": "zsh",
+        "name": "柞水",
+        "code": "ZSY",
+        "pinyin": "zhashui",
+        "abbr": "zs",
+        "city": "商洛"
+      },
+      {
+        "shortPinyin": "zsh",
+        "name": "珠斯花",
+        "code": "ZHD",
+        "pinyin": "zhusihua",
+        "abbr": "zsh",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "zsh",
+        "name": "中山",
+        "code": "ZSQ",
+        "pinyin": "zhongshan",
+        "abbr": "zs",
+        "city": "中山"
+      },
+      {
+        "shortPinyin": "zsh",
+        "name": "樟树",
+        "code": "ZSG",
+        "pinyin": "zhangshu",
+        "abbr": "zs",
+        "city": "宜春"
+      },
+      {
+        "shortPinyin": "zsz",
+        "name": "朱砂古镇",
+        "code": "ZSE",
+        "pinyin": "zhushaguzhen",
+        "abbr": "zsgz",
+        "city": "铜仁"
+      },
+      {
+        "shortPinyin": "zsz",
+        "name": "周水子",
+        "code": "ZIT",
+        "pinyin": "zhoushuizi",
+        "abbr": "zsz",
+        "city": "大连"
+      },
+      {
+        "shortPinyin": "zta",
+        "name": "中堂",
+        "code": "ZTA",
+        "pinyin": "zhongtang",
+        "abbr": "zt",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "zto",
+        "name": "昭通",
+        "code": "ZDW",
+        "pinyin": "zhaotong",
+        "abbr": "zt",
+        "city": "昭通"
+      },
+      {
+        "shortPinyin": "zwe",
+        "name": "中卫",
+        "code": "ZWJ",
+        "pinyin": "zhongwei",
+        "abbr": "zw",
+        "city": "中卫"
+      },
+      {
+        "shortPinyin": "zwn",
+        "name": "中卫南",
+        "code": "ZTJ",
+        "pinyin": "zhongweinan",
+        "abbr": "zwn",
+        "city": "中卫"
+      },
+      {
+        "shortPinyin": "zxi",
+        "name": "镇雄",
+        "code": "ZXE",
+        "pinyin": "zhenxiong",
+        "abbr": "zx",
+        "city": "昭通"
+      },
+      {
+        "shortPinyin": "zya",
+        "name": "紫阳",
+        "code": "ZVY",
+        "pinyin": "ziyang",
+        "abbr": "zy",
+        "city": "安康"
+      },
+      {
+        "shortPinyin": "zya",
+        "name": "枣阳",
+        "code": "ZYN",
+        "pinyin": "zaoyang",
+        "abbr": "zy",
+        "city": "襄阳"
+      },
+      {
+        "shortPinyin": "zyb",
+        "name": "资阳北",
+        "code": "FYW",
+        "pinyin": "ziyangbei",
+        "abbr": "zyb",
+        "city": "资阳"
+      },
+      {
+        "shortPinyin": "zye",
+        "name": "张掖",
+        "code": "ZYJ",
+        "pinyin": "zhangye",
+        "abbr": "zy",
+        "city": "张掖"
+      },
+      {
+        "shortPinyin": "zyi",
+        "name": "遵义",
+        "code": "ZYE",
+        "pinyin": "zunyi",
+        "abbr": "zy",
+        "city": "遵义"
+      },
+      {
+        "shortPinyin": "zyu",
+        "name": "镇远",
+        "code": "ZUW",
+        "pinyin": "zhenyuan",
+        "abbr": "zy",
+        "city": "凯里"
+      },
+      {
+        "shortPinyin": "zyx",
+        "name": "遵义西",
+        "code": "ZIW",
+        "pinyin": "zunyixi",
+        "abbr": "zyx",
+        "city": "遵义"
+      },
+      {
+        "shortPinyin": "zyx",
+        "name": "张掖西",
+        "code": "ZEJ",
+        "pinyin": "zhangyexi",
+        "abbr": "zyx",
+        "city": "张掖"
+      },
+      {
+        "shortPinyin": "zzb",
+        "name": "资中北",
+        "code": "WZW",
+        "pinyin": "zizhongbei",
+        "abbr": "zzb",
+        "city": "内江"
+      },
+      {
+        "shortPinyin": "zzd",
+        "name": "漳州东",
+        "code": "GOS",
+        "pinyin": "zhangzhoudong",
+        "abbr": "zzd",
+        "city": "漳州"
+      },
+      {
+        "shortPinyin": "zzd",
+        "name": "涿州东",
+        "code": "ZAP",
+        "pinyin": "zhuozhoudong",
+        "abbr": "zzd",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "zzh",
+        "name": "枣庄",
+        "code": "ZEK",
+        "pinyin": "zaozhuang",
+        "abbr": "zz",
+        "city": "枣庄"
+      },
+      {
+        "shortPinyin": "zzh",
+        "name": "漳州",
+        "code": "ZUS",
+        "pinyin": "zhangzhou",
+        "abbr": "zz",
+        "city": "漳州"
+      },
+      {
+        "shortPinyin": "zzh",
+        "name": "株洲",
+        "code": "ZZQ",
+        "pinyin": "zhuzhou",
+        "abbr": "zz",
+        "city": "株洲"
+      },
+      {
+        "shortPinyin": "zzh",
+        "name": "庄寨",
+        "code": "VOK",
+        "pinyin": "zhuangzhai",
+        "abbr": "zz",
+        "city": "菏泽"
+      },
+      {
+        "shortPinyin": "zzn",
+        "name": "株洲南",
+        "code": "KVQ",
+        "pinyin": "zhuzhounan",
+        "abbr": "zzn",
+        "city": "株洲"
+      },
+      {
+        "shortPinyin": "zzx",
+        "name": "枣庄西",
+        "code": "ZFK",
+        "pinyin": "zaozhuangxi",
+        "abbr": "zzx",
+        "city": "枣庄"
+      },
+      {
+        "shortPinyin": "zzx",
+        "name": "株洲西",
+        "code": "ZAQ",
+        "pinyin": "zhuzhouxi",
+        "abbr": "zzx",
+        "city": "株洲"
+      },
+      {
+        "shortPinyin": "zan",
+        "name": "镇安",
+        "code": "ZEY",
+        "pinyin": "zhenan",
+        "abbr": "za",
+        "city": "商洛"
+      },
+      {
+        "shortPinyin": "zan",
+        "name": "治安",
+        "code": "ZAD",
+        "pinyin": "zhian",
+        "abbr": "za",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "zba",
+        "name": "招柏",
+        "code": "ZBP",
+        "pinyin": "zhaobai",
+        "abbr": "zb",
+        "city": "大同"
+      },
+      {
+        "shortPinyin": "zbw",
+        "name": "张百湾",
+        "code": "ZUP",
+        "pinyin": "zhangbaiwan",
+        "abbr": "zbw",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "zcd",
+        "name": "中川机场东",
+        "code": "ZRJ",
+        "pinyin": "zhongchuanjichangdong",
+        "abbr": "zcjcd",
+        "city": "兰州"
+      },
+      {
+        "shortPinyin": "zch",
+        "name": "子长",
+        "code": "ZHY",
+        "pinyin": "zichang",
+        "abbr": "zc",
+        "city": "延安"
+      },
+      {
+        "shortPinyin": "zch",
+        "name": "赵城",
+        "code": "ZCV",
+        "pinyin": "zhaocheng",
+        "abbr": "zc",
+        "city": "临汾"
+      },
+      {
+        "shortPinyin": "zch",
+        "name": "张槎",
+        "code": "ZAA",
+        "pinyin": "zhangcha",
+        "abbr": "zc",
+        "city": "佛山"
+      },
+      {
+        "shortPinyin": "zch",
+        "name": "枝城",
+        "code": "ZCN",
+        "pinyin": "zhicheng",
+        "abbr": "zc",
+        "city": "宜昌"
+      },
+      {
+        "shortPinyin": "zch",
+        "name": "邹城",
+        "code": "ZIK",
+        "pinyin": "zoucheng",
+        "abbr": "zc",
+        "city": "济宁"
+      },
+      {
+        "shortPinyin": "zch",
+        "name": "诸城",
+        "code": "ZQK",
+        "pinyin": "zhucheng",
+        "abbr": "zc",
+        "city": "潍坊"
+      },
+      {
+        "shortPinyin": "zda",
+        "name": "章党",
+        "code": "ZHT",
+        "pinyin": "zhangdang",
+        "abbr": "zd",
+        "city": "抚顺"
+      },
+      {
+        "shortPinyin": "zdo",
+        "name": "准东",
+        "code": "ZER",
+        "pinyin": "zhundong",
+        "abbr": "zd",
+        "city": "昌吉"
+      },
+      {
+        "shortPinyin": "zdo",
+        "name": "肇东",
+        "code": "ZDB",
+        "pinyin": "zhaodong",
+        "abbr": "zd",
+        "city": "绥化"
+      },
+      {
+        "shortPinyin": "zfp",
+        "name": "照福铺",
+        "code": "ZFM",
+        "pinyin": "zhaofupu",
+        "abbr": "zfp",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "zfu",
+        "name": "芝罘",
+        "code": "GZK",
+        "pinyin": "zhifu",
+        "abbr": "zf",
+        "city": "烟台"
+      },
+      {
+        "shortPinyin": "zge",
+        "name": "准格尔",
+        "code": "ZEC",
+        "pinyin": "zhungeer",
+        "abbr": "zge",
+        "city": "鄂尔多斯"
+      },
+      {
+        "shortPinyin": "zgt",
+        "name": "章古台",
+        "code": "ZGD",
+        "pinyin": "zhanggutai",
+        "abbr": "zgt",
+        "city": "阜新"
+      },
+      {
+        "shortPinyin": "zgu",
+        "name": "赵光",
+        "code": "ZGB",
+        "pinyin": "zhaoguang",
+        "abbr": "zg",
+        "city": "黑河"
+      },
+      {
+        "shortPinyin": "zhe",
+        "name": "政和",
+        "code": "ZES",
+        "pinyin": "zhenghe",
+        "abbr": "zh",
+        "city": "南平"
+      },
+      {
+        "shortPinyin": "zhe",
+        "name": "中和",
+        "code": "ZHX",
+        "pinyin": "zhonghe",
+        "abbr": "zh",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "zjb",
+        "name": "织金北",
+        "code": "ZJE",
+        "pinyin": "zhijinbei",
+        "abbr": "zjb",
+        "city": "毕节"
+      },
+      {
+        "shortPinyin": "zjb",
+        "name": "枝江北",
+        "code": "ZIN",
+        "pinyin": "zhijiangbei",
+        "abbr": "zjb",
+        "city": "宜昌"
+      },
+      {
+        "shortPinyin": "zjc",
+        "name": "钟家村",
+        "code": "ZJY",
+        "pinyin": "zhongjiacun",
+        "abbr": "zjc",
+        "city": "渭南"
+      },
+      {
+        "shortPinyin": "zjg",
+        "name": "紫荆关",
+        "code": "ZYP",
+        "pinyin": "zijingguan",
+        "abbr": "zjg",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "zjg",
+        "name": "朱家沟",
+        "code": "ZUB",
+        "pinyin": "zhujiagou",
+        "abbr": "zjg",
+        "city": "牡丹江"
+      },
+      {
+        "shortPinyin": "zjt",
+        "name": "周家屯",
+        "code": "ZOD",
+        "pinyin": "zhoujiatun",
+        "abbr": "zjt",
+        "city": "锦州"
+      },
+      {
+        "shortPinyin": "zjw",
+        "name": "褚家湾",
+        "code": "CWJ",
+        "pinyin": "zhujiawan",
+        "abbr": "zjw",
+        "city": "固原"
+      },
+      {
+        "shortPinyin": "zka",
+        "name": "仲恺",
+        "code": "ZKA",
+        "pinyin": "zhongkai",
+        "abbr": "zk",
+        "city": "惠州"
+      },
+      {
+        "shortPinyin": "zko",
+        "name": "曾口",
+        "code": "ZKE",
+        "pinyin": "zengkou",
+        "abbr": "zk",
+        "city": "巴中"
+      },
+      {
+        "shortPinyin": "zla",
+        "name": "张兰",
+        "code": "ZLV",
+        "pinyin": "zhanglan",
+        "abbr": "zl",
+        "city": "晋中"
+      },
+      {
+        "shortPinyin": "zli",
+        "name": "珠琳",
+        "code": "ZOM",
+        "pinyin": "zhulin",
+        "abbr": "zl",
+        "city": "文山"
+      },
+      {
+        "shortPinyin": "zli",
+        "name": "枣林",
+        "code": "ZIV",
+        "pinyin": "zaolin",
+        "abbr": "zl",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "zlt",
+        "name": "扎鲁特",
+        "code": "ZLD",
+        "pinyin": "zhalute",
+        "abbr": "zlt",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "zmd",
+        "name": "樟木头东",
+        "code": "ZRQ",
+        "pinyin": "zhangmutoudong",
+        "abbr": "zmtd",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "zmt",
+        "name": "樟木头",
+        "code": "ZOQ",
+        "pinyin": "zhangmutou",
+        "abbr": "zmt",
+        "city": "东莞"
+      },
+      {
+        "shortPinyin": "zna",
+        "name": "扎囊",
+        "code": "ZNO",
+        "pinyin": "zhanang",
+        "abbr": "zn",
+        "city": "扎囊"
+      },
+      {
+        "shortPinyin": "znd",
+        "name": "中宁东",
+        "code": "ZDJ",
+        "pinyin": "zhongningdong",
+        "abbr": "znd",
+        "city": "中卫"
+      },
+      {
+        "shortPinyin": "zni",
+        "name": "中宁",
+        "code": "VNJ",
+        "pinyin": "zhongning",
+        "abbr": "zn",
+        "city": "中卫"
+      },
+      {
+        "shortPinyin": "zni",
+        "name": "周宁",
+        "code": "ZNS",
+        "pinyin": "zhouning",
+        "abbr": "zn",
+        "city": "宁德"
+      },
+      {
+        "shortPinyin": "znn",
+        "name": "中宁南",
+        "code": "ZNJ",
+        "pinyin": "zhongningnan",
+        "abbr": "znn",
+        "city": "中卫"
+      },
+      {
+        "shortPinyin": "zpi",
+        "name": "邹平",
+        "code": "ZLK",
+        "pinyin": "zouping",
+        "abbr": "zp",
+        "city": "滨州"
+      },
+      {
+        "shortPinyin": "zpi",
+        "name": "镇平",
+        "code": "ZPF",
+        "pinyin": "zhenping",
+        "abbr": "zp",
+        "city": "南阳"
+      },
+      {
+        "shortPinyin": "zpu",
+        "name": "漳浦",
+        "code": "ZCS",
+        "pinyin": "zhangpu",
+        "abbr": "zp",
+        "city": "漳州"
+      },
+      {
+        "shortPinyin": "zqi",
+        "name": "张桥",
+        "code": "ZQY",
+        "pinyin": "zhangqiao",
+        "abbr": "zq",
+        "city": "渭南"
+      },
+      {
+        "shortPinyin": "zqi",
+        "name": "枣强",
+        "code": "ZVP",
+        "pinyin": "zaoqiang",
+        "abbr": "zq",
+        "city": "衡水"
+      },
+      {
+        "shortPinyin": "zqi",
+        "name": "庄桥",
+        "code": "ZQH",
+        "pinyin": "zhuangqiao",
+        "abbr": "zq",
+        "city": "宁波"
+      },
+      {
+        "shortPinyin": "zrh",
+        "name": "朱日和",
+        "code": "ZRC",
+        "pinyin": "zhurihe",
+        "abbr": "zrh",
+        "city": "锡林郭勒"
+      },
+      {
+        "shortPinyin": "zsb",
+        "name": "中山北",
+        "code": "ZGQ",
+        "pinyin": "zhongshanbei",
+        "abbr": "zsb",
+        "city": "中山"
+      },
+      {
+        "shortPinyin": "zsd",
+        "name": "樟树东",
+        "code": "ZOG",
+        "pinyin": "zhangshudong",
+        "abbr": "zsd",
+        "city": "宜春"
+      },
+      {
+        "shortPinyin": "zsh",
+        "name": "钟山",
+        "code": "ZSZ",
+        "pinyin": "zhongshan",
+        "abbr": "zs",
+        "city": "贺州"
+      },
+      {
+        "shortPinyin": "zsh",
+        "name": "昭山",
+        "code": "KWQ",
+        "pinyin": "zhaoshan",
+        "abbr": "zs",
+        "city": "湘潭"
+      },
+      {
+        "shortPinyin": "zsx",
+        "name": "钟山西",
+        "code": "ZAZ",
+        "pinyin": "zhongshanxi",
+        "abbr": "zsx",
+        "city": "贺州"
+      },
+      {
+        "shortPinyin": "zts",
+        "name": "支提山",
+        "code": "ZIS",
+        "pinyin": "zhitishan",
+        "abbr": "zts",
+        "city": "宁德"
+      },
+      {
+        "shortPinyin": "zwo",
+        "name": "珠窝",
+        "code": "ZOP",
+        "pinyin": "zhuwo",
+        "abbr": "zw",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "zwt",
+        "name": "张维屯",
+        "code": "ZWB",
+        "pinyin": "zhangweitun",
+        "abbr": "zwt",
+        "city": "绥化"
+      },
+      {
+        "shortPinyin": "zwu",
+        "name": "彰武",
+        "code": "ZWD",
+        "pinyin": "zhangwu",
+        "abbr": "zw",
+        "city": "阜新"
+      },
+      {
+        "shortPinyin": "zxi",
+        "name": "洲心",
+        "code": "ZIA",
+        "pinyin": "zhouxin",
+        "abbr": "zx",
+        "city": "清远"
+      },
+      {
+        "shortPinyin": "zxi",
+        "name": "漳县",
+        "code": "ZXJ",
+        "pinyin": "zhangxian",
+        "abbr": "zx",
+        "city": "定西"
+      },
+      {
+        "shortPinyin": "zxi",
+        "name": "资溪",
+        "code": "ZXS",
+        "pinyin": "zixi",
+        "abbr": "zx",
+        "city": "资溪"
+      },
+      {
+        "shortPinyin": "zxi",
+        "name": "棕溪",
+        "code": "ZOY",
+        "pinyin": "zongxi",
+        "abbr": "zx",
+        "city": "安康"
+      },
+      {
+        "shortPinyin": "zxi",
+        "name": "镇西",
+        "code": "ZVT",
+        "pinyin": "zhenxi",
+        "abbr": "zx",
+        "city": "白城"
+      },
+      {
+        "shortPinyin": "zxi",
+        "name": "钟祥",
+        "code": "ZTN",
+        "pinyin": "zhongxiang",
+        "abbr": "zx",
+        "city": "荆门"
+      },
+      {
+        "shortPinyin": "zxi",
+        "name": "张辛",
+        "code": "ZIP",
+        "pinyin": "zhangxin",
+        "abbr": "zx",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "zxq",
+        "name": "正镶白旗",
+        "code": "ZXC",
+        "pinyin": "zhengxiangbaiqi",
+        "abbr": "zxbq",
+        "city": "锡林郭勒"
+      },
+      {
+        "shortPinyin": "zyn",
+        "name": "遵义南",
+        "code": "ZNE",
+        "pinyin": "zunyinan",
+        "abbr": "zyn",
+        "city": "遵义"
+      },
+      {
+        "shortPinyin": "zyu",
+        "name": "竹园",
+        "code": "ZUM",
+        "pinyin": "zhuyuan",
+        "abbr": "zy",
+        "city": "蒙自"
+      },
+      {
+        "shortPinyin": "zyu",
+        "name": "招远",
+        "code": "VDK",
+        "pinyin": "zhaoyuan",
+        "abbr": "zy",
+        "city": "烟台"
+      },
+      {
+        "shortPinyin": "zzd",
+        "name": "枣庄东",
+        "code": "ZNK",
+        "pinyin": "zaozhuangdong",
+        "abbr": "zzd",
+        "city": "枣庄"
+      },
+      {
+        "shortPinyin": "zzd",
+        "name": "卓资东",
+        "code": "ZDC",
+        "pinyin": "zhuozidong",
+        "abbr": "zzd",
+        "city": "乌兰察布"
+      },
+      {
+        "shortPinyin": "zzh",
+        "name": "子洲",
+        "code": "ZZY",
+        "pinyin": "zizhou",
+        "abbr": "zz",
+        "city": "榆林"
+      },
+      {
+        "shortPinyin": "zzh",
+        "name": "涿州",
+        "code": "ZXP",
+        "pinyin": "zhuozhou",
+        "abbr": "zz",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "zzh",
+        "name": "中寨",
+        "code": "ZZM",
+        "pinyin": "zhongzhai",
+        "abbr": "zz",
+        "city": "曲靖"
+      },
+      {
+        "shortPinyin": "zzh",
+        "name": "壮志",
+        "code": "ZUX",
+        "pinyin": "zhuangzhi",
+        "abbr": "zz",
+        "city": "大庆"
+      },
+      {
+        "shortPinyin": "zzi",
+        "name": "咋子",
+        "code": "ZAL",
+        "pinyin": "zhazi",
+        "abbr": "zz",
+        "city": "白山"
+      },
+      {
+        "shortPinyin": "zzs",
+        "name": "卓资山",
+        "code": "ZZC",
+        "pinyin": "zhuozishan",
+        "abbr": "zzs",
+        "city": "乌兰察布"
+      },
+      {
+        "shortPinyin": "zch",
+        "name": "增城",
+        "code": "ZCA",
+        "pinyin": "zengcheng",
+        "abbr": "zc",
+        "city": "广州"
+      },
+      {
+        "shortPinyin": "zjg",
+        "name": "镇江关",
+        "code": "ZEE",
+        "pinyin": "zhenjiangguan",
+        "abbr": "zjg",
+        "city": "阿坝藏族羌族自治州"
+      },
+      {
+        "shortPinyin": "zyx",
+        "name": "资阳西",
+        "code": "ZIE",
+        "pinyin": "ziyangxi",
+        "abbr": "zyx",
+        "city": "资阳"
+      },
+      {
+        "shortPinyin": "zzx",
+        "name": "资中西",
+        "code": "ZZE",
+        "pinyin": "zizhongxi",
+        "abbr": "zzx",
+        "city": "内江"
+      }
+    ],
+    "A": [
+      {
+        "shortPinyin": "aax",
+        "name": "昂昂溪",
+        "code": "AAX",
+        "pinyin": "angangxi",
+        "abbr": "aax",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "acb",
+        "name": "阿城北",
+        "code": "ABB",
+        "pinyin": "achengbei",
+        "abbr": "acb",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "ach",
+        "name": "阿城",
+        "code": "ACB",
+        "pinyin": "acheng",
+        "abbr": "ac",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "aci",
+        "name": "安次",
+        "code": "ACI",
+        "pinyin": "anci",
+        "abbr": "ac",
+        "city": "廊坊"
+      },
+      {
+        "shortPinyin": "ada",
+        "name": "安达",
+        "code": "ADX",
+        "pinyin": "anda",
+        "abbr": "ad",
+        "city": "绥化"
+      },
+      {
+        "shortPinyin": "ade",
+        "name": "安德",
+        "code": "ARW",
+        "pinyin": "ande",
+        "abbr": "ad",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "aeb",
+        "name": "阿尔山北",
+        "code": "ARX",
+        "pinyin": "aershanbei",
+        "abbr": "aesb",
+        "city": "兴安"
+      },
+      {
+        "shortPinyin": "aes",
+        "name": "阿尔山",
+        "code": "ART",
+        "pinyin": "aershan",
+        "abbr": "aes",
+        "city": "兴安"
+      },
+      {
+        "shortPinyin": "aji",
+        "name": "安吉",
+        "code": "AJU",
+        "pinyin": "anji",
+        "abbr": "aj",
+        "city": "湖州"
+      },
+      {
+        "shortPinyin": "aji",
+        "name": "安靖",
+        "code": "PYW",
+        "pinyin": "anjing",
+        "abbr": "aj",
+        "city": "成都"
+      },
+      {
+        "shortPinyin": "aji",
+        "name": "安家",
+        "code": "AJB",
+        "pinyin": "anjia",
+        "abbr": "aj",
+        "city": "哈尔滨"
+      },
+      {
+        "shortPinyin": "aka",
+        "name": "安康",
+        "code": "AKY",
+        "pinyin": "ankang",
+        "abbr": "ak",
+        "city": "安康"
+      },
+      {
+        "shortPinyin": "aks",
+        "name": "阿克苏",
+        "code": "ASR",
+        "pinyin": "akesu",
+        "abbr": "aks",
+        "city": "阿克苏"
+      },
+      {
+        "shortPinyin": "akt",
+        "name": "阿克陶",
+        "code": "AER",
+        "pinyin": "aketao",
+        "abbr": "akt",
+        "city": "阿图什"
+      },
+      {
+        "shortPinyin": "ale",
+        "name": "阿拉尔",
+        "code": "AOR",
+        "pinyin": "alaer",
+        "abbr": "ale",
+        "city": "阿克苏"
+      },
+      {
+        "shortPinyin": "alh",
+        "name": "阿里河",
+        "code": "AHX",
+        "pinyin": "alihe",
+        "abbr": "alh",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "alk",
+        "name": "阿拉山口",
+        "code": "AKR",
+        "pinyin": "alashankou",
+        "abbr": "alsk",
+        "city": "博乐"
+      },
+      {
+        "shortPinyin": "alt",
+        "name": "阿勒泰",
+        "code": "AUR",
+        "pinyin": "aletai",
+        "abbr": "alt",
+        "city": "阿勒泰"
+      },
+      {
+        "shortPinyin": "alu",
+        "name": "安陆",
+        "code": "ALN",
+        "pinyin": "anlu",
+        "abbr": "al",
+        "city": "孝感"
+      },
+      {
+        "shortPinyin": "alx",
+        "name": "安陆西",
+        "code": "AXN",
+        "pinyin": "anluxi",
+        "abbr": "alx",
+        "city": "孝感"
+      },
+      {
+        "shortPinyin": "api",
+        "name": "安平",
+        "code": "APT",
+        "pinyin": "anping",
+        "abbr": "ap",
+        "city": "辽阳"
+      },
+      {
+        "shortPinyin": "aqi",
+        "name": "安庆",
+        "code": "AQH",
+        "pinyin": "anqing",
+        "abbr": "aq",
+        "city": "安庆"
+      },
+      {
+        "shortPinyin": "aqx",
+        "name": "安庆西",
+        "code": "AIU",
+        "pinyin": "anqingxi",
+        "abbr": "aqx",
+        "city": "安庆"
+      },
+      {
+        "shortPinyin": "ash",
+        "name": "安顺",
+        "code": "ASW",
+        "pinyin": "anshun",
+        "abbr": "as",
+        "city": "安顺"
+      },
+      {
+        "shortPinyin": "ash",
+        "name": "鞍山",
+        "code": "AST",
+        "pinyin": "anshan",
+        "abbr": "as",
+        "city": "鞍山"
+      },
+      {
+        "shortPinyin": "asx",
+        "name": "安顺西",
+        "code": "ASE",
+        "pinyin": "anshunxi",
+        "abbr": "asx",
+        "city": "安顺"
+      },
+      {
+        "shortPinyin": "asx",
+        "name": "鞍山西",
+        "code": "AXT",
+        "pinyin": "anshanxi",
+        "abbr": "asx",
+        "city": "鞍山"
+      },
+      {
+        "shortPinyin": "atb",
+        "name": "安亭北",
+        "code": "ASH",
+        "pinyin": "antingbei",
+        "abbr": "atb",
+        "city": "上海"
+      },
+      {
+        "shortPinyin": "atx",
+        "name": "安亭西",
+        "code": "AXU",
+        "pinyin": "antingxi",
+        "abbr": "atx",
+        "city": "上海"
+      },
+      {
+        "shortPinyin": "aya",
+        "name": "安阳",
+        "code": "AYF",
+        "pinyin": "anyang",
+        "abbr": "ay",
+        "city": "安阳"
+      },
+      {
+        "shortPinyin": "ayd",
+        "name": "安阳东",
+        "code": "ADF",
+        "pinyin": "anyangdong",
+        "abbr": "ayd",
+        "city": "安阳"
+      },
+      {
+        "shortPinyin": "abq",
+        "name": "阿巴嘎旗",
+        "code": "AQC",
+        "pinyin": "abagaqi",
+        "abbr": "abgq",
+        "city": "锡林郭勒"
+      },
+      {
+        "shortPinyin": "adi",
+        "name": "安定",
+        "code": "ADP",
+        "pinyin": "anding",
+        "abbr": "ad",
+        "city": "北京"
+      },
+      {
+        "shortPinyin": "adu",
+        "name": "安多",
+        "code": "ADO",
+        "pinyin": "anduo",
+        "abbr": "ad",
+        "city": "那曲"
+      },
+      {
+        "shortPinyin": "agu",
+        "name": "安广",
+        "code": "AGT",
+        "pinyin": "anguang",
+        "abbr": "ag",
+        "city": "白城"
+      },
+      {
+        "shortPinyin": "aha",
+        "name": "敖汉",
+        "code": "YED",
+        "pinyin": "aohan",
+        "abbr": "ah",
+        "city": "赤峰"
+      },
+      {
+        "shortPinyin": "ahe",
+        "name": "艾河",
+        "code": "AHP",
+        "pinyin": "aihe",
+        "abbr": "ah",
+        "city": "保定"
+      },
+      {
+        "shortPinyin": "ahu",
+        "name": "安化",
+        "code": "PKQ",
+        "pinyin": "anhua",
+        "abbr": "ah",
+        "city": "益阳"
+      },
+      {
+        "shortPinyin": "ajc",
+        "name": "艾家村",
+        "code": "AJJ",
+        "pinyin": "aijiacun",
+        "abbr": "ajc",
+        "city": "吴忠"
+      },
+      {
+        "shortPinyin": "ajd",
+        "name": "安江东",
+        "code": "ADA",
+        "pinyin": "anjiangdong",
+        "abbr": "ajd",
+        "city": "怀化"
+      },
+      {
+        "shortPinyin": "aji",
+        "name": "阿金",
+        "code": "AJD",
+        "pinyin": "ajin",
+        "abbr": "aj",
+        "city": "阜新"
+      },
+      {
+        "shortPinyin": "aji",
+        "name": "安匠",
+        "code": "MJP",
+        "pinyin": "anjiang",
+        "abbr": "aj",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "aks",
+        "name": "阿克塞",
+        "code": "AKJ",
+        "pinyin": "akesai",
+        "abbr": "aks",
+        "city": "酒泉"
+      },
+      {
+        "shortPinyin": "aky",
+        "name": "安口窑",
+        "code": "AYY",
+        "pinyin": "ankouyao",
+        "abbr": "aky",
+        "city": "宝鸡"
+      },
+      {
+        "shortPinyin": "alg",
+        "name": "敖力布告",
+        "code": "ALD",
+        "pinyin": "aolibugao",
+        "abbr": "albg",
+        "city": "通辽"
+      },
+      {
+        "shortPinyin": "alo",
+        "name": "安龙",
+        "code": "AUZ",
+        "pinyin": "anlong",
+        "abbr": "al",
+        "city": "兴义"
+      },
+      {
+        "shortPinyin": "als",
+        "name": "阿龙山",
+        "code": "ASX",
+        "pinyin": "alongshan",
+        "abbr": "als",
+        "city": "呼伦贝尔"
+      },
+      {
+        "shortPinyin": "ame",
+        "name": "阿木尔",
+        "code": "JTX",
+        "pinyin": "amuer",
+        "abbr": "ame",
+        "city": "加格达奇"
+      },
+      {
+        "shortPinyin": "anz",
+        "name": "阿南庄",
+        "code": "AZM",
+        "pinyin": "ananzhuang",
+        "abbr": "anz",
+        "city": "楚雄"
+      },
+      {
+        "shortPinyin": "are",
+        "name": "安仁",
+        "code": "ARG",
+        "pinyin": "anren",
+        "abbr": "ar",
+        "city": "郴州"
+      },
+      {
+        "shortPinyin": "ata",
+        "name": "安塘",
+        "code": "ATV",
+        "pinyin": "antang",
+        "abbr": "at",
+        "city": "忻州"
+      },
+      {
+        "shortPinyin": "ats",
+        "name": "阿图什",
+        "code": "ATR",
+        "pinyin": "atushi",
+        "abbr": "ats",
+        "city": "阿图什"
+      },
+      {
+        "shortPinyin": "atu",
+        "name": "安图",
+        "code": "ATL",
+        "pinyin": "antu",
+        "abbr": "at",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "atx",
+        "name": "安图西",
+        "code": "AXL",
+        "pinyin": "antuxi",
+        "abbr": "atx",
+        "city": "延边"
+      },
+      {
+        "shortPinyin": "awt",
+        "name": "阿瓦提",
+        "code": "AWR",
+        "pinyin": "awati",
+        "abbr": "awt",
+        "city": "阿克苏"
+      },
+      {
+        "shortPinyin": "axi",
+        "name": "安溪",
+        "code": "AXS",
+        "pinyin": "anxi",
+        "abbr": "ax",
+        "city": "安溪"
+      },
+      {
+        "shortPinyin": "axd",
+        "name": "安溪东",
+        "code": "ANS",
+        "pinyin": "anxidong",
+        "abbr": "axd",
+        "city": "泉州"
+      },
+      {
+        "shortPinyin": "aze",
+        "name": "安泽",
+        "code": "AEV",
+        "pinyin": "anze",
+        "abbr": "az",
+        "city": "临汾"
+      },
+      {
+        "shortPinyin": "azh",
+        "name": "安州",
+        "code": "AZE",
+        "pinyin": "anzhou",
+        "abbr": "az",
+        "city": "绵阳"
+      }
+    ],
+    "E": [
+      {
+        "shortPinyin": "ebn",
+        "name": "峨边南",
+        "code": "ENE",
+        "pinyin": "ebiannan",
+        "abbr": "ebn",
+        "city": "乐山"
+      },
+      {
+        "shortPinyin": "ees",
+        "name": "鄂尔多斯",
+        "code": "EEC",
+        "pinyin": "eerduosi",
+        "abbr": "eeds",
+        "city": "鄂尔多斯"
+      },
+      {
+        "shortPinyin": "ejn",
+        "name": "额济纳",
+        "code": "EJC",
+        "pinyin": "ejina",
+        "abbr": "ejn",
+        "city": "阿拉善"
+      },
+      {
+        "shortPinyin": "eli",
+        "name": "二连",
+        "code": "RLC",
+        "pinyin": "erlian",
+        "abbr": "el",
+        "city": "二连浩特"
+      },
+      {
+        "shortPinyin": "eme",
+        "name": "峨眉",
+        "code": "EMW",
+        "pinyin": "emei",
+        "abbr": "em",
+        "city": "乐山"
+      },
+      {
+        "shortPinyin": "ems",
+        "name": "峨眉山",
+        "code": "IXW",
+        "pinyin": "emeishan",
+        "abbr": "ems",
+        "city": "乐山"
+      },
+      {
+        "shortPinyin": "esh",
+        "name": "恩施",
+        "code": "ESN",
+        "pinyin": "enshi",
+        "abbr": "es",
+        "city": "恩施"
+      },
+      {
+        "shortPinyin": "ezh",
+        "name": "鄂州",
+        "code": "ECN",
+        "pinyin": "ezhou",
+        "abbr": "ez",
+        "city": "鄂州"
+      },
+      {
+        "shortPinyin": "edm",
+        "name": "二道沟门",
+        "code": "RDP",
+        "pinyin": "erdaogoumen",
+        "abbr": "edgm",
+        "city": "承德"
+      },
+      {
+        "shortPinyin": "edw",
+        "name": "二道湾",
+        "code": "RDX",
+        "pinyin": "erdaowan",
+        "abbr": "edw",
+        "city": "齐齐哈尔"
+      },
+      {
+        "shortPinyin": "elo",
+        "name": "二龙",
+        "code": "RLD",
+        "pinyin": "erlong",
+        "abbr": "el",
+        "city": "赤峰"
+      },
+      {
+        "shortPinyin": "elt",
+        "name": "二龙山屯",
+        "code": "ELA",
+        "pinyin": "erlongshantun",
+        "abbr": "elst",
+        "city": "黑河"
+      },
+      {
+        "shortPinyin": "emh",
+        "name": "二密河",
+        "code": "RML",
+        "pinyin": "ermihe",
+        "abbr": "emh",
+        "city": "通化"
+      },
+      {
+        "shortPinyin": "emi",
+        "name": "额敏",
+        "code": "EMR",
+        "pinyin": "emin",
+        "abbr": "em",
+        "city": "塔城"
+      },
+      {
+        "shortPinyin": "epi",
+        "name": "恩平",
+        "code": "PXQ",
+        "pinyin": "enping",
+        "abbr": "ep",
+        "city": "江门"
+      },
+      {
+        "shortPinyin": "esh",
+        "name": "峨山",
+        "code": "EVM",
+        "pinyin": "eshan",
+        "abbr": "es",
+        "city": "峨山"
+      },
+      {
+        "shortPinyin": "eyi",
+        "name": "二营",
+        "code": "RYJ",
+        "pinyin": "erying",
+        "abbr": "ey",
+        "city": "固原"
+      },
+      {
+        "shortPinyin": "ezd",
+        "name": "鄂州东",
+        "code": "EFN",
+        "pinyin": "ezhoudong",
+        "abbr": "ezd",
+        "city": "鄂州"
+      }
+    ],
+    "R": [
+      {
+        "shortPinyin": "ran",
+        "name": "融安",
+        "code": "RAZ",
+        "pinyin": "rongan",
+        "abbr": "ra",
+        "city": "柳州"
+      },
+      {
+        "shortPinyin": "ran",
+        "name": "瑞安",
+        "code": "RAH",
+        "pinyin": "ruian",
+        "abbr": "ra",
+        "city": "温州"
+      },
+      {
+        "shortPinyin": "rcb",
+        "name": "荣昌北",
+        "code": "RQW",
+        "pinyin": "rongchangbei",
+        "abbr": "rcb",
+        "city": "荣昌"
+      },
+      {
+        "shortPinyin": "rch",
+        "name": "荣成",
+        "code": "RCK",
+        "pinyin": "rongcheng",
+        "abbr": "rc",
+        "city": "威海"
+      },
+      {
+        "shortPinyin": "rdo",
+        "name": "如东",
+        "code": "RIH",
+        "pinyin": "rudong",
+        "abbr": "rd",
+        "city": "南通"
+      },
+      {
+        "shortPinyin": "rjg",
+        "name": "汝箕沟",
+        "code": "RQJ",
+        "pinyin": "rujigou",
+        "abbr": "rjg",
+        "city": "石嘴山"
+      },
+      {
+        "shortPinyin": "rji",
+        "name": "瑞金",
+        "code": "RJG",
+        "pinyin": "ruijin",
+        "abbr": "rj",
+        "city": "赣州"
+      },
+      {
+        "shortPinyin": "rkz",
+        "name": "日喀则",
+        "code": "RKO",
+        "pinyin": "rikaze",
+        "abbr": "rkz",
+        "city": "日喀则"
+      },
+      {
+        "shortPinyin": "rpi",
+        "name": "饶平",
+        "code": "RVQ",
+        "pinyin": "raoping",
+        "abbr": "rp",
+        "city": "潮州"
+      },
+      {
+        "shortPinyin": "rqi",
+        "name": "若羌",
+        "code": "RQR",
+        "pinyin": "ruoqiang",
+        "abbr": "rq",
+        "city": "库尔勒"
+      },
+      {
+        "shortPinyin": "rsn",
+        "name": "乳山南",
+        "code": "REK",
+        "pinyin": "rushannan",
+        "abbr": "rsn",
+        "city": "威海"
+      },
+      {
+        "shortPinyin": "rzh",
+        "name": "日照",
+        "code": "RZK",
+        "pinyin": "rizhao",
+        "abbr": "rz",
+        "city": "日照"
+      },
+      {
+        "shortPinyin": "rzx",
+        "name": "日照西",
+        "code": "KZK",
+        "pinyin": "rizhaoxi",
+        "abbr": "rzx",
+        "city": "日照"
+      },
+      {
+        "shortPinyin": "rbu",
+        "name": "仁布",
+        "code": "RUO",
+        "pinyin": "renbu",
+        "abbr": "rb",
+        "city": "日喀则"
+      },
+      {
+        "shortPinyin": "rch",
+        "name": "瑞昌",
+        "code": "RCG",
+        "pinyin": "ruichang",
+        "abbr": "rc",
+        "city": "九江"
+      },
+      {
+        "shortPinyin": "rcx",
+        "name": "瑞昌西",
+        "code": "RXG",
+        "pinyin": "ruichangxi",
+        "abbr": "rcx",
+        "city": "九江"
+      },
+      {
+        "shortPinyin": "rga",
+        "name": "如皋",
+        "code": "RBH",
+        "pinyin": "rugao",
+        "abbr": "rg",
+        "city": "南通"
+      },
+      {
+        "shortPinyin": "rgn",
+        "name": "如皋南",
+        "code": "RNU",
+        "pinyin": "rugaonan",
+        "abbr": "rgn",
+        "city": "南通"
+      },
+      {
+        "shortPinyin": "rgu",
+        "name": "容桂",
+        "code": "RUQ",
+        "pinyin": "ronggui",
+        "abbr": "rg",
+        "city": "佛山"
+      },
+      {
+        "shortPinyin": "rji",
+        "name": "榕江",
+        "code": "RVW",
+        "pinyin": "rongjiang",
+        "abbr": "rj",
+        "city": "凯里"
+      },
+      {
+        "shortPinyin": "rqi",
+        "name": "任丘",
+        "code": "RQP",
+        "pinyin": "renqiu",
+        "abbr": "rq",
+        "city": "沧州"
+      },
+      {
+        "shortPinyin": "rsh",
+        "name": "融水",
+        "code": "RSZ",
+        "pinyin": "rongshui",
+        "abbr": "rs",
+        "city": "柳州"
+      },
+      {
+        "shortPinyin": "rsh",
+        "name": "乳山",
+        "code": "ROK",
+        "pinyin": "rushan",
+        "abbr": "rs",
+        "city": "威海"
+      },
+      {
+        "shortPinyin": "rxi",
+        "name": "容县",
+        "code": "RXZ",
+        "pinyin": "rongxian",
+        "abbr": "rx",
+        "city": "玉林"
+      },
+      {
+        "shortPinyin": "rya",
+        "name": "饶阳",
+        "code": "RVP",
+        "pinyin": "raoyang",
+        "abbr": "ry",
+        "city": "衡水"
+      },
+      {
+        "shortPinyin": "rya",
+        "name": "汝阳",
+        "code": "RYF",
+        "pinyin": "ruyang",
+        "abbr": "ry",
+        "city": "洛阳"
+      },
+      {
+        "shortPinyin": "ryh",
+        "name": "绕阳河",
+        "code": "RHD",
+        "pinyin": "raoyanghe",
+        "abbr": "ryh",
+        "city": "锦州"
+      },
+      {
+        "shortPinyin": "rzh",
+        "name": "汝州",
+        "code": "ROF",
+        "pinyin": "ruzhou",
+        "abbr": "rz",
+        "city": "平顶山"
+      }
+    ]
+  };
+
+module.exports = {
+  stationGroupedData
+}; 

@@ -1,0 +1,154 @@
+.station-selector {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.panel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background: #fff;
+  border-radius: 20rpx 20rpx 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #eee;
+  flex-shrink: 0;
+}
+
+.close-btn {
+  font-size: 40rpx;
+  color: #999;
+  padding: 10rpx;
+}
+
+.search {
+  margin: 20rpx 30rpx;
+  padding: 20rpx;
+  background: #f5f5f5;
+  border-radius: 10rpx;
+  flex-shrink: 0;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.station-list {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.grouped-list {
+  padding-right: 20rpx;
+  padding-left: 30rpx;
+}
+
+.section-title {
+  padding: 20rpx 30rpx;
+  background:rgb(255, 255, 255);
+  font-size: 28rpx;
+  color: #000000;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+.station-group {
+  padding: 20rpx 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20rpx 10rpx;
+}
+
+.station-item {
+  padding: 15rpx 0;
+  border: 1rpx solid #eee;
+  border-radius: 8rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.station-name {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.station-city {
+  display: none;
+}
+
+.letter-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rpx;
+  border-radius: 30rpx;
+  width: 60rpx;
+  flex-shrink: 0;
+}
+
+.letter-item {
+  padding: 8rpx 0;
+  font-size: 22rpx;
+  color: #666;
+  text-align: center;
+  width: 100%;
+}
+
+/* 
+.letter-item.active {
+  color: #3a8dff;
+  font-weight: bold;
+} 
+*/
+
+.search-results-list .station-item {
+  border-bottom: 1rpx solid #eee;
+  background-color: transparent;
+  justify-content: space-between;
+  border: none;
+  background-color:rgba(212, 212, 212, 0.19);
+  margin-bottom: 10rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.search-results-list .station-city {
+  display: inline;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.search-results {
+  padding: 0 30rpx;
+}

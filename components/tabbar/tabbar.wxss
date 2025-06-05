@@ -1,0 +1,31 @@
+/* components/tabbar/tabbar.wxss */
+.bottom-tabbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 110rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 -2rpx 12rpx #e6eaf0;
+  z-index: 100;
+  margin-bottom: 20rpx;
+}
+.tabbar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 23rpx;
+  color: #888; /* 未选中状态文本颜色 */
+  padding: 8rpx 0;
+}
+.tabbar-item.active {
+  color: #3a8dff; /* 选中状态文本颜色 */
+}
+.tabbar-icon {
+  width: 48rpx;
+  height: 48rpx;
+  margin-bottom: 10rpx;
+}

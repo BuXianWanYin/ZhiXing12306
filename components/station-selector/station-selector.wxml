@@ -1,0 +1,67 @@
+<view class="station-selector" wx:if="{{show}}">
+  <view class="mask" bindtap="onClose"></view>
+  <view class="panel">
+    <view class="header">
+      <text>{{title}}</text>
+      <view class="close-btn" bindtap="onClose">×</view>
+    </view>
+    
+    <input class="search" placeholder="{{placeholderText}}" bindinput="searchInput" />
+
+    <!-- 搜索结果 -->
+    <scroll-view scroll-y class="station-list search-results-list" wx:if="{{searchKeyword}}">
+      <view class="search-results">
+        <block wx:for="{{searchResults}}" wx:key="code">
+          <view class="station-item search-item" bindtap="onSelect" data-station="{{item}}">
+            <text class="station-name">{{item.name}}</text>
+            <text class="station-city">{{item.city}}</text>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+
+    <!-- 按字母分组的站点列表 -->
+    <view class="main-content" wx:else>
+      <scroll-view
+        scroll-y
+        class="station-list grouped-list"
+        bindscrolltolower="loadMoreStations"
+        bindscroll="onScroll"
+        scroll-into-view="{{scrollViewTarget}}"
+        scroll-with-animation
+      >
+        <block wx:for="{{letterList}}" wx:key="*this">
+          <view class="section-title" 
+                id="{{item}}" 
+                bindtap="onLetterIndexTap" data-letter="{{item}}">
+            {{item}}
+          </view>
+          <!-- 对应字母下的站点列表 - 使用 flex 或 grid 布局 -->
+          <view class="station-group" wx:if="{{groupedStations[item]}}">
+            <block wx:for="{{groupedStations[item]}}" wx:for-item="station" wx:key="code">
+              <view class="station-item" bindtap="onSelect" data-station="{{station}}">
+                <text class="station-name">{{station.name}}</text>
+              </view>
+            </block>
+          </view>
+        </block>
+      </scroll-view>
+
+      <!-- 侧边字母索引 -->
+      <view class="letter-index" 
+            bindtouchstart="onTouchStart"
+            bindtouchmove="onTouchMove"
+            bindtouchend="onTouchEnd">
+        <block wx:for="{{letterList}}" wx:key="*this">
+          <view 
+            class="letter-item {{item === activeLetterIndex ? 'active' : ''}}"
+            data-item="{{item}}"
+            bindtap="onLetterTap"
+          >
+            {{item}}
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
