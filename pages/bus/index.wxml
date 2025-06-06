@@ -42,7 +42,7 @@
 
   <!-- 快捷导航 -->
   <view class="quick-nav">
-    <view class="nav-item">
+    <view class="nav-item" bindtap="onGoFlight">
       <image class="nav-icon" src="/images/train.png"/>
       <text>火车票</text>
     </view>

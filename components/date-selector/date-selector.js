@@ -178,8 +178,8 @@ Component({
         today.setHours(0,0,0,0); // 清零时分秒，精确比较日期
 
         // 补齐上月空白日期
-        for (let i = 0; i < (startWeek === 0 ? 7 : startWeek); i++) { // 确保周日前面有空白
-          days.push({ day: '', isCurrentMonth: false });
+        for (let i = 0; i < startWeek; i++) { // 只补startWeek个空白，周日不补空
+          days.push({ day: '', isCurrentMonth: false, key: `empty-${year}-${month}-${i}` });
         }
 
         // 生成当前月份的日期数据
@@ -229,7 +229,6 @@ Component({
           days
         });
       }).catch(err => {
-          console.error('Failed to get month holiday and lunar data:', err);
           // 即使获取数据失败，也要渲染基础日历
            const days = [];
            const firstDay = new Date(year, month - 1, 1);
@@ -239,8 +238,8 @@ Component({
            const today = new Date();
            today.setHours(0,0,0,0);
 
-           for (let i = 0; i < (startWeek === 0 ? 7 : startWeek); i++) {
-             days.push({ day: '', isCurrentMonth: false });
+           for (let i = 0; i < startWeek; i++) {
+             days.push({ day: '', isCurrentMonth: false, key: `empty-${year}-${month}-${i}` });
            }
            for (let d = 1; d <= daysCount; d++) {
               const dateStr = `${year}-${month.toString().padStart(2, '0')}-${d.toString().padStart(2, '0')}`;

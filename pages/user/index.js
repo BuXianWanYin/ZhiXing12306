@@ -15,11 +15,6 @@ Page({
       });
     }
   },
-
-  onLoad() {
-    console.log('本页tabIndex:', this.data.tabIndex);
-  },
-
   // 登录
   onLogin() {
     if (!this.data.isLogin) {

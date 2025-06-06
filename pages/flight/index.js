@@ -32,12 +32,6 @@ Page({
   showFromCitySelector() {
     this.setData({ showFromCity: true });
   },
-  onShow() {
-    console.log('tabIndex:', this.data.tabIndex, typeof this.data.tabIndex);
-  },
-  onLoad() {
-    console.log('本页tabIndex:', this.data.tabIndex);
-  },
   // 显示到达城市选择器
   showToCitySelector() {
     this.setData({ showToCity: true });
@@ -74,5 +68,25 @@ Page({
     if (diff === 1) return '明天';
     const weekArr = ['日', '一', '二', '三', '四', '五', '六'];
     return `周${weekArr[target.getDay()]}`
+  },
+  onGoFlight() {
+    wx.showLoading({
+      title: '加载中...',
+      mask: true
+    });
+    wx.switchTab({
+      url: '/pages/index/index',
+      success: () => {
+        wx.hideLoading();
+      },
+      fail: (error) => {
+        wx.hideLoading();
+        wx.showToast({
+          title: '页面跳转失败',
+          icon: 'none'
+        });
+        console.error('Navigation failed:', error);
+      }
+    });
   }
 })

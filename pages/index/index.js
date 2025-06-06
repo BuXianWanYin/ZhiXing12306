@@ -16,7 +16,6 @@ Page({
       showFromStation: false, // 是否显示出发站选择器
       showToStation: false, // 是否显示到达站选择器
       showDate: false, // 是否显示日期选择器
-      tabIndex: 0
     },
     onLoad() {
       // 读取本地存储的历史记录
@@ -119,15 +118,10 @@ Page({
       this.setData({ showToStation: true });
     },
     showDateSelector() {
-      console.log('Main page date before opening selector:', this.data.date);
       this.setData({
         dateValue: this.data.date,
         showDate: true
       });
-      console.log('Main page dateValue set to:', this.data.dateValue);
-    },
-    onLoad() {
-      console.log('本页tabIndex:', this.data.tabIndex);
     },
     onFromStationSelect(e) {
       const station = e.detail.station;
@@ -214,6 +208,23 @@ Page({
       wx.setStorageSync('toStation', fromStation);
     },
     onGoFlight() {
-      wx.navigateTo({ url: '/pages/flight/index' });
+      wx.showLoading({
+        title: '加载中...',
+        mask: true
+      });
+      wx.switchTab({
+        url: '/pages/flight/index',
+        success: () => {
+          wx.hideLoading();
+        },
+        fail: (error) => {
+          wx.hideLoading();
+          wx.showToast({
+            title: '页面跳转失败',
+            icon: 'none'
+          });
+          console.error('Navigation failed:', error);
+        }
+      });
     }
   });

@@ -15,12 +15,13 @@
       </block>
     </view>
     <view class="date-selector-days">
-      <block wx:for="{{days}}" wx:key="date">
+      <block wx:for="{{days}}" wx:key="*this">
         <view
           wx:if="{{item.day}}"
           class="date-selector-day {{item.isCurrentMonth ? '' : 'date-selector-day--disabled'}} {{item.isToday ? 'date-selector-day--today' : ''}} {{item.isSelected ? 'date-selector-day--selected' : ''}}"
           bindtap="onSelectDay"
           data-date="{{item.date}}"
+          wx:key="{{item.date}}"
         >
           <text>{{item.day}}</text>
           <view class="date-selector-day-desc">
@@ -30,7 +31,7 @@
             <text wx:if="{{item.isReserve}}" class="date-selector-reserve">预约</text>
           </view>
         </view>
-        <view wx:else class="date-selector-day date-selector-day--empty"></view>
+        <view wx:else class="date-selector-day date-selector-day--empty" wx:key="{{item.key}}"></view>
       </block>
     </view>
   </view>

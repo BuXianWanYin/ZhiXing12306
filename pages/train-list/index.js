@@ -244,10 +244,8 @@ Page({
     wx.reLaunch({
       url: '/pages/index/index',
       success: () => {
-        console.log('返回首页成功');
       },
       fail: (err) => {
-        console.error('返回首页失败:', err);
         wx.showToast({
           title: '返回失败',
           icon: 'none'

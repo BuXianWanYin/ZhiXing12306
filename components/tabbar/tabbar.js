@@ -8,7 +8,7 @@ Component({
       type: Number,
       value: 0,
       observer(newVal) {
-        console.log('tabbar收到currentIndex:', newVal, typeof newVal);
+  
         this.setData({ activeTabIndex: newVal });
       }
     }
@@ -41,7 +41,7 @@ Component({
 
   lifetimes: {
     attached() {
-      console.log('tabbar attached');
+   
       this.setData({ activeTabIndex: this.data.currentIndex });
     }
   },

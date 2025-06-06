@@ -21,7 +21,6 @@
       <view class="station" bindtap="showToStationSelector">{{toStation}}</view>
     </view>
 
-
     <view class="date-row">
       <view class="date-info" bindtap="showDateSelector">
         <text class="date">{{dateText}}</text>
@@ -71,6 +70,13 @@
     </view>
   </view>
 
+  <!-- 日期选择组件 -->
+  <date-selector
+    show="{{showDate}}"
+    dateText="{{dateValue}}"
+    bind:select="onDateSelect"
+    bind:close="onDateSelectorClose" />
+
   <!-- 站点选择组件 -->
   <station-selector
     show="{{showFromStation}}"
@@ -83,12 +89,7 @@
     bind:select="onToStationSelect"
     bind:close="onStationSelectorClose" />
 
-  <!-- 日期选择组件 -->
-  <date-selector
-    show="{{showDate}}"
-    dateText="{{dateValue}}"
-    bind:select="onDateSelect"
-    bind:close="onDateSelectorClose" />
+
 
  <!-- 底部tabbar -->
   <tabbar-component></tabbar-component>
