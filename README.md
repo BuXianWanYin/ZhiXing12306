@@ -40,7 +40,7 @@
 
 1. 克隆项目
 ```bash
-git clone [https://github.com/BuXianWanYin/ZhiXing12306.git]
+git clone https://github.com/BuXianWanYin/ZhiXing12306.git
 ```
 
 2. 使用微信开发者工具打开项目
