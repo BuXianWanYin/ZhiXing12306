@@ -1,1 +1,57 @@
- 
+<view class="page">
+ <view class="title-bar">
+ <view class="nav-left" bindtap="onBack">
+    <image src="/images/back.png" class="back-icon"></image>
+  </view>
+    <text class="title">抢票</text>
+  </view>
+  <!-- 顶部提示栏 -->
+    <view class="top">
+        <view class="top-bar" bindtap="onNoticeTap">
+        <view class="policy-tag">
+        <text class="policy-text">攻略</text>
+        </view>
+        <text class="top-bar-text">抢票成功后以电话或短信通知，收到后请及时支付！</text>
+        <image class="arrow-right" src="/images/right.png"/>
+    </view>
+    </view>    
+
+  <!-- 抢票列表 -->
+  <view class="ticket-list">
+    <block wx:for="{{tickets}}" wx:key="id">
+      <view class="ticket-item">
+        <!-- 左侧内容：主要信息 + 副标题 -->
+        <view class="ticket-left-content">
+          <view class="ticket-info">
+            <text class="city">{{item.from}}</text>
+            <text class="arrow">→</text>
+            <text class="city">{{item.to}}</text>
+          </view>
+          <view class="ticket-date">{{item.date}}</view>
+          <!-- 副标题移动到这里 -->
+          <view class="ticket-subtitle">{{item.subtitle}}</view>
+        </view>
+
+        <!-- 右侧状态按钮 -->
+        <view class="ticket-status">
+          <view class="status-btn {{item.statusClass}}">
+            <text>{{item.statusText}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <!-- 分享加速包模块 -->
+  <view class="share-accelerate" bindtap="onShareAccelerateTap">
+    <view class="accelerate-icon">
+      <text>加速</text>
+    </view>
+    <view class="share-content-vertical">
+      <text class="share-title">分享赢加速包</text>
+      <text class="share-subtitle">分享给好友，可随机赢取最多10个加速包</text>
+    </view>
+    <image class="arrow-right" src="/images/right.png"/>
+  </view>
+
+</view>

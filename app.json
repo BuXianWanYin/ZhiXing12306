@@ -4,7 +4,8 @@
     "pages/train-list/index",
     "pages/flight/index",
     "pages/bus/index",
-    "pages/user/index"
+    "pages/user/index",
+    "pages/rob-ticket/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",

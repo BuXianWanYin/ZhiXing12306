@@ -10,19 +10,22 @@
 │   ├── station-selector/ # 站点选择器组件
 │   ├── swiper/          # 轮播组件
 │   ├── tabbar/          # 底部导航栏组件
+│   ├── custom-tabbar/   # 自定义底部导航栏组件
 │   └── navigation-bar/   # 导航栏组件
 ├── pages/               # 页面目录
 │   ├── train-list/      # 火车票列表页面
 │   ├── index/           # 首页
-│   ├── order/           # 订单页面
 │   ├── rob-ticket/      # 抢票页面
-│   ├── user/          # 个人中心
+│   ├── user/            # 个人中心
 │   ├── bus/             # 汽车票相关页面
 │   └── flight/          # 机票相关页面
 ├── utils/               # 工具函数目录
 ├── styles/              # 公共样式目录
 ├── images/              # 图片资源目录
-└── project.config.json  # 项目配置文件
+├── project.config.json  # 项目配置文件
+├── project.private.config.json # 项目私有配置文件
+├── sitemap.json         # 小程序搜索配置文件
+└── .eslintrc.js         # ESLint 配置文件
 ```
 
 ## 技术栈
@@ -35,6 +38,13 @@
 - 微信开发者工具
 - Node.js 环境
 - 微信小程序账号
+
+## 项目特点
+- 完整的12306购票流程模拟
+- 支持火车票、汽车票、机票查询
+- 自定义组件封装
+- 统一的代码风格和规范
+- 优化的用户体验
 
 ## 安装和使用
 
@@ -51,6 +61,11 @@ git clone https://github.com/BuXianWanYin/ZhiXing12306.git
 
 5. 编译运行
 
+## 代码规范
+项目使用 ESLint 进行代码规范检查，配置文件为 `.eslintrc.js`。在开发过程中请遵循以下规范：
+- 使用 ES6+ 语法
+- 遵循微信小程序开发规范
+- 保持代码风格统一
 
 ## 联系方式
 - 项目维护者：[QGJ]
