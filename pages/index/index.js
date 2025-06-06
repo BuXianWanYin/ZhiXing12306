@@ -1,59 +1,47 @@
 Page({
     data: {
-      banners: [
-        { url: 'https://img1.baidu.com/it/u=1234567890,1234567890&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=270' },
-        { url: 'https://img.zcool.cn/community/01b6c95e3e7e2fa8012193a3e7e2e2.jpg' },
-        { url: 'https://img.zcool.cn/community/01b6c95e3e7e2fa8012193a3e7e2e3.jpg' }
-      ],
-      activeTab: 0,
-      fromStation: '哈尔滨',
-      toStation: '北京',
-      date: '2024-06-06',
-      weekday: '周四',
+      fromStation: '南宁东', // 默认出发站
+      toStation: '北京', // 默认到达站
+      date: '', // 日期
+      dateText: '', // 格式化的日期文本
+      dateValue: '', // 日期值
       isHighSpeed: false,
       isStudent: false,
-      history: ['北京-佳木斯', '佳木斯-北京'],
-      quickNav: [
-        { icon: 'https://unicons.iconscout.com/release/v4.0.0/svg/solid/bolt.svg', title: '极速抢票' },
-        { icon: 'https://unicons.iconscout.com/release/v4.0.0/svg/solid/seat.svg', title: '在线选座' },
-        { icon: 'https://unicons.iconscout.com/release/v4.0.0/svg/solid/gift.svg', title: '抢手好货' },
-        { icon: 'https://unicons.iconscout.com/release/v4.0.0/svg/solid/building.svg', title: '超值酒店' }
-      ],
+      history: [],
       tabbarIndex: 0,
-      isStudentTicket: false,
-      isHighSpeedTrain: false,
-      historyList: [],
-      dateText: '6月6日',
-      dayText: '明天',
-      showFromStation: false,
-      showToStation: false,
-      showDate: false
+      isStudentTicket: false, // 是否选择学生票
+      isHighSpeedTrain: false, // 是否只显示高铁动车
+      historyList: [], // 历史搜索记录
+      dayText: '', // 星期几文本
+      showFromStation: false, // 是否显示出发站选择器
+      showToStation: false, // 是否显示到达站选择器
+      showDate: false, // 是否显示日期选择器
     },
     onLoad() {
-      // 假数据
-      const defaultHistory = [
-        '北京-佳木斯',
-        '佳木斯-北京',
-        '上海-广州'
-      ];
-      // 先尝试读取本地存储
-      let history = wx.getStorageSync('historyList');
-      // 如果本地没有，则用假数据
-      if (!history || history.length === 0) {
-        history = defaultHistory;
-        wx.setStorageSync('historyList', history);
-      }
+      // 读取本地存储的历史记录
+      let history = wx.getStorageSync('historyList') || [];
       this.setData({ historyList: history });
+
+      // 设置今天的日期
+      const today = new Date();
+      const yyyy = today.getFullYear();
+      const mm = String(today.getMonth() + 1).padStart(2, '0');
+      const dd = String(today.getDate()).padStart(2, '0');
+      const todayStr = `${yyyy}-${mm}-${dd}`;
+      
+      this.setData({ 
+        date: todayStr,
+        dateText: this.formatDate(todayStr),
+        dateValue: todayStr,
+        dayText: this.getDayText(todayStr)
+      });
     },
     switchTab(e) {
       this.setData({ activeTab: e.currentTarget.dataset.index });
     },
-    chooseStation(e) {
-      // TODO: 跳转到选择车站页面
-    },
     chooseDate() {
       wx.navigateTo({
-        url: '/pages/choose-date/choose-date'
+        url: `/pages/choose-date/choose-date?date=${this.data.date}`
       });
     },
     toggleHighSpeed(e) {
@@ -61,9 +49,6 @@ Page({
     },
     toggleStudent(e) {
       this.setData({ isStudent: e.detail.value });
-    },
-    onSearch() {
-      // TODO: 跳转到火车票列表页面
     },
     clearHistory() {
       this.setData({ history: [] });
@@ -86,11 +71,28 @@ Page({
       if (newHistory.length > 3) newHistory = newHistory.slice(0, 3);
       this.setData({ historyList: newHistory });
       wx.setStorageSync('historyList', newHistory);
-      // ... 这里可以继续你的查询逻辑 ...
+  
     },
     onClearHistory() {
       this.setData({ historyList: [] });
       wx.removeStorageSync('historyList');
+    },
+    onHistoryItemTap(e) {
+      const item = e.currentTarget.dataset.item;
+      const [fromStation, toStation] = item.split('-');
+      
+      // 更新当前选择的站点
+      this.setData({
+        fromStation,
+        toStation
+      });
+      
+      // 存储站点信息
+      wx.setStorageSync('fromStation', fromStation);
+      wx.setStorageSync('toStation', toStation);
+      
+      // 使用当前选择的站点和日期进行查询
+      this.onSearchTrainTickets();
     },
     chooseFromStation() {
       this.setData({ showFromStation: true });
@@ -116,7 +118,12 @@ Page({
       this.setData({ showToStation: true });
     },
     showDateSelector() {
-      this.setData({ showDate: true });
+      console.log('Main page date before opening selector:', this.data.date);
+      this.setData({
+        dateValue: this.data.date,
+        showDate: true
+      });
+      console.log('Main page dateValue set to:', this.data.dateValue);
     },
     onFromStationSelect(e) {
       const station = e.detail.station;
@@ -140,7 +147,9 @@ Page({
     onDateSelect(e) {
       const date = e.detail.date;
       this.setData({
+        date: date,
         dateText: this.formatDate(date),
+        dateValue: date,
         dayText: this.getDayText(date),
         showDate: false
       });
@@ -154,11 +163,50 @@ Page({
     },
     getDayText(dateStr) {
       const today = new Date();
+      today.setHours(0, 0, 0, 0); // 清零时分秒
       const target = new Date(dateStr);
+      target.setHours(0, 0, 0, 0); // 也清零
       const diff = (target - today) / (1000 * 60 * 60 * 24);
-      if (diff < 1 && diff > -1) return '今天';
-      if (diff < 2 && diff > 0) return '明天';
+      if (diff === 0) return '今天';
+      if (diff === 1) return '明天';
       const weekArr = ['日', '一', '二', '三', '四', '五', '六'];
-      return `周${weekArr[target.getDay()]}`;
+      return `周${weekArr[target.getDay()]}`
+    },
+    onSearchTrainTickets: function() {
+      const departureStation = this.data.fromStation;
+      const arrivalStation = this.data.toStation;
+      const travelDate = this.data.date;
+      const isHighSpeedTrain = this.data.isHighSpeedTrain;
+      const isStudentTicket = this.data.isStudentTicket;
+
+      if (!travelDate) {
+        wx.showToast({ title: '请选择出发日期', icon: 'none' });
+        return;
+      }
+
+      // 添加新的历史记录
+      const newRecord = `${departureStation}-${arrivalStation}`;
+      let historyList = this.data.historyList.filter(item => item !== newRecord);
+      historyList.unshift(newRecord);
+      if (historyList.length > 3) {
+        historyList = historyList.slice(0, 3);
+      }
+      
+      this.setData({ historyList });
+      wx.setStorageSync('historyList', historyList);
+
+      wx.navigateTo({
+        url: `/pages/train-list/index?departureStation=${departureStation}&arrivalStation=${arrivalStation}&travelDate=${travelDate}&isHighSpeedTrain=${isHighSpeedTrain}&isStudentTicket=${isStudentTicket}`
+      });
+    },
+    switchStations() {
+      const { fromStation, toStation } = this.data;
+      this.setData({
+        fromStation: toStation,
+        toStation: fromStation
+      });
+      // 更新存储的站点信息
+      wx.setStorageSync('fromStation', toStation);
+      wx.setStorageSync('toStation', fromStation);
     }
   });

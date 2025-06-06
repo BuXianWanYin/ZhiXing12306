@@ -1,4 +1,9 @@
 <view class="index-page">
+  <!-- 顶部标题栏 -->
+  <view class="title-bar">
+    <text class="title">智行12306</text>
+  </view>
+
   <!-- 顶部轮播图 -->
   <swiper-component></swiper-component>
 
@@ -12,7 +17,7 @@
     
     <view class="station-row">
       <view class="station" bindtap="showFromStationSelector">{{fromStation}}</view>
-      <image class="arrow" src="https://img.icons8.com/ios-filled/50/3a8dff/sort-right.png"/>
+      <image class="arrow" src="/images/toggle.png" bindtap="switchStations"/>
       <view class="station" bindtap="showToStationSelector">{{toStation}}</view>
     </view>
 
@@ -35,12 +40,12 @@
     </view>
     
     <view class="search-btn-wrapper">
-    <button class="search-btn">火车票查询</button>
+    <button class="search-btn" bindtap="onSearchTrainTickets">查询火车票</button>
   </view>
 
     <view class="history-row">
       <block wx:for="{{historyList}}" wx:key="index">
-        <view class="history-item">{{item}}</view>
+        <view class="history-item" bindtap="onHistoryItemTap" data-item="{{item}}">{{item}}</view>
       </block>
       <text class="clear-btn" wx:if="{{historyList.length > 0}}" bindtap="onClearHistory">清除</text>
     </view>
@@ -49,19 +54,19 @@
   <!-- 快捷导航 -->
   <view class="quick-nav">
     <view class="nav-item">
-      <image class="nav-icon" src="https://img.icons8.com/ios-filled/50/3a8dff/train.png"/>
+      <image class="nav-icon" src="/images/qiangpiao.png"/>
       <text>极速抢票</text>
     </view>
     <view class="nav-item">
-      <image class="nav-icon" src="https://img.icons8.com/ios-filled/50/3a8dff/online-support.png"/>
+      <image class="nav-icon" src="/images/xuanzuo.png"/>
       <text>在线选座</text>
     </view>
     <view class="nav-item">
-      <image class="nav-icon" src="https://img.icons8.com/ios-filled/50/3a8dff/gift.png"/>
+      <image class="nav-icon" src="/images/shangpin.png"/>
       <text>抢票好货</text>
     </view>
     <view class="nav-item">
-      <image class="nav-icon" src="https://img.icons8.com/ios-filled/50/3a8dff/hotel.png"/>
+      <image class="nav-icon" src="/images/jiudian.png"/>
       <text>超值酒店</text>
     </view>
   </view>
@@ -81,7 +86,7 @@
   <!-- 日期选择组件 -->
   <date-selector
     show="{{showDate}}"
-    dateText="{{dateText}}"
+    dateText="{{dateValue}}"
     bind:select="onDateSelect"
     bind:close="onDateSelectorClose" />
 

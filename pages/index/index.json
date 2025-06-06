@@ -3,7 +3,6 @@
       "swiper-component": "/components/swiper/swiper",
       "tabbar-component": "/components/tabbar/tabbar",
       "station-selector": "/components/station-selector/station-selector",
-    "date-selector": "/components/date-selector/date-selector"
-     
+      "date-selector": "/components/date-selector/date-selector"
     }
   }

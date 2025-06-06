@@ -11,7 +11,7 @@
   align-items: center;
   box-shadow: 0 -2rpx 12rpx #e6eaf0;
   z-index: 100;
-  margin-bottom: 20rpx;
+  padding-bottom: 20rpx;
 }
 .tabbar-item {
   display: flex;
@@ -27,5 +27,5 @@
 .tabbar-icon {
   width: 48rpx;
   height: 48rpx;
-  margin-bottom: 10rpx;
+  padding-bottom: 10rpx;
 }

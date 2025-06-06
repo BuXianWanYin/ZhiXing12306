@@ -1,15 +1,13 @@
-/* components/swiper/swiper.wxss */
+
 .banner-swiper {
-  width: 92vw;
-  height: 240rpx;
-  margin: 62rpx auto 0 auto;
-  border-radius: 18rpx;
+  width: 100vw;
+  height: 340rpx;
+  margin: 158rpx auto 0 auto;
   overflow: hidden;
   background: #eaf3ff;
 }
 .banner-img {
   width: 100%;
   height: 100%;
-  border-radius: 18rpx;
   object-fit: cover;
 }

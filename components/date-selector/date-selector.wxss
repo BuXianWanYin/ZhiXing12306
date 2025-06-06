@@ -60,31 +60,34 @@
   position: relative;
   background: #fff;
   transition: background 0.2s;
+  border: none;
 }
 .date-selector-day--disabled {
   color: #ccc;
   background: #f7f7f7;
 }
 .date-selector-day--today {
-  background: #3a8dff;
-  color: #fff;
   border: none;
+}
+.date-selector-day.date-selector-day--today:not(.date-selector-day--selected) {
+  background: #fff;
+  color: #222;
+}
+.date-selector-day--today.date-selector-day--selected {
+  border: none !important;
+  background: #3a8dff !important;
+  color: #fff !important;
 }
 .date-selector-day--today .lunar-text,
 .date-selector-day--today .date-selector-festival,
 .date-selector-day--today .date-selector-holiday,
 .date-selector-day--today .date-selector-reserve {
-  color: #fff;
-}
-.date-selector-day--selected {
-  border: 2rpx solid #3a8dff;
-  background: #fff;
   color: #222;
 }
-.date-selector-day--today.date-selector-day--selected {
+.date-selector-day--selected {
   background: #3a8dff;
   color: #fff;
-  border: none;
+  border: none !important;
 }
 .date-selector-day-desc {
   font-size: 18rpx;
@@ -139,23 +142,6 @@
   font-size: 20rpx;
   margin-left: 2rpx;
 }
-.date-selector-day--disabled {
-  color: #ccc;
-  background: #f7f7f7;
-}
-.date-selector-day--selected {
-  background: #3a8dff;
-  color: #fff;
-}
-.date-selector-day--today {
-  border: 2rpx solid #3a8dff;
-}
-.date-selector-day--empty {
-  background: none;
-  border: none;
-  box-shadow: none;
-  pointer-events: none;
-}
 .date-selector-week,
 .date-selector-days {
   box-sizing: border-box;
@@ -172,4 +158,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.date-selector-day--selected text,
+.date-selector-day--selected .date-selector-day-desc text,
+.date-selector-day--selected .lunar-text,
+.date-selector-day--selected .date-selector-festival,
+.date-selector-day--selected .date-selector-holiday,
+.date-selector-day--selected .date-selector-reserve {
+  color: #fff !important;
 }

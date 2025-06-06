@@ -1,1 +1,90 @@
- 
+<!-- 顶部导航栏 -->
+<view class="custom-navbar">
+  <view class="nav-left" bindtap="onBack">
+    <image src="/images/back.png" class="back-icon"></image>
+  </view>
+  <view class="nav-title">
+    {{departureStation}}<image class="arrow" src="/images/toggle_black.png" mode="widthFix" bindtap="onToggleStation"></image>{{arrivalStation}}
+  </view>
+  <view class="nav-right">
+    <image src="/assets/add.png" class="nav-icon"></image>
+    <image src="/assets/feedback.png" class="nav-icon"></image>
+  </view>
+</view>
+
+<!-- 日期选择栏 -->
+<scroll-view class="date-scroll" scroll-x="true" scroll-into-view="{{scrollIntoView}}">
+  <block wx:for="{{dateTabs}}" wx:key="id">
+    <view id="{{item.id}}" class="date-tab {{currentDateIndex === index ? 'active' : ''}}" bindtap="onDateTabTap" data-index="{{index}}">
+      <view class="date-week">{{item.weekStr}}</view>
+      <view class="date-main">{{item.dateShort}}</view>
+    </view>
+  </block>
+</scroll-view>
+
+<view class="container">
+  <scroll-view class="ticket-list" scroll-y="true" style="height: calc(100vh - 220rpx);">
+    <!-- 车票卡片列表 -->
+    <block wx:for="{{trainList}}" wx:key="trainNumber">
+      <view class="ticket-item">
+        <view class="left-info">
+          <view class="time">{{item.departureTime}}</view>
+          <view class="station">{{departureStation}}<text class="marker">(始)</text></view>
+          <!-- 左侧座位信息 -->
+          <view class="seat-column">
+            <block wx:for="{{item.displaySeats}}" wx:for-item="seat" wx:for-index="seatIndex" wx:key="name" wx:if="{{seatIndex % 4 === 0}}">
+              <view class="seat-row seatIndex0">
+                <text class="seat-type">{{seat.name}}</text>
+                <text class="seat-count {{seat.count === '有票' || (seat.count && seat.count.includes('张')) ? 'seat-available' : (seat.count === '候补' ? 'seat-wait' : 'seat-unavailable')}}">{{seat.count}}</text>
+              </view>
+            </block>
+          </view>
+        </view>
+        <view class="center-info">
+          <view class="train-number">{{item.trainNumber}}</view>
+          <view class="duration-arrow">
+            <view class="arrow-line"></view>
+            <text class="duration-text">{{item.duration}}</text>
+            <view class="arrow-line"></view>
+          </view>
+          <!-- 中间座位信息 -->
+          <view class="seat-column">
+            <block wx:for="{{item.displaySeats}}" wx:for-item="seat" wx:for-index="seatIndex" wx:key="name" wx:if="{{seatIndex % 4 === 1}}">
+              <view class="seat-row seatIndex1">
+                <text class="seat-type">{{seat.name}}</text>
+                <text class="seat-count {{seat.count === '有票' || (seat.count && seat.count.includes('张')) ? 'seat-available' : (seat.count === '候补' ? 'seat-wait' : 'seat-unavailable')}}">{{seat.count}}</text>
+              </view>
+            </block>
+          </view>
+        </view>
+        <view class="arrival">
+          <text class="time">{{item.arrivalTime}}</text>
+          <text class="station"><text class="marker">(终)</text>{{arrivalStation}}</text>
+          <!-- 右侧座位信息 -->
+          <view class="seat-column">
+            <block wx:for="{{item.displaySeats}}" wx:for-item="seat" wx:for-index="seatIndex" wx:key="name" wx:if="{{seatIndex % 4 === 2}}">
+              <view class="seat-row seatIndex2">
+                <text class="seat-type">{{seat.name}}</text>
+                <text class="seat-count {{seat.count === '有票' || (seat.count && seat.count.includes('张')) ? 'seat-available' : (seat.count === '候补' ? 'seat-wait' : 'seat-unavailable')}}">{{seat.count}}</text>
+              </view>
+            </block>
+          </view>
+        </view>
+        <view class="right-info">
+          <view class="price">¥{{item.price}}</view>
+          <!-- 价格下方座位信息 -->
+          <view class="seat-column">
+            <block wx:for="{{item.displaySeats}}" wx:for-item="seat" wx:for-index="seatIndex" wx:key="name" wx:if="{{seatIndex % 4 === 3}}">
+              <view class="seat-row seatIndex3">
+                <text class="seat-type">{{seat.name}}</text>
+                <text class="seat-count {{seat.count === '有票' || (seat.count && seat.count.includes('张')) ? 'seat-available' : (seat.count === '候补' ? 'seat-wait' : 'seat-unavailable')}}">{{seat.count}}</text>
+              </view>
+            </block>
+          </view>
+        </view>
+      </view>
+    </block>
+    <!-- 占位 -->
+    <view style="height: env(safe-area-inset-bottom);"></view>
+  </scroll-view>
+</view>

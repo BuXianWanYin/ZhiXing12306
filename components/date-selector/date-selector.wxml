@@ -15,7 +15,7 @@
       </block>
     </view>
     <view class="date-selector-days">
-      <block wx:for="{{days}}" wx:key="index">
+      <block wx:for="{{days}}" wx:key="date">
         <view
           wx:if="{{item.day}}"
           class="date-selector-day {{item.isCurrentMonth ? '' : 'date-selector-day--disabled'}} {{item.isToday ? 'date-selector-day--today' : ''}} {{item.isSelected ? 'date-selector-day--selected' : ''}}"
