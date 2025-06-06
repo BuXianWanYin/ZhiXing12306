@@ -208,5 +208,8 @@ Page({
       // 更新存储的站点信息
       wx.setStorageSync('fromStation', toStation);
       wx.setStorageSync('toStation', fromStation);
+    },
+    onGoFlight() {
+      wx.navigateTo({ url: '/pages/flight/index' });
     }
   });

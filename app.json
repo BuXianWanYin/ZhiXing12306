@@ -1,11 +1,39 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/train-list/index"
+    "pages/train-list/index",
+    "pages/flight/index",
+    "pages/bus/index",
+    "pages/user/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#999999",
+    "selectedColor": "#1a73e8",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "火车票"
+      },
+      {
+        "pagePath": "pages/flight/index",
+        "text": "飞机票"
+      },
+      {
+        "pagePath": "pages/bus/index",
+        "text": "汽车票"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "个人中心"
+      }
+    ]
   },
   "style": "v2",
   "renderer": "skyline",

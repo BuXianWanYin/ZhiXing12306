@@ -11,7 +11,7 @@
   <view class="search-card">
     <view class="tab-switch">
       <view class="tab active">火车票</view>
-      <view class="tab">飞机票</view>
+      <view class="tab" bindtap="onGoFlight">飞机票</view>
     </view>
 
     
