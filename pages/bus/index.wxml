@@ -79,6 +79,7 @@
     bind:select="onDateSelect"
     bind:close="onDateSelectorClose" />
 
-  <!-- 底部tabbar -->
+ 
   <tabbar-component></tabbar-component>
+ <tabbar-component currentIndex="{{tabIndex}}"/>
 </view>

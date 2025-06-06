@@ -28,7 +28,7 @@ Page({
     originalTrainList: [], // 用于重置
     sortType: ''
   },
-
+  
   onLoad: function (options) {
     const fromStation = options.departureStation;
     const toStation = options.arrivalStation;
@@ -36,7 +36,7 @@ Page({
     const isHighSpeedTrain = options.isHighSpeedTrain === 'true';
     const isStudentTicket = options.isStudentTicket === 'true';
     const today = formatDate(new Date());
-
+    
     let dateTabs = [];
     let currentDateIndex = 0;
 

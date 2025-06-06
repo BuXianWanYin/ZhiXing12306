@@ -1,7 +1,8 @@
 Page({
   data: {
     userInfo: null,
-    isLogin: false
+    isLogin: false,
+    tabIndex:3
   },
 
   onLoad() {
@@ -15,13 +16,8 @@ Page({
     }
   },
 
-  onShow() {
-    // 设置当前页面的 tabBar 索引
-    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
-      this.getTabBar().setData({
-        activeTabIndex: 3  // 个人中心是第四个 tab
-      });
-    }
+  onLoad() {
+    console.log('本页tabIndex:', this.data.tabIndex);
   },
 
   // 登录

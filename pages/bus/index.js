@@ -10,6 +10,7 @@ Page({
     showFromCity: false, // 是否显示出发城市选择器
     showToCity: false, // 是否显示到达城市选择器
     showDate: false, // 是否显示日期选择器
+    tabIndex: 2
   },
 
   onLoad() {
@@ -29,14 +30,11 @@ Page({
   },
 
   onShow() {
-    // 设置当前页面的 tabBar 索引
-    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
-      this.getTabBar().setData({
-        activeTabIndex: 1  // 飞机票是第二个 tab
-      });
-    }
+    console.log('tabIndex:', this.data.tabIndex, typeof this.data.tabIndex);
   },
-
+  onLoad() {
+    console.log('本页tabIndex:', this.data.tabIndex);
+  },
   // 显示出发城市选择器
   showFromCitySelector() {
     this.setData({ showFromCity: true });

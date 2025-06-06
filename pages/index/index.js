@@ -16,6 +16,7 @@ Page({
       showFromStation: false, // 是否显示出发站选择器
       showToStation: false, // 是否显示到达站选择器
       showDate: false, // 是否显示日期选择器
+      tabIndex: 0
     },
     onLoad() {
       // 读取本地存储的历史记录
@@ -124,6 +125,9 @@ Page({
         showDate: true
       });
       console.log('Main page dateValue set to:', this.data.dateValue);
+    },
+    onLoad() {
+      console.log('本页tabIndex:', this.data.tabIndex);
     },
     onFromStationSelect(e) {
       const station = e.detail.station;
