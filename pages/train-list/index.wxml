@@ -84,7 +84,46 @@
         </view>
       </view>
     </block>
-    <!-- 占位 -->
-    <view style="height: env(safe-area-inset-bottom);"></view>
+    <!-- 占位，防止内容被底部栏遮挡 -->
+    <view style="height: 180rpx;"></view>
   </scroll-view>
 </view>
+
+<!-- 筛选栏，始终吸底 -->
+<view class="sort-filter-bar">
+  <view class="sort-item {{sortType === 'early' ? 'active' : ''}}" bindtap="onSort" data-type="early">
+    <image src="{{sortType === 'early' ? '/images/time_blue.png' : '/images/time_black.png'}}" class="sort-icon"></image>
+    <text>最早发车</text>
+  </view>
+  <view class="sort-item {{sortType === 'duration' ? 'active' : ''}}" bindtap="onSort" data-type="duration">
+    <image src="{{sortType === 'duration' ? '/images/haoshi_blue.png' : '/images/haoshi_black.png'}}" class="sort-icon"></image>
+    <text>耗时最短</text>
+  </view>
+  <view class="sort-item {{sortType === 'price' ? 'active' : ''}}" bindtap="onSort" data-type="price">
+    <image src="{{sortType === 'price' ? '/images/money_blue.png' : '/images/money_black.png'}}" class="sort-icon"></image>
+    <text>价格最低</text>
+  </view>
+  <view class="sort-item" bindtap="onShowFilter">
+    <image src="/images/shaixuan_black.png" class="sort-icon"></image>
+    <text>高级筛选</text>
+  </view>
+</view>
+
+<!-- 出发时间筛选弹窗 -->
+<view wx:if="{{showFilter}}" class="filter-modal">
+  <view class="filter-content">
+    <view class="filter-title">出发时间</view>
+    <view class="time-options">
+      <view class="time-option {{selectedTimeRange === 0 ? 'active' : ''}}" bindtap="onSelectTimeRange" data-range="0">0点-6点</view>
+      <view class="time-option {{selectedTimeRange === 1 ? 'active' : ''}}" bindtap="onSelectTimeRange" data-range="1">6点-12点</view>
+      <view class="time-option {{selectedTimeRange === 2 ? 'active' : ''}}" bindtap="onSelectTimeRange" data-range="2">12点-18点</view>
+      <view class="time-option {{selectedTimeRange === 3 ? 'active' : ''}}" bindtap="onSelectTimeRange" data-range="3">18点-24点</view>
+    </view>
+    <view class="filter-actions">
+      <button class="reset-btn" bindtap="onResetTimeRange">重置</button>
+      <button class="confirm-btn" bindtap="onConfirmTimeRange">确定</button>
+    </view>
+  </view>
+</view>
+
+

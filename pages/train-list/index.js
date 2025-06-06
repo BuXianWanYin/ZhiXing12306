@@ -22,7 +22,11 @@ Page({
     currentDateIndex: 0, // 当前选中的日期索引
     scrollIntoView: '', // 滚动到视图的日期ID
     isHighSpeedTrain: false, // 是否只显示高铁动车
-    isStudentTicket: false // 是否为学生票
+    isStudentTicket: false, // 是否为学生票
+    showFilter: false,
+    selectedTimeRange: null, // 0:0-6, 1:6-12, 2:12-18, 3:18-24
+    originalTrainList: [], // 用于重置
+    sortType: ''
   },
 
   onLoad: function (options) {
@@ -227,7 +231,7 @@ Page({
           trainList = trainList.filter(train => train.isHighSpeed);
         }
 
-        this.setData({ trainList });
+        this.setData({ trainList, originalTrainList: trainList });
       },
       fail: (err) => {
         wx.showToast({ title: '查询失败', icon: 'none' });
@@ -260,5 +264,72 @@ Page({
       arrivalStation: departureStation
     });
     this.fetchTrainList(arrivalStation, departureStation, travelDate);
+  },
+
+  onShowFilter() {
+    this.setData({ showFilter: true });
+  },
+
+  onSelectTimeRange(e) {
+    this.setData({ selectedTimeRange: Number(e.currentTarget.dataset.range) });
+  },
+
+  onResetTimeRange() {
+    this.setData({ selectedTimeRange: null, trainList: this.data.originalTrainList });
+  },
+
+  onConfirmTimeRange() {
+    const { selectedTimeRange, originalTrainList } = this.data;
+    if (selectedTimeRange === null) {
+      this.setData({ trainList: originalTrainList, showFilter: false });
+      return;
+    }
+    // 时间区间
+    const ranges = [
+      [0, 6],
+      [6, 12],
+      [12, 18],
+      [18, 24]
+    ];
+    const [start, end] = ranges[selectedTimeRange];
+    const filtered = originalTrainList.filter(item => {
+      // 假设 item.departureTime 格式为 "08:30"
+      const hour = parseInt(item.departureTime.split(':')[0], 10);
+      return hour >= start && hour < end;
+    });
+    this.setData({ trainList: filtered, showFilter: false });
+  },
+
+  onSort(e) {
+    const type = e.currentTarget.dataset.type;
+    if (this.data.sortType === type) {
+      // 如果已选中，再次点击则恢复默认
+      this.setData({
+        sortType: '',
+        trainList: [...this.data.originalTrainList]
+      });
+      return;
+    }
+    let sortedList = [...this.data.trainList];
+    if (type === 'early') {
+      sortedList.sort((a, b) => a.departureTime.localeCompare(b.departureTime));
+    } else if (type === 'duration') {
+      sortedList.sort((a, b) => {
+        const getMinutes = str => {
+          if (str.includes('小时')) {
+            const [h, m] = str.replace('分', '').split('小时');
+            return parseInt(h) * 60 + parseInt(m || 0);
+          }
+          return parseInt(str);
+        };
+        return getMinutes(a.duration) - getMinutes(b.duration);
+      });
+    } else if (type === 'price') {
+      sortedList.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
+    }
+    this.setData({
+      trainList: sortedList,
+      sortType: type
+    });
   }
 })
