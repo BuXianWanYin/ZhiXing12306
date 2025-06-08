@@ -4,7 +4,9 @@
     <image src="/images/back.png" class="back-icon"></image>
   </view>
   <view class="nav-title">
-    {{departureStation}}<image class="arrow" src="/images/toggle_black.png" mode="widthFix" bindtap="onToggleStation"></image>{{arrivalStation}}
+    <text class="station-text">{{departureStation}}</text>
+    <image class="arrow" src="/images/toggle_black.png" mode="widthFix" bindtap="onToggleStation"></image>
+    <text class="station-text">{{arrivalStation}}</text>
   </view>
   <view class="nav-right">
     <image src="/assets/add.png" class="nav-icon"></image>

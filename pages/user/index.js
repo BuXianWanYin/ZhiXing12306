@@ -167,9 +167,7 @@ Page({
   },
 
   onListItemTap(e) {
-    wx.showToast({ title: '点击了', icon: 'none' }); // 调试用
     const { url } = e.currentTarget.dataset;
-    console.log('点击了' + url);
     if (url) {
       wx.navigateTo({ url });
     }
