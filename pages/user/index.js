@@ -6,6 +6,7 @@ Page({
       desc: '点击登录账号',
       uid: ''
     },
+    serverUrl: 'http://localhost:3000',
     listItems: [
       {
         icon: '/images/user/caifu.png',
@@ -39,7 +40,8 @@ Page({
         icon: '/images/user/gengduo.png',
         text: '更多'
       }
-    ]
+    ],
+    isLoggingIn: false
   },
 
   onLoad() {
@@ -52,52 +54,104 @@ Page({
   },
   onLogin() {
     console.log('onLogin: 点击登录');
+    if (this.data.isLoggingIn) {
+      console.log('正在登录中，请稍候...');
+      return;
+    }
     if (this.data.userInfo.nickname !== '未登录') {
       console.log('onLogin: 已登录，直接返回');
       return;
     }
+
+    this.setData({ isLoggingIn: true });
+
+    if (!wx.getUserProfile) {
+      wx.showModal({
+        title: '提示',
+        content: '当前微信版本过低，无法使用该功能，请升级到最新微信版本后重试。',
+        showCancel: false
+      });
+      this.setData({ isLoggingIn: false });
+      return;
+    }
+
     wx.getUserProfile({
       desc: '用于完善会员资料',
+      lang: 'zh_CN',
       success: (res) => {
-        console.log('onLogin: getUserProfile 成功', res.userInfo);
+        console.log('getUserProfile 成功:', res.userInfo);
         wx.login({
           success: (loginRes) => {
-            console.log('onLogin: wx.login 成功', loginRes.code);
+            console.log('wx.login 成功:', loginRes.code);
             wx.request({
-              url: 'http://localhost:3000/api/user/login',
+              url: `${this.data.serverUrl}/api/user/login`,
               method: 'POST',
               data: {
                 code: loginRes.code,
-                avatar: res.userInfo.avatarUrl,
-                nickname: res.userInfo.nickName
+                userInfo: res.userInfo
               },
               success: (resp) => {
-                console.log('onLogin: 后端返回', resp.data);
+                console.log('登录响应:', resp.data);
                 if (resp.data && resp.data.success) {
                   const userInfo = {
-                    avatar: resp.data.avatar,
-                    nickname: resp.data.nickname,
+                    avatar: resp.data.userInfo?.avatarUrl || '/images/avatar-default.svg',
+                    nickname: resp.data.userInfo?.nickName || '微信用户',
                     desc: '微信用户',
-                    uid: resp.data.openid
+                    uid: resp.data.openid || ''
                   };
                   this.setData({ userInfo });
                   wx.setStorageSync('userInfo', userInfo);
                   wx.showToast({ title: '登录成功', icon: 'success' });
-                  console.log('onLogin: 登录成功，userInfo:', userInfo);
-                  console.log('登录后端返回的头像路径:', resp.data.avatar);
                 } else {
-                  wx.showToast({ title: '登录失败', icon: 'none' });
-                  console.log('onLogin: 登录失败', resp.data);
+                  wx.showToast({ 
+                    title: resp.data?.msg || '登录失败', 
+                    icon: 'none' 
+                  });
+                  console.error('登录失败:', resp.data);
                 }
+              },
+              fail: (err) => {
+                console.error('登录请求失败:', err);
+                wx.showToast({
+                  title: '网络请求失败，请重试',
+                  icon: 'none'
+                });
               }
+            });
+          },
+          fail: (err) => {
+            console.error('wx.login 失败:', err);
+            wx.showToast({
+              title: '登录失败，请重试',
+              icon: 'none'
             });
           }
         });
+      },
+      fail: (err) => {
+        console.error('getUserProfile 失败:', err);
+        if (err.errMsg.includes('deny')) {
+          wx.showModal({
+            title: '提示',
+            content: '您已拒绝授权，如需使用完整功能，请重新授权。',
+            showCancel: false
+          });
+        } else {
+          wx.showToast({
+            title: '获取用户信息失败',
+            icon: 'none'
+          });
+        }
+        this.setData({ isLoggingIn: false });
+      },
+      complete: () => {
+        setTimeout(() => {
+          this.setData({ isLoggingIn: false });
+        }, 1000);
       }
     });
   },
 
-  // 更换头像
   onChangeAvatar() {
     const { uid } = this.data.userInfo;
     if (!uid) {
@@ -109,7 +163,7 @@ Page({
       success: (res) => {
         const tempFilePath = res.tempFilePaths[0];
         wx.uploadFile({
-          url: 'http://localhost:3000/api/user/uploadAvatar',
+          url: `${this.data.serverUrl}/api/user/uploadAvatar`,
           filePath: tempFilePath,
           name: 'avatar',
           formData: { uid },
@@ -133,7 +187,6 @@ Page({
     });
   },
 
-  // 修改昵称
   onChangeNickname(e) {
     const newNickname = e.detail.value;
     const { uid } = this.data.userInfo;
@@ -142,7 +195,7 @@ Page({
       return;
     }
     wx.request({
-      url: 'http://localhost:3000/api/user/updateNickname',
+      url: `${this.data.serverUrl}/api/user/updateNickname`,
       method: 'POST',
       data: { uid, nickname: newNickname },
       success: (res) => {
